@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/dianzi.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <!--<script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/page-dianzi.js"></script>-->
+    <title>电子签约</title>
+</head>
+<body>
+<div data-role="page" class="main dianzi" id="dianzi-customerConfirm">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+        电子签约
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('dianzi-readingID.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>开通情况</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>签字确认</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>提交完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="msg-con">
+                <div class="msg-box">
+                    <div class="msg-header">确认信息 <span class="reWrite"><img src="../../images/ps_modify.png" style="width:25px;position: relative;top:5px;" alt=""/></span>
+                    </div>
+                    <div class="msg-content">
+                        <div class="msg-l">
+                            <div class="msg-l-content">
+                                <div class="work-left">
+                                    <div><span>网上银行&手机银行</span></div>
+                                </div>
+                                <div class="work-left">
+                                    <div class="font-l-color"><span>网上银行状态：</span><span
+                                            class="text-toggle"></span>
+                                    </div>
+                                    <div class="que-l-box"><span>动态密码对外转账限额：</span><span
+                                            id="netBank-out"></span><span>元/日</span>
+                                    </div>
+                                    <div class="que-l-box"><span>动态密码网银支付限额：</span><span
+                                            id="netBank-in"></span><span>元/日</span>
+                                    </div>
+                                </div>
+                                <div class="work-left">
+                                    <div class="font-l-color"><span>手机银行状态：</span><span
+                                            class="text-toggle"></span>
+                                    </div>
+                                    <div class="que-l-box">
+                                        <span>动态密码对外转账限额：</span><span
+                                            class="moBank-out"><!--9999.00--></span><span>元/日</span>
+                                    </div>
+                                </div>
+                                <div class="work-left" id="guaK">
+                                    <div class="font-l-color"><span>已挂靠账户数量：</span>X<span id="counter"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg-r">
+                            <div class="msg-r-content">
+                                <div class="work-right">
+                                    <div><span>银信通</span></div>
+                                </div>
+                                <div class="work-right">
+                                    <div class="font-r-color"><span>账号：</span><span
+                                            class="yin-zhangH"><!--6227873683727362--></span>
+                                    </div>
+                                </div>
+                                <div class="work-right">
+                                    <div class="font-r-color"><span>资金转出通知：</span><span
+                                            class="yinM-out-toggle"><!--已开通--></span></div>
+                                    <div class="que-r-box"><span>资金转出起点金额：</span>
+                                        <span class="yin-out"><!--9999.00--></span><span>元</span>
+                                    </div>
+                                </div>
+                                <div class="work-right">
+                                    <div class="font-r-color"><span>资金转入通知：</span><span
+                                            class="yinM-in-toggle"><!--已关闭--></span></div>
+                                    <div class="que-r-box"><span>资金转入起点金额：</span>
+                                        <span class="yin-in"><!--9999.00--></span><span>元</span>
+                                    </div>
+                                </div>
+                                <div class="work-right">
+                                    <div class="font-r-color"><span>定期到期通知：</span><span
+                                            class="yinM-end-toggle"><!--已开通--></span></div>
+                                </div>
+                                <div class="work-right">
+                                    <div class="font-r-color"><span>金融信息通知：</span><span
+                                            class="yinM-msg-toggle"><!--已开通--></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="dianzi-sure-xy">
+                    <div class="sure-img"  style="display: inline-block;">
+                        <img id="ic-disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt=""/>
+                        <img id="ic-agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt=""/></div>
+                        本人已阅读<span>《个人电子银行业务服务协议》</span>及<span>《个人银信通使用须知》</span>,自愿申请相关业务,并承诺所提供资料信息真实有效。
+                    </div>
+                <div class="video-qian">
+                    <div class="qian-box">
+                        <div class="qian-header">确认签名</div>
+                        <!-- <img src="../../images/ic_down.png" class="ic_down"/> -->
+                        <!-- <img src="../../images/ic_up.png" class="ic_up"/>-->
+                        <!-- <div class="dianjiqianming-con">点击签名</div> -->
+                        <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:25px;position: relative;top:5px"/></div>
+                        <div id="qianM" class="qian-content"></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="imageData" id="imageData"/>
+                        </form>
+                    </div>
+                    <div id="qianOK" class="qian-over">
+                        <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%"
+                             alt=""/>
+                        <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png"
+                             height="100%" alt=""/>
+                        <span>签名完成</span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <div id="msgVerification" class="duanX_con">
+                    <span>短信验证码</span>
+                    <input type="text" id="inp" data-role="none"/>
+                    <span id="getMsg" class="disMsg">获取验证码</span>
+                    <span>请在<span style="color:red;"><span id="dianzi-auth-time">80</span>秒</span>内输入验证码</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="dz-customerCon-sub" class="previous btn_next2"
+             style="margin-left: auto;margin-right: auto;float:none;">提&nbsp;&nbsp;&nbsp;交
+        </div>
+    </div>
+</div>
+</body>
+</html>

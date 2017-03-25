@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/loan.css" />
+		<link rel="stylesheet" href="../../css/smallLoan.css" />
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+		<title>小贷客户信息管理</title>
+	</head>
+
+	<body>
+		<div data-role="page" class="main smallLoan" id="smallLoanCusManage-index">
+			<!--头部-->
+			<div class="header">
+				<a class="head-all head-left" data-direction="reverse" href="../main.html">首页</a>
+				小贷客户信息管理
+				<a class="head-all head-right" data-direction="reverse" href="../main.html">退出</a>
+			</div>
+			<!--123...流程-->
+			<div class="navigation-steps sixCurrent">
+				<div class="border-all"></div>
+				<div id="border-over" class="border-over"></div>
+				<ul class="circle-con">
+					<li>
+						<div class="circle">1</div>
+						<p>客户类型</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">2</div>
+						<p>读取身份证</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">3</div>
+						<p>影像采集</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">4</div>
+						<p>信息录入</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">5</div>
+						<p>确认签名</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">6</div>
+						<p>完成</p>
+					</li>
+				</ul>
+			</div>
+			<!--<div class="containSelect">
+				<span class="containSpan">请选择客户类型：</span>
+				<div class="typeDropDown public-drop-down">
+					<select id="s_type" class="drop-down">
+						<option value="1">个体工商户</option>
+						<option value="2" selected>个人</option>
+						<option value="3">小企业</option>
+					</select>
+				</div>
+			</div>-->
+			<div data-role="content" class="conter-con">
+				<!--主题内容-->
+				<div class="conter-auto">
+
+					<div class="show-box" id="normalcustomer">
+						<div class="img-box">
+							<img src="../../images/ic_crm_1.png" alt="" class="img-format" />
+
+						</div>
+						<div class="message-show">
+							借款人
+						</div>
+					</div>
+					<div class="show-box" id="corporateperson">
+						<div class="img-box">
+							<img src="../../images/ic_crm_1.png" alt="" class="img-format"/>
+
+						</div>
+						<div class="message-show">
+							共借人
+						</div>
+					</div>
+					<div class="show-box" id="guaranteeperson">
+						<div class="img-box">
+							<img src="../../images/ps_agency_licai.png" alt="" class="img-format" />
+
+						</div>
+						<div class="message-show">
+							担保人
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--尾部-->
+			<div class="footter">
+			</div>
+			<div class="search-day-con">
+				<div class="seach-day" style="height: 200px!important;width: 572px!important;">
+					<ul class="seach-day-ul">
+						<li>
+							<div class="seach-day-header" style="width: 127px!important;">
+								请选择客户类型
+							</div>
+							<div class="seach-day-box" style="padding: 0;width: 267px;">
+								<select class="drop-down" id="customerType">
+									<option value="2" selected="true">个人</option>
+									<option value="1">个体工商户</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="fangqi-seach" style="float: left;">
+								放弃
+							</div>
+							<div class="fangqi-seach" style="float: right;">
+								继续
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

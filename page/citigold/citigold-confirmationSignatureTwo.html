@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <!--<script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-citigold.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/page-citigold-su.js"></script>-->
+    <title>基金购买</title>
+</head>
+<body>
+<div data-role="page" class="main main-con" id="citigold-confirmationSignatureTwo">
+     <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        基金购买
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('citigold-fundSupermarketsOne.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>基金超市</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>风险评估</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>业务签约</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li>
+                <div class="circle">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容--> 
+    <div data-role="content" class="conter-con">
+    	   	<div class="conter-auto">
+        <div class="msg-con">
+            <div class="basic_con msg-box">
+                <div class="msg-box-header">基金购买确认信息<span style="float:right; font-size:16px; color:#0F45A7" id="citi-edit"><img src="../../images/ps_modify.png" style="width:30px;position: relative;top:5px" alt=""/></span></div>
+                <ul class="confirm-ul">
+                    <li class="basic-li">
+                        <div class="li-first-div">
+                            <span class="basic-name">基金名称：</span>
+                            <span id="basic-name"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span class="basic-sex">基金代码：</span>
+                            <span id="basic-sex"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-first-div">
+                            <span class="basic_zhengType">单位净值：</span>
+                            <span id="basic_zhengType"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span class="basic_guoJ">净值日期：</span>
+                            <span id="basic_guoJ"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-first-div">
+                            <span class="basic_zhengType">最小购买起点：</span>
+                            <span id="basic_zhengType"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span class="basic_guoJ">最小购买单位：</span>
+                            <span id="basic_guoJ"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-first-div">
+                            <span class="basic_zhengType">追加购买下限：</span>
+                            <span id="basic_zhengType"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span class="basic_guoJ">参考费率：</span>
+                            <span id="basic_guoJ"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-first-div">
+                            <span class="basic_zhengJH">购买金额：</span>
+                            <span id="basic_zhengJH"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span class="basic_addressZ">推荐人：</span>
+                            <span id="basic_addressZ"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-first-div">
+                            <span class="basic_zhengJY">定投用途：</span>
+                            <span id="basic_zhengJY"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span class="basic_qianF">推荐人：</span>
+                            <span id="basic_qianF"></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="customer-risk-rating">
+            	    <p>客户风险承受能力评级:［<span class="customer-risk-pj"></span>］&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请确认:&nbsp;&nbsp;
+            	    	<span class="customer-risk-pj">
+            	    		<input type="radio" name="radiobutton" value="radiobutton" data-role="none"> 是 
+					<input type="radio" name="radiobutton" value="radiobutton" data-role="none" style="margin-left: 15px;"> 否 
+            	    </span></p>
+            	    <div class="agree-btn-box" id="xk-agree-btn" >
+	                <img id="ic-disagree" class="ic-agree" src="../../images/ic_disagree.png" height="100%" alt="">
+	                <img id="ic-agree" class="ic-agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt="">
+	                <span class="txt-agree">本人已阅读<a class="jijin-kesm">《基金产品说明书》</a>和<a class="jijin-kesm">《客户声明》</a>，自愿申请基金购买业务，并承诺所提供资料信息真实有效。</span>
+            		</div>
+            </div>
+            <div class="video-qian">
+            	   	<span class="kh-buy-title">客户购买／定投资金视频</span>
+            	   	<span class="kh-buy-cxps" style="display:none;">重新拍摄</span>
+            	   	<span class="kh-buy-qrqm">确认签名</span>
+            	   	<div class="video-box">
+                    <div class="video-header">
+                        <span>必拍，请保证拍摄清晰</span>
+                    </div>
+                    <img src="../../images/ic_videocamera.png" alt="" class="photo"/>
+                </div>
+                <div class="qian-box">
+                    <div class="qianM_shadow"></div>
+                    <div class="qian-content" id="qianMGM"></div>
+                    <div id="clear-botton" style="border: 0px;"><img src="../../images/ps_clear.png" style="width:25px;position: relative;top:6px"/></div>
+                    <form action="./Base64ToImages" method="post">
+						<input type="hidden" name="imageData" id="imageData" />
+					</form>
+                </div>
+                <div style="float: right;" id="qianOK" class="qian-over">
+                    <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt=""/>
+                    <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%"
+                         alt=""/>
+                    <span>签名完成</span>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="duanX_con">
+                <span>短信验证码</span>
+                <input type="text" id="inp" data-role="none"/>
+                <span id="getMsg">获取验证码</span>
+                <span class="codetime">请在<span style="color:red;">80秒</span>内输入验证码</span>
+            </div>
+            <div class="kong_box"></div>
+        </div>
+      </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <!--<div class="previous previous-con back-1">上一步</div>-->
+        <div id="xinka-customerCon-sub" class="previous btn_next2"
+             style="margin-left: auto;margin-right: auto;float:none;">提&nbsp;&nbsp;&nbsp;交
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

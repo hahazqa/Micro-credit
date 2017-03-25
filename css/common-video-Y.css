@@ -1,0 +1,50 @@
+.common-video-Y .box-header {
+    height: 50px;
+    width: 100%;
+    background-color: #EBEBEB;
+}
+.common-video-Y .box-header>div {
+    height: 50px;
+    width: 20%;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.common-video-Y .box-content {
+    width: 100%;
+    height: auto;
+}
+.common-video-Y .box-content .click {
+    background-color: #0F45A7 !important;
+    color: #FFFFFF;
+    text-shadow:none;
+}
+.common-video-Y .box-rows {
+    width: 100%;
+    height: 55px;
+}
+.common-video-Y .box-rows>div {
+    height: 55px;
+    width: 20%;
+    text-align: center;
+    float: left;
+    line-height: 55px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.common-video-Y .box-rows:nth-child(even) {
+    background-color: #f7f7f7;
+}

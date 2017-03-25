@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/mobile.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-mobile.js"></script>
+    <title>移动CRM</title>
+</head>
+<body>
+<div data-role="page" class="main mobile-con Service" id="mobile-CRMServiceOne">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">退出</a>
+        客户服务
+    </div>
+    <!--导航栏-->
+    <div class="navigation-steps-mobile">
+        <div class="navigation-steps-seach">
+            <div class="seach-botton" id="Conditional_Search">条件搜索</div>
+            <div class="seach-botton">新增客户服务</div>
+            <div class="head-seach">
+                <input type="text" placeholder="按名字搜索" style="color: #CCCCCC;" data-role="none"
+                       class="head-seach-input">
+                <img src="../../images/seach_one_icon.png" class="seach_icon">
+            </div>
+        </div>
+    </div>
+    <div data-role="content"  class="conter-con conter-mobile-con" style="bottom: 0;">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <!--第一屏-->
+            <ul class="tixing-zoushitu tixing-con tixing-zoushitu-bg">
+                <div class="tixing-zoushitu-title">
+                    <div class="bg-img">服务标题</div>
+                    <div>客户姓名</div>
+                    <div>联络渠道</div>
+                    <div class="id-card">证件号码</div>
+                    <div>客户服务类型</div>
+                    <div>服务时间</div>
+                    <div>执行状态</div>
+                </div>
+                <li class="sel-img img-mobile-wei">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>未执行</div>
+                </li>
+                <li class="sel-img img-mobile-over">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>已执行</div>
+                </li>
+                <li class="sel-img img-mobile-over">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>已执行</div>
+                </li>
+                <li class="sel-img img-mobile-wei">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>未执行</div>
+                </li>
+                <li class="sel-img img-mobile-wei">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>已执行</div>
+                </li>
+                <li class="sel-img img-mobile-over">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>未执行</div>
+                </li>
+                <li class="sel-img img-mobile-wei">
+                    <div class="bg-img">占位符</div>
+                    <div>赵向东</div>
+                    <div>占位符</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>占位符</div>
+                    <div>xxxx年xx月xx日</div>
+                    <div>未执行</div>
+                </li>
+            </ul>
+            <!--页码-->
+            <div class="page-number-con">
+                <span class="page-number-sx">上一页</span>
+                <span class="page-number-change">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>...</span>
+                <span>10</span>
+                <span class="page-number-sx page-number-bgcolor">下一页</span>
+            </div>
+        </div>
+    </div>
+    <div class="footter">
+        <a class="previous previous-con back-1">执行</a>
+        <a class="previous btn_next">删除</a>
+    </div>
+    <!--弹窗-->
+    <div id="seach-day-content" class="service_tanchuang">
+        <div class="seach-day">
+                <div class="seach-day-title">服务时间</div>
+                <ul class="seach-day-ul">
+                    <li>
+                        <div class="day-botton" style="float: left;">
+                        			<div class="day-botton-dayone"><input type="date" /></div>
+                        			<div class="day-botton-daytwo">
+                        				<select class="drop-down">
+		                                <option value="">00</option>
+		                                <option value="">10</option>
+		                                <option value="">12</option>
+		                                <option value="">13</option>
+		                            </select>
+                        			</div>
+                        			<div class="day-botton-daydiandian">:</div>
+                        			<div class="day-botton-daythree">
+                        				<select class="drop-down">
+		                                <option value="">00</option>
+		                                <option value="">10</option>
+		                                <option value="">12</option>
+		                                <option value="">13</option>
+		                            </select>
+                        			</div>
+                        </div>
+                        至
+                        <div class="day-botton" style="float: right;">
+                            <div class="day-botton-dayone"><input type="date" /></div>
+                    			<div class="day-botton-daytwo">
+                    				<select class="drop-down">
+		                                <option value="">00</option>
+		                                <option value="">10</option>
+		                                <option value="">12</option>
+		                                <option value="">13</option>
+		                            </select>
+                    			</div>
+                    			<div class="day-botton-daydiandian">:</div>
+                    			<div class="day-botton-daythree">
+                    				<select class="drop-down">
+		                                <option value="">00</option>
+		                                <option value="">10</option>
+		                                <option value="">12</option>
+		                                <option value="">13</option>
+		                            </select>
+                    			</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="seach-day-header">
+                            客户姓名
+                        </div>
+                        <div class="seach-day-box">
+                            <input type="text" class="input-test-con" style="height:26px; line-height:26px;padding:5px 0;" data-role="none">
+                        </div>
+                    </li>
+                    <li class="li-two">
+                        <div class="seach-day-header">
+                            联络渠道
+                        </div>
+                        <div class="seach-day-box">
+                            <select class="drop-down">
+                                <option value="">全部</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                            </select>
+                        </div>
+                        <img src="../../images/arrow_icon.png" class="arrow_icon_mobile" />
+                    </li>
+                    <li>
+                        <div class="seach-day-header">
+                            客户服务类型
+                        </div>
+                        <div class="seach-day-box" style="padding: 0;">
+                            <select class="drop-down">
+                                <option value="">全部</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                            </select>
+                        </div>
+                        <img src="../../images/arrow_icon.png" class="arrow_icon_mobile" />
+                    </li>
+                    <li class="li-two">
+                        <div class="seach-day-header">
+                            执行状态
+                        </div>
+                        <div class="seach-day-box" style="padding: 0;">
+                            <select class="drop-down">
+                                <option value="">全部</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                                <option value="">占位符</option>
+                            </select>
+                        </div>
+                        <img src="../../images/arrow_icon.png" class="arrow_icon_mobile" />
+                    </li>
+                    <li>
+                        <div class="fangqi-seach" id="fangqi_service" style="float: left;">
+                            放弃
+                        </div>
+                        <div class="fangqi-seach" style="float: right;">
+                            搜索
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>
+</body>
+</html>

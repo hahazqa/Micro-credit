@@ -1,0 +1,121 @@
+/**
+ * 公共模块-----读取身份证完成样式
+ * named by lei.
+ */
+
+
+.common-read .pic_suc {
+    margin: 28px 4% 28px 4%;
+    width: 92%;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+.common-read .img_box {
+    width: 92%;
+    height: auto;
+    margin: 0 4%;
+}
+
+.common-read .sfzz-box, .common-read .sfzf-box {
+    width: 398px;
+    height: auto;
+    display: inline-block;
+}
+
+.common-read .sfzz-box {
+    background: url("../images/sfzzm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+.common-read .sfzz-box span {
+    display: inline-block;
+}
+
+.common-read .sfz-img {
+    float: right;
+    width: 103px;
+    height: auto;
+    margin-top: 45px;
+    margin-right: 30px;
+}
+
+.common-read .sfzz-box .sfz-name {
+    margin-top: 43px;
+}
+
+.common-read .ziduan-name {
+    color: #2C86B6;
+    font-size: 16px;
+}
+
+.common-read .ziduan-qian {
+    color: #3D3D3D;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.common-read .ziduan-min {
+    margin-left: 30px;
+}
+
+.common-read .ziduan-add {
+    display: inline-block !important;
+    font-size: 14px !important;
+    width: 46%;
+}
+
+.common-read .ziduan-value {
+    font-size: 15px;
+    color: #3D3D3D;
+    margin-left: 4px;
+}
+
+.common-read .gong-num {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.common-read .sfzz-box > p {
+    margin-left: 32px;
+    margin-top: 12px;
+}
+
+.common-read .sfzf-box {
+    background: url("../images/sfzfm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    float: right;
+    height: 250px;
+}
+
+.common-read .sfzf-box p {
+    margin-left: 21%;
+}
+
+.common-read .sfzf-box .qianfa {
+    margin-top: 155px;
+}
+
+.common-read .sfzf-box .qixian {
+    margin-top: 18px;
+    margin-bottom: 28px;
+}
+
+.common-read .loading_box {
+    width: 100%;
+    text-align: center;
+}
+
+.common-read .read_loading {
+    font-size: 18px;
+    color: #d0021b;
+}
+
+.common-read .loading_box > img {
+    width: 60px;
+    height: auto;
+}

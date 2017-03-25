@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/creditLoan.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-loan.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <title>申请信用贷款</title>
+</head>
+<body>
+<div data-role="page" class="main nav-seven" id="creditLoan-complete">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouyeNo()" data-direction="reverse" class="head-all head-left">首页</a>
+        申请信用贷款
+        <a onclick="dzhFanhuiNo('creditLoan-product.html')" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over border-over-seven"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>测算额度</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="">
+                <div class="circle">6</div>
+                <p>确认签名</p>
+            </li>
+            <li>
+                <div class="circle">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </div>
+    <!--主题内容-->
+    <div data-role="content" id="conter-con" class="conter-con">
+        <div class="conter-auto">
+            <div class="compl_box">
+                <div class="compl"><img src="../../images/ic_sqwc.png" alt=""/><span>贷款申请已受理！</span></div>
+
+
+                <div class="basic_msg">
+                    <p><span class="ziduan-name">申请人&nbsp;&nbsp;&nbsp;：</span><span class="name_cn"></span></p>
+                    <p><span class="ziduan-name">证件号码：</span><span class="zheng_num"></span></p>
+                    <p><span class="ziduan-name">手机号码：</span><span class="phone_num"></span></p>
+                    <p><span class="ziduan-name">申请金额：</span><span class="loan_money"></span>元</p>
+                    <p><span class="ziduan-name">申请期限：</span><span class="loan_time"></span>月</p>
+                    <p><span class="ziduan-name">还款方式：</span><span class="loan_method"></span></p>
+                    <p><span class="ziduan-name">还款(发放)账号：</span><span class="loan_acct"></span></p>
+                    <p><span class="ziduan-name">可授信额度：</span><span class="loan_limit"></span>元</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="btn_next" class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">完成</div>
+    </div>
+</div>
+</body>
+</html>

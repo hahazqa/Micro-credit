@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-citigold.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <script src="../../js/swiper.jquery.min.js"></script>
+    <title>基金购买</title>
+</head>
+<body>
+<div data-role="page" class="main" id="citigold-InformationInput">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        基金购买
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('citigold-fundSupermarketsOne.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>基金超市</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>风险评估</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>业务签约</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+    	<div class="conter-auto">
+        <div class="img_content" style="overflow:hidden;">
+            <div class="img_box get-face">
+                <div class="customer customer_one">
+                    <div class="rephoto">必拍</div>
+                    <!--<img class="customer-picture" src="" alt=""/>-->
+                    <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                </div>
+                <div class="img_notes">客户面部照片</div>
+            </div>
+            <div class="img_box">
+
+                <div class="customer customer_three" picname="custAndCustOwnerPic">
+                    <div class="rephoto">必拍</div>
+                    <!--<img class="customer-picture" src="" alt=""/>-->
+                    <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                </div>
+                <div class="img_notes">与客户合影照片</div>
+            </div>
+            <!-- <div style="clear: both"></div> -->
+            <div class="img_box" style="margin-bottom: 0;">
+
+                <div class="customer customer_four" picname="frontIDCardPic">
+                    <div class="rephoto">必拍</div>
+                    <!--<img class="customer-picture" src="" alt=""/>-->
+                    <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                </div>
+                <div class="img_notes">身份证正面</div>
+            </div>
+            <div class="img_box" style="margin-bottom: 0;">
+
+                <div class="customer customer_three" picname="backIDCardPic">
+                    <div class="rephoto">必拍</div>
+                    <!--<img class="customer-picture" src="" alt=""/>-->
+                    <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                </div>
+                <div class="img_notes">身份证反面</div>
+            </div>
+            <!-- <div style="clear: both"></div> -->
+            </div>
+       </div>
+    </div>
+    <!--尾部-->
+     <div class="footter">
+        <a  class="previous previous-con back-1">上一步</a>
+        <a  class="previous img_content-next">下一步</a>
+    </div>
+    <div class="bigpic-review-box">
+        <div class="bigpic-review-cont">
+            <div class="bigpic-review-close"></div>
+            <div class="bigpic-review"></div>
+        </div>
+        <div class="bigpic-review-ft">
+            <span class="bigpic-review-rephone"></span>
+            <span class="bigpic-review-del"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

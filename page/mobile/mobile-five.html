@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/mobile.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/echarts-all.js"></script>
+    <script src="../../js/page-mobile.js"></script>
+    <title>移动CRM</title>
+</head>
+<body>
+<div data-role="page" class="main" id="mobile-five">
+    <!--头部-->
+    <div class="header">
+        <a href="mobile-two.html" class="head-mobile head-back">返回</a> 移动CRM
+    </div>
+    <!--123...流程-->
+    <!--中间内容-->
+    <div class="conter-con conter-mobile-con">
+        <!--中间内容左边-->
+        <ul class="navigation">
+            <li>核心客户信息</li>
+            <li>身份证信息</li>
+            <li>其他补充信息</li>
+            <li>客户爱好及投资习惯</li>
+        </ul>
+        <!--中间内容区右-->
+        <div class="information-input">
+            <!--信息总览页面-->
+            <ul class="credit-card-show info-enter-item opinions-demand-text">
+                <div class="heartInfo">基本信息</div>
+                <div class="information-overview">
+                    <div>客户号：<span>006</span></div>
+                    <div>客户姓名：<span>王浩</span></div>
+                    <div>客户名(英文)：<span>Wanghao</span></div>
+                    <div>性别：<span>男</span></div>
+                    <div>证件号码：<span>131082199011111111</span></div>
+                    <div>国籍：<span>中国</span></div>
+                    <div>核心通讯地址：<span>广东省深圳市罗湖区深南东路3038合作金融大厦</span></div>
+                </div>
+            </ul>
+            <!--持有产品-->
+            <ul class="info-enter-item">
+                <div class="heartInfo">基本信息</div>
+                <div class="information-overview">
+                    <div class="li-rows">出生日期：<span class="year">1988</span>年<span class="month">09</span>月<span
+                            class="date">24</span>日
+                    </div>
+                    <div class="minzu">民族： <span>汉</span></div>
+                    <div style="clear: both"></div>
+                    <div>户籍地址：<span>广东省深圳市罗湖区</span></div>
+                </div>
+            </ul>
+            <!--最近到期产品-->
+            <ul class="info-enter-item">
+                <div class="heartInfo">基本信息</div>
+                <div class="information-overview info-que">
+                    <div>现住址：<span>广东省深圳市罗湖区</span></div>
+                    <div>手机：<span>18301651177</span></div>
+                    <div>联系方式偏好：<span>手机</span></div>
+                    <div>禁忌：<span>占位符</span></div>
+                    <div>工作单位：<span>深圳市国信灵通科技有限公司</span></div>
+                    <div>单位电话：<span>0175-239384</span></div>
+                    <div>单位地址：<span>广东省深圳市罗湖区深南东路3038合作金融大厦</span></div>
+                    <div>婚姻状况：<span>已婚</span></div>
+                    <div>配偶姓名：<span>霍秀</span></div>
+                    <div>配偶联系电话：<span>18232053661</span></div>
+                    <div>是否有深圳物业：<span>有</span></div>
+                    <div>家庭拥有深圳住房数：<span>3套</span></div>
+                    <div>是否有私车：<span>有</span></div>
+                </div>
+                <div class="information-overview info-xiu">
+                    <div><label for="" data-role="none">现住址：</label><input type="text" value="广东省深圳市罗湖区" data-role="none"/></div>
+                    <div><label for="" data-role="none">手机：</label><input type="text" value="18301651177" data-role="none"/></div>
+                    <div><label for="" data-role="none">联系方式偏好：</label><input type="text" value="手机" data-role="none"/></div>
+                    <div><label for="" data-role="none">禁忌：</label><input type="text" value="占位符" data-role="none"/></div>
+                    <div><label for="" data-role="none">工作单位：</label><input type="text" value="深圳市国信灵通科技有限公司" data-role="none"/></div>
+                    <div><label for="" data-role="none">单位电话：</label><input type="text" value="0175-239384" data-role="none"/></div>
+                    <div><label for="" data-role="none">单位地址：</label><input type="text" value="广东省深圳市罗湖区深南东路3038合作金融大厦" data-role="none"/></div>
+                    <div><label for="" data-role="none">婚姻状况：</label><input type="text" value="已婚" data-role="none"/></div>
+                    <div><label for="" data-role="none">配偶姓名：</label><input type="text" value="霍秀" data-role="none"/></div>
+                    <div><label for="" data-role="none">配偶联系电话：</label><input type="text" value="18232053661" data-role="none"/></div>
+                    <div><label for="" data-role="none">是否有深圳物业：</label><input type="text" value="有" data-role="none"/></div>
+                    <div><label for="" data-role="none">家庭拥有深圳住房数：</label><input type="text" value="3套" data-role="none"/></div>
+                    <div><label for="" data-role="none">是否有私车：</label><input type="text" value="有" data-role="none"/></div>
+                </div>
+                <div class="btn-box">
+                    <div class="btn-save">保存</div>
+                    <div class="btn-re">修改</div>
+                </div>
+            </ul>
+            <!--营销线索-->
+            <ul class="info-enter-item">
+                <div class="heartInfo">基本信息</div>
+                <div class="horCon">
+                    <div class="hor-header">客户爱好:</div>
+                    <div class="hor-box">
+                        <div class="hor-box-rows">
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>音乐会</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>话剧</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>电影</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>美食</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>讲座</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>演唱会</span></div>
+                        </div>
+                        <div class="hor-box-rows">
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>休闲娱乐</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>集邮</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>摄影</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>绘画</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>自驾游</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>钓鱼</span></div>
+                        </div>
+                        <div class="hor-box-rows">
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>古玩</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>电玩</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>运动</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div style="clear: both;"></div>-->
+                <div class="horCon">
+                    <div class="hor-header">投资偏好:</div>
+                    <div class="hor-box">
+                        <div class="hor-box-rows">
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>房地产</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>国际市场</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>股票</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>基金</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>私募</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>信托</span></div>
+                        </div>
+                        <div class="hor-box-rows">
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>过期市场</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>黄金</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>汇市</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>现贷</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>理财</span></div>
+                            <div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>其他</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horCon" style="width: 85%;">
+                    <div class="hor-header">备注：</div>
+                    <div class="hor-box">
+                        <textarea name="" id="" cols="10" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="btn-box" style="text-align: center">
+                    <div>保存</div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/**
+ * 公共模块-----导航条样式
+ * named by lei.
+ */
+
+.nav-four .border-all{   /* ----------------------->导航栏四步*/
+    width: 43% !important;
+    left: 28.7% !important;
+}
+.nav-four .border-over{
+    left: 28.7%;
+    width:7.2%;
+}
+.nav-four .circle-con{
+    left:21.6%;
+}
+.nav-four .circle-con li,.nav-four .navigation-steps li {
+    width: 14.2% !important;
+}
+.nav-six .border-all{   /* ----------------------->导航栏六步*/
+    width: 83.3333333333% !important;
+    left: 8.3333333333% !important;
+}
+.nav-six .border-over{
+    left: 8.3333333333%;
+}
+.nav-six .circle-con li,.nav-six .navigation-steps li {
+    width: 16.666666666667% !important;
+}
+
+
+.nav-seven .border-all{   /* ----------------------->导航栏七步*/
+    width: 86% !important;
+    left: 7% !important;
+}
+.nav-seven .circle-con li,.nav-seven .navigation-steps li {
+    width: 14.2% !important;
+}
+.nav-seven .border-over-one {
+     width:6.94444444444%;
+}
+.nav-seven .border-over-two {
+    width:21.8333333333%;
+}
+.nav-seven .border-over-three {
+    width:35.7222222222%;
+}
+.nav-seven .border-over-four {
+    width:49.91111111111%;
+}
+.nav-seven .border-over-five {
+    width:64%;
+}
+.nav-seven .border-over-six {
+    width:78.38888888888%;
+}
+.nav-seven .border-over-seven {
+    width:83.333333333333%;
+}

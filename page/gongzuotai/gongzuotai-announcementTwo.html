@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-gongzuotai.js"></script>
+    <title>工作台</title>
+</head>
+<body>
+<div data-role="page" class="main gongzuotai-con" id="gongzuotai-announcementTwo">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" data-rel="back" class="head-all head-left" data-direction="reverse">退出</a>
+        通知公告
+    </div>
+    <!--123...流程-->
+    <!--主题内容-->
+    <div data-role="content" class="conter-con" style="background: rgba(255,255,255,0.00000001);">
+    	<div class="conter-auto">
+    		<ul class="announcementTwo-ul">
+    			<li class="li-bgcolor">
+    				<div class="announcementTwo-title">标题：</div>
+    				<span class="announcementTwo-zhi"></span>
+    			</li>
+    			<li class="li-bgcolor">
+    				<div class="announcementTwo-title">发布机构：</div>
+				<span class="announcementTwo-zhi"></span>
+    			</li>
+    			
+    			<li>
+				<div class="gaihou-two-tongzhi">
+					<div class="announcementTwo-title">发布时间：</div>
+					<span class="announcementTwo-zhi"></span>
+				</div>
+				<div class="gaihou-two-tongzhi" style="margin-left: 2%;">
+					<div class="announcementTwo-title">发布人：</div>
+					<span class="announcementTwo-zhi"></span>
+				</div>
+    			</li>
+
+    			<li style="margin-top: 40px;">
+    				<div class="announcementTwo-title neirong-title-change">内容：</div>
+    				<span class="announcementTwo-zhi agree-content neirong-changebgcolor"></span>
+    			</li>
+    			<li class="li-bgcolor">
+    				<div class="announcementTwo-title">附件：</div>
+                 <span id="anFuName" class="announcementTwo-zhi"></span>
+    			</li>
+    			<li style="line-height: 39px;" id="noticeDetailFile">
+                    <div class="announcementTwo-lijixiazai">查&nbsp;&nbsp;看</div>
+    			</li>
+    		</ul>
+     </div>
+    </div>
+    <div id="ywbl-erweima" style="position:absolute; z-index:90; background:rgba(0,0,0,.4); top:0; left:0; right:0; bottom:0; display:none;">
+        <img src="" alt="" style="position:absolute; background-color:#fff; top:50%; left:50%; width:300px; height:300px; margin-top:-150px; margin-left:-150px;"/>
+    </div>
+   <!--尾部-->
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/**
+ * 公共模块-----采集影像界面
+ * named by lei.
+ */
+
+.customerP .img_content {
+    width: 58.7890625%;
+    margin: 43px 20.60546875% 0 20.60546875%;
+}
+
+.customerP .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.customerP .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+
+.customerP .rephoto {
+    position: relative;
+    left: 0;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0 0;
+    z-index: 100;
+}
+.customerP .recolor{
+    color: #0F45A7;
+}
+.customerP .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+}
+
+.customerP .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+
+.customerP .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+.customerP .customer_two {
+    background: url("../images/ykhhz.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+.customerP .customer_three {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+.customerP .customer_four {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+.customerP .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+.customerP .img_box:nth-child(even) {
+    float: right;
+    position: relative;
+}
+.customerP .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}

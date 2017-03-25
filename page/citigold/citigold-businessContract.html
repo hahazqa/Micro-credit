@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-citigold.js"></script>
+    <script src="../../js/page-citigold-su.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <script src="../../js/swiper.jquery.min.js"></script>
+    <title>基金购买</title>
+</head>
+<body>
+<div data-role="page" class="main citigold-four-fives" id="citigold-businessContract">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        基金购买
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('citigold-fundSupermarketsOne.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>基金超市</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>风险评估</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>业务签约</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容--> 
+    <div data-role="content"  class="conter-con">
+	    	<div class="conter-auto">
+	    		<ul class="previous-ul">
+	        	    <li>
+				   <div class="result-left"><span class="required-stars">*</span>账卡号</div>
+				   <div class="input-test">
+					   	<select id="citi-card" class="drop-down">
+				        </select>
+				   </div>
+        	        </li>
+	        	    <li>
+				   <div class="result-left"><span class="required-stars">*</span>性别</div>
+				   <div class="input-test">
+				   	    <select id="citi-sex" class="drop-down">
+					        <option value="1">男</option>
+					        <option value="0">女</option>
+				        </select>
+				   </div>
+        	        </li>
+	        	    <li>
+				   <div class="result-left citigold-left1"><span class="required-stars">*</span>对账单邮寄方式</div>
+				   <div class="input-test citigold-right1">
+				   	   <select id="citi-sendstyle" class="drop-down">
+					        <!-- <option value="1">短信息</option>
+                            <option value="2">Email</option>
+                             <option value="3">邮寄</option> -->
+                            <option value="00010000">短消息</option>
+                            <option value="00100000">Email</option>
+                            <option value="10000000">邮寄</option>
+                            <!-- <option value="01000000">传真</option> -->
+				        </select>
+				   </div>
+        	        </li>
+	        	    <li>
+				   <div class="result-left"><span class="required-stars">*</span>手机号码</div>
+				   <div class="input-test"><input type="text" class="input-test-con" data-role="none" reg="mobile" id="citi-mobile"></div>
+        	        </li>
+        	        <li>
+				   <div class="result-left"><span class="required-stars">*</span>固定电话</div>
+				   <!-- <div class="input-test"><input type="text" class="input-test-con input-test-yuan" data-role="none" reg="tel" id="citi-tel"></div> -->
+                   <div class="input-test" style="width: 12%;text-align: center;">
+                        <input type="text" class="input-test-con" data-role="none" id="citi-city-tel" reg="telQh" placeholder="区号"/>
+                    </div>
+                    <div style="float: left;width: 6%; line-height:36px;">－</div>
+                    <div class="input-test" style="width: 46%;">
+                        <input type="text" class="input-test-con" data-role="none" id="citi-tel-num" reg="telHm" placeholder="号码"/>
+                    </div>
+        	        </li>
+	        	    <li class="citi-email-cell">
+				   <div class="result-left"><span class="required-stars" style="display:none;">*</span>电子邮件</div>
+				   <div class="input-test"><input type="text" class="input-test-con" data-role="none" reg="email" id="citi-email"></div>
+        	        </li>
+        	        <li>
+				   <div class="result-left"><span class="required-stars">*</span>通讯地址</div>
+				   <div class="input-test"><input type="text" class="input-test-con input-test-yuan" data-role="none" id="citi-addr"><span class="yuan-citigold">元</span></div>
+        	        </li>
+	        	    <li>
+				   <div class="result-left"><span class="required-stars">*</span>邮编</div>
+				   <div class="input-test"><input type="text" class="input-test-con" data-role="none" reg="zipCode" id="citi-zipCode"></div>
+        	        </li>
+        		</ul>
+        <div class="tzrblzjywxz-con">
+        	    <!--  <div class="tzrblzjywxz">投资人办理基金账户业务须知</div> -->
+        	     <div class="tzrblzjywxz-detaid">
+        	     	<p class="tzrblzjywxz-detaid-title"><strong>投资人办理基金账户业务须知</strong></p>
+        	     	<p class="tzrblzjywxz-detaid-con" style="font-size:14px;line-height:1.5;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;重要提示：投资者在购买基金前应仔细阅读基金契约、基金招募说明书、及本行的基金交易须知，充分了解各基金的情况。</strong></br></br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;1、资金账户的开立。</strong>资金账户是投资者在深圳农村商业银行开立的用于办理基金交易资金往来的账户。投资者在深圳农村商银行代销网点办理基金业务时，必须先开立用于基金业务清算的资金账户。个人投资者须指定本人信通借记卡所对应的活期结算账户作为基金业务清算的资金账户。机构投资者须指定一活期结算账户作为基金业务清算的资金账户。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;2、基金交易账户的开立</strong>。基金交易账户是深圳农村商业银行为投资者设立的用于在本行进行基金交易的账户。投资者通过深圳农村商业银行代销网点办理基金业务时，必须先开立基金交易账户。该账户用于记载投资者进行基金交易活动的情况和所持有的基金份额。每个投资者只能申请开立一个基金交易账户。如开户时投资者的证件编号缺位、多位、与他人重复，开户申请将被拒绝。<strong>港澳台居民或外籍人士持港澳通行证、台胞证或护照开户，开户申请也将被拒绝。</strong>投资者办理基金交易账户的销户时，交易账户内必须无任何基金单位余额或未达权益，同时该账户未被冻结。个人投资者办理开、销户手续时，需本人亲自临柜办理。机构投资者可授权经办人办理。投资者第一次办理某只基金的认购或申购时将自动为投资者向该基金的注册与过户登记机构提交开立基金账户的申请，办理基金账户开户手续。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;3、分红方式选择。</strong>投资者在开立基金账户时，应在开户申请表上选择分红方式，一旦开户交易被基金管理公司确认成功，则投资者在开户申请表上所选择的分红方式也将被基金管理公司接受。
+修改分红方式。投资者提交申请后，银行通过分红方式选择交易为投资者办理。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;4、交易账户资料变更。</strong>投资者要对基金账户的信息资料进行变更时，应及时到银行网点办理变更手续。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;5、资金账号变更。</strong>在认购、申购及赎回交易未确认的情况下，不允许更换签约卡号/账号。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;6、冻结与解冻。</strong>冻结与解冻包括基金账户和基金份额的冻结与解冻。根据基金契约和相关公告的规定，基金公司（注册与过户登记机构）只受理国家有权机关或部门要求的因司法程序而发生的冻结与解冻业务。银行代销网点不负责办理此项业务。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;7、登记基金账号（增开交易账号）。</strong>投资者若在其他销售机构已开立基金账户，现仍需在深圳农村商业银行办理基金业务，则首先应在深圳农村商业银行办理开户和登记基金账号业务。在申请登记基金账号时，投资者除应提交开户时所须资料外，还应提供原注册登记机构基金账号。</br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;8、非交易过户。</strong>非交易过户是指继承、赠予和司法执行三种情况下基金份额的过户。此项由基金公司或注册登记中心办理，银行代销网点暂不负责办理此项业务。
+</p>
+        	     </div>
+        	     <div class="agree-box">
+            <div class="agree-btn-box" id="xk-agree-btn" style="width:278px;">
+                <img id="ic-disagree" class="ic-agree" src="../../images/ic_disagree.png" height="100%" alt="">
+                <img id="ic-agree" class="ic-agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt="">
+                <span class="txt-agree">客户已仔细阅读以上业务须知</span>
+            </div>
+        </div>
+        </div>
+	    </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a  class="previous previous-con back-1">上一步</a>
+        <a  class="previous"  href="javascript:;">下一步</a>
+    </div>
+</div>
+</body>
+</html>

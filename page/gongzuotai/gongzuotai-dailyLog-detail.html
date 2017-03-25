@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>日志详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/gongzuotai.css" />
+    <link rel="stylesheet" href="../../css/common-contract-Y.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/page-gongzuotai-new.js"></script>
+</head>
+<body>
+    <div data-role="page" class="main gongzuotai-con dailyLogY common-contract-Y" id="dailyLogDetail">
+        <!--头部-->
+        <div class="header">
+            <a  href="gongzuotai-dailyLog.html" data-rel="back" class="head-all head-left" data-direction="reverse">返回</a>
+            工作日志
+        </div>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con" style="top:100px;">
+            <div class="conter-auto" style="position: relative;">
+                <!--模拟表单布局-->
+                <div class="i-form">
+                    <!--输入框组-->
+                    <div class="i-input-group">
+                        <!--模拟输入框-->
+                        <div class="i-input i-input-col2" style="overflow:visible; ">
+                            <span class="i-input-info"><div class="required-stars">*</div>工作时间</span>
+
+                            <input type="date" class="i-input-control i-input-control-data"/>
+                        </div>
+                        <!--模拟input框-->
+                        <div class="select-which">
+                            <!--修改工作日志显示-->
+                            <div id="dailyLog-detail" class="i-input i-input-bg-info i-input-col2" style="float:right;">
+                                <span class="i-input-info">用户</span>
+                                <div class="i-input-control" type="text" style="color:#cccccc;"></div>
+                            </div>
+                            <!--新增工作日志显示-->
+                            <div id='dailyLog-add' class="i-input i-input-col2 active"
+                                 style="border:none;box-sizing: border-box;">
+                                <img id="ic-disagree" class="ic-agree" style="display: none"
+                                     src="../../images/ic_disagree.png" height="50%"
+                                     alt=""/>
+                                <img id="ic-agree" class="ic-agree" style="display: none"
+                                     src="../../images/ic_agree.png" height="50%" alt=""/>
+                                <img id="ic-disabled" class="ic-disabled" style="display: inline-block"
+                                     src="../../images/ic_disagree2.png" height="50%" alt=""/>
+                                <span style="color:#979797">加入工作提醒</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--输入框组-->
+                    <div class="i-input-group">
+                        <!--模拟select框-->
+                        <div class="i-input i-input-col2" style="overflow:visible; ">
+                            <span class="i-input-info"><div class="required-stars">*</div>工作分类</span>
+
+                            <div class="i-input-control i-input-control-dropdown" id="classify">
+                                <div class="i-input-select">
+                                    <select class="drop-down">
+                                        <option value="">请选择</option>
+                                        <!--<option value="">分类1</option>-->
+                                        <!--<option value="">分类2</option>-->
+                                        <!--<option value="">分类3</option>-->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--模拟select框-->
+                        <div class="i-input i-input-col2" style="overflow:visible; ">
+                            <span class="i-input-info"><div class="required-stars">*</div>工作项目</span>
+
+                            <div class="i-input-control i-input-control-dropdown" id="item">
+                                <div class="i-input-select">
+                                    <select class="drop-down">
+                                        <option value="" selected="true">请选择</option>
+                                        <!--<option value="">项目1</option>-->
+                                        <!--<option value="">项目2</option>-->
+                                        <!--<option value="">项目3</option>-->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--输入框组-->
+                    <div class="i-input-group">
+                        <!--模拟input框-->
+                        <div class="i-input i-input-col2" id="workTime">
+                            <span class="i-input-info"><div class="required-stars">*</div>工作时长</span>
+                            <input class="i-input-control-c" type="text"/>
+                        </div>
+                        <!--模拟select框-->
+                        <div class="i-input i-input-col2" style="overflow:visible; ">
+                            <span class="i-input-info"><div class="required-stars">*</div>完成情况</span>
+
+                            <div class="i-input-control i-input-control-dropdown">
+                                <div class="i-input-select"  id="job-complete">
+                                    <select class="drop-down">
+                                        <option value="" selected="true">请选择</option>
+                                        <option value="1">已完成</option>
+                                        <option value="0">已变更</option>
+                                        <option value="-1">未完成</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--输入框组-->
+                    <textarea placeholder="具体内容" style="padding:10px;overflow: auto" maxlength="512"></textarea>
+                    <textarea placeholder="备注" style="padding:10px;overflow: auto" maxlength="512"></textarea>
+                </div>
+                <!--模拟表单结束-->
+            </div>
+        </div>
+        <!--尾部-->
+        <div class="footter">
+            <a class="previous previous-con btn-cannt-click">删除</a>
+            <a class="previous">保存</a>
+        </div>
+    </div>
+</body>
+</html>

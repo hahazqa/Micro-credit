@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/gongzuotai.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-gongzuotai.js"></script>
+    <title>利率和外汇牌价</title>
+</head>
+
+<body>
+    <div data-role="page" class="main gongzuotai-con" id="gongzuotai-lilvandwaihui">
+        <!--头部-->
+        <div class="header">
+            <a href="＃" onClick="javascript :history.back(-1)" class="head-all head-left" data-direction="reverse">退出</a> 利率和外汇牌价
+        </div>
+        <div class="lilvandwaihui-tabs-wrap">
+            <ul class="lilvandwaihui-tabs">
+                <li class="active"><span>贷款利率</span></li>
+                <li><span>存款利率</span></li>
+                <li><span>外汇牌价</span></li>
+            </ul>
+        </div>
+        <!--贷款利率-->
+        <div class="lilvandwaihui-tabs-contwrap lilvandwaihui-tabs-contwrap-dk">
+            <div class="lilvandwaihui-tabs-contlt">
+                <div class="lilvandwaihui-in-tabs">
+                    <div class="lilvandwaihui-in-tabs-hd">
+                        <ul>
+                            <li>贷款期限</li>
+                            <li>&nbsp;</li>
+                            <li>人行基准年利率（%）</li>
+                        </ul>
+                    </div>
+                    <ul class="lilvandwaihui-in-tabs-bd">
+                       <!--  <li>六个月</li>
+                        <li style="width:40%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>六个月</li>
+                        <li style="width:40%">&nbsp;</li>
+                        <li>六个月</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--存款利率-->
+        <div class="lilvandwaihui-tabs-contwrap lilvandwaihui-tabs-contwrap-ck" style="display:none;">
+            <div class="lilvandwaihui-tabs-contlt">
+                <div class="lilvandwaihui-in-tabs">
+                    <div class="lilvandwaihui-in-tabs-hd">
+                        <ul>
+                            <li class="active">人民币（RMB）</li>
+                            <li><span>港币（HKD）</span></li>
+                            <li>美元（USD）</li>
+                        </ul>
+                    </div>
+                    <!-- <ul class="lilvandwaihui-in-tabs-bd">
+                        <li style="font-weight:bold;">种类</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li style="font-weight:bold;">年利率（%）</li>
+                        <li>活期</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>整存整取3个月</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>整存整取6个月</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                    </ul>
+                    <ul class="lilvandwaihui-in-tabs-bd" style="display:none;">
+                        <li style="font-weight:bold;">种类</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li style="font-weight:bold;">年利率（%）</li>
+                        <li>活期</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>整存整取3个月</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>整存整取6个月</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                    </ul>
+                    <ul class="lilvandwaihui-in-tabs-bd" style="display:none;">
+                        <li style="font-weight:bold;">种类</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li style="font-weight:bold;">年利率（%）</li>
+                        <li>活期</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>整存整取3个月</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                        <li>整存整取6个月</li>
+                        <li style="width:10%">&nbsp;</li>
+                        <li>六个月</li>
+                    </ul> -->
+                </div>
+                <!--  <div class="lilvandwaihui-wh-name">人民币（RMB）</div>
+                <table class="lilvandwaihui-ck">
+                    <tr><th style="width:114px;">种类</th><th></th><th style="width:95px;">年利率（%）</th></tr>
+                    <tr><td>货期</td><td></td><td> 4.85</td></tr>
+                    <tr><td>整存整取3个月</td><td></td><td> 4.85</td></tr>
+                    <tr><td>整存整取6个月</td><td></td><td> 4.85</td></tr>
+                </table>
+                <div class="lilvandwaihui-wh-name">港币（HKD）</div>
+                <table class="lilvandwaihui-ck">
+                    <tr><th style="width:114px;">种类</th><th></th><th style="width:95px;">年利率（%）</th></tr>
+                    <tr><td>货期</td><td></td><td> 4.85</td></tr>
+                    <tr><td>整存整取3个月</td><td></td><td> 4.85</td></tr>
+                    <tr><td>整存整取6个月</td><td></td><td> 4.85</td></tr>
+                </table>
+                <div class="lilvandwaihui-wh-name">美元（USD）</div>
+                <table class="lilvandwaihui-ck">
+                    <tr><th style="width:114px;">种类</th><th></th><th style="width:95px;">年利率（%）</th></tr>
+                    <tr><td>货期</td><td></td><td> 4.85</td></tr>
+                    <tr><td>整存整取3个月</td><td></td><td> 4.85</td></tr>
+                    <tr><td>整存整取6个月</td><td></td><td> 4.85</td></tr>
+                </table> -->
+            </div>
+        </div>
+        <!--外汇牌价-->
+        <div class="lilvandwaihui-tabs-contwrap lilvandwaihui-tabs-contwrap-wh" style="display:none;">
+            <div class="lilvandwaihui-tabs-contlt">
+                <div class="lilvandwaihui-in-tabs">
+                    <div class="lilvandwaihui-in-tabs-hd">
+                        <ul>
+                            <li>&nbsp;</li>
+                            <li>港币（HKD）</li>
+                            <li>美元（USD）</li>
+                            <li>欧元（EUR）</li>
+                        </ul>
+                    </div>
+                    <div class="lilvandwaihui-in-tabs-bd-wrap">
+                        <ul class="lilvandwaihui-in-tabs-bd">
+                            <li>
+                                <div>基数</div><!--<div>基准价</div>--><div>现汇买入价</div><div>现汇卖出价</div><div>现钞买入价</div><div>现钞卖出价</div>
+                            </li>
+                            <!-- <li><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div></li>
+                            <li><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div></li>
+                            <li><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!--  <ul class="lilvandwaihui-wh">
+                    <li><div>&nbsp;</div><div>基数</div><div>基准价</div><div>现汇买入价</div><div>现汇卖出价</div><div>现钞买入价</div><div>现钞卖出价</div></li>
+                    <li><div>港币（HKD）</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div></li>
+                    <li><div>美元（USD）</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div></li>
+                    <li><div>欧元（EUR）</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

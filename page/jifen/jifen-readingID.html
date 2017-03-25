@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/jifen.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-jifen.js"></script>
+    <title>积分</title>
+</head>
+<body>
+<div data-role="page" class="main jifen" id="jifen-readingID">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" data-direction="reverse" class="head-all head-left">首页</a>
+    	<font id="headTitle"></font>
+        <a href="../main.html" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--流程-->
+    <ul class="navigation-steps">
+    	<div id="order_process" style="display: none;">
+	        <div class="border-all"></div>
+	        <div id="border-over" class="border-over"></div>
+	        <ul class="circle-con">
+	            <li>
+	                <div class="circle">1</div>
+	                <p>读取身份证</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">2</div>
+	                <p>查询订单</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">3</div>
+	                <p>确认签名</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">4</div>
+	                <p>完成</p>
+	            </li>
+	        </ul>
+	    </div>
+	    <div id="gift_process" style="display: none;">
+			<div class="border-all"></div>
+	        <div id="border-over" class="border-over"></div>
+	        <ul class="circle-con">
+	            <li>
+	                <div class="circle">1</div>
+	                <p>读取身份证</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">2</div>
+	                <p>礼品展示</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">3</div>
+	                <p>影像采集</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">4</div>
+	                <p>兑换信息</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">5</div>
+	                <p>确认签名</p>
+	            </li>
+	            <li class="color-cc">
+	                <div class="circle1">6</div>
+	                <p>完成</p>
+	            </li>
+	        </ul>	    	
+	    </div>
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div id="photoRbtn" class="picRe">影像复用</div>
+            <img class="readID" src="../../images/ic_dqsfz.png" alt=""/>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">读取身份证</div>
+    </div>
+</div>
+
+</body>
+</html>

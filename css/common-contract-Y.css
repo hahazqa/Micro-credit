@@ -1,0 +1,219 @@
+/**
+ * 参照页面characteristicG-contract.html
+ * named by Y.
+ */
+
+/*参照页面characteristicG-contract.html*/
+/*格式化输入框*/
+.common-contract-Y .i-form {
+    font-size: 0.9em;
+    overflow: hidden;
+    width: 77.1%;
+    margin:0 auto;
+}
+/*一个输入框组占用一行*/
+.common-contract-Y .i-input-group {
+    background-color: transparent !important;
+    width: 100%;
+    height: 39px;
+    line-height: 37px;
+    margin-top: 15px;
+}
+.common-contract-Y .i-input {
+    position: relative;
+    border-radius: 3px;
+    width:36.5%;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    height: 39px;
+    line-height: 37px;
+    float: left;
+    margin-right: 1.464%;
+}
+.common-contract-Y .i-input-lg {
+    width:40%;
+}
+.common-contract-Y .i-input-info {
+    font-size: inherit;
+    color:#cccccc;
+    display: block;
+    float: left;
+    height:39px;
+    line-height: 39px;
+    width:30%;
+    padding-left: 6%;
+    margin:0;
+}
+/*输入框下拉列表右边图标*/
+.common-contract-Y .i-input .i-input-control-dropdown:after {
+    content: '';
+    position: absolute;
+    width:21px;
+    height:21px;
+    background: url(.././images/icon-right.png) no-repeat;
+    background-size: 60%;
+    top: 47% !important;
+    margin-top: -9px !important;
+    right: .5625em;
+}
+/*输入框日期右边图标*/
+.common-contract-Y .i-input .i-input-control-data:after {
+    content: '';
+    position: absolute;
+    width:30px;
+    height:24px;
+    background: url(.././images/day-botton.png) no-repeat;
+    background-size: 100%;
+    top: 47% !important;
+    margin-top: -9px !important;
+    right: .5625em;
+}
+/*输入框背景色*/
+.common-contract-Y .i-input-bg-info {
+    background-color:#f0f0f0;
+}
+/*输入框宽度*/
+.common-contract-Y .i-input-col2 {
+    width:46%
+}
+.common-contract-Y .i-input-col2:nth-child(2){
+    float:right;
+}
+/*必输新标设置*/
+.common-contract-Y .i-input .i-input-info .required-stars {
+    display: inline;
+    color: #d0021b;
+    position: absolute;
+    top: -3.5px;
+    left: 4.2%;
+    font-size: 0.85em;
+}
+.common-contract-Y .i-input .i-input-control {
+    padding:0;
+    float: left;
+    height:37px;
+    line-height:39px;
+    width:63%;
+}
+/*改变默认JQ mobile select样式*/
+.common-contract-Y .i-input-control .i-input-select .ui-select{
+    margin:0;
+
+}
+.common-contract-Y .i-input-control .i-input-select .ui-select .ui-btn {
+    background-color: transparent !important;
+    border:none !important;
+    text-shadow:none !important;
+    box-shadow: none;
+    padding:0;
+    font-size: 1em;
+    font-weight: normal;
+    height:39px !important;
+    line-height: 39px !important;
+    text-align: left;
+}
+.common-contract-Y .i-input-control .i-input-select .ui-select .ui-btn .drop-down {
+    border:none !important;
+    background-color:transparent !important;
+}
+.common-contract-Y .i-input-control .i-input-select .ui-select .ui-btn:after {
+    background-image:none;
+    background-color:transparent;
+}
+.common-contract-Y .i-input .select .select {
+    position: relative;
+}
+.common-contract-Y .i-input .select .option-box {
+    position: absolute;
+    top:39px;
+    overflow: hidden;
+    width: 60%;
+    border-top:10px;
+    border-bottom:10px;
+}
+.common-contract-Y .i-input .select .option-box .option {
+    color:#000;
+    height:39px;
+}
+.common-contract-Y .i-form .i-input .i-input-control-right {
+    height:39px;
+    line-height:39px;
+    width:13%;
+    position: absolute;
+    right:0;
+    top:0;
+}
+/*通用table样式*/
+.common-contract-Y .table-box {
+    margin-top: 30px;
+    width:76.3%;
+}
+.common-contract-Y .box-header{
+    height: 50px;
+    background-color: #EBEBEB;
+    border-radius:5px 5px 0 0;
+    margin: 0;
+    padding: 0;
+}
+.common-contract-Y .box-header>div:nth-child(1),
+.common-contract-Y .box-rows>div:nth-child(1){
+    width:20%;
+}
+.common-contract-Y .box-header>div:nth-child(2),
+.common-contract-Y .box-rows>div:nth-child(2) {
+    width:20%;
+}
+.common-contract-Y .box-header>div:nth-child(3),
+.common-contract-Y .box-rows>div:nth-child(3){
+    width:20%;
+}
+.common-contract-Y .box-header>div:nth-child(4),
+.common-contract-Y .box-rows>div:nth-child(4) {
+    width:20%;
+}
+.common-contract-Y .box-header>div:nth-child(5),
+.common-contract-Y .box-rows>div:nth-child(5) {
+    width:20%;
+}
+.common-contract-Y .box-rows>div:last-child {
+    border-radius:0 0 5px 5px;
+}
+
+.common-contract-Y .box-header>div{
+    float:left;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.common-contract-Y .box-content{
+    width: 100%;
+    height: auto;
+}
+.common-contract-Y .box-rows:nth-child(even){
+    background-color: #f7f7f7;
+}
+.common-contract-Y .box-rows{
+    width: 100%;
+    height: 55px;
+}
+.common-contract-Y .click{
+    background-color: #0F45A7 !important;
+    color: #FFFFFF;
+    text-shadow:none;
+}
+.common-contract-Y .box-rows>div{
+    float:left;
+    height: 55px;
+    text-align: center;
+    display: inline-block;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+}
+.common-contract-Y .ui-page-theme-a{
+    text-shadow: none !important;
+}

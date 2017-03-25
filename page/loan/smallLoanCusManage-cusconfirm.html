@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/smallLoan.css"/>
+    <link rel="stylesheet" href="../../css/loan.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/page-smallLoan.js"></script>
+
+    <script src="../../js/meapRequest-loan.js"></script>
+    <title>小贷客户信息管理</title>
+</head>
+<body>
+<div data-role="page" class="main cusConfirm" id="smallLoanCusManage-cusconfirm">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+        小贷客户信息管理
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('smallLoanCusManage-index.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps sixCurrent">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>信息录入</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </div>
+    <!--主题内容-->
+    <div data-role="content" id="conter-con" class="conter-con">
+        <div class="conter-auto">
+            <div class="msg_con">
+                <div class="basic_con">
+                    <div class="basic_header">主申请人<span style="margin: 0 15px 0 60px" id="smallLoan-name"></span><span
+                            id="smallLoan-cerNo"></span><span class="reWrite"style="float:right;padding-top:6px;"><img
+                            style="height: 30px;" src="../../images/ps_modify.png" alt=""></span></div>
+                    <ul class="basic_content_rows confirm_ul">
+                        <li>
+                            <div class="basic_rows_name">
+                                <span>手机号码：</span>
+                                <span id="smallLoanCus-mobile"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>婚姻状况：</span>
+                                <span id="smallLoanCus-marriage"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="basic_rows_name">
+                                <span>经营地址：</span>
+                                <span id="smallLoanCus-addr-home"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>居住地址：</span>
+                                <span id="smallLoanCus-addr-detail"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="basic_rows_name">
+                                <span>工作单位：</span>
+                                <span id="smallLoanCus-com-name"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>职务：</span>
+                                <span id="ZhiWu"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="basic_rows_name">
+                                <span>月收入：</span>
+                                <span id="smallLoanCus-income"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>家庭月收入：</span>
+                                <span id="smallLoanCus-f-income"></span>
+                            </div>
+                        </li>
+                        <!--<li>
+                            <div class="basic_rows_name">
+                                <span>配偶姓名：</span>
+                                <span id="smallLoan-peiName"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>配偶证件：</span>
+                                <span id="smallLoan-peiCerNo"></span>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+                <!--<div class="basic_con">
+                    <div class="basic_header">贷款信息</div>
+                    <ul class="basic_content_rows confirm_ul">
+                        <li>
+                            <div class="basic_rows_name">
+                                <span>贷款金额：</span>
+                                <span id="smallLoan-loanMoney"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>贷款期限：</span>
+                                <span id="smallLoan-loanTime"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="basic_rows_name">
+                                <span>还款方式：</span>
+                                <span id="paymentMethod"></span>
+                            </div>
+                            <div class="basic_rows_name">
+                                <span>贷款用途：</span>
+                                <span id="smallLoan-loanUse"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>-->
+                <div class="basic_con">
+                    <div class="basic_header">文件清单</div>
+                    <ul class="basic_content_rows confirm_ul">
+                        <li>
+                            <div class="linkClick">
+                                点击查看<a href="#">征信报告</a>、<a href="#">本行对账单</a>、<a href="#" id = "applicationform">“<span id="smallLoanCus-proName"></span>”申请表</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qianM_con">
+                    <div class="qianM_shadow"></div>
+                    <div class="masterID_header masterID_header-qrqm querenqianming-click">确认签名</div>
+                    <div class="qianM_box">
+                        <span id="qianM" data-role="none" style="z-index: 1000000;"></span>
+
+                        <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:30px;" alt=""/></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="imageData" id="imageData"/>
+                        </form>
+                        <!-- <img id="tempImage" src="" alt="临时图片文件" /> -->
+                        <div id="qianOK" class="qian-over" style="float: right;" qmImg="">
+                            <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%"
+                                 alt=""/>
+                            <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png"
+                                 height="100%" alt=""/>
+                            <span id="btn_submit">签名完成</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="duanX_con">
+                    <span>短信验证码</span>
+                    <input type="text" id="inp" data-role="none" maxlength="6"/>
+                    <span id="getMsg">获取验证码</span>
+                    <span class="codetime">请在<span style="color:red;">80秒</span>内输入验证码</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="btn_next" class="previous btn_next2" style="margin-left: auto;margin-right: auto;float:none;">提交</div>
+    </div>
+    <div class='searchBank'>
+        <div class="wei">
+            <div class="wei-header">
+                银行对账单
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div style="width: 12%">姓名</div>
+                    <div style="width: 15%;">查询时间</div>
+                    <div style="width: 20%;">账卡号</div>
+                    <div style="width: 43%;">对账单文件</div>
+                    <div style="width: 10%;">选中</div>
+                </div>
+                <ul>
+                    <!--<li>-->
+                    <!--<div style="width: 15%">深圳市瑞泽家园</div>-->
+                    <!--<div style="width: 20%">深圳市福田区福田中心区民田路</div>-->
+                    <!--<div style="width: 25%">同步</div>-->
+                    <!--<div style="width: 30%;">对账单文件</div>-->
+                    <!--<div style="width: 10%;"><img class="dzdImg" src="../../images/ic_sqwc.png" alt=""></div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con back-1" style="margin-top: 5px;height: 45px;line-height: 45px;">放弃</a>
+                <a class="previous btn_next" style="margin-top: 5px;height: 45px;line-height: 45px;">确认</a>
+            </div>
+        </div>
+    </div>
+    <div class='searchCredit'>
+        <div class="wei">
+            <div class="wei-header">
+                征信报告
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div style="width: 20%;">查询时间</div>
+                    <div style="width: 20%;">征信类型</div>
+                    <div style="width: 50%;">征信文件</div>
+                    <div style="width: 10%;">选中</div>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con back-1" style="margin-top: 5px;height: 45px;line-height: 45px;">放弃</a>
+                <a class="previous btn_next" style="margin-top: 5px;height: 45px;line-height: 45px;">确认</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

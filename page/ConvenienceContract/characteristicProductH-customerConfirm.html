@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css"/>
+    <link rel="stylesheet" href="../../css/common-customerConfirm-Y.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/page-characteristicProduct.js"></script>
+    <title></title>
+</head>
+<body>
+<div data-role="page" class="main nav-seven common-customerConfirm-Y" id="characteristicProductH-customerConfirm">
+    <!--头部内容-->
+    <div class="header">
+        <a onclick="dzhShouye()" class="head-all head-left" data-direction="reverse">首页</a>
+        特色产品
+        <a onclick="dzhFanhui('characteristicProductA.html')" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航步骤-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over border-over-six"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品展示</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>采集影像</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>选择账号</p>
+            </li>
+            <li>
+                <div class="circle">6</div>
+                <p>确认签字</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto">
+            <div class="masterID_con">
+                <!--确认信息-->
+                <div class="masterID_header">确认信息<span style="float:right;padding-top:6px;" id="socialSecurity-customerCon-edit"><img src="../../images/ps_modify.png" style="width:30px;" alt=""/></span></div>
+                <ul class="masterID_content  confirm_ul">
+                    <li class="masterID_content_rows">
+                        <div class="masterID_rows_lines">
+                            <span class="masterID_lines">签约产品：</span>
+                            <span id="QYCP">测试信息</span>
+                        </div>
+                        <div class="masterID_rows_lines">
+                            <span class="masterID_lines">户名：</span>
+                            <span id="HM">测试信息</span>
+                        </div>
+                    </li>
+                    <li class="masterID_content_rows">
+                        <div class="masterID_rows_lines">
+                            <span class="masterID_lines">签约账号：</span>
+                            <span id="QYZH">测试信息</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--客户签名-->
+            <div class="qianM_con">
+                <div class="qianM_shadow"></div>
+                <div class="masterID_header masterID_header-qrqm querenqianming-click">确认签名</div>
+                <!-- <img src="../../images/ic_up.png" class="ic_up"/>-->
+                <div class="qianM_box">
+                    <span id="qianM" data-role="none" style="z-index: 1000000;"></span>
+                    <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:30px"/></div>
+                    <form action="./Base64ToImages" method="post">
+                        <input type="hidden" name="imageData" id="imageData" />
+                    </form>
+                    <!-- <img id="tempImage" src="" alt="临时图片文件" /> -->
+                    <div id="qianOK" class="qian-over" style="float: right;" qmImg="">
+                        <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt="" />
+                        <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt="" />
+                        <span id="btn_submit">签名完成</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous" style="margin-left: auto;margin-right: auto;float:none;">提交</div>
+    </div>
+</div>
+</body>
+</html>

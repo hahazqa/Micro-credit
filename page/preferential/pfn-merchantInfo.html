@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>特惠商户</title>
+	<script type="text/javascript" src="../../js/jquery-1.11.1.min.js" ></script>
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js" ></script>
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/pfn-merchant.css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=C1SEj9RpkRvGwTeBy2Ptr6NQ3UUzQ674"></script>
+	<script src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/page-pfn-merchant.js" ></script>
+</head>
+<body>
+	<!--第三页 商户详情页-->
+	<div data-role="page" class="main ui-page ui-page-theme-a" id="MT_businessdealPageThree">
+		<!--头部信息-->
+		<div class="header">
+			<a href="#" class="head-all head-left" data-direction="reverse" data-action="changeToTwo">返回</a> 特惠商户
+		</div>
+		<!--主题内容-->
+		<div data-role="content" class="conter-con" style="top:80px;">
+			<!--上半部分-->
+			<div id="photo-container" class="content_top clear">
+				<!-- <div class="take_Photo" hidden>
+					<div class="photo">
+						<img class="img_del" src="../../images/ic_delete.png"/>
+					</div>
+				</div> -->
+				<div id="photo-template" class="take_Photo" hidden>
+					<div class="take">
+						<img class="camera" src="../../images/ic-paz.png"/>
+					</div>
+				</div>
+			</div>
+			<!--下半部分-->
+			<div id="merchant-content" class="content_down">
+				<div class="business_style">
+					<div class="result-left"><span class="required-stars">*</span>商户类型</div>
+					<div class="result-right">
+						<select class="drop-down">
+							<option value="">请选择</option>
+                            <option value="01">餐饮类</option>
+                            <option value="02">消费购物类</option>
+                            <option value="03">首饰珠宝类</option>
+                            <option value="04">健康美容类</option>
+                            <option value="05">娱乐休闲类</option>
+                            <option value="06">商旅类</option>
+                            <option value="07">教育培训类</option>
+                            <option value="08">汽车服务类</option>
+                            <option value="09">线上服务类</option>
+                            <option value="10">其他类</option>
+						</select>
+					</div>
+				</div>
+				<div class="business_address">
+					<div class="result-left">商户地址</div>
+					<span></span>
+				</div>
+				<div class="business_name">
+					<div class="result-left">商户名称</div>
+					<span></span>
+				</div>
+				<div class="business_position">
+					<div class="result-left"><span class="required-stars">*</span>商户定位</div>
+					<span id="text-position"></span>
+					<img id="img-location" src="../../images/icon_gps-ing.png"/>
+				</div>
+				<div class="business_dischargeText">
+					<div class="result-left"><span class="required-stars">*</span>优惠信息</div>
+					<textarea id="textarea" cols="20" rows="3" data-role="none" placeholder="" maxlength="500"></textarea>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="footter">
+			<div id="btn-close" class="previous previous-con btn_next">关闭</div>
+			<div id="btn-submit" class="previous btn_next">提交</div>
+		</div>
+		<!--添加弹窗-->
+		<div id="pop-window" class="pop_bigWindow" hidden>
+			<div class="pop_window">
+				<!--地图-->
+				<div id="pop-map" class="map_window"></div>
+				<div id="r-result">
+					<input type="text" id="suggestId" size="40" placeholder="请输入定位关键字" />
+				</div>
+				<div id="searchResultPanel"></div>
+				<!--关闭确定按钮-->
+				<div class="btn close">关闭</div>
+				<div class="btn sure btn-disable">确认</div>
+			</div>
+		</div>
+		<!-- 预览图片 -->
+		<div class="bigpic-review-box">
+            <div class="bigpic-review-cont">
+                <div class="bigpic-review-close"></div>
+                <div class="bigpic-review"></div>
+            </div>
+            <div class="bigpic-review-ft">
+                <span class="bigpic-review-rephone"></span>
+                <span class="bigpic-review-del"></span>
+            </div>
+        </div>
+	</div>
+</body>
+</html>

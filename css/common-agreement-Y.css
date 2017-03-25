@@ -1,0 +1,57 @@
+/**
+ * 公共模块-----客户须知样式
+ * named by Y.
+ */
+
+.common-agreement-Y .agree-notice{
+    margin: 25px auto;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    color: #464D59;
+    margin-bottom: 15px;
+}
+
+.common-agreement-Y .agree-content{
+    width: 62%;
+    line-height: 30px;
+    max-height: 80%;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.common-agreement-Y .agree-box{
+    width: 62%;
+    position: fixed;
+    bottom: 85px;
+    left: 19%;
+    max-height: 73%;
+}
+
+.common-agreement-Y .agree-btn-box{
+    width: 23.14453125%;
+    margin-top: 20px;
+    min-width: 237px;
+    height: 42px;
+    line-height: 42px;
+    border: solid 1px #0F45A7;
+    border-radius: 9px;
+    z-index: 1000;
+}
+
+.common-agreement-Y .ic-agree{
+    display: inline-block;
+    height: 21px;
+    margin: 7.5px 6px 10.5px 23px;
+    vertical-align: middle;
+}
+
+.common-agreement-Y .txt-agree{
+    display: inline-block;
+    font-size: 16px;
+    color: #0F45A7;
+}

@@ -1,0 +1,1395 @@
+#creditLoan-cusInfo .search-weihu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+#creditLoan-cusInfo .searchBank {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+#creditLoan-cusInfo .searchBank .wei{
+    width: 800px;
+    height: 508px;
+}
+#creditLoan-cusInfo .wei{
+    position: relative;
+    width: 800px;
+    height: 508px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+#creditLoan-cusInfo .wei .wei-header{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 1.2em;
+}
+
+#creditLoan-cusInfo .wei .wei-con{
+    width: 90%;
+    height: 357px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: scroll;
+}
+
+#creditLoan-cusInfo .wei .hu-header {
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+
+#creditLoan-cusInfo .wei u{
+    color:#00d;
+    text-decoration: none;
+}
+#creditLoan-cusInfo .wei u:hover{
+    color:#00c;
+    text-decoration: underline;
+}
+
+/*#creditLoan-cusInfo .searchLos .wei .hu-header{*/
+    /*background: none;*/
+/*}*/
+#creditLoan-cusInfo .searchBank .hucon {
+    height: 384px;
+}
+#creditLoan-cusInfo .searchBank .hucon ul{
+    height: 334px;
+}
+#creditLoan-cusInfo .searchBank .hucon ul li>div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+#creditLoan-cusInfo .hucon ul {
+    height: 334px;
+    padding-bottom: 0;
+    overflow: scroll;
+}
+
+#creditLoan-cusInfo .hucon ul li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#creditLoan-cusInfo .wei .hu-header > div,#creditLoan-cusInfo .hucon ul div{
+  /*  width: 25%;*/
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+#creditLoan-cusInfo .wei .footter{
+    border-radius: 0 0 8px 8px;
+    height: 60px;
+}
+
+#creditLoan-cusInfo .wei .wei-con li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#creditLoan-cusInfo .wei .wei-con li > span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#creditLoan-cusInfo .wei .wei-con li > img {
+    display: inline-block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+#creditLoan-cusInfo #shishidingwei1 {
+    float: left;
+    margin-top: 7px;
+    width: 60px;
+    height: 25px;
+    display: block;
+}
+
+#creditLoan-cusInfo #shishidingwei1 .ding-normal {
+    width: 60px;
+    height: 25px;
+    background: url(../images/icon_gps.png) center no-repeat;
+    background-size: 14px;
+}
+
+#creditLoan-cusPicture1 #border-over {
+    width: 43%;
+}
+
+#creditLoan-cusPicture1 .img_content {
+    width: 100%;
+    margin: 43px 0 0;
+}
+
+#creditLoan-cusPicture1 .qitazhengming {
+    color: #0F45A7;
+}
+
+#creditLoan-cusPicture1 .qita-tanchuang-cbg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+}
+
+#creditLoan-cusPicture1 .qita-tanchuang-con {
+    position: absolute;
+    bottom: 53px;
+    z-index: 101;
+    left: 0;
+    width: 100%;
+    height: 307px;
+    background-color: #FFFFFF;
+    display: none;
+    border-radius: 12px;
+    padding: 0 0 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#creditLoan-cusPicture1 .crow_icon_win {
+    height: 14px;
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    -webkit-transform: translateX()(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 101;
+    display: none;
+}
+
+#creditLoan-cusPicture1 .qita-tanchuang-ul {
+    width: 100%;
+    height: 257px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+#creditLoan-cusPicture1 .queren-quxiao {
+    width: 100%;
+    height: 43px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#creditLoan-cusPicture1 .quxiao-ok {
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    color: #2760cb;
+    text-align: center;
+}
+
+#creditLoan-cusPicture1 .quxiao-click {
+    float: left;
+    margin-left: 14px;
+}
+
+#creditLoan-cusPicture1 .queding-click {
+    float: right;
+    margin-right: 14px;
+}
+
+#creditLoan-cusPicture1 .qita-tanchuang-ul > li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(32, 40, 43, 0.4);
+}
+
+#creditLoan-cusPicture1 .qita-tanchuang-ul .qita-tanchuang-li {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    color: rgba(32, 40, 43, 1);
+}
+
+#creditLoan-cusPicture1 .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#creditLoan-cusPicture1 .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#creditLoan-cusPicture1 .rephoto {
+    position: relative;
+    left: 0px;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0px 0px;
+    z-index: 2;
+}
+
+#creditLoan-cusPicture1 .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+
+}
+
+#creditLoan-cusPicture1 .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+    /*border: 0 !important;*/
+}
+
+#creditLoan-cusPicture1 .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-cusPicture1 .customer_two {
+    background: url("../images/ic_clnrzp1.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-cusPicture1 .customer_three {
+    background: url("../images/ykhhz.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-cusPicture1 .customer_four {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-cusPicture1 .customer_five {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-cusPicture1 .customer_six {
+    background: url("../images/ic_xuanpai1.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-cusPicture1 .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+    margin-left: 8%;
+    margin-bottom: 35px;
+}
+
+#creditLoan-cusPicture1 .cusPicture-zancun {
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+
+#creditLoan-cusPicture1 .img_box:nth-child(even) {
+    width: 38.03986711%;
+}
+
+#creditLoan-cusPicture1 .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}
+#creditLoan-cusPicture1 .customerP-zancun {
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+
+#creditLoan-personFace #border-over {
+    width: 43% !important;
+}
+
+#creditLoan-personFace .center-header {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+#creditLoan-personFace .img_content {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+#creditLoan-personFace .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#creditLoan-personFace .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+
+#creditLoan-personFace .customer_one, #creditLoan-personFace .customer_four, #creditLoan-personFace .customer_six {
+    background: url("../images/ic_mianbu.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-personFace .customer_three {
+    background: url("../images/ic_shenfenzheng.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-personFace .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+
+#creditLoan-personFace .face-box {
+    float: left;
+    width: 24.42244224%;
+    min-width: 148px;
+}
+
+#creditLoan-personFace .face-result {
+    text-align: center;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 65px;
+    border-radius: 3px;
+    color: #F9F9F9;
+}
+
+#creditLoan-personFace .pass {
+    background-color: #0F45A7;
+}
+
+#creditLoan-personFace .no-pass {
+    background-color: #D13F14;
+}
+
+#creditLoan-personFace .img_notes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#creditLoan-personFace .camera {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#creditLoan-cusPicture #border-over,#loan-peiPicture #border-over, #creditLoan-personFace #border-over, #loan-peiPicture #border-over {
+    width: 41.6666666667%;
+}
+#creditLoan-cusPicture .customer .camera,#loan-peiPicture .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+
+}
+#creditLoan-cusPicture .img_box,#loan-peiPicture .img_box{
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+    margin-left: 8%;
+    margin-bottom: 35px;
+}
+#creditLoan-cusPicture .img_box{
+    margin-bottom: 18px !important;
+}
+#creditLoan-cusPicture .customerP-zancun,#loan-peiPicture .customerP-zancun,#faceSign-choseT .customerP-zancun{
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+#creditLoan-cusPicture .img_box:nth-child(even),#loan-peiPicture .img_box:nth-child(even) {
+    width: 38.03986711%;
+}
+#creditLoan-testLimit .basic_con {
+    margin-top: 25px;
+    width: 40%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#creditLoan-testLimit .basic_header {
+    height: 44px;
+    line-height: 44px;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    font-size: 15px;
+}
+#creditLoan-testLimit .basic_content_rows {
+    height: 120px;
+    line-height: 120px;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    font-size: 50px;
+    text-align: center;
+}
+#creditLoan-testLimit .basic_content_footor {
+    height: 44px;
+    line-height: 44px;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    font-size: 15px;
+}
+
+#creditLoan-testLimit .chongxincesuan {
+    width: 89px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    z-index: 20;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#creditLoan-testLimit .jixuanshenqing {
+    width: 89px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    z-index: 20;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#creditLoan-testLimit .result-value-down>a:hover{
+    color: #CCCCCC;
+    background-color: #0F45A7;
+}
+
+#creditLoan-testLimit .result-value-down>a:visited{
+    color: #CCCCCC;
+    background-color: #0F45A7;
+}
+
+#creditLoan-testLimit .result-value-down>a:active{
+	color:#b22739;
+}
+
+#creditLoan-cusConfirm .msg_con {
+    width: 96%;
+    height: auto;
+    padding: 0 2%;
+}
+
+#creditLoan-cusConfirm .basic_con {
+    margin-top: 25px;
+    width: 100%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#creditLoan-cusConfirm .basic_header {
+    height: 44px;
+    line-height: 44px;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    font-size: 15px;
+}
+
+#creditLoan-cusConfirm .querenqianming-con {
+    border-radius: 8px;
+}
+
+#creditLoan-cusConfirm .confirm_ul li {
+    margin-left: 3.41796875%;
+    margin-bottom: 24px;
+}
+
+#creditLoan-cusConfirm .dianjiqianming-con {
+    position: absolute;
+
+    font-size: 15px;
+    color: #CCCCCC;
+    top: 14px;
+    right: 60px;
+}
+
+#creditLoan-cusConfirm .confirm_ul li:first-child {
+    margin-top: 25px;
+
+}
+
+#creditLoan-cusConfirm .confirm_ul li div {
+    font-size: 14px;
+    display: inline-block;
+    width: 49%;
+}
+
+#creditLoan-cusConfirm .confirm_ul li div span:first-child {
+    color: #999999;
+    font-size: 14px;
+}
+
+#creditLoan-cusConfirm .confirm_ul li div span:nth-child(2) {
+    color: #666666;
+    font-size: 14PX;
+}
+
+#creditLoan-cusConfirm .qianM_con {
+    position: relative;
+    z-index: 1;
+    margin: 25px 0 25px 0;
+}
+
+#creditLoan-cusConfirm .qianM_con > span {
+    display: inline-block;
+}
+
+#creditLoan-cusConfirm .qianM_con > span:first-child {
+    vertical-align: top;
+}
+
+#creditLoan-cusConfirm .qianM_box {
+    width: 100%;
+    position: relative;
+    height: 215px;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    overflow: visible;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+#creditLoan-cusConfirm .qianM_shadow {
+    display: none;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    z-index:2;
+    height:261px;
+
+}
+
+#creditLoan-cusConfirm #qianM {
+    display: inline-block;
+    height: 215px;
+    margin-bottom: 20px;
+    width: 100%;
+    background:url(../images/shouxieqianming.png) center center no-repeat;
+    background-size: 282px;;
+}
+
+#creditLoan-cusConfirm .masterID_header-qrqm {
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-top: solid 1px #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 46px;
+    background-color: #E8E8E8;
+    padding: 0 3.52112676%;
+    font-size: 17px;
+}
+
+#creditLoan-cusConfirm .ic_agree {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+
+#creditLoan-cusConfirm #masterID_messageT {
+    display: inline-block;
+    padding: 3px 5px;
+    color: #FFFFFF;
+    background-color: #D13F14;
+    border: solid 1px #D13F14;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#creditLoan-cusConfirm #clear-botton {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -39px;
+    text-align: center;
+    color: #0F45A7;
+}
+
+#creditLoan-cusConfirm .ic_down {
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+}
+
+#creditLoan-cusConfirm .ic_up {
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+    display: none;
+}
+
+#creditLoan-cusConfirm .searchBank {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#creditLoan-cusConfirm .wei {
+    position: relative;
+    width: 800px;
+    height: 508px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+#creditLoan-cusConfirm .wei .wei-header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 1.2em;
+}
+
+#creditLoan-cusConfirm .wei .wei-con {
+    width: 90%;
+    height: 357px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: scroll;
+}
+
+#creditLoan-cusConfirm .wei .hu-header {
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+
+
+#creditLoan-cusConfirm .hucon {
+    height: 384px;
+}
+
+#creditLoan-cusConfirm .hucon ul {
+    height: 334px;
+    overflow: auto;
+}
+
+#creditLoan-cusConfirm .hucon ul li > div {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+#creditLoan-cusConfirm .hucon ul li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#creditLoan-cusConfirm .addrAndArea {
+    width: 20%;
+    height: 34px;
+    line-height: 34px;
+    box-shadow: none;
+    border: 0;
+    text-align: center;
+}
+
+#creditLoan-cusConfirm .wei .hu-header > div, #creditLoan-cusConfirm .hucon ul div {
+    /*  width: 25%;*/
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+#creditLoan-cusConfirm .wei .footter {
+    border-radius: 0 0 8px 8px;
+    height: 60px;
+}
+
+#creditLoan-cusConfirm .dzdImg {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+#creditLoan-cusInfo .dzdImg {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+#creditLoan-cusConfirm .wei .wei-con li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#creditLoan-cusConfirm .wei .wei-con li > span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#creditLoan-complete .compl {
+    margin: 40px 0 64px;
+    height: 39px;
+    line-height: 39px;
+    color: #0F45A7;
+    font-size: 28px;
+    text-align: center;
+}
+
+#creditLoan-complete .basic_msg {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background: url("../images/card-left.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#creditLoan-complete .basic_msg p {
+    color: #999999 !important;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 5%;
+}
+
+#creditLoan-complete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+#creditLoan-complete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+}
+
+#creditLoan-complete .com_txt {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+#creditLoan-complete .card_mode {
+    display: block;
+    width: auto;
+    height: 220px;
+    margin: 30px auto 20px auto;
+}
+
+#creditLoan-complete .read_prompt {
+    text-align: center;
+    font-size: 15px;
+    color: #909090;
+}
+
+#creditLoan-testLimit .result-display {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#creditLoan-testLimit .result-con {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#creditLoan-testLimit .result-header {
+	height: 40px;
+	width: 400px;
+	line-height: 40px;
+	text-color: #4A4A4A;
+	font-size: 15px;
+	text-align: left;
+    padding-left: 5%;
+}
+
+#creditLoan-testLimit .result-header-con{
+	height: 40px;
+	width: 400px;
+	line-height: 40px;
+	text-color: #4A4A4A;
+	font-size: 13px;
+	text-align: left;
+    padding-left: 5%;
+}
+#creditLoan-testLimit .result-value {
+	height: 160px;
+	width: 400px;
+}
+
+#creditLoan-testLimit .result-value-up {
+	height: 100px;
+	width: 400px;
+	text-color: #0F45A7;
+	text-align: center;
+    background-color: #fafafa;
+}
+#creditLoan-testLimit .result-value-up-left {
+	width: 45%;
+	height: 100%;
+	text-color: #0F45A7;
+	font-size: 22px;
+	text-align: right;
+    background-color: #fafafa;
+    line-height:100px;
+    float:left;
+    
+}
+#creditLoan-testLimit .result-value-up-right {
+	width: 100%;
+	height: 100%;
+	text-color: #0F45A7;
+	font-size: 26px;
+	text-align: center;
+    background-color: #fafafa;
+    line-height:100px;
+    float:left;
+}
+
+#creditLoan-testLimit .result-value-down {
+	height: 60px;
+	width: 400px;
+	line-height: 60px;
+	text-align: center;
+	padding-top: -10px;
+	background-color: #fafafa;
+}
+
+#creditLoan-testLimit .header-pfk {
+	width: 100%;
+  	margin-top: 0;
+	height: 12%;
+	line-height: 60px;
+	text-align: center;
+	background-color: #fafafa;
+	position:fixed;
+}
+
+#creditLoan-testLimit .header-1-pfk {
+	width: 100%;
+  	margin-top: 60px;
+	height: 4%;
+	line-height: 20px;
+    background-color: #FFFFFF;
+    text-align: left;
+    position:fixed;
+}
+
+#creditLoan-testLimit .header-pfk-sp1 {
+	width: 33.3%;
+  	margin-top: 0;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font-size: 16px;
+	padding-left: 18%;
+	padding-right: 12%;
+}
+#creditLoan-testLimit .header-pfk-sp2 {
+	width: 33.3%;
+  	margin-top: 0;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font-size: 16px;
+	padding-left: 15%;
+	padding-right: 12%;
+}
+#creditLoan-testLimit .header-pfk-sp3 {
+	width: 33.3%;
+  	margin-top: 0;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font-size: 16px;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+#creditLoan-testLimit .conter-auto-pfk {
+	width: 100%;
+  	float: right;
+  	height: 65%;
+  	overflow: auto;
+  	padding-bottom: 100px;
+  	box-sizing: border-box;
+  	margin-top: 80px;
+  	position:fixed;
+  	-webkit-overflow-scrolling: touch;
+}
+
+#creditLoan-testLimit .basic_con-pfk {
+    margin-top: 25px;
+    width: 100%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    
+    text-align: left;
+}
+
+#creditLoan-testLimit .basic_rows_2 {
+    margin-bottom: 24px;
+}
+
+#creditLoan-testLimit .basic_rows_3 {
+	margin-left: 24.41796875%;
+    margin-bottom: 24px;
+}
+
+#creditLoan-testLimit .confirm_ul li:first-child {
+    margin-top: 25px;
+
+}
+
+#creditLoan-testLimit .confirm_ul li {
+	margin-left: 4.01796875%;
+    width: 95%;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 15px;
+    overflow: hidden;
+   
+
+}
+
+#creditLoan-testLimit .confirm_ul li div {
+}
+
+#creditLoan-testLimit .confirm_ul li div span:first-child {
+    font-size: 14px;
+}
+
+#creditLoan-testLimit .confirm_ul li div span:nth-child(2) {
+    color: #666666;
+    font-size: 14PX;
+}
+#creditLoan-testLimit .basic_content_rows-pfk {
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    text-align: left;
+}
+
+#creditLoan-testLimit .basic_rows_name_div1 {
+	width: 42%;
+    padding: 0 0;
+    text-align: left;
+    float: left;
+    
+    height: 35px;
+    line-height: 35px;
+    background-color: #F0F0F0;
+    border-radius: 1px;
+    float: left;
+    margin-right: 0.464%;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    
+}
+#creditLoan-testLimit .basic_rows_name_div12 {
+	width: 25%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #F0F0F0;
+    border-radius: 1px;
+    float: left;
+    margin-right: 0.464%;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    
+	width: 25%;
+    padding: 0 0;
+    text-align: left;
+    float: left;
+}
+#creditLoan-testLimit .basic_rows_name_div2 {
+	width: 35%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #F0F0F0;
+    border-radius: 1px;
+    float: left;
+    margin-right: 0.464%;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    
+	width: 28%;
+    padding: 0 0;
+    text-align: left;
+    float: left;
+}
+#creditLoan-testLimit .basic_rows_name_div2-cc{
+    border-radius: 1px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin-right: 0.464%;
+}
+#creditLoan-testLimit .basic_rows_name_div2-se {
+	width: 100%;
+    height: 35px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+#creditLoan-testLimit .basic_rows_name_div2-sel{
+      width: 100%;
+	  text-align: left;
+	  background-color: #FFFFFF;
+	  border: 0;
+	  font-size: 0.95em;
+}
+#creditLoan-testLimit .basic_rows_name_div2-sel-error{
+      width: 100%;
+      height: 34px;
+	  background-color: #FFFFFF;
+	  text-align: left;
+	  border: 0;
+	  font-size: 0.95em;
+	  border-color:#c8b3b6!important;
+	  background:#fae5e8!important;
+	  overflow: hidden;
+}
+#creditLoan-testLimit .basic_rows_name_div3 {
+	width: 25%;
+    padding: 0 1.52112676%;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+    
+}
+#creditLoan-testLimit .basic_rows_name_div4 {
+	width: 25%;
+    padding: 0 9.52112676%;
+    text-align: left;
+    float: left;
+}
+#creditLoan-cusConfirm .searchCredit {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+#creditLoan-cusInfo .searchCredit {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#creditLoan-cusConfirm .box-header {
+	height: 50px;
+    width: 100%;
+    background-color: #EBEBEB;
+    margin-top: 30px;
+}
+.creditLoan-cusConfirm .box-header > div {
+    height: 50px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#creditLoan-cusConfirm .confirm_ul_fi li {
+    /*margin-left: 3.41796875%;
+    margin-bottom: 24px;*/
+}
+#creditLoan-cusConfirm .confirm_ul_fi li:first-child {
+    /*margin-top: 25px;*/
+
+}
+#creditLoan-cusConfirm .confirm_ul_fi li div {
+    font-size: 14px;
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+}
+
+#creditLoan-cusConfirm .list_row_1 {
+    width: 13%;
+}
+#creditLoan-cusConfirm .list_row_2 {
+    width: 20%;
+}
+#creditLoan-cusConfirm .list_row_2-1 {
+    width: 13%;
+}
+#creditLoan-cusConfirm .list_row_3 {
+    width: 53%;
+}
+#creditLoan-cusConfirm .list_row_3-1 {
+    width: 40%;
+}
+#creditLoan-cusConfirm .confirm_ul_fi div.list_row_4 {
+    width: 14%;
+    overflow: hidden;
+}
+
+#creditLoan-cusConfirm div.list_row_4 div{
+    border: 1px solid #0f45a7 !important;
+    box-sizing: border-box;
+    color: #0f45a7 !important;
+    text-align: center;
+    z-index: 20;
+    border-radius: 5px;
+    height: 38px;
+    line-height: 38px;
+    width: 50%;
+    list-style: outside none none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#creditLoan-cusConfirm .confirm_ul_fi li div span:first-child {
+    color: #999999;
+    font-size: 14px;
+}
+#creditLoan-cusConfirm .confirm_ul_fi li div span:nth-child(2) {
+    color: #666666;
+    font-size: 14PX;
+}
+#creditLoan-cusConfirm .duanX_con{
+    margin-top: 25px;
+    margin-left: 3.41796875%;
+    height: 36px;
+    line-height: 36px;
+}
+#creditLoan-cusConfirm .duanX_con>span{
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+#creditLoan-cusConfirm .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#creditLoan-cusConfirm .masterID_header{
+    height: 44px;
+  	line-height: 44px;
+  	background-color: #F7F7F7;
+  	border-bottom: solid 1px #CCCCCC;
+  	border-radius: 8px 8px 0 0;
+  	padding: 0 3.52112676%;
+  	font-size: 15px;
+}
+#creditLoan-cusConfirm #inp{
+    height: 34px;
+    width: 13.28125%;
+    margin-left: 2%;
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+}
+#creditLoan-cusConfirm #getMsg{
+    height: 34px;
+    line-height: 34px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    width: 13.3515625%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+}
+#creditLoan-cusConfirm .cannt-click{
+    color: #ccc !important;
+    border: 1px solid #ccc !important;
+}
+#creditLoan-cusInfo .ui-shadow-inset {
+    text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}

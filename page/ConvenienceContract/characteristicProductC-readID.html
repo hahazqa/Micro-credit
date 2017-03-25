@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css"/>
+    <link rel="stylesheet" href="../../css/common-read.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/page-characteristicProduct.js"></script>
+    <script src="../../js/wce-commonY.js"></script>
+    <title></title>
+</head>
+<body>
+<div data-role="page" class="main common-read nav-seven" id="characteristicProductC-readID">
+    <!--头部内容-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">首页</a>
+        特色产品
+        <a href="characteristicProductA.html" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航步骤-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over border-over-two"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品展示</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>采集影像</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>选择账号</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签字</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content"  class="conter-con">
+        <div class="conter-auto">
+            <div class="pic_suc"><!-- 身份证读取成功! --></div>
+            <div class="img_box">
+                <!--身份证正面-->
+                <div class="sfzz-box">
+                    <img class="sfz-img" src="../../images/head-photo.png" width="100%" alt=""/>
+                    <p class="sfz-name">
+                        <span class="ziduan-name">姓&nbsp;名</span>
+                        <span class="ziduan-value">代用名</span>
+                    </p>
+                    <p>
+                    <span>
+                        <span class="ziduan-name">性&nbsp;别</span>
+                        <span class="ziduan-value">男</span>
+                    </span>
+                    <span>
+                        <span class="ziduan-name ziduan-min">民族</span>
+                        <span class="ziduan-value">汉</span>
+                    </span>
+                    </p>
+                    <p>
+                        <span class="ziduan-name">出&nbsp;生</span>
+                    <span>
+                        <span>
+                            <span class="ziduan-value">2000</span><span class="ziduan-name">&nbsp;年</span>
+                        </span>
+                        <span>
+                            <span class="ziduan-value">01</span><span class="ziduan-name">&nbsp;月</span>
+                        </span>
+                        <span>
+                            <span class="ziduan-value">01</span><span class="ziduan-name">&nbsp;日</span>
+                        </span>
+                    </span>
+                    </p>
+                    <p>
+                        <span class="ziduan-name" style="display: inline;vertical-align: top">住&nbsp;址</span>
+                        <span class="ziduan-value ziduan-add">北京市昌平区荣京道A1座309室</span>
+                    </p>
+                    <div style="clear: both;"></div>
+                    <p class="gong-num">
+                        <span class="ziduan-name">公民身份号码</span>
+                        <span class="ziduan-value">430101198011180130</span>
+                    </p>
+                </div>
+                <!--身份证反面-->
+                <div class="sfzf-box">
+                    <p class="qianfa">
+                        <span class="ziduan-qian">签发机关</span>
+                        <span class="ziduan-qianadd ziduan-value">昌平区公安局</span>
+                    </p>
+                    <p class="qixian">
+                        <span class="ziduan-qian">有效期限</span>
+                        <span class="ziduan-value"><!-- 2000.01.01-2010.01.01 --></span>
+                    </p>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <!--数据读取信息显示-->
+            <div class="loading_box">
+            <img class="img_loading" src="../../images/ic_load.gif" alt=""/>
+            <div class="read_loading">信息审核中…</div>
+            </div>
+        </div>
+    </div>
+    <!--尾部按钮-->
+    <div class="footter">
+        <div class="previous previous-con back-1">重新读取</div>
+        <div class="previous" data-transition="slide">下一步</div>
+    </div>
+    <!--联网核查故障弹窗-->
+    <div class="submitted-successfully lianwanghecha-yichang">
+        <div class="mian-tanchuang-con lianwanghecha-con">
+            <div class="lianwanghecha-title">联网核查异常！</div>
+            <ul class="lianwanghecha-ul">
+                <li class="lianwanghecha-chongxin">重新联网核查</li>
+                <li class="lianwanghecha-jixu">继续业务办理</li>
+                <li class="lianwanghecha-tuichu">退&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

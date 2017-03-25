@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/socialSecurity.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/meapRequest-loan.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-socialSecurity.js"></script>
+    <script src="../../js/wce-socialSecurity.js"></script>
+    <title>社保待遇</title>
+</head>
+<body>
+<div data-role="page" class="main personFace" id="socialSecurity-compareP">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        社保待遇
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('socialSecurity_readingID.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over" style="left: 28.7%; width:21.6%"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>采集影像</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">3</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="center-header">&nbsp;</div>
+            <div class="img_content">
+                <div class="img_box">
+                    <div class="customer customer_one">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">客户照片</div>
+                </div>
+                <div class="face-box"><div class="face-result pass">对比中</div></div>
+                <div class="img_box">
+                    <div class="customer customer_three">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">身份证照片</div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="img_content" style="margin-bottom: 0">
+                <div class="img_box">
+                    <div class="customer customer_four">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">客户照片</div>
+                </div>
+                <div class="face-box"><div class="face-result pass">对比中</div></div>
+                <div class="img_box">
+                    <div class="customer customer_six">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">联网核查照片</div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div style="margin-top:30px" id="managerList">
+                <span>客户经理：</span>
+                <select name="" data-role="none" style="width:200px; height:30px;">
+                    <option value=""></option>
+                </select>
+                <a href="#">查询</a>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="socialSecurity-compareP-prev" class="previous previous-con btn_next">放弃</div>
+        <div id="socialSecurity-compareP-next" class="previous">继续</div>
+    </div>
+</div>
+</body>
+</html>

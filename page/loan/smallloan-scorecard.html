@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/loan.css" />
+		<link rel="stylesheet" href="../../css/smallLoan.css" />
+		<link rel="stylesheet" href="../../css/common-nav.css">
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+		<title>申请小微贷款</title>
+	</head>
+
+	<body>
+		<div data-role="page" class="main smallLoanScore" id="smallLoan-scorecard">
+			<!--头部-->
+			<div class="header">
+				<a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+				申请小微贷款
+				<a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('smallLoan-product.html')">退出</a>
+			</div>
+			<!--123...流程-->
+			<div class="navigation-steps sevenCurrent">
+				<div class="border-all"></div>
+				<div id="border-over" class="border-over"></div>
+				<ul class="circle-con">
+					<li>
+						<div class="circle">1</div>
+						<p>产品选择</p>
+					</li>
+					<li>
+						<div class="circle">2</div>
+						<p>读取身份证</p>
+					</li>
+					<li>
+						<div class="circle">3</div>
+						<p>评分</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">4</div>
+						<p>影像采集</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">5</div>
+						<p>信息录入</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">6</div>
+						<p>确认签名</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">7</div>
+						<p>完成</p>
+					</li>
+				</ul>
+			</div>
+			<div data-role="content" id="conter-con" class="conter-con">
+				<div class="header-pfk">
+					<span id="smallLoan-scorecard-proname"></span>
+				</div>
+				<div class="header-1-pfk">
+					<span class="header-pfk-sp1">指标</span>
+					<span class="header-pfk-sp1">原值</span>
+					<span class="header-pfk-sp1">调整值</span>
+				</div>
+				<!--主题内容-->
+				<div class="conter-auto-pfk">
+					<ul class="confirm_ul">
+						<!--<li>
+							<div class="basic_rows_name_div1">
+								<div>测试题目</div>
+							</div>
+							<div class="basic_rows_name_div2"> <span class="basic_rows_2">123</span></div>
+							<div class="basic_rows_name_div2">
+								<div class="basic_rows_name_div2-se">
+									<input type="text" class="basic_rows_name_div2-sel textInput numOnly" data-role="none" reg="mobile" value="" name="" /></div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="basic_rows_name_div1">
+								<div>测试题目</div>
+							</div>
+							<div class="basic_rows_name_div2"> <span class="basic_rows_2">123</span></div>
+							<div class="basic_rows_name_div2"> <div class="additional-materials-input">
+									<select id = "" class="drop-down optionIpt">
+										<option value ="">1</option>
+										<option value ="">2</option>
+									</select>
+								</div>
+						</li>-->
+
+					</ul>
+				</div>
+			</div>
+			<!--尾部-->
+			<div class="footter">
+				<!--<div class="previous previous-con back-1 isPei">关闭</div>-->
+				<div class="previous" style="margin-left: auto;margin-right: auto;float:none;">提交评分</div>
+			</div>
+			<!--
+    	作者：offline
+    	时间：2016-08-13
+    	描述：结果项的弹窗
+    -->
+			<div class="search-day-con">
+				<div class="seach-day">
+					<div class="result-title">
+						尊敬的<span style="color:red" id="smallloan-scorecard-uname"></span><span id="smallloan-scorecard-usex"></span>，经测算，您的可授信额度为：
+					</div>
+					<ul class="result-list" id="resultlist">
+						<!--<li>
+						<div class="xianshi-class"><span id= "">9000.00</span>元</div>
+						
+						</li>-->
+						<!--<li>
+						<div class="seach-day-header">本次哈哈测评额度&nbsp;:</div><div class="xianshi-class"><span id= "">10,000,000.00</span></div>
+						
+						</li>
+						<li>
+						<div class="seach-day-header">最终哈哈哈建议额度&nbsp;:</div><div class="xianshi-class"><span id= "">120000.00</span></div>
+						
+						</li>
+						<li>
+						<div class="seach-day-header">建议基础额度&nbsp;:</div><div class="xianshi-class"><span id= "">9000.00</span></div>
+						
+						</li>-->
+						<!--<li>
+				<div class="fangqi-seach" style="float: left;">关闭</div>
+				<div class="fangqi-seach" style="float: right;">完成</div>
+				</li>-->
+						<!--<li>
+    				<div class="input-question">
+    					你的年收入是
+    				</div>
+    				<div class="messageshow">
+    					1000
+    				</div>
+    			</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

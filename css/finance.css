@@ -1,0 +1,335 @@
+/**
+ * named by lei.
+ * 其中部分页面和贷款样式 复用贷款的!
+ **/
+
+/*页面导航栏进度条---------读取身份证 显示身份证界面*/
+#finance-read #border-over,#finance-reading #border-over,#finance-video #border-over {
+    width: 8.3333333333%;
+}
+/*页面导航栏进度条---------风评等级*/
+#finance-character #border-over {
+    width: 25%;
+}
+/*页面导航栏进度条---------影像采集AND影像对比*/
+#finance-customerP #border-over ,#finance-personFace #border-over{
+    width: 41.6666666667%;
+}
+/*页面导航栏进度条---------填写问卷*/
+#finance-question #border-over {
+    width: 58.33333%;
+}
+/*页面导航栏进度条---------确认签名*/
+#finance-confirm #border-over {
+    width: 75%;
+}
+/*页面导航栏进度条---------完成界面*/
+#finance-complete #border-over {
+    width: 83.3333333333%;
+}
+
+/*
+ *读取身份证完成
+ **/
+#finance-read .img_box {
+    width: 92%;
+    height: auto;
+    margin: 0 4%;
+}
+
+/*
+ *风险评估等级
+ **/
+#finance-character .msg_Box{
+    width: 400px;
+    height: 250px;
+    margin-top: 100px;
+    border:1px solid #0F45A7;
+    background-color: #f7f7f7 ;
+    border-radius:5px;
+    text-align: center;
+}
+#finance-character .msg_header{
+    padding-top: 40px;
+    color: #4a4a4a;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+#finance-character .msg_con{
+    padding-top: 50px;
+    font-weight:bolder;
+    font-size: 32px;
+    color: #0F45A7;
+}
+#finance-character .msg_foot{
+    text-align: left;
+    padding: 50px 0 0 108px;
+}
+
+/*
+ * 影响采集
+ */
+#finance-customerP .img_content {
+    width: 100%;
+    margin: 0;
+}
+#finance-customerP .plesPic{
+    padding:120px 0 30px 8%;
+}
+
+#finance-customerP .img_box{
+    margin-left: 8%;
+    margin-bottom: 35px;
+    float: left !important;
+}
+
+/*调查问卷*/
+#finance-question .dxwj{
+    width: 90%;
+    margin: 0 auto;
+}
+#finance-question .dx_name{
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    margin:28px 0 15px 0;
+}
+#finance-question .dx_box{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+#finance-question .dx_title{
+    margin-top: 30px;
+}
+#finance-question .dx_answer{
+    width: 100%;
+    float: left;
+}
+#finance-question .dx_answer>li{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    position: relative;
+}
+#finance-question .dx_answer>li>span{
+    padding: 8px 15px 8px 40px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+#finance-question .dx-no{
+    width: 23px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+#finance-question .dx-yes{
+    width: 23px;
+    position: absolute;
+    top:-1px;
+    left: 0;
+    display: none;
+}
+/*确认界面*/
+#finance-confirm .box_con_l{
+    margin: 56px 4% 0 3%;
+    width:40%;
+    float: left;
+
+}
+#finance-confirm .box_con_l .fin_con{
+    border:1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow: hidden;
+}
+#finance-confirm .info_box{
+    width: 100%;
+    height:44px;
+    line-height: 44px;
+    padding-left:10px;
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #CCCCCC;
+}
+#finance-confirm .msg_header{
+    padding-top: 30px;
+    color: #4a4a4a;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+#finance-confirm .msg_con{
+    padding-top: 30px;
+    font-weight:bolder;
+    font-size: 32px;
+}
+#finance-confirm .rw{
+    float: right;
+    margin: 7px 30px 7px 0;
+    height: 30px;
+}
+#finance-confirm .info_name{
+    display: inline-block;
+    margin-right: 15px;
+}
+#finance-confirm .msg_foot{
+    text-align: left;
+    padding: 30px 0 0 20%;
+}
+#finance-confirm .info_box_tw{
+    width: 100%;
+    height: 215px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+#finance-confirm .box_con_r{
+    float: left;
+    margin: 56px 3% 0 0;
+    width:50%;
+}
+#finance-confirm #clear-botton{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8.1px;
+    text-align: center;
+    color: #0F45A7;
+}
+#finance-confirm #clear-botton>img{
+    height: 30px;
+    width: 30px;
+}
+#finance-confirm .qian-box{
+    position: relative;
+    display: inline-block;
+    border: solid 1px #CCCCCC;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 260px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+#finance-confirm .qian-box .qian-header{
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 1.953125%;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    background-color: #e8e8e8;
+}
+#finance-confirm .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#finance-confirm .ic_agree {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+#finance-confirm .ic_down {
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+}
+#finance-confirm .dianjiqianming-con {
+    position: absolute;
+    font-size: 15px;
+    color: #CCCCCC;
+    top: 14px;
+    right: 60px;
+}
+#finance-confirm #qianM {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 215px;
+    background:url(../images/shouxieqianming.png) center center no-repeat;
+    background-size: 282px;
+}
+/*完成界面*/
+.finance-complete .border-all{
+    width: 83.3333333333% !important;
+    left: 8.3333333333% !important;
+}
+.finance-complete .compl {
+    margin: 40px auto 40px auto;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 28px;
+}
+
+.finance-complete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+
+.finance-complete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+
+.finance-complete .basic_msg {
+    float: left;
+    width: 50%;
+    height: 300px;
+    border-right:1px solid #D8D8D8;
+    box-sizing: border-box;
+}
+.finance-complete .basic_erweima{
+    float: left;
+    padding: 20px 0 0  165px;
+    height: 300px;
+}
+.finance-complete .basic_erweima img{
+    width: 230px;
+    height:230px;
+}
+.finance-complete .basic_erweima p{
+    font-size: 17px;
+    color: #808080;
+    margin-top: 15px;
+}
+.finance-complete .basic_msg_header {
+    color: #4A4A4A;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.finance-complete .basic_msg_content{
+    padding-top: 68px;
+}
+.finance-complete .basic_msg_content .ziduan-name {
+    display: inline-block;
+    color: #999999 !important;
+    padding-left: 30%;
+    width: 15%;
+    text-align: left;
+    margin-right: 3%;
+}
+
+.finance-complete .basic_msg_content .basic_msg_content {
+    color: #666666;
+}
+
+.finance-complete .basic_msg_content > p {
+    margin-bottom: 40px;
+}

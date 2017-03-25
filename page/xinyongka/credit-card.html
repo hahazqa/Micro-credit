@@ -1,0 +1,435 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>信用卡申请</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+		<link type="text/css" rel="stylesheet" href="../../css/common.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/credit.css" />
+	    <script src="../../js/jquery-1.11.1.min.js"></script>
+	    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+	    <script src="../../js/cordova.js"></script>
+	    <script src="../../js/NSMeapPlugin.js"></script>
+	    <script src="../../js/canvas.js"></script>
+	    <script src="../../js/variables.js"></script>
+	    <script src="../../js/common.js"></script>
+	    <script src="../../js/meapRequest.js"></script>
+	    <script src="../../js/meapRequest-credit.js"></script>
+	    <script src="../../js/area.js"></script>
+	    <script src="../../js/page-credit.js"></script>
+	    <script src="../../js/page-xinka.js"></script>
+	    <script src="../../js/wce-credit.js"></script>
+	</head>
+	<body>
+		<div data-role="page" class="main card-f-o" id="card-f-o">
+			<!--头部-->
+			<div class="header">
+				<a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+				信用卡申请
+				<a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('credit-product.html')">退出</a>
+			</div>
+			<!--123...流程-->
+			<ul class="navigation-steps" data-role="none">
+				<div class="border-all"></div>
+				<div class="border-over"></div>
+				<ul class="circle-con" data-role="none">
+					<li>
+						<div class="circle" data-role="none">1</div>
+						<p data-role="none">卡产品选择</p>
+					</li>
+					<li>
+						<div class="circle">2</div>
+						<p>读取身份证</p>
+					</li>
+					<li>
+						<div class="circle">3</div>
+						<p>阅读协议</p>
+					</li>
+					<li>
+						<div class="circle">4</div>
+						<p>影像采集</p>
+					</li>
+					<li>
+						<div class="circle">5</div>
+						<p>信息录入</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">6</div>
+						<p>确认信息</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">7</div>
+						<p>申请完成</p>
+					</li>
+			    </ul>
+			</ul>
+			<!--中间内容-->
+			<div class="conter-con">
+				<!--中间内容左边-->
+				<ul class="navigation">
+					<li class="change-bg">基本信息<span></span></li>
+					<li>职业信息<span></span></li>
+					<li>联系人信息<span></span></li>
+					<li>主卡信息<span></span></li>
+				</ul>
+				<!--中间内容区右-->
+				<div class="information-input">
+					<ul class="credit-card-show info-enter-item">
+					<li>
+						<div class="information-result name-credit">
+							<div class="result-left name-dongtai">姓名</div>
+							<span id="c-name"></span>
+						</div>
+						<div class="gender" id="c-sex"></div>
+						<!-- <div class="information-result border-cc fm-item">
+							<div class="result-left"><span class="required-stars">*</span>拼音</div>
+							<div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" id="c-en" reg="enName" maxlength="19"/></div>
+						</div> -->
+						<div class="information-result border-cc fm-item">
+							<div class="result-left" style="width: 20%;"><span class="required-stars">*</span>拼音</div>
+							<div class="input-test" style="width: 23%;text-align: center;">
+								<input type="text" class="input-test-con" data-role="none" id="c-en-xing" reg="enName" placeholder="拼音姓"/>
+							</div>
+							<div style="float: left;width: 12%;">－</div>
+							<div class="input-test" style="width: 40%;">
+								<input type="text" class="input-test-con" data-role="none" id="c-en-ming" reg="enName" placeholder="拼音名"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="id-number-con">
+							<div class="result-left result-left1">证件号码</div>
+							<span id="c-cerNO"></span>
+						</div>
+					</li>
+					<li>
+						<div class="information-result">
+							<div class="result-left">证件有效期</div>
+							<span id="c-cerExpdDt"></span>
+						</div>
+						<div class="information-result">
+							<div class="result-left">出生日期</div>
+							<span id="c-birthday"></span>
+						</div>
+					</li>
+					<li>
+						<div class="information-result border-cc fm-item">
+							<div class="result-left jiaoyu-cd"><span class="required-stars">*</span>教育程度</div>
+							<div class="input-test">
+								 <select name="day" id="c-edu" class="drop-down">
+							          <option value="">请选择</option>
+							          <option value="1">初中及以下</option>
+							          <option value="2">高中</option>
+							          <option value="3">大专</option>
+							          <option value="4" selected="true">本科</option>
+							          <option value="5">研究生及以上</option>
+						        </select>
+							</div>
+						</div>
+						<div class="information-result border-cc  fm-item">
+							<div class="result-left jiaoyu-cd"><span class="required-stars">*</span>住宅类型</div>
+							<div class="input-test">
+								 <select id="c-room-style" class="drop-down">
+							          <option value="">请选择</option>
+							          <option value="1" selected="true">商品房有按揭</option>
+							          <option value="2">商品房无按揭</option>
+							          <option value="3">已购公房</option>
+							          <option value="4">租用／月租房</option>
+							          <option value="5">单位集体宿舍</option>
+							          <option value="6">亲属／父母家</option>
+							          <option value="7">其它</option>
+						        </select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="information-result border-cc fm-item">
+							<div class="result-left"><span class="required-stars">*</span>手机号码</div>
+							<div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" maxlength="11" id="c-mobile" reg="mobile" style="font-size: 1.3em;"/></div>
+						</div>
+						<div class="information-result border-cc fm-item">
+							<div class="result-left"><span class="required-stars">*</span>邮编</div>
+							<div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" maxlength="6" id="c-zipcode" reg="zipCode"/></div>
+						</div>
+					</li>
+					<li>
+						<div class="public-drop-down fm-item">
+							<div class="domicile"><span class="required-stars">*</span>通讯地址</div>
+							<div class="domicile-value">
+								 <select name="s_province" id="s_province" class="drop-down">
+							          <option>省份</option>
+						        </select>
+							</div>
+						</div>
+						<div class="public-drop-down fm-item">
+							<select name="s_city" id="s_city" class="drop-down">
+								<option>城市</option>
+							</select>
+						</div>
+						<a href="javascript:;" id="hujifangxian">
+							<div class="hu-normal"></div>
+						</a>
+						<a href="javascript:;" id="shishidingwei">
+							<div class="ding-normal"></div>
+						</a>
+						<!-- <div class="public-drop-down fm-item">
+							 <select name="s_county" id="s_county" class="drop-down">
+						          <option>市、县级市</option>
+						     </select>
+						</div> -->
+					</li>
+					<li>
+						<div class="border-cc1 fm-item">
+							<div class="result-left result-left1"><span class="required-stars">*</span>详细地址</div>
+							<div class="input-test  input-test1"><input type="text" class="input-test-con" id="c-addr-detail" data-role="none"/></div>
+						</div>
+					</li>
+					<li>
+						<div class="border-cc1 fm-item">
+							<div class="result-left result-left1"><span class="required-stars">*</span>邮箱</div>
+							<div class="input-test input-test1"><input type="text" class="input-test-con" data-role="none" id="c-email" reg="email"/></div>
+						</div>
+					</li>
+					<li>
+						<div class="public-drop-down fm-item">
+							<div class="domicile"><span class="required-stars">*</span>户籍所在地</div>
+							<div class="domicile-value">
+								 <select name="day_a" id="day_a" class="drop-down">
+							          <option>省份</option>
+						        </select>
+							</div>
+						</div>
+						<div class="public-drop-down fm-item">
+							<select name="day_b" id="day_b" class="drop-down">
+								<option>城市</option>
+						    </select>
+						</div>
+						<div class="agree_btn_box">
+			                <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt="">
+			                <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt="">
+			                <span class="txt_agree">深户</span>
+			            </div>
+			            <div class="agree_btn_boxtwo">
+			            		<span class="txt_agree">已婚</span>
+			                <img class="ic_agree" id="none_weihun" src="../../images/ic_disagree.png" height="100%" alt="">
+			                <img class="ic_agree" id="none_yihun" style="display: none" src="../../images/ic_agree.png" height="100%" alt="">
+			            </div>
+					</li>
+					<li>
+						<div class="id-number-con">
+							<div class="result-left result-left1">户籍地址</div>
+							<span id="c-housregaddr" style="width:80%;height:39px;display:inline-block;overflow:hidden;"></span>
+						</div>
+					</li>
+					<li>
+						<div class="information-result border-cc fm-item">
+							<div class="result-left">推荐人</div>
+							<div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" id="c-reference" placehold="客户经理信用卡系统编号"/></div>
+						</div>
+					</li>
+				</ul>
+				<!--职业信息页面-->
+				<ul id="card-f-t" class="info-enter-item">
+					<li>
+						<div class="border-cc left-long fm-item">
+							<div class="result-left"><span class="required-stars">*</span>单位全称</div>
+							<div class="input-test pingyin-input">
+								<input type="text" class="input-test-con" data-role="none" id="c-com-name" maxlength="19"/>
+							</div>
+						</div>
+						<div class="border-cc right-short fm-item">
+							<div class="result-left"><span class="required-stars">*</span>单位性质</div>
+							<div class="input-test pingyin-input">
+								<select id="c-com-property" class="drop-down">
+							        <option value="">请选择</option>
+							        <option value="1">政府机关</option>
+							        <option value="2">事业单位</option>
+							        <option value="3">国企</option>
+							        <option value="4">股份制公司</option>
+							        <option value="5">外企</option>
+							        <option value="6" selected="true">民企</option>
+							        <option value="7">其它</option>
+						        </select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="border-cc fm-item" style="width: 41%; ">
+							<div class="result-left" style="width: 24%;"><span class="required-stars">*</span>单位固话</div>
+							<div class="input-test" style="width: 19%;text-align: center;">
+								<input type="text" class="input-test-con" data-role="none" id="c-com-tel1" reg="telQh" placeholder="区号" maxlength="4"/>
+							</div>
+							<div style="float: left;width: 12%;">－</div>
+							<div class="input-test" style="width: 40%;">
+								<input type="text" class="input-test-con" data-role="none" id="c-com-tel2" reg="telHm" placeholder="固定号码" maxlength="8"/>
+							</div>
+							
+						</div>
+						<div class="border-cc fm-item" style="width:32%;">
+							<div class="result-left"><span class="required-stars">*</span>行业类别</div>
+							<div class="input-test pingyin-input">
+								<select id="c-ndustry" class="drop-down">
+							        <option value="">请选择</option>
+							        <option value="A">公共管理、公共服务和社会组织</option>
+							        <option value="B">卫生、社会保障和社会福利业</option>
+							        <option value="C">水利、环境和公共设施管理</option>
+							        <option value="D">金融、水利、电力、燃气及水的生产供应业</option>
+							        <option value="E">信息传输、计算机服务及软件业</option>
+							        <option value="F">国防、部队</option>
+							        <option value="G">科学研究、技术服务和地质勘查业</option>
+							        <option value="H">租聘和商业服务业</option>
+							        <option value="I">文化、教育业</option>
+							        <option value="J">住宿、餐饮、娱乐业</option>
+							        <option value="K">房地产业</option>
+							        <option value="L">交通运输、仓储和邮政业</option>
+							        <option value="M">其他行业</option>
+						        </select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="border-cc fm-item left-long">
+							<div class="result-left" style="width: 25%;"><span class="required-stars">*</span>职位/岗位</div>
+							<div class="input-test pingyin-input" style="width: 70%;">
+								<select id="ZhiWeiGangWei" class="drop-down">
+									<option value="" selected="true">请选择</option>
+							        <option value="1">一般员工</option>
+							        <option value="2">一般管理人员</option>
+							        <option value="3">中层管理人员</option>
+							        <option value="4">企业负责人</option>
+							        <option value="5">一般干部</option>
+							        <option value="6">科级</option>
+							        <option value="7">处级</option>
+							        <option value="8">厅局级以上</option>
+							        <option value="9">学生</option>
+						        </select>
+							</div>
+						</div>
+						<div class="border-cc fm-item right-short">
+							<div class="result-left" style="width: 57%;"><span class="required-stars">*</span>在现单位工作年限</div>
+							<div class="input-test" style="width: 38%;">
+								<input type="text" class="input-test-con" data-role="none" id="ZXDWGZNX" reg="numZU" maxlength="2"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="border-cc right-short fm-item">
+							<div class="result-left" style="width: 40%;"><span class="required-stars">*</span>年收入</div>
+							<div class="input-test pingyin-input" style="width: 55%;">
+								<input type="text" class="input-test-con" data-role="none" id="c-income" reg="income" maxlength="10"/>
+							</div>
+						</div>
+						<span>&nbsp;万元</span>
+					</li>
+				</ul>
+				<!--联系人信息页面-->
+				<ul class="info-enter-item">
+					<li>
+						<div class="contact-information-con border-cc fm-item">
+							<div class="contact-information-left"><span class="required-stars">*</span>紧急联系人姓名</div>
+							<div class="contact-information-test">
+								<input type="text" class="input-test-con" data-role="none" id="c-contact-name">
+							</div>
+						</div>
+						<div class="contact-information-choose border-cc fm-item">
+							<div class="contact-information-left contact-information-tleft"><span class="required-stars">*</span>紧急联系人手机</div>
+							<div class="contact-information-ttext"><input type="text" class="input-test-con" data-role="none" id="c-contact-mobile" reg="mobile" maxlength="11" style="font-size: 1.3em;"></div>
+						</div>
+					</li>
+				</ul>
+				<!--主卡信息页面-->
+				<ul id="card-f-fives" class="info-enter-item">
+					<li class="distance-adjustment">
+						<div class="border-cc11 fm-item">
+							<div class="result-left result-left1">卡片寄送地址</div>
+							<div class="input-test  input-test1 kpjs-dz">
+								<input type="text" class="input-test-con" style="background-color: #f0f0f0;" data-role="none" id="c-card-addr" disabled="disabled">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="contact-information-con border-cc fm-item" style="width: 34%;">
+							<div class="contact-information-left"><span class="required-stars">*</span>进件来源</div>
+							<div class="contact-information-test">
+								<select id="JinJianLaiYuan" class="drop-down">
+							        <option value="SK" selected="true">散户</option>
+							        <option value="TJ">推荐</option>
+							        <option value="TB">团办</option>
+							        <option value="YQ">邀请</option>
+						        </select>
+							</div>
+						</div>
+						<div class="border-cc right-short fm-item">
+							<div class="result-left"><span class="required-stars">*</span>申请额度</div>
+							<div class="input-test pingyin-input">
+								<input type="text" class="input-test-con" data-role="none" id="ShenQingEDu" reg="num" maxlength="10">
+							</div>
+						</div>
+						<span>&nbsp;元</span>
+					</li>
+					<li>
+						<div class="contact-information-con border-cc fm-item"style="width: 34%;">
+							<div class="contact-information-left"><span class="required-stars">*</span>年费类型</div>
+							<div class="contact-information-test">
+								<select id="c-card-annualfee" class="drop-down">
+							        <option value="1" selected="true">首年免年费</option>
+							        <option value="2">每年收年费</option>
+							        <option value="3">终身免年费</option>
+						        </select>
+							</div>
+						</div>
+						<div id="billDateDiv" class="border-cc right-short fm-item">
+							<div class="contact-information-left"><span class="required-stars">*</span>账单日</div>
+							<div class="contact-information-test">
+								<select id="billDate" class="drop-down">
+							        <option value="06" selected="true">06日</option>
+							        <option value="16">16日</option>
+							        <option value="26">26日</option>
+						        </select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="contact-information-choose border-cc fm-item">
+							<div class="contact-information-left contact-information-tleft"><span class="required-stars">*</span>自动还款功能</div>
+							<div class="contact-information-ttext">
+								<select id="c-card-repay" class="drop-down">
+							        <option value="1">是</option>
+							        <option value="0" selected="true">否</option>
+						        </select>
+							</div>
+						</div>
+						<div class="contact-information-con border-cc fm-item y-c-card-repay" style="display:none;">
+							<div class="contact-information-left"><span class="required-stars">*</span>自动还款方式</div>
+							<div class="contact-information-test">
+								<select id="c-card-repaystyle" class="drop-down">
+							        <option value="">请选择</option>
+							        <option value="01">最低还款额</option>
+							        <option value="02">全额还款额</option>
+						        </select>
+							</div>
+						</div>
+					</li>
+					<li class="y-c-card-repay" style="display:none;">
+						<div class="border-cc1 fm-item">
+							<div class="result-left result-left1"><span class="required-stars">*</span>还款卡号／账号</div>
+							<div class="input-test  input-test1">
+								<select id="c-card-card" class="drop-down">
+							        <option value="">请选择</option>
+						        </select>
+							</div>
+						</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+			<!--尾部-->
+			 <div class="footter" data-role="none">
+		        <div id="credit-messageIn-back" class="previous previous-con back-1">上一步</div>
+		        <div id="credit-messageIn-next" class="previous btn_next" data-transition="slide">下一步</div>
+		    </div>
+		    <div class="zancun">暂存</div>
+		</div>
+	</body>
+</html>

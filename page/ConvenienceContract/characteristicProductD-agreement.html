@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css"/>
+    <link rel="stylesheet" href="../../css/common-agreement-Y.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/page-characteristicProduct.js"></script>
+    <title></title>
+</head>
+<body>
+<div data-role="page" class="main nav-seven common-agreement-Y trueFooterY" id="characteristicProductD-agreement">
+    <!--头部内容-->
+    <div class="header">
+        <a onclick="dzhShouye()" class="head-all head-left" data-direction="reverse">首页</a>
+        特色产品
+        <a onclick="dzhFanhui('characteristicProductA.html')" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航步骤-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over border-over-three"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品展示</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>采集影像</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>选择账号</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签字</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con" style="z-index: inherit;">
+        <div class="conter-auto">
+            <div class="agree-notice">客户须知</div>
+            <div class="agree-content">
+            <!--协议内容-->
+                <!--协议内容 协议内容 协议内容 协议内容 协议内容 协议内容 协议内容
+                协议内容 协议内容 协议内容 协议内容 协议内容 协议内容 协议内容
+                协议内容 协议内容 协议内容 协议内容 协议内容 协议内容 协议内容-->
+            </div>
+            <div class="agree-box">
+                <div class="agree-btn-box" id="agree-btn">
+                    <img id="ic-disagree" class="ic-agree" src="../../images/ic_disagree.png" height="100%"  alt=""/>
+                    <img id="ic-agree" class="ic-agree" style="display: none" src="../../images/ic_agree.png" height="100%"  alt=""/>
+                    <span class="txt-agree">我已阅读并同意本协议</span>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous previous-con back-1">上一步</div>
+        <div class="previous" data-transition="slide">下一步</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

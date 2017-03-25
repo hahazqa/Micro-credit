@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>特惠商户</title>
+	<script type="text/javascript" src="../../js/jquery-1.11.1.min.js" ></script>
+	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js" ></script>
+	<link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/pfn-merchant.css" />
+	<script type="text/javascript" src="../../js/page-pfn-merchant.js" ></script>
+</head>
+<body>
+	<!--第二页 商户列表页-->
+	<div data-role="page" class="main ui-page ui-page-theme-a" id="MT_businessdealPageTwo">
+		<!--头部-->
+		<div class="header">
+			<a href="#" class="head-all head-left" data-direction="reverse" data-action="changeToOne">返回</a> 特惠商户
+		</div>
+		<!--主题内容-->
+		<div data-role="content" class="conter-con" style="top:80px;">
+			<div class="business_list">
+				<ul id="ul-frame" class="clear">
+					<li id="li-template" hidden>
+						<div class="business">
+							<a class="business_img" href="#" data-action="changeToThree">
+								<img src="../../images/ic-tx-ing.png" alt="" />
+							</a>
+							<div class="business_text">
+								<p class="business_name">商户名称:<span></span></p>
+								<p class="business_type">商户类型:<span></span></p>
+								<p class="business_msg">优惠信息:<span></span></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="footter">
+			<div id="btn-close" class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">关闭</div>
+		</div>
+	</div>
+</body>
+</html>

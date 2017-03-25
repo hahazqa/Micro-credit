@@ -1,0 +1,2691 @@
+.main .navigation-steps.sixCurrent li {
+    width: 16.6%;
+}
+
+#smallLoan-complete #border-over {
+    width: 84%;
+}
+
+#smallLoan-complete .compl,#smallLoanCusManage-complete .compl {
+    margin: 40px 0 64px;
+    height: 39px;
+    line-height: 39px;
+    color: #0F45A7;
+    font-size: 28px;
+    text-align: center;
+}
+
+#smallLoan-complete .basic_msg,#smallLoanCusManage-complete .basic_msg {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background: url("../images/card-left.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-complete .basic_msg p,#smallLoanCusManage-complete .basic_msg p {
+    color: #999999 !important;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 5%;
+}
+
+#smallLoan-complete .compl img,#smallLoanCusManage-complete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+#smallLoan-complete .compl span,#smallLoanCusManage-complete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+}
+
+#smallLoan-complete .com_txt,#smallLoanCusManage-complete .com_txt {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+#smallLoan-complete .card_mode,#smallLoanCusManage-complete .card_mode {
+    display: block;
+    width: auto;
+    height: 220px;
+    margin: 30px auto 20px auto;
+}
+
+#smallLoan-complete .read_prompt,#smallLoanCusManage-complete .read_prompt {
+    text-align: center;
+    font-size: 15px;
+    color: #909090;
+}
+
+#smallLoan-cusConfirm #border-over {
+    width: 78%;
+}
+
+#smallLoan-cusConfirm .msg_con,#smallLoanCusManage-cusconfirm .msg_con {
+    width: 96%;
+    height: auto;
+    padding: 0 2%;
+}
+
+#smallLoan-cusConfirm .basic_con,#smallLoanCusManage-cusconfirm .basic_con {
+    margin-top: 25px;
+    width: 100%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#smallLoan-cusConfirm .basic_header,#smallLoanCusManage-cusconfirm .basic_header {
+    height: 44px;
+    line-height: 44px;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    font-size: 15px;
+}
+
+#smallLoan-cusConfirm .querenqianming-con,#smallLoanCusManage-cusconfirm .querenqianming-con {
+    border-radius: 8px;
+}
+
+#smallLoan-cusConfirm .confirm_ul li,#smallLoanCusManage-cusconfirm .confirm_ul li{
+    margin-left: 3.41796875%;
+    margin-bottom: 24px;
+}
+
+#smallLoan-cusConfirm .dianjiqianming-con,#smallLoanCusManage-cusconfirm .dianjiqianming-con {
+    position: absolute;
+
+    font-size: 15px;
+    color: #CCCCCC;
+    top: 14px;
+    right: 60px;
+}
+
+#smallLoan-cusConfirm .confirm_ul li:first-child,#smallLoanCusManage-cusconfirm .confirm_ul li:first-child {
+    margin-top: 25px;
+
+}
+
+#smallLoan-cusConfirm .confirm_ul li div,#smallLoanCusManage-cusconfirm .confirm_ul li div {
+    font-size: 14px;
+    display: inline-block;
+    width: 49%;
+}
+
+#smallLoan-cusConfirm .confirm_ul li div span:first-child,#smallLoanCusManage-cusconfirm .confirm_ul li div span:first-child {
+    color: #999999;
+    font-size: 14px;
+}
+
+#smallLoan-cusConfirm .confirm_ul li div span:nth-child(2),#smallLoanCusManage-cusconfirm .confirm_ul li div span:nth-child(2) {
+    color: #666666;
+    font-size: 14PX;
+}
+
+#smallLoan-cusConfirm .qianM_con,#smallLoanCusManage-cusconfirm .qianM_con {
+    position: relative;
+    z-index: 1;
+    margin: 25px 0 25px 0;
+}
+
+#smallLoan-cusConfirm .qianM_con > span,#smallLoanCusManage-cusconfirm .qianM_con > span {
+    display: inline-block;
+}
+
+#smallLoan-cusConfirm .qianM_con > span:first-child ,#smallLoanCusManage-cusconfirm .qianM_con > span:first-child {
+    vertical-align: top;
+}
+
+#smallLoan-cusConfirm .qianM_box,#smallLoanCusManage-cusconfirm .qianM_box {
+    width: 100%;
+    position: relative;
+    height: 215px;
+    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    overflow: visible;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+#smallLoan-cusConfirm .qianM_shadow,#smallLoanCusManage-cusconfirm .qianM_shadow {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 261px;
+
+}
+
+#smallLoan-cusConfirm #qianM,#smallLoanCusManage-cusconfirm #qianM{
+    display: inline-block;
+    height: 215px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: url(../images/shouxieqianming.png) center center no-repeat;
+    background-size: 282px;
+}
+#smallLoan-cusConfirm .masterID_header,#smallLoanCusManage-cusconfirm .masterID_header{
+    border-radius: 8px 8px 0 0;
+}
+#smallLoan-cusConfirm .masterID_header-qrqm,#smallLoanCusManage-cusconfirm .masterID_header-qrqm {
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-top: solid 1px #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 46px;
+    background-color: #E8E8E8;
+    padding: 0 3.52112676%;
+    font-size: 17px;
+}
+#smallLoan-cusConfirm .qian-over,#smallLoanCusManage-cusconfirm .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#smallLoan-cusConfirm .ic_agree,#smallLoanCusManage-cusconfirm .ic_agree {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+
+#smallLoan-cusConfirm #masterID_messageT,#smallLoanCusManage-cusconfirm #masterID_messageT {
+    display: inline-block;
+    padding: 3px 5px;
+    color: #FFFFFF;
+    background-color: #D13F14;
+    border: solid 1px #D13F14;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#smallLoan-cusConfirm #clear-botton,#smallLoanCusManage-cusconfirm #clear-botton {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -39px;
+    text-align: center;
+    color: #0F45A7;
+}
+
+#smallLoan-cusConfirm .ic_down,#smallLoanCusManage-cusconfirm .ic_down {
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+}
+
+#smallLoan-cusConfirm .ic_up,#smallLoanCusManage-cusconfirm .ic_up {
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+    display: none;
+}
+
+#smallLoan-cusPicture #border-over {
+    width: 49%;
+}
+
+#smallLoan-cusPicture .img_content {
+    width: 100%;
+    margin: 43px 0 0;
+}
+
+#smallLoan-cusPicture .qitazhengming {
+    color: #0F45A7;
+}
+
+#smallLoan-cusPicture .qita-tanchuang-cbg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+}
+
+#smallLoan-cusPicture .qita-tanchuang-con {
+    position: absolute;
+    bottom: 53px;
+    z-index: 101;
+    left: 0;
+    width: 100%;
+    height: 307px;
+    background-color: #FFFFFF;
+    display: none;
+    border-radius: 12px;
+    padding: 0 0 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#smallLoan-cusPicture .crow_icon_win {
+    height: 14px;
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    -webkit-transform: translateX()(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 101;
+    display: none;
+}
+
+#smallLoan-cusPicture .qita-tanchuang-ul {
+    width: 100%;
+    height: 257px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+#smallLoan-cusPicture .queren-quxiao {
+    width: 100%;
+    height: 43px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#smallLoan-cusPicture .quxiao-ok {
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    color: #2760cb;
+    text-align: center;
+}
+
+#smallLoan-cusPicture .quxiao-click {
+    float: left;
+    margin-left: 14px;
+}
+
+#smallLoan-cusPicture .queding-click {
+    float: right;
+    margin-right: 14px;
+}
+
+#smallLoan-cusPicture .qita-tanchuang-ul > li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(32, 40, 43, 0.4);
+}
+
+#smallLoan-cusPicture .qita-tanchuang-ul .qita-tanchuang-li {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    color: rgba(32, 40, 43, 1);
+}
+
+#smallLoan-cusPicture .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#smallLoan-cusPicture .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#smallLoan-cusPicture .rephoto {
+    position: relative;
+    left: 0px;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0px 0px;
+    z-index: 2;
+}
+
+#smallLoan-cusPicture .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+
+}
+
+#smallLoan-cusPicture .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+    /*border: 0 !important;*/
+}
+
+#smallLoan-cusPicture .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-cusPicture .customer_two {
+    background: url("../images/ic_clnrzp1.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-cusPicture .customer_three {
+    background: url("../images/ykhhz.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-cusPicture .customer_four {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-cusPicture .customer_five {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-cusPicture .customer_six {
+    background: url("../images/ic_xuanpai1.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-cusPicture .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+    margin-left: 8%;
+    margin-bottom: 35px;
+}
+
+#smallLoan-cusPicture .cusPicture-zancun {
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+
+#smallLoan-cusPicture .img_box:nth-child(even) {
+    width: 38.03986711%;
+}
+
+#smallLoan-cusPicture .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#smallLoan-product #border-over {
+    width: 7.5%;
+}
+
+#smallLoan-product .product_box {
+    margin: 39px 4%;
+    width: 92%;
+    min-height: 189px;
+    padding-bottom: 42px;
+    border-bottom: solid 1px #CCCCCC;
+
+}
+
+#smallLoan-product .product_img {
+    float: left;
+    display: inline-block;
+    width: 307px;
+    height: 189px;
+    margin-right: 20px;
+}
+
+#smallLoan-product .product_content {
+    position: relative;
+    display: inline-block;
+    width: 65.2%;
+    max-height: 189px;
+}
+
+#smallLoan-product .product_register {
+    float: right;
+    position: relative;
+    right: 0px;
+    top: 149px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 200px;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+}
+
+#smallLoan-product .product_register:active {
+    background-color: #0045A7;
+    color: #FFFFFF;
+}
+
+#smallLoan-product .product_title {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#smallLoan-product .containSelect,#smallLoanCusManage-index .containSelect {
+    width: 96%;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 2% 0 2%;
+    clear: both;
+    font-size: 1em;
+    position: fixed;
+    top: 186px;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 21;
+}
+
+#smallLoan-product .containSpan,#smallLoanCusManage-index .containSpan {
+    margin: 0 3%;
+    line-height: 50px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    float: left;
+}
+
+#smallLoan-product .typeDropDown,#smallLoanCusManage-index .typeDropDown {
+    margin: 5px;
+}
+
+#smallLoan-product .product_Intro {
+    font-size: 16px;
+    line-height: 1.5em;
+    max-height: 100px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    word-break:break-all;
+}
+
+#smallLoan-product .smallLoan-product-gengduo {
+    color: #0F45A7;
+    font-size: 16px;
+}
+
+#smallLoan-readID #border-over {
+    width: 21.5%;
+}
+
+#smallLoan-readID .pic_suc {
+    margin: 28px 4% 28px 4%;
+    width: 92%;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+#smallLoan-readID .img_box {
+    width: 92%;
+    height: auto;
+    margin: 0 4%;
+}
+
+#smallLoan-readID .sfzz-box, #smallLoan-readID .sfzf-box {
+    width: 398px;
+    height: auto;
+    display: inline-block;
+}
+
+#smallLoan-readID .sfzz-box {
+    background: url("../images/sfzzm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#smallLoan-readID .sfzz-box span {
+    display: inline-block;
+}
+
+#smallLoan-readID .sfz-img {
+    float: right;
+    width: 103px;
+    height: auto;
+    margin-top: 45px;
+    margin-right: 30px;
+}
+
+#smallLoan-readID .ziduan-name {
+    color: #2C86B6;
+    font-size: 16px;
+}
+
+#smallLoan-readID .sfzz-box .sfz-name {
+    margin-top: 43px;
+}
+
+#smallLoan-readID .ziduan-name {
+    color: #2C86B6;
+    font-size: 16px;
+}
+
+#smallLoan-readID .ziduan-qian {
+    color: #3D3D3D;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#smallLoan-readID .loading_box > img {
+    width: 50px;
+    height: auto;
+}
+
+#smallLoan-readID .ziduan-min {
+    margin-left: 30px;
+}
+
+#smallLoan-readID .ziduan-add {
+    display: inline-block !important;
+    font-size: 14px !important;
+    width: 46%;
+}
+
+#smallLoan-readID .ziduan-value {
+    font-size: 15px;
+    color: #3D3D3D;
+    margin-left: 4px;
+}
+
+#smallLoan-readID .gong-num {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#smallLoan-readID .sfzz-box > p {
+    margin-left: 32px;
+    margin-top: 12px;
+}
+
+#smallLoan-readID .sfzf-box {
+    background: url("../images/sfzfm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    float: right;
+    height: 250px;
+}
+
+#smallLoan-readID .sfzf-box p {
+    margin-left: 21%;
+}
+
+#smallLoan-readID .sfzf-box .qianfa {
+    margin-top: 155px;
+}
+
+#smallLoan-readID .sfzf-box .qixian {
+    margin-top: 18px;
+    margin-bottom: 28px;
+}
+
+#smallLoan-readID .readID_positive, .readID_negative {
+    display: inline-block;
+    width: 46.71361502%;
+    height: auto;
+}
+
+#smallLoan-readID .readID_negative {
+    float: right;
+}
+
+#smallLoan-readID .loading_box {
+    width: 100%;
+    text-align: center;
+}
+
+#smallLoan-readID .read_loading {
+    font-size: 18px;
+    color: #d0021b;
+}
+
+#smallLoan-readingID #border-over {
+    width: 21.5%;
+}
+
+#smallLoan-readingID .picRe {
+    position: relative;
+    top: 42px;
+    left: 80%;
+    margin: 0px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 16px;
+    width: 11.5234375%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+}
+
+#smallLoan-readingID .readID {
+    display: block;
+    width: auto;
+    height: 312px;
+    margin: 54px auto 41px auto;
+}
+
+#smallLoan-readingID .read_prompt {
+    text-align: center;
+    font-size: 20px;
+    color: #4A4A4A;
+}
+
+/**
+ * Ӱ����
+ */
+#smallLoan-video .border-over {
+    width: 21.3% !important;
+}
+
+#smallLoan-video .box-header,#smallLoanCusManage-video .box-header {
+    height: 50px;
+    width: 100%;
+    background-color: #EBEBEB;
+    margin-top: 30px;
+}
+
+#smallLoan-video .box-header > div, #smallLoanCusManage-video .box-header > div {
+    height: 50px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#smallLoan-video .box-content, #smallLoanCusManage-video .box-content {
+    width: 100%;
+    height: auto;
+}
+
+#smallLoan-video .box-rows:nth-child(even), #smallLoanCusManage-video .box-rows:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+#smallLoan-video .box-rows,#smallLoanCusManage-video .box-rows {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+}
+
+#smallLoan-video .click, #smallLoanCusManage-video .click {
+    background-color: #0F45A7 !important;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+#smallLoan-video .box-rows > div,#smallLoanCusManage-video .box-rows > div {
+    height: 55px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-page-theme-a {
+    text-shadow: none !important;
+}
+
+/*�����Ա�*/
+
+#smallLoan-personFace #border-over {
+    width: 49% !important;
+}
+
+#smallLoan-personFace .center-header,#smallLoanCusManage-personFace .center-header {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+#smallLoan-personFace .img_content,#smallLoanCusManage-personFace .img_content {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+#smallLoan-personFace .customer,#smallLoanCusManage-personFace .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#smallLoan-personFace .customer .customer-picture,#smallLoanCusManage-personFace .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+
+#smallLoan-personFace .customer_one, #smallLoan-personFace .customer_four, #smallLoan-personFace .customer_six,
+#smallLoanCusManage-personFace .customer_one,#smallLoanCusManage-personFace .customer_four,#smallLoanCusManage-personFace .customer_six
+{
+    background: url("../images/ic_mianbu.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-personFace .customer_three,#smallLoanCusManage-personFace .customer_three {
+    background: url("../images/ic_shenfenzheng.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoan-personFace .img_box,#smallLoanCusManage-personFace .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+
+#smallLoan-personFace .face-box,#smallLoanCusManage-personFace .face-box {
+    float: left;
+    width: 24.42244224%;
+    min-width: 148px;
+}
+
+#smallLoan-personFace .face-result,#smallLoanCusManage-personFace .face-result {
+    text-align: center;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 65px;
+    border-radius: 3px;
+    color: #F9F9F9;
+}
+
+#smallLoan-personFace .pass,#smallLoanCusManage-personFace .pass {
+    background-color: #0F45A7;
+}
+
+#smallLoan-personFace .no-pass,#smallLoanCusManage-personFace .no-pass {
+    background-color: #D13F14;
+}
+
+#smallLoan-personFace .img_notes,#smallLoanCusManage-personFace .img_notes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#smallLoan-personFace .camera,#smallLoanCusManage-personFace .camera {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#smallLoan-messageIn #border-over {
+    width: 64%;
+}
+
+#smallLoan-messageIn #hujifangxian,#smallLoanCusManage-messageinput  #hujifangxian{
+    position: relative;
+    float: left;
+    margin-top: 7px;
+    margin-left: 80px;
+    top: 0px;
+    right: 0px;
+}
+
+#smallLoan-messageIn #shishidingwei,#smallLoanCusManage-messageinput #shishidingwei {
+    position: relative;
+    float: left;
+    margin-top: 7px;
+    top: 0px;
+    right: 0px;
+}
+
+#hujifangxian1 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 80px;
+    width: 60px;
+    height: 25px;
+
+    border-right: 1px solid #808080;
+}
+
+#shishidingwei1 {
+    float: left;
+    margin-top: 7px;
+    width: 60px;
+    height: 25px;
+    display: block;
+}
+
+#hujifangxian1 .hu-normal {
+    width: 60px;
+    height: 25px;
+    background: url(../images/icon_address.png) center no-repeat;
+    background-size: 20px;
+}
+
+#shishidingwei1 .ding-normal {
+    width: 60px;
+    height: 25px;
+    background: url(../images/icon_gps.png) center no-repeat;
+    background-size: 14px;
+}
+
+#hujifangxian1 .hu-changeimg {
+    width: 60px;
+    height: 25px;
+    background: url(../images/icon_address_pressed.png) center no-repeat;
+    background-size: 20px;
+}
+
+#shishidingwei1 .ding-changeimg {
+    width: 60px;
+    height: 25px;
+    background: url(../images/icon_gps_pressed.png) center no-repeat;
+    background-size: 14px;
+}
+
+#smallLoan-cusPicture .customerP-zancun {
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+
+#smallLoan-addData ul {
+    display: block;
+}
+
+#smallLoan-addData .ui-select {
+    margin: 0;
+}
+
+#smallLoan-addData .mian-tanchuang-con {
+    width: 600px;
+    height: 350px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#smallLoan-addData .mian-tanchuang-header {
+    height: 60px;
+    line-height: 60px;
+}
+
+#smallLoan-addData .qingdanliebiao_ul {
+    width: 550px;
+    height: 280px;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+#smallLoan-addData .qingdanliebiao_ul li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+}
+
+#smallLoan-addData .qingdanliebiao_ul li:last-child {
+    border-bottom: 0;
+}
+
+#smallLoan-addData .qingdanliebiao_tupian {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#smallLoan-addData .qingdanliebiao_gou {
+    background: url('../images/icon_right.png') center center no-repeat;
+    background-size: 65%;
+}
+
+#smallLoan-addData .qingdanliebiao_x {
+    background: url('../images/icon_wrong.png') center center no-repeat;
+    background-size: 70%;
+}
+
+#smallLoan-addData .swiper-container {
+    height: 100%;
+}
+
+#smallLoan-addData .lajitong_icon {
+    width: 26px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#smallLoan-addData .bendiwenJian {
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    right: -75px;
+    color: #0F45A7;
+    text-align: center;
+    display: none;
+}
+
+#smallLoan-addData .bendiwenjian_con {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    left: 25%;
+    bottom: 105px;
+    text-align: center;
+    display: none;
+}
+
+#smallLoan-addData .BDwenjian {
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+}
+
+#smallLoan-addData .BDwenjian_title {
+    width: 90px;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    font-size: 16px;
+}
+
+#smallLoan-addData .BDwenjian_zhi {
+    width: 230px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 14px;
+    color: #909090;
+    float: left;
+    padding-left: 15px;
+    text-align: left;
+    border: 1px solid #0045A7;
+    border-radius: 20px;
+    position: relative;
+}
+
+#smallLoan-addData .BDwenjian_img {
+    width: 11px;
+    position: absolute;
+    top: 13px;
+    right: 18px;
+}
+
+/*input ��  disableʱ�� ��ʽ*/
+.input-disabled {
+    background-color: #fff;
+}
+
+#smallLoan-cusConfirm .searchBank,
+#smallLoan-cusConfirm .searchCredit,
+#smallLoanCusManage-cusconfirm .searchBank,
+#smallLoanCusManage-cusconfirm .searchCredit,
+#smallLoan-addData .searchBank,
+#smallLoan-addData .searchCredit {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#smallLoan-cusConfirm .wei,#smallLoan-addData .wei,#smallLoanCusManage-cusconfirm .wei {
+    position: relative;
+    width: 800px;
+    height: 508px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+#smallLoan-cusConfirm .wei u,#smallLoan-addData .wei u,#smallLoanCusManage-cusconfirm .wei u{
+    color:#00d;
+    text-decoration: none;
+}
+#smallLoan-cusConfirm .wei u:hover,#smallLoan-addData .wei u:hover,#smallLoanCusManage-cusconfirm .wei u:hover{
+    color:#00c;
+    text-decoration: underline;
+}
+#smallLoan-cusConfirm .wei .wei-header,#smallLoan-addData .wei .wei-header,#smallLoanCusManage-cusconfirm .wei .wei-header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 1.2em;
+}
+
+#smallLoan-cusConfirm .wei .wei-con,#smallLoan-addData .wei .wei-con,#smallLoanCusManage-cusconfirm .wei .wei-con {
+    width: 90%;
+    height: 357px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: scroll;
+}
+
+#smallLoan-cusConfirm .wei .hu-header,#smallLoan-addData .wei .hu-header,#smallLoanCusManage-cusconfirm .wei .hu-header {
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+
+/*#smallLoan-cusConfirm .searchLos .wei .hu-header{*/
+/*background: none;*/
+/*}*/
+#smallLoan-cusConfirm .hucon,#smallLoan-addData .hucon,#smallLoanCusManage-cusconfirm .hucon {
+    height: 384px;
+}
+
+#smallLoan-cusConfirm .hucon ul,#smallLoan-addData .hucon ul,#smallLoanCusManage-cusconfirm .hucon ul {
+    height: 334px;
+    overflow: auto;
+}
+
+#smallLoan-addData .hucon ul{
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+#smallLoan-cusConfirm .hucon ul li > div,#smallLoan-addData .hucon ul li > div,#smallLoanCusManage-cusconfirm .hucon ul li > div {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+#smallLoan-cusConfirm .hucon ul li,#smallLoan-addData .hucon ul li,#smallLoanCusManage-cusconfirm .hucon ul li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#smallLoan-cusConfirm .addrAndArea,#smallLoanCusManage-cusconfirm .addrAndArea {
+    width: 20%;
+    height: 34px;
+    line-height: 34px;
+    box-shadow: none;
+    border: 0;
+    text-align: center;
+}
+
+#smallLoan-cusConfirm .wei .hu-header > div, #smallLoan-cusConfirm .hucon ul div,
+#smallLoanCusManage-cusconfirm .wei .hu-header > div, #smallLoanCusManage-cusconfirm .hucon  ul div,
+#smallLoan-addData .wei .hu-header > div, #smallLoan-addData .hucon ul div {
+    /*  width: 25%;*/
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+#smallLoan-cusConfirm .wei .footter,#smallLoan-addData .wei .footter,#smallLoanCusManage-cusconfirm .wei .footter {
+    border-radius: 0 0 8px 8px;
+    height: 60px;
+}
+
+#smallLoan-cusConfirm .dzdImg,#smallLoanCusManage-cusconfirm .dzdImg {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+#smallLoan-cusConfirm .wei .wei-con li,#smallLoan-addData .wei .wei-con li,#smallLoanCusManage-cusconfirm .wei .wei-con li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#smallLoan-cusConfirm .wei .wei-con li > span,#smallLoan-addData .wei .wei-con li > span,#smallLoanCusManage-cusconfirm .wei .wei-con li > span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:first-child,
+#smallLoan-queryProcess #queryProcess-con li > div:first-child {
+    width: 10%;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:nth-child(2),
+#smallLoan-queryProcess #queryProcess-con li > div:nth-child(2) {
+    width: 20%;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:nth-child(3),
+#smallLoan-queryProcess #queryProcess-con li > div:nth-child(3) {
+    width: 10%;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:nth-child(4),
+#smallLoan-queryProcess #queryProcess-con li > div:nth-child(4) {
+    width: 15%;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:nth-child(5),
+#smallLoan-queryProcess #queryProcess-con li > div:nth-child(5) {
+    width: 10%;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:nth-child(6),
+#smallLoan-queryProcess #queryProcess-con li > div:nth-child(6) {
+    width: 15%;
+}
+
+#smallLoan-queryProcess .queryProcess-title > div:nth-child(7),
+#smallLoan-queryProcess #queryProcess-con li > div:nth-child(7) {
+    width: 20%;
+}
+
+#smallLoan-list .sContainer,#smallLoan-list2 .sContainer {
+    padding: 5% 10%;
+    line-height: 30px;
+    /*color:#00f;*/
+}
+
+#smallLoan-list .conHead,#smallLoan-list2 .conHead {
+    margin-top: 40px;
+    height: 60px;
+}
+#smallLoan-list .conHead img, #smallLoan-list2 .conHead img{
+    width: 15%;
+    height: 36px;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+
+#smallLoan-list .conHead p,#smallLoan-list2 .conHead p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#smallLoan-list table,#smallLoan-list2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#smallLoan-list table td,#smallLoan-list2 table td {
+    border: 1px solid #000;
+    width: 12.5%;
+    text-align: left;
+    padding: 10px;
+}
+#smallLoan-list table td input,#smallLoan-list2 table td input{
+    margin:5px ;
+}
+#smallLoan-list table td:first-child, #smallLoan-list table td:nth-child(3),#smallLoan-list2 table td:first-child,#smallLoan-list2 table td:nth-child(3) {
+    font-weight: bold;
+    text-align: center;
+}
+
+#smallLoan-list table td.current,#smallLoan-list2 table td.current {
+    text-align: left;
+    background-color: #9cf;
+    padding: 5px;
+}
+
+#smallLoan-scorecard .border-over{
+	width: 36%!important;
+}
+#smallLoan-scorecard .main-top {
+	position: relative;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#smallLoan-scorecard .title {
+	font-size: 39px;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+#smallLoan-scorecard .main-middle {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	height: auto;
+}
+
+#smallLoan-scorecard .singlechoice {
+	position: relative;
+	height: auto;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#smallLoan-scorecard .singlechoice-question {
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	text-align: left;
+	font-size: 17px!important;
+}
+
+#smallLoan-scorecard .singlechoice-choice {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+#smallLoan-scorecard .singlechoice li {
+	position: relative;
+	height: auto;
+	width: 100%;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#smallLoan-scorecard .radio-label {
+	/*border-bottom: 1px solid #CCCCCC !important;*/
+	position: relative;
+	height: 30px!important;
+	line-height: 30px!important;
+	padding-right: 40px!important;
+	margin: 0!important;
+	text-align: left!important;
+	white-space: normal!important;
+	z-index: 2!important;
+	min-width: 10%!important;
+	width: auto;
+	float: left;
+	margin-bottom: 5px!important;
+}
+
+#smallLoan-scorecard .radio-label:hover {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+	color: #000000;
+	text-shadow: none;
+}
+
+#smallLoan-scorecard .singleinput {
+	margin-left: 10px;
+}
+
+#smallLoan-scorecard .fillblanklist {
+	position: relative;
+	margin-top: 40px;
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+}
+
+#smallLoan-scorecard .fillblanklist li {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#smallLoan-scorecard .fillblank {
+	width: 50%;
+	min-height: 40px;
+	height: auto;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	position: relative;
+	float: left;
+}
+
+#smallLoan-scorecard .input-question {
+	float: left;
+	width: 50%;
+	min-height: 40px;
+	height: auto;
+	/*line-height: 40px;*/
+	padding: 0;
+	text-align: left;
+	font-size: 17px!important;	position: relative;
+}
+
+#smallLoan-scorecard .duiji{
+	display: w-webkit-box;
+	height: auto;
+}
+
+#smallLoan-scorecard .ui-shadow-inset {
+	text-shadow: none;
+	/*border: 0;*/
+	box-shadow: none;
+	margin: 0;
+	background-color: transparent;
+	border-color: transparent;
+	color: #333333;
+}
+
+#smallLoan-scorecard .result-list {
+	position: relative;
+	margin-top: 15px;
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+	display:  none;
+	padding-bottom: 15px;
+}
+
+#smallLoan-scorecard .result-list li {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	/*margin-bottom: 20px;*/
+	/*color: #CCCCCC;*/
+	/*border: 1px solid #CCCCCC;*/
+	box-sizing: border-box;
+	/*background-color: #FFFFFF;*/
+	border-radius: 3px;
+	position: relative;
+	margin-left: 0;
+}
+
+#smallLoan-scorecard .messageshow {
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #DDDDDD;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+#smallLoan-scorecard .input-test-con {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	box-shadow: none;
+	border: 0;
+	/*color: #CCCCCC;*/
+}
+
+.smallLoanScore .search-day-con {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 24;
+	display: none;
+}
+
+.smallLoanScore .seach-day {
+	position: relative;
+	width: 420px;
+	height: 200px;
+	background-color: #f7f7f7;
+	margin: 0 auto;
+	border-radius: 8px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#smallLoan-scorecard .result-title {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 15px;
+	padding-top: 12px;
+	/*padding-left: 65px;*/
+	border-bottom: 1px solid #CCCCCC;
+	padding-left: 5%;
+}
+
+.smallLoanScore .seach-day-header {
+	width: 50%;
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	padding-left: 0;
+	text-align: right;
+}
+
+.smallLoanScore .seach-day-box {
+	width: 295px;
+	height: 37px;
+	float: left;
+}
+
+#smallLoan-scorecard .result-list li:last-child {
+	margin-top: 20px;
+    height: 44px;
+    background-color: #f7f7f7;
+    border: 0;
+    margin-left: 0;
+}
+
+.smallLoanScore .fangqi-seach {
+	width: 120px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    margin-left: 10px;
+}
+
+/*显示身份证信息界面新增弹窗*/
+#smallLoan-readID .search-day-con {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 24;
+	display: none;
+}
+
+#smallLoan-readID .seach-day {
+	position: relative;
+	width: 420px;
+	height: 428px;
+	background-color: #f7f7f7;
+	margin: 0 auto;
+	border-radius: 8px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+#smallLoan-readID .result-title {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 12px;
+	/*padding-left: 65px;*/
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#smallLoan-readID .fangqi-seach {
+	width: 120px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    margin-left: 10px;
+}
+
+#smallLoan-readID .result-list {
+	position: relative;
+	margin-top: 50px;
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+}
+
+#smallLoan-readID .result-list li {
+	margin-top: 20px;
+    height: 44px;
+    background-color: #f7f7f7;
+    border: 0;
+    margin-left: 0;
+}
+
+.main .navigation-steps.sevenCurrent li {
+     width: 14.2%; 
+}
+
+#smallLoan-scorecard .xianshi-class{
+	width: 35%;
+	float: none;
+	text-align: center;
+	height: 37px;
+	line-height: 37px;
+}
+
+
+#smallLoan-scorecard .header-pfk{
+	width: 100%;
+  	margin-top: 0;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #fafafa;
+}
+
+#smallLoan-scorecard .header-1-pfk {
+	width: 100%;
+  	margin-top: 0;
+	height: 20px;
+	line-height: 20px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+#smallLoan-scorecard .header-pfk-sp1 {
+	width: 33.3%;
+  	margin-top: 0;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+#smallLoan-scorecard .conter-auto-pfk {
+	width: 100%;
+  	float: right;
+  	height: 65%;
+  	overflow: auto;
+  	padding-bottom: 120px;
+  	box-sizing: border-box;
+  	-webkit-overflow-scrolling: touch;
+  	position: fixed;
+}
+
+#smallLoan-scorecard .basic_con-pfk {
+    margin-top: 25px;
+    width: 100%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    
+    text-align: left;
+}
+
+#smallLoan-scorecard .basic_rows_2 {
+    margin-bottom: 24px;
+    color: #999999;
+}
+
+#smallLoan-scorecard .basic_rows_3 {
+	margin-left: 24.41796875%;
+    margin-bottom: 24px;
+}
+
+#smallLoan-scorecard .confirm_ul li:first-child {
+    margin-top: 25px;
+
+}
+
+#smallLoan-scorecard .confirm_ul li {
+	margin-left: 4.41796875%;
+    width: 95.5%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+    overflow: hidden;
+   
+
+}
+
+#smallLoan-scorecard .confirm_ul li div {
+    font-size: 15px;
+    /*height: 30px;*/
+    border-bottom: #CCCCCC;
+}
+
+#smallLoan-scorecard .confirm_ul li div span:first-child {
+    font-size: 15px;
+}
+
+#smallLoan-scorecard .confirm_ul li div span:nth-child(2) {
+    color: #666666;
+    font-size: 15PX;
+}
+#smallLoan-scorecard .basic_content_rows-pfk {
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    text-align: left;
+}
+
+#smallLoan-scorecard .basic_rows_name_div1 {
+	width: 35%;
+    padding: 0 0;
+    text-align: left;
+    float: left;
+    
+    height: 40px;
+    line-height: 40px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: left;
+    margin-right: 0.464%;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    
+}
+
+#smallLoan-scorecard .basic_rows_name_div2 {
+	width: 30.5%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: left;
+    margin-right: 0.464%;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    
+	width: 28%;
+    padding: 0 0;
+    text-align: left;
+    float: left;
+}
+#smallLoan-scorecard .basic_rows_name_div2-se {
+	width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+#smallLoan-scorecard .basic_rows_name_div2-sel{
+      width: 100%;
+      height: 40px;
+	  background-color: #FFFFFF;
+	  text-align: left;
+	  border: 0;
+	  font-size: 0.95em;
+	  text-indent: 20px;
+}
+#smallLoan-scorecard .basic_rows_name_div2-sel-error{
+      width: 100%;
+      height: 34px;
+	  background-color: #FFFFFF;
+	  text-align: left;
+	  border: 0;
+	  font-size: 0.95em;
+	  border-color:#c8b3b6!important;
+	  background:#fae5e8!important;
+	  overflow: hidden;
+}
+#smallLoan-scorecard .basic_rows_name_div3 {
+	width: 25%;
+    padding: 0 1.52112676%;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+    
+}
+#smallLoan-scorecard .basic_rows_name_div4 {
+	width: 25%;
+    padding: 0 9.52112676%;
+    text-align: left;
+    float: left;
+}
+
+#smallLoan-scorecard .ui-select{
+	margin: 0;
+}
+
+.smallLoanScore .ui-btn{
+	background-color: #FFFFFF;
+    color: #000000;
+    text-shadow: none;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 1em;
+    padding: .68em 1em;
+    line-height: 1 !important;
+    font-family: "helvetica neue";
+    height: 19px;
+}
+
+.smallLoanScore .drop-down{
+	width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 0;
+    font-size: 0.95em;
+}
+
+#smallLoan-scorecard .additional-materials-input{
+	width: 100%;
+    float: left;
+    height: 37px!important;
+    line-height: 37px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    overflow: hidden;
+    border-bottom: none!important;
+}
+
+
+.smallLoanScore .ui-btn-icon-right:after {
+    right: .2625em;
+}
+.smallLoanScore .ui-icon-carat-d:after {
+    background: url(.././images/icon-right.png) no-repeat;
+    background-size: 60%;
+    top: 47% !important;
+    margin-top: -12px !important;
+}
+
+/*小贷客户信息管理*/
+.smallLoan .picRe {
+    position: relative;
+    top: 42px;
+    left: 80%;
+    margin: 0px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 16px;
+    width: 11.5234375%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+}
+
+.smallLoan .readID {
+    display: block;
+    width: auto;
+    height: 312px;
+    margin: 54px auto 41px auto;
+}
+
+#smallLoanCusManage-index #border-over{
+	width: 10%;
+}
+
+#smallLoanCusManage-index .public-drop-down{
+	width: 23.5%;
+    height: 39px;
+    margin-right: 2%;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    float: left;
+    overflow: hidden;
+}
+
+#smallLoanCusManage-index .seach-day-ul li:first-child {
+    border: 0;
+    background-color: #FFFFFF;
+    margin-bottom: 38px;
+}
+
+.smallLoan .show-box{
+    width: 20%;
+    height: 38%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+    float: left;
+    margin-top: 10%;
+    margin-left: 6.5%;
+    position: relative;
+    margin-right: 6.5%;
+    text-align: center;
+}
+
+.smallLoan .img-format{
+	position: relative;
+	width: 79%;
+    height: 126%;
+    padding-bottom: 10px;
+}
+
+.smallLoan .img-box{
+	width: 100%;
+	height: 70%;
+	position: relative;
+}
+
+#smallLoanCusManage-index .message-show{
+	font-size: 20px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#smallLoanCusManage-progress #border-over{
+	width: 10%;
+}
+
+#smallLoanCusManage-progress .search-button{
+	width: 150px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#smallLoanCusManage-progress .search-button:hover{
+	background-color: #0F45A7;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+}
+
+#smallLoanCusManage-progress .com-title{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #f0f0f0;
+	/*margin-top: 80px;*/
+}
+
+#smallLoanCusManage-progress .com-title div{
+	width: 20%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 15px;
+	color: #4A4A4A;
+	font-weight: 700;
+	float: left;
+	padding: 0 2px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#smallLoanCusManage-progress .progress-title > div{
+	width: 12%;
+}
+
+#smallLoanCusManage-progress .progress-title > div:first-child{
+	width: 11%;
+}
+
+#smallLoanCusManage-progress .progress-title > div:nth-child(2){
+	width: 16.5%;
+}
+
+/*#smallLoanCusManage-progress .progress-title > div:nth-child(5){
+	width: 10%;
+}*/
+
+#smallLoanCusManage-progress .progress-title > div:nth-child(6){
+	width: 13.3%;
+}
+
+#smallLoanCusManage-progress .progress-title > div:nth-child(7){
+	width: 23%;
+}
+
+#smallLoanCusManage-progress .box-content{
+	width: 100%;
+	height: auto;
+}
+
+#smallLoanCusManage-progress ul.box-content > li:nth-of-type(even) {
+    background-color: #f7f7f7;
+}
+
+#smallLoanCusManage-progress ul.box-content > li:nth-of-type(odd) {
+    background-color: #FFFFFF;
+}
+
+#smallLoanCusManage-progress .box-rows{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+}
+
+#smallLoanCusManage-progress ul.box-content >li > div{
+	width: 12%;
+}
+
+#smallLoanCusManage-progress ul.box-content >li > div:first-child{
+	width: 11%;
+}
+
+#smallLoanCusManage-progress ul.box-content >li > div:nth-child(2){
+	width: 16.5%;
+}
+
+
+/*#smallLoanCusManage-progress ul.box-content >li > div:nth-child(5){
+	width: 10%;
+}*/
+
+#smallLoanCusManage-progress ul.box-content >li > div:nth-child(6){
+	width: 13.3%;
+}
+
+#smallLoanCusManage-progress ul.box-content >li > div:nth-child(7){
+	width: 23%;
+}
+
+#smallLoanCusManage-progress .box-rows > div {
+	 width: 20%;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    padding: 0 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.smallLoan .search-day-con {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 24;
+	display: none;
+}
+
+.smallLoan .seach-day {
+    position: relative;
+    width: 617px;
+    height: 428px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.smallLoan .seach-day-title {
+    float: left;
+    margin-top: 50px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.smallLoan .seach-day-ul {
+    width: 410px;
+    float: right;
+    display: block;
+    margin-right: 90px;
+    margin-top: 40px;
+}
+
+.smallLoan .seach-day-ul li {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+}
+
+.smallLoan .seach-day-ul li:first-child {
+    border: 0;
+    background-color: #f7f7f7;
+}
+
+
+.smallLoan .seach-day-ul .input-test-con {
+    font-size: 17px;
+}
+
+.smallLoan .seach-day-ul li:first-child {
+    text-align: center;
+}
+
+.smallLoan .seach-day-ul .seach-day-baifenbai {
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 39px;
+    background-color: #f7f7f7;
+    border: 0;
+}
+
+.smallLoan .seach-day-ul li:last-child {
+    margin-top: 13px;
+    height: 44px;
+    background-color: #f7f7f7;
+    border: 0;
+}
+
+.smallLoan .seach-day-box {
+    width: 295px;
+    height: 37px;
+    float: left;
+}
+
+.smallLoan .input-test-con {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    box-shadow: none;
+    border: 0;
+}
+
+.smallLoan .seach-day-header {
+    width: 95px;
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    padding-left: 15px;
+}
+
+.smallLoan .seach-day-tail{
+	width: 20px;
+	height: 37px;
+	line-height: 37px;
+	float: right;
+}
+
+.smallLoan .ui-shadow-inset {
+    text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.smallLoan .day-botton {
+    width: 190px;
+    height: 39px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.smallLoan .day-botton-img {
+    height: 24px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.smallLoan .ui-select{
+	margin:0;
+}
+
+.smallLoan .ui-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-shadow: none;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 1em;
+    padding: .68em 1em;
+    line-height: 1 !important;
+    font-family: "helvetica neue";
+}
+.smallLoan .drop-down {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 0;
+    font-size: 0.95em;
+}
+
+.smallLoan .ui-icon-carat-d:after {
+    background: url(.././images/icon-right.png) no-repeat;
+    background-size: 60%;
+    top: 47% !important;
+    margin-top: -9px !important;
+}
+
+.smallLoan .fangqi-seach{
+	width: 160px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-radius: 5px;
+	border:1px solid #0F45A7;
+	color: #0F45A7;
+}
+
+.smallLoan .seach-botton:hover{
+	background-color: #0F45A7;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+}
+
+.smallLoan .fangqi-seach:hover{
+	background-color: #0F45A7;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+}
+
+.smallLoan .conter-con .page-number-con>span{
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+
+#smallLoanCusManage-progress .detail-botton{
+	width: 47%;
+	height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    position: relative;
+    margin-top: 7px;
+}
+
+#smallLoanCusManage-progress .detail-botton:hover{
+	background-color: #0F45A7;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+}
+
+#smallLoanCusManage-progress .page-number-con{
+	/*position: relative;*/
+	margin-right: 50px;
+	float: right;
+	margin-top: 60px;
+	bottom: 10px;
+	color: #CCCCCC;
+}
+
+#smallLoanCusManage-readingID #border-over{
+	width: 27%;
+}
+
+#smallLoanCusManage-readID #border-over{
+	width: 27%;
+}
+#smallLoanCusManage-readID .pic_suc {
+    margin: 28px 4% 28px 4%;
+    width: 92%;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+#smallLoanCusManage-readID .img_box {
+    width: 92%;
+    height: auto;
+    margin: 0 4%;
+}
+
+#smallLoanCusManage-readID .sfzz-box, #smallLoanCusManage-readID .sfzf-box {
+    width: 398px;
+    height: auto;
+    display: inline-block;
+}
+
+#smallLoanCusManage-readID .sfzz-box {
+    background: url("../images/sfzzm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#smallLoanCusManage-readID .sfzz-box span {
+    display: inline-block;
+}
+
+#smallLoanCusManage-readID .sfz-img {
+    float: right;
+    width: 103px;
+    height: auto;
+    margin-top: 45px;
+    margin-right: 30px;
+}
+
+#smallLoanCusManage-readID .ziduan-name {
+    color: #2C86B6;
+    font-size: 16px;
+}
+
+#smallLoanCusManage-readID .sfzz-box .sfz-name {
+    margin-top: 43px;
+}
+
+#smallLoanCusManage-readID .ziduan-name {
+    color: #2C86B6;
+    font-size: 16px;
+}
+
+#smallLoanCusManage-readID .ziduan-qian {
+    color: #3D3D3D;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#smallLoanCusManage-readID .loading_box > img {
+    width: 50px;
+    height: auto;
+}
+
+#smallLoanCusManage-readID .ziduan-min {
+    margin-left: 30px;
+}
+
+#smallLoanCusManage-readID .ziduan-add {
+    display: inline-block !important;
+    font-size: 14px !important;
+    width: 46%;
+}
+
+#smallLoanCusManage-readID .ziduan-value {
+    font-size: 15px;
+    color: #3D3D3D;
+    margin-left: 4px;
+}
+
+#smallLoanCusManage-readID .gong-num {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#smallLoanCusManage-readID .sfzz-box > p {
+    margin-left: 32px;
+    margin-top: 12px;
+}
+
+#smallLoanCusManage-readID .sfzf-box {
+    background: url("../images/sfzfm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    float: right;
+    height: 250px;
+}
+
+#smallLoanCusManage-readID .sfzf-box p {
+    margin-left: 21%;
+}
+
+#smallLoanCusManage-readID .sfzf-box .qianfa {
+    margin-top: 155px;
+}
+
+#smallLoanCusManage-readID .sfzf-box .qixian {
+    margin-top: 18px;
+    margin-bottom: 28px;
+}
+
+#smallLoanCusManage-readID .readID_positive, .readID_negative {
+    display: inline-block;
+    width: 46.71361502%;
+    height: auto;
+}
+
+#smallLoanCusManage-readID .readID_negative {
+    float: right;
+}
+
+#smallLoanCusManage-readID .loading_box {
+    width: 100%;
+    text-align: center;
+}
+
+#smallLoanCusManage-readID .read_loading {
+    font-size: 18px;
+    color: #d0021b;
+}
+
+
+#smallLoanCusManage-cusPictures #border-over {
+    width: 43%;
+}
+
+#smallLoanCusManage-cusPictures .img_content {
+    width: 100%;
+    margin: 43px 0 0;
+}
+
+#smallLoanCusManage-cusPictures .qitazhengming {
+    color: #0F45A7;
+}
+
+#smallLoanCusManage-cusPictures .qita-tanchuang-cbg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+}
+
+#smallLoanCusManage-cusPictures .qita-tanchuang-con {
+    position: absolute;
+    bottom: 53px;
+    z-index: 101;
+    left: 0;
+    width: 100%;
+    height: 307px;
+    background-color: #FFFFFF;
+    display: none;
+    border-radius: 12px;
+    padding: 0 0 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#smallLoanCusManage-cusPictures .crow_icon_win {
+    height: 14px;
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    -webkit-transform: translateX()(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 101;
+    display: none;
+}
+
+#smallLoanCusManage-cusPictures .qita-tanchuang-ul {
+    width: 100%;
+    height: 257px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+#smallLoanCusManage-cusPictures .queren-quxiao {
+    width: 100%;
+    height: 43px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#smallLoanCusManage-cusPictures .quxiao-ok {
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    color: #2760cb;
+    text-align: center;
+}
+
+#smallLoanCusManage-cusPictures .quxiao-click {
+    float: left;
+    margin-left: 14px;
+}
+
+#smallLoanCusManage-cusPictures .queding-click {
+    float: right;
+    margin-right: 14px;
+}
+
+#smallLoanCusManage-cusPictures .qita-tanchuang-ul > li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(32, 40, 43, 0.4);
+}
+
+#smallLoanCusManage-cusPictures .qita-tanchuang-ul .qita-tanchuang-li {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    color: rgba(32, 40, 43, 1);
+}
+
+#smallLoanCusManage-cusPictures .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#smallLoanCusManage-cusPictures .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#smallLoanCusManage-cusPictures .rephoto {
+    position: relative;
+    left: 0px;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0px 0px;
+    z-index: 2;
+}
+
+#smallLoanCusManage-cusPictures .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+
+}
+
+#smallLoanCusManage-cusPictures .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+    /*border: 0 !important;*/
+}
+
+#smallLoanCusManage-cusPictures .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoanCusManage-cusPictures .customer_two {
+    background: url("../images/ic_clnrzp1.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoanCusManage-cusPictures .customer_three {
+    background: url("../images/ykhhz.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoanCusManage-cusPictures .customer_four {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoanCusManage-cusPictures .customer_five {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoanCusManage-cusPictures .customer_six {
+    background: url("../images/ic_xuanpai1.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#smallLoanCusManage-cusPictures .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+    margin-left: 8%;
+    margin-bottom: 35px;
+}
+
+#smallLoanCusManage-cusPictures .cusPicture-zancun {
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+
+#smallLoanCusManage-cusPictures .img_box:nth-child(even) {
+    width: 38.03986711%;
+}
+
+#smallLoanCusManage-cusPictures .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#smallLoanCusManage-cusPictures .customerP-zancun {
+    width: 89px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    position: fixed;
+    right: 50px;
+    bottom: 98px;
+    z-index: 20;
+}
+
+#smallLoanCusManage-personFace #border-over{
+	width: 43%;
+}
+
+#smallLoanCusManage-messageinput #border-over{
+	width: 60%;
+}
+
+#smallLoanCusManage-cusconfirm #border-over{
+	width: 76%;
+}
+
+#smallLoanCusManage-complete #border-over{
+	width: 86%;
+}
+
+#smallLoanCusManage-video #border-over{
+	width: 26%;
+}
+
+#smallLoan-messageIn .newcolumn,#smallLoan-cusConfirm .newcolumn{
+	display: none;
+}
+
+.smallLoan .list-bgcolor {
+    background-color: #0F45A7 !important;
+    color: #FFFFFF !important;
+}

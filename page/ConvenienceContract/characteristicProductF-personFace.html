@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css"/>
+    <link rel="stylesheet" href="../../css/common-personFace.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/page-characteristicProduct.js"></script>
+    <title></title>
+</head>
+<body>
+<div data-role="page" class="main nav-seven personFace" id="characteristicProductF-personFace">
+    <!--头部内容-->
+    <div class="header">
+        <a onclick="dzhShouye()" class="head-all head-left" data-direction="reverse">首页</a>
+        特色产品
+        <a onclick="dzhFanhui('characteristicProductA.html')" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航步骤-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over border-over-four"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品展示</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>采集影像</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>选择账号</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签字</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主体内容-->
+        <div class="conter-auto">
+            <div class="center-header">人脸识别未通过</div>
+            <div class="img_content">
+                <div class="img_box">
+                    <div class="customer customer_one">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">客户照片</div>
+                </div>
+                <div class="face-box"><div class="face-result pass">对比中</div></div>
+                <div class="img_box">
+                    <div class="customer customer_three">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">身份证照片</div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="img_content" style="margin-bottom: 0">
+                <div class="img_box">
+                    <div class="customer customer_four">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">客户照片</div>
+                </div>
+                <div class="face-box"><div class="face-result pass">对比中</div></div>
+                <div class="img_box">
+                    <div class="customer customer_six">
+                        <img class="camera" src="" alt=""/>
+                    </div>
+                    <div class="img_notes">联网核查照片</div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div id="managerList" style="margin-top:30px;">
+                <span>客户经理：</span>
+                <select name="" data-role="none" style="width:200px; height:30px;">
+                    <option value=""></option>
+                </select>
+                <a href="#">查询</a>
+            </div>
+        </div>
+    </div>
+    <!--尾部按钮-->
+    <div class="footter">
+        <div class="previous previous-con btn_next">放弃</div>
+        <div class="previous">继续</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

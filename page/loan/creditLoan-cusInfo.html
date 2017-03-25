@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <!-- <link rel="stylesheet" href="../../css/credit.css"/> -->
+    <link rel="stylesheet" href="../../css/credit.css"/>
+    <link rel="stylesheet" href="../../css/creditLoan.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+   	
+
+
+    <!--<script src="../../js/wce-loan.js"></script>-->
+    <title>申请信用贷款</title>
+</head>
+<body>
+<div data-role="page" class="main nav-seven card-f-o" id="creditLoan-cusInfo">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" onclick="dzhShouye()" class="head-all head-left">首页</a>
+        申请信用贷款
+        <a data-direction="reverse" onclick="dzhFanhui('creditLoan-product.html')" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over border-over-five"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>测算额度</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </div>
+    <!--主题内容-->
+    <div id="conter-con" class="conter-con">
+        <!--中间内容左边-->
+        <ul class="navigation">
+            <li class="change-bg">身份信息<span></span></li>
+            <li>联系方式<span></span></li>
+            <li>职业信息<span></span></li>
+            <li>家庭状况<span></span></li>
+            <li>物业信息<span></span></li>
+            <li>贷款信息<span></span></li>
+        </ul>
+        <!--中间内容区右-->
+        <div class="information-input">
+            <!--证件信息-->
+            <ul class="info-enter-item credit-card-show">
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">中文姓名</div>
+                        <span id="creditLoan-name"></span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">性别</div>
+                        <span id="creditLoan-sex"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">证件类型</div>
+                        <span id="creditLoan-cerType">身份证</span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">证件号码</div>
+                        <span id="creditLoan-cerNo"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">证件到期日</div>
+                        <span id="creditLoan-cerTime"></span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>何时来本地</div>
+                        <div class="input-test pingyin-input">
+                            <input id="creditLoan-dwellYear" type="month" class="input-test-con" style="text-align: center;padding: 0.25em;"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>最高学历</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-eduExp" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>最高学位</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-cuzgxw" class="drop-down">
+                            	<option value="01">名誉博士</option>
+                                <option value="02">博士</option>
+                                <option value="03">硕士</option>
+                                <option value="04">学士</option>
+                                <option value="09">未知</option>
+                                <option value="99" selected="selected">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li style='display:none'>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left">地区名称</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-addrName" disabled>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>签发地区</div>
+                        <div class="input-test pingyin-input">
+                            <select name="day" id="creditLoan-addr" class="drop-down" disabled>
+                                <!--<option value="1">深圳市</option>-->
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--联系方式-->
+            <ul class="info-enter-item">
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>手机号码</div>
+                        <div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" maxlength="11" id="creditLoan-mobile" reg="mobile" style="font-size: 1.3em;"/></div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>固定电话</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" id="creditLoan-telephone" class="input-test-con" maxlength="20" reg="loanTel" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="public-drop-down fm-item">
+                        <div class="domicile"><span class="required-stars">*</span>居住地址</div>
+                        <div class="domicile-value">
+                            <select id="s_city" class="drop-down" disabled>
+                                <option value="深圳市">深圳市</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="public-drop-down fm-item">
+                        <select name="s_county" id="s_county" class="drop-down">
+                            <!--<option value="区/县级市">区/县级市</option>-->
+                            <option value="福田区">福田区</option>
+                            <option value="罗湖区">罗湖区</option>
+                            <option value="南山区">南山区</option>
+                            <option value="宝安区">宝安区</option>
+                            <option value="龙岗区">龙岗区</option>
+                            <option value="盐田区">盐田区</option>
+                            <option value="龙华新区">龙华新区</option>
+                            <option value="光明新区">光明新区</option>
+                            <option value="大鹏新区">大鹏新区</option>
+                            <option value="坪山新区">坪山新区</option>
+                        </select>
+                    </div>
+                    <div id="hujifangxian1" style="display:block;float:left;margin-top:7px;margin-left:80px;width:60px;height:25px;border-right:1px solid #808080;background:url(../../images/icon_address.png) center no-repeat;background-size:20px;">
+                    </div>
+                    <div id="shishidingwei1" style="display:block;float:left;margin-top:7px;width:60px;height:25px;background:url(../../images/icon_gps.png) center no-repeat;background-size:14px;">
+                    </div>
+                    <!--<a href="javascript:;" id="hujifangxian1"><div class="hu-normal"></div></a>
+                    　<a href="javascript:;" id="shishidingwei1"><div class="ding-normal"></div></a>  -->
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1"><span class="required-stars">*</span>详细地址</div>
+                        <div class="input-test  input-test1"><input type="text" class="input-test-con" id="creditLoan-addr-detail" data-role="none"/></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>邮编</div>
+                        <div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" maxlength="6" id="creditLoan-zipcode" reg="zipCode" value="518000"/></div>
+                    </div>
+                </li>
+            </ul>
+            
+             <!-- 职业信息 -->
+            <ul class="info-enter-item">
+             	<li>
+             		<div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>行业</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-industry" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>职业</div>
+
+                        <div class="input-test pingyin-input">
+                            <select name="day" id="creditLoan-occup" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>工作单位</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-company"/>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>职务</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-office" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>职称</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-position" name="day" class="drop-down">
+                            	<option value="01">无</option>
+                                <option value="02">高级</option>
+                                <option value="03">中级</option>
+                                <option value="04">初级</option>
+                                <option value="09">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>月收入</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-income" disabled/>
+                        </div>
+                        <span>元</span>
+                    </div>
+                </li>
+            </ul> 
+
+            <!-- 家庭状况 -->
+            <ul class="info-enter-item">
+             	<li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>家庭状况</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-marriage" class="drop-down" disabled>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>居住状况</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-dwellingStatus" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                    <!--<a href="javascript:;" id="creditLoan-peioushenfen"><div class="hu-normal"></div></a>-->
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiName_txt">配偶姓名</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-peiName">
+                        </div>
+                    </div>
+                    <div id="creditLoan-peioushenfen-div">
+                    	<div id="creditLoan-peioushenfen" style="display:block;width:60px;height:40px;background:url(../../images/ic-dzpao-ing.png) left no-repeat;background-size:35px;"></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiCerType_txt">配偶证件类型</div>
+                        <div class="input-test pingyin-input" id="creditLoan-peiCerType-div">
+                            <select id="creditLoan-peiCerType" class="drop-down" disabled>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiCerNo_txt">配偶证件号码</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-peiCerNo" reg="qitaCerNo" maxlength="20" style="text-indent:15px">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiCompany_txt">配偶工作单位</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-peiCompany" style="text-indent:15px"/>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiOffice_txt">配偶职务</div>
+                        <div class="input-test pingyin-input" id="creditLoan-peiOffice-div">
+                            <select id="creditLoan-peiOffice" class="drop-down" disabled>
+                            	<option value="1">高级领导(行政级别局级局级以上领导或大公司高级管理人员)</option>
+                                <option value="2">中级领导(行政级别局级以下领导或大公司中级管理人员)</option>
+                                <option value="3">一般员工</option>
+                                <option value="4">其他</option>
+                                <option value="9">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiIncome_txt">配偶月收入</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-peiIncome"/>
+                        </div>
+                        <span>元</span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-peiPhone_txt">配偶手机号码</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" id="creditLoan-peiPhone" class="input-test-con" data-role="none" reg="mobile" maxlength="11" style="font-size:1.3em;text-indent:15px">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-oiSrc_txt" style="width: 40%;">家庭其他收入来源</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <select id="creditLoan-oiSrc" class="drop-down" disabled>
+                            </select>
+                        </div>
+                    </div>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-oiAmt_txt" style="width: 35%;">家庭其他月收入</div>
+                        <div class="input-test pingyin-input" style="width:50%;">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-oiAmt" style="text-indent:15px">
+                        </div>
+                        <span>元</span>
+                    </div>
+                </li>
+                 
+            </ul> 
+            <!-- 物业信息 -->
+            <ul class="info-enter-item" id="creditLoan-wuyexinxi">
+            	<li title="wuye">
+                    <div class="information-result-cl-cl1 border-cc-cl1 fm-item">
+	                    <!--<a href="javascript:;" id="creditLoan-wuyeadd"><div class="hu-normal"></div></a>  -->
+	                    <div id="creditLoan-wuyeadd" style="width:100px;height:25px;background:url(../../images/ic-tz-ing.png) right no-repeat;background-size:14px;">
+	                    </div>
+                    </div>
+            	</li>
+            	<li title="wuye">
+            		<div class="information-result-cl border-cc fm-item">
+            			<div class="result-left-cl"><span class="required-stars">*</span></div>
+                        <div class="input-test-cl pingyin-input-cl">
+                            <select id="creditLoan-wyType" class="drop-down">
+                            	<option value=""></option>
+                            	<option value="10">深房第字</option>
+                            	<option value="11">粤不动产权</option>
+                            	<option value="12">无房产证</option>
+                            	<option value="13">无物业</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result-cl-cl border-cc-cl fm-item">
+                        <span>第</span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                    	<div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-wyNo"/>
+                        </div>
+                    </div>
+                    <div class="information-result-cl-cl border-cc-cl fm-item">
+                        <span>号</span>
+                    </div>
+                    <div class="information-result-cl border-cc fm-item">
+                    	<div class="result-left-cl" id='creditLoan-wyStatus_txt'></div>
+                        <div class="input-test-cl pingyin-input-cl">
+                            <select id="creditLoan-wyStatus" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li title="wuye1" style="display:none">
+            		<div class="information-result-cl border-cc fm-item">
+                        <div class="result-left-cl"><span class="required-stars">*</span></div>
+                        <div class="input-test-cl pingyin-input-cl">
+                            <select id="creditLoan-wyType1" class="drop-down">
+                            	<option value=""></option>
+                            	<option value="10">深房第字</option>
+                            	<option value="11">粤不动产权</option>
+                            	<option value="12">无房产证</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result-cl-cl border-cc-cl fm-item">
+                        <span>第</span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                    	<div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-wyNo1"/>
+                        </div>
+                    </div>
+                    <div class="information-result-cl-cl border-cc-cl fm-item">
+                        <span>号</span>
+                    </div>
+                    <div class="information-result-cl border-cc fm-item">
+                        <div class="result-left-cl" id='creditLoan-wyStatus1_txt'></div>
+                        <div class="input-test-cl pingyin-input-cl">
+                            <select id="creditLoan-wyStatus1" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result-cl-cl border-cc-cl fm-item">
+                    	<div id="creditLoan-wuyedelete" style="display:block;width:60px;height:25px;background:url(../../images/ic-jian-ing.png) left no-repeat;background-size:14px;"></div>
+                    </div>
+                </li>
+            </ul>
+            <!--贷款信息-->
+            <ul class="info-enter-item">
+            	<li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>申请金额</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-loanMoney"/>
+                        </div>
+                        <span>元</span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>申请期限</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <select id="creditLoan-loanTime" class="drop-down">
+                            	<option value="12">12</option>
+                                <option value="24">24</option>
+                                <option value="36" selected="selected">36</option>
+                            </select>
+                        </div>
+                        <span>月</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>还款方式</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-paymentMethod" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>用途说明</div>
+                        <div class="input-test pingyin-input">
+                            <select id="creditLoan-loanUse" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" id="creditLoan-otherUse_txt">其他用途</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-otherUse" disabled/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>可授信额度</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <input type="text" class="input-test-con" data-role="none" id="creditLoan-loanLimit" disabled/>
+                        </div>
+                        <span>元</span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" style="width: 35%;"><span class="required-stars">*</span>还款(发放)账户</div>
+                        <div class="input-test pingyin-input" style="width: 60%;">
+                            <select id="creditLoan-cardAccount" name="day" class="drop-down">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter" data-role="none">
+        <div id='btn_prev' class="previous previous-con back-1">上一步</div>
+        <div id="btn_next" class="previous btn_next" data-transition="slide">下一步</div>
+    </div>
+    <div class="zlqd zhengxin">征信报告</div>
+    <div class="zlqd dzd">对账单</div>
+    <div class="zlqd zq">资料清单</div>
+    <div class="zancun" style="width: 150px;right: 37px;">暂存</div>
+    <!-- 资料清单 -->
+    <div class="search-weihu">
+        <div class="wei">
+            <div class="wei-header">清单列表<a data-direction="reverse" class="head-all head-right" style="top:15px;">关闭</a></div>
+            <ul class="wei-con">
+            </ul>
+        </div>
+    </div>
+    <!-- 银行对账单 -->
+    <div class='searchBank'>
+        <div class="wei">
+            <div class="wei-header">
+                银行对账单
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div style="width:15%;">查询时间</div>
+                    <div style="width:25%;">账卡号</div>
+                    <div style="width:50%;">对账单文件</div>
+                    <div style="width:10%;">选中</div>
+                </div>
+                <ul>
+                	<li>
+                        <div style="width: 15%">深圳市福田区福田中心区民田路</div>
+                        <div style="width: 25%">同步</div>
+                        <div style="width: 50%;">对账单文件</div>
+                        <div style="width: 10%;"><img class="dzdImg" src="../../images/ic_sqwc.png" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con back-1" style="margin-top: 5px;height: 45px;line-height: 45px;">放弃</a>
+                <a class="previous btn_next" style="margin-top: 5px;height: 45px;line-height: 45px;">确认</a>
+            </div>
+        </div>
+    </div>
+    <div class='searchCredit'>
+        <div class="wei">
+            <div class="wei-header">
+                征信报告
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div style="width: 20%;">查询时间</div>
+                    <div style="width: 20%;">征信类型</div>
+                    <div style="width: 50%;">征信文件</div>
+                    <div style="width: 10%;">选中</div>
+                </div>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con back-1" style="margin-top: 5px;height: 45px;line-height: 45px;">放弃</a>
+                <a class="previous btn_next" style="margin-top: 5px;height: 45px;line-height: 45px;">确认</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

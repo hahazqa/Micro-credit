@@ -1,0 +1,25 @@
+/**
+ * 公共模块-----读取身份证界面样式
+ * named by lei.
+ */
+
+.common-reading .picRe {
+    position: relative;
+    top: 42px;
+    left: 80%;
+    margin: 0;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 16px;
+    width: 11.5234375%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+}
+.common-reading .readID {
+    display: block;
+    width: auto;
+    height: 312px;
+    margin: 60px auto 41px auto;
+}

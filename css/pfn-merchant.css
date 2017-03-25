@@ -1,0 +1,480 @@
+/*清除浮动*/
+
+.clear {
+	zoom: 1;
+}
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#MT_businessdealPageOne .input_search {
+	width: 270px;
+	margin-left: 30px;
+	float: left;
+}
+
+#MT_businessdealPageOne .input_search div {
+	width: 270px;
+	height: 39px;
+	position: relative;
+	background: none;
+	-webkit-box-shadow: none
+}
+
+#MT_businessdealPageOne .input_search input {
+	padding-left: 15px;
+	padding-right: 50px;
+	box-sizing: border-box;
+	border: 1px solid #979797;
+	border-radius: 36px;
+	background: #FFFFFF;
+	color: #4D4D4D;
+	opacity: 0.7;
+}
+
+#MT_businessdealPageOne .input_search img {
+	width: 22px;
+	position: absolute;
+	top: 7px;
+	left: 230px;
+}
+
+.nav_thst {
+	width: 1024px;
+	height: 90px;
+	padding-top: 40px;
+}
+
+.nav_thst>li {
+	height: 39px;
+}
+
+.drop-down {
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: left;
+	border: 0;
+	font-size: 0.95em;
+}
+
+.ui-btn {
+	background-color: #FFFFFF !important;
+	color: #000000;
+	text-shadow: none;
+	border: none;
+	box-shadow: none;
+	font-weight: normal;
+	font-size: 1em;
+	padding: .68em 1em;
+	line-height: 1 !important;
+	font-family: "helvetica neue";
+}
+
+#MT_businessdealPageThree .ui-btn{
+	box-shadow: none;
+}
+
+.business_style,
+.list_merchantType,
+.list_distance,
+.list_showType,
+.refresh_thsh {
+	border: 1px solid #CCCCCC;
+	border-radius: 6px;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: #FFFFFF;
+	width: 126px;
+	height: 39px;
+	line-height: 39px;
+}
+
+#MT_businessdealPageOne .list_merchantType,
+.list_distance,
+.list_showType,
+.refresh_thsh {
+	float: right;
+	margin: 0 12px;
+}
+
+#MT_businessdealPageOne .refresh_thsh {
+	margin-right: 30px;
+}
+
+.refresh_thsh {
+	height: 37px;
+	width: 60px;
+	border: 1px solid #0F45A7;
+	text-align: center;
+	line-height: 39px;
+	color: #0F45A7
+}
+
+.ui-btn-icon-right:after {
+	right: 10px;
+}
+
+.ui-page-theme-a .ui-btn:hover,
+html .ui-bar-a .ui-btn:hover,
+html .ui-body-a .ui-btn:hover,
+html body .ui-group-theme-a .ui-btn:hover,
+html head + body .ui-btn.ui-btn-a:hover {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+	color: #000000;
+	text-shadow: none;
+}
+
+.ui-shadow-inset {
+	text-shadow: none;
+	border: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+#MT_businessdealPageOne .ui-select,
+#MT_businessdealPageThree .ui-select {
+	margin: 0;
+}
+
+.day-botton {
+	width: 190px;
+	height: 39px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+.day-botton-img {
+	height: 24px;
+	position: absolute;
+	right: 7px;
+	top: 7px;
+}
+
+.ui-icon-carat-d:after {
+	background: url(../images/icon-bottom.png) no-repeat;
+	/*background-size: 60%;*/
+	background-size: 100%;
+    width: 20px;
+	top: 50% !important;
+	margin-top: -5px !important;
+}
+
+.ui-content {
+	padding-left: 0;
+}
+
+#MT_businessdealPageOne .down_content{
+	top: 130px;
+	height: 556px;
+}
+
+.map_frame{
+	width: 1024px; 
+	height: 100%; 
+    background: #FFFFFF;
+}
+
+/**
+ * 	商户列表页
+ */
+
+#MT_businessdealPageTwo .business_list {
+	margin: 0 100px;
+}
+
+#MT_businessdealPageTwo .business {
+	float: left;
+	margin-top: 65px;
+	width: 362px;
+}
+
+#MT_businessdealPageTwo .business:nth-child(odd) {
+	margin-left: 50px;
+}
+
+#MT_businessdealPageTwo li:nth-child(even) .business {
+	clear: both;
+}
+
+#MT_businessdealPageTwo .business_img {
+	float: left;
+}
+
+#MT_businessdealPageTwo .business img {
+	width: 172px;
+	height: 102px;
+	border-radius: 6px;
+    border: 1px solid #CCC;
+}
+
+#MT_businessdealPageTwo .business_text {
+	float: left;
+	margin-left: 25px;
+	width: 163px;
+}
+
+#MT_businessdealPageTwo .business_text p {
+	font-size: 15px;
+	color: #20282B;
+	line-height: 30px;
+	word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+/**
+ * 商户详情页
+ */
+
+#MT_businessdealPageThree .content_top {
+	height: auto;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 15px 0 57px 66px;
+}
+
+#MT_businessdealPageThree .content_top .take_Photo {
+	float: left;
+	width: 229px;
+	height: 155px;
+	margin: 40px 34px 0px;
+	position: relative;
+}
+
+#MT_businessdealPageThree .content_top .take_Photo .img_del {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+#MT_businessdealPageThree .take_Photo .photo {
+	width: 274px;
+	height: 155px;
+	background: url(../images/ic-tx-ing.png) no-repeat;
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#MT_businessdealPageThree .take_Photo .take {
+	width: 229px;
+	height: 155px;
+	/*background: url(../images/ic-paz.png) no-repeat;*/
+	/*background-size: 100% 100%;*/
+	border-radius: 10px;
+}
+
+#MT_businessdealPageThree .take_Photo .camera {
+    width: 100%;
+    height: 100%;
+}
+
+#MT_businessdealPageThree .take_Photo:not(.addPhotoBtn) .camera {
+    width: 227px;
+    height: 153px;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+}
+
+#MT_businessdealPageThree .content_down {
+	width: 100%;
+	height: 350px;
+	margin: 0 auto;
+}
+
+#MT_businessdealPageThree .result-left{
+	width: 20%;
+    height: 39px;
+    line-height: 39px;
+    float: left;
+    color: #CCCCCC;
+    position: relative;
+    box-shadow: none !important;
+    z-index: 1;
+}
+
+#MT_businessdealPageThree .content_down .business_style {
+	width: 400px;
+	height: 41px;
+	margin-top: 40px;
+	padding-left: 16px;
+    margin-left: 100px;
+    float: left;
+}
+
+#MT_businessdealPageThree .business_style .result-right{
+	width: 84%;
+    height: 39px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+    margin-left: -16px;
+}
+
+#MT_businessdealPageThree .business_name,
+.business_address,
+.business_position {
+	width: 400px;
+	height: 41px;
+	margin-top: 15px;
+	border-radius: 6px;
+	border: 1px solid #979797;
+	background: #F5F5F5;
+	box-sizing: border-box;
+	line-height: 39px;
+	padding-left: 16px;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+#MT_businessdealPageThree .business_address{
+    margin-left: 24px;
+    float: left;
+    margin-top: 40px;
+}
+
+#MT_businessdealPageThree .business_name{
+    float: left;
+    margin-left: 100px;
+}
+
+#MT_businessdealPageThree .business_position {
+	position: relative;
+	float: left;
+    margin-left: 24px;
+}
+
+#MT_businessdealPageThree .business_position img {
+	width: 18px;
+	position: absolute;
+	right: 12px;
+	bottom: 4px;
+}
+
+#MT_businessdealPageThree .business_dischargeText {
+	margin-top: 15px;
+	border: 1px solid #979797;
+    border-radius: 6px;
+    padding-left: 16px;
+    width: 824px;
+    height: 123px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 100px;
+}
+
+#MT_businessdealPageThree .business_dischargeText .result-left{
+	width: 76px;
+}
+
+#MT_businessdealPageThree .business_dischargeText textarea {
+	padding: 10px 0px;
+	box-sizing: border-box;
+	border: 0px;
+	width: 90%;
+    height: 100%;
+}
+
+#MT_businessdealPageThree .pop_bigWindow{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.35);
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+
+#MT_businessdealPageThree .pop_window {
+	width: 727px;
+	height: 515px;
+	margin-top: 100px;
+	position: relative;
+	border-radius:6px ;
+	background: #F7F9FD;
+	border: 2px solid #979797;
+	border-radius: 14px;
+	display: block;
+}
+
+#MT_businessdealPageThree .btn {
+	width: 160px;
+	height: 44px;
+	position: absolute;
+	bottom: 20px;
+	border: 1px solid #0F45A7 !important;
+	color: #0F45A7 !important;
+	display: block;
+	border-radius:3px ;
+	font-weight: 320px;
+	line-height: 44px;
+	text-align: center;
+}
+
+#MT_businessdealPageThree .close{
+	left: 168px;
+}
+
+#MT_businessdealPageThree .sure{
+	right: 168px;
+}
+
+#MT_businessdealPageThree .btn:active{
+	background: #0F45A7;
+	color: #FFFFFF !important;	
+}
+
+#MT_businessdealPageThree .map_window{
+	width: 644px; 
+	height: 386px; 
+	top: 40px; 
+	border-radius: 6px; 
+	background: #0088BB;
+}
+
+div.tangram-suggestion-main{
+	z-index: 100;
+}
+
+#MT_businessdealPageThree #r-result{
+	width: 322px;
+	margin-left: 40px;
+	position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+#MT_businessdealPageThree #searchResultPanel{
+	border:1px solid #C0C0C0;
+	width:150px;
+	height:auto; 
+	display:none;
+}
+
+#MT_businessdealPageThree .required-stars{
+	color: #d0021b;
+    position: absolute;
+    top: 0.5px;
+    left: -10px;
+    font-size: 0.85em;
+}
+
+#MT_businessdealPageThree .btn-disable{
+    border: 1px solid #CCCCCC !important;
+    color: #CCCCCC !important;
+}
+
+#MT_businessdealPageThree .btn-disable:active{
+	background: transparent;
+	color: #CCCCCC !important;
+}

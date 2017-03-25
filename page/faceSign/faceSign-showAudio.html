@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/common-customeP.css"/>
+    <link rel="stylesheet" href="../../css/faceSign.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/gatherPic.js"></script>
+    <title>面签</title>
+</head>
+<body>
+<div data-role="page" class="main nav-four chooseLoan customerP screenP" id="faceSign-showAudio">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouye()" data-direction="reverse" class="head-all head-left">首页</a>
+        面签
+        <a onclick="dzhFanhui('faceSign-reading.html')" href="" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>选择贷款</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>身份验证</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" id="conter-con" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <audio src=""></audio>
+            <!--<div class="box_con" audioSrc="../../images/yicijiuhao.mp3">-->
+                <!--<div class="play_box">-->
+                    <!--<img class="bp" src="../../images/ic-ly-ing.png" alt="">-->
+                    <!--<img style="display:none;" class="bp" src="../../images/ic-nokz-ing.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="time_box sty_box tine">2011年12月12日  12:59:59</div>-->
+                <!--<ul class="per_son">-->
+                    <!--<li class="sty_box"><span >借款人</span>: <span>天下的我看人</span></li>-->
+                    <!--<li class="sty_box"><span>共同借款人</span>: <span></span></li>-->
+                    <!--<li class="sty_box"><span>保款人</span>: <span></span></li>-->
+                <!--</ul>-->
+                <!--<div style="clear:both;"></div>-->
+            <!--</div>-->
+            <!--<div class="msg_box">-->
+                <!--<div class="img_box">-->
+                    <!--<div class="customer customer_one">-->
+                        <!--<img class="camera" src="../../images/ic_camera.png" alt=""/>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">关 闭</div>
+    </div>
+</div>
+</body>
+</html>

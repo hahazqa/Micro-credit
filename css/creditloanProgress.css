@@ -1,0 +1,660 @@
+.creditloan .navigation-steps-seach{
+    width: 100%;
+    height: 40px;
+    margin: 19px auto 0 auto;
+}
+
+.creditloan .seach-botton{
+	width: 150px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #0F45A7;
+    color: #0F45A7;
+    border-radius: 3px;
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.creditloan .head-seach {
+    width: 200px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 3px;
+    border: 1px solid #979797;
+    color: #CCCCCC;
+    font-size: 15px;
+    text-shadow: none;
+    text-align: left;
+    background-color: #FFFFFF;
+    float: right;
+    position: relative;
+    margin-right: 30px;
+}
+
+.creditloan .head-seach-input {
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    box-shadow: none;
+    margin: 0 5px 0 5px;
+    border: 0;
+}
+
+.creditloan .seach_icon {
+    width: 23px;
+    position: absolute;
+    right: 15px;
+    top: 7.5px;
+}
+
+.creditloan .search-day-con{
+	height:100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.35);
+	position: relative;
+	top:0;
+	left: 0;
+	z-index:24;
+	display: none;
+}
+
+.creditloan .seach-day {
+    position: relative;
+    width: 617px;
+    height: 428px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.creditloan .seach-day-title {
+    float: left;
+    margin-top: 50px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.creditloan .seach-day-ul {
+    width: 410px;
+    float: right;
+    display: block;
+    margin-right: 90px;
+    margin-top: 40px;
+}
+
+.creditloan .seach-day-ul li {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+}
+
+.creditloan .seach-day-ul li:first-child {
+    border: 0;
+    background-color: #f7f7f7;
+}
+
+.creditloan .seach-day-ul > li:nth-child(4){
+	border: 0;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
+.creditloan .seach-day-ul > li:nth-child(5){
+	border: 0;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
+.creditloan .seach-day-ul .input-test-con {
+    font-size: 17px;
+}
+
+.creditloan .seach-day-ul li:first-child {
+    text-align: center;
+}
+
+.creditloan .seach-day-ul .seach-day-baifenbai {
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 39px;
+    background-color: #f7f7f7;
+    border: 0;
+}
+
+.creditloan .seach-day-ul li:last-child {
+    margin-top: 13px;
+    height: 44px;
+    background-color: #f7f7f7;
+    border: 0;
+}
+
+.creditloan .seach-day-box {
+    width: 295px;
+    height: 37px;
+    float: left;
+}
+
+.creditloan .input-test-con {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    box-shadow: none;
+    border: 0;
+}
+
+.creditloan .seach-day-header {
+    width: 95px;
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    padding-left: 15px;
+}
+
+.creditloan .seach-day-tail{
+	width: 20px;
+	height: 37px;
+	line-height: 37px;
+	float: right;
+}
+
+.creditloan .ui-shadow-inset {
+    text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.creditloan .day-botton {
+    width: 190px;
+    height: 39px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.creditloan .day-botton-img {
+    height: 24px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.creditloan .ui-select{
+	margin:0;
+}
+
+.creditloan .ui-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-shadow: none;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 1em;
+    padding: .68em 1em;
+    line-height: 1 !important;
+    font-family: "helvetica neue";
+}
+.creditloan .drop-down {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 0;
+    font-size: 0.95em;
+}
+
+.creditloan .ui-icon-carat-d:after {
+    background: url(.././images/icon-right.png) no-repeat;
+    background-size: 60%;
+    top: 47% !important;
+    margin-top: -9px !important;
+}
+
+.creditloan .fangqi-seach{
+	width: 160px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-radius: 5px;
+	border:1px solid #0F45A7;
+	color: #0F45A7;
+}
+
+.creditloan .seach-botton:hover{
+	background-color: #0F45A7;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+}
+
+.creditloan .fangqi-seach:hover{
+	background-color: #0F45A7;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+}
+
+.creditloan .zlqd {
+    z-index:20;
+    height: 34px;
+    line-height:34px;
+    width: 150px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #0F45A7 !important;
+    text-align: center;
+    color: #0F45A7 !important;
+}
+
+.creditloan .dzdImg {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+.creditloan .page-number-con {
+	bottom: 120px;
+}
+
+.creditloan .conter-con .page-number-con>span{
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+.ui-page-theme-a .ui-btn:hover,
+html .ui-bar-a .ui-btn:hover,
+html .ui-body-a .ui-btn:hover,
+html body .ui-group-theme-a .ui-btn:hover,
+html head + body .ui-btn.ui-btn-a:hover {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #000000;
+    text-shadow: none;
+}
+
+/*.creditloan .progress-title{
+	background-color: #EBEBEB;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+}*/
+
+.creditloan .list-bgcolor {
+    background-color: #0F45A7 !important;
+    color: #FFFFFF !important;
+}
+
+#creditloan-queryProgress .com-title{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #f0f0f0;
+}
+
+#creditloan-queryProgress .com-title div{
+	width: 20%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 15px;
+	color: #4A4A4A;
+	font-weight: 700;
+	float: left;
+	padding: 0 2px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#creditloan-queryProgress .progress-title > div{
+	width: 12%;
+}
+
+#creditloan-queryProgress .progress-title > div:first-child{
+	width: 11%;
+}
+
+#creditloan-queryProgress .progress-title > div:nth-child(2){
+	width: 16.5%;
+}
+
+/*#creditloan-queryProgress .progress-title > div:nth-child(5){
+	width: 10%;
+}*/
+
+#creditloan-queryProgress .progress-title > div:nth-child(6){
+	width: 13.3%;
+}
+
+#creditloan-queryProgress .progress-title > div:nth-child(7){
+	width: 23%;
+}
+
+#creditloan-queryProgress .box-content{
+	width: 100%;
+	height: auto;
+}
+
+#creditloan-queryProgress ul.box-content > li:nth-of-type(even) {
+    background-color: #f7f7f7;
+}
+
+#creditloan-queryProgress ul.box-content > li:nth-of-type(odd) {
+    background-color: #FFFFFF;
+}
+
+#creditloan-queryProgress .box-rows{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+}
+
+#creditloan-queryProgress ul.box-content >li > div{
+	width: 12%;
+}
+
+#creditloan-queryProgress ul.box-content >li > div:first-child{
+	width: 11%;
+}
+
+#creditloan-queryProgress ul.box-content >li > div:nth-child(2){
+	width: 16.5%;
+}
+
+
+/*#creditloan-queryProgress ul.box-content >li > div:nth-child(5){
+	width: 10%;
+}*/
+
+#creditloan-queryProgress ul.box-content >li > div:nth-child(6){
+	width: 13.3%;
+}
+
+#creditloan-queryProgress ul.box-content >li > div:nth-child(7){
+	width: 23%;
+}
+
+#creditloan-queryProgress .box-rows > div {
+	 width: 20%;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    padding: 0 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#creditloan-queryProgress .seach-day-jiner{
+	position: absolute;
+	float: left;
+	top: 224px;
+	left: 20px;
+}
+
+#creditloan-queryProgress .seach-day-month{
+	position: absolute;
+	float: left;
+	top: 286px;
+	left: 20px;
+}
+
+/**信用贷款进度查询界面*/
+#creditloan-addData .main-show{
+	position: relative;
+	height: 100%;
+	width: 82%;
+}
+
+#creditloan-addData .information-show{
+	float: left;
+	width: 40%;
+	margin-top: 60px;
+	display: block;
+}
+
+#creditloan-addData .information-show li{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#creditloan-addData .li-title{
+	height: 40px;
+}
+
+#creditloan-addData .buchongziliao{
+	float: left;
+	width: 56%;
+	margin-top: 60px;
+	position: relative;
+	margin-left: 4%;
+}
+
+#creditloan-addData .chose-div{
+	width: 100%;
+	position: relative;
+	height: 40px;
+	margin-top: 60px;
+}
+
+#creditloan-addData .information{
+	line-height: 40px;
+	float: left;
+}
+
+#creditloan-addData .additional-materials-input{
+	width: 54%;
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	border: 1px solid #cccccc;
+	margin-left: 20px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+#creditloan-addData .additional-materials-paishe{
+	width: 90px;
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	text-align: center;
+	color:#0F45A7;
+	margin-left: 25px;
+	border: 1px solid #0F45A7;
+	border-radius: 5px;
+}
+
+#creditloan-addData .lajitong_icon{
+	width: 26px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+#creditloan-addData .paishe-content{
+	width: 97%;
+	height: 290px;
+	background-color: #eff5ff;
+	border: 1PX solid #CCCCCC;
+	margin-top: 35px;
+	border-radius: 8px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+#creditloan-addData .swiper-container{
+	width: 100%;
+}
+
+#creditloan-addData .ziliaoqingdan{
+	width: 92px;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	color:#0F45A7;
+	border: 1px solid #0F45A7;
+	border-radius: 5px;
+	margin-top: 20px;
+	text-align: center;
+	float: right;
+	margin-right: 18px;
+}
+
+#creditloan-addData .qingdanliebiao_ul{
+	width: 550px;
+	height: 280px;
+	margin: 0 auto;
+	overflow: hidden;
+	overflow: auto;
+	margin-top: 5px;
+	padding-bottom: 10px;
+}
+#creditloan-addData .qingdanliebiao_ul li{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	font-size: 16px;
+	border-bottom: 1px solid #CCCCCC;
+	position: relative;
+}
+#creditloan-addData .qingdanliebiao_ul li:last-child{
+	border-bottom: 0;
+}
+
+#creditloan-addData .mian-tanchuang-header{
+	height: 60px;
+	line-height: 60px;
+}
+
+#creditloan-addData .qingdanliebiao_tupian{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#creditloan-addData .qingdanliebiao_gou{
+	background: url('../images/icon_right.png') center center no-repeat;
+	background-size: 65%;
+}
+
+#creditloan-addData .wei {
+    position: relative;
+    width: 617px;
+    height: 428px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#creditloan-addData .searchCredit,#creditloan-addData .searchBank {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#creditloan-addData .searchBank .wei,#creditloan-addData .searchCredit .wei{
+    width: 800px;
+    height: 508px;
+}
+
+#creditloan-addData .wei .wei-header{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 1.2em;
+}
+
+#creditloan-addData .searchCredit .hucon {
+    height: 384px;
+}
+
+#creditloan-addData .searchBank .hucon ul, #creditloan-addData .searchCredit .hucon ul {
+    height: 334px;
+    overflow-y: auto;
+}
+
+#creditloan-addData .hucon ul li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#creditloan-addData .wei .hu-header > div, #creditloan-addData .hucon ul div {
+    /* width: 25%; */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+ #creditloan-addData .searchBank .hucon ul li>div, #creditloan-addData .searchCredit .hucon ul li>div {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+#creditloan-addData .wei .hu-header {
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+
+#creditloan-addData .wei .footter{
+    border-radius: 0 0 8px 8px;
+    height: 60px;
+}
+
+#creditloan-addData .zxbgBtn{
+    position: fixed;
+    bottom: 270px;
+}
+
+#creditloan-addData .dzdBtn{
+    position: fixed;
+    bottom: 210px;
+}
+
+#creditloan-addData .wei u {
+    color: #00d;
+    text-decoration: none;
+}

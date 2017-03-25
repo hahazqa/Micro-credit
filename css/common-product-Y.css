@@ -1,0 +1,58 @@
+/**
+ * 公共模块-----产品列表样式
+ * named by Y.
+ */
+
+.common-productList-Y .product_box{
+    margin: 39px 4%;
+    width:92%;
+    min-height: 189px;
+    padding-bottom: 42px;
+    border-bottom: solid 1px #CCCCCC;
+
+}
+.common-productList-Y .product_img{
+    float: left;
+    display: inline-block;
+    width: 307px;
+    height: 189px;
+    margin-right: 20px;
+}
+.common-productList-Y .product_content{
+    position: relative;
+    display: inline-block;
+    width: 65.2%;
+    max-height: 189px;
+}
+.common-productList-Y .product_register{
+    float: right;
+    position: relative;
+    right: 0px;
+    top: 149px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 200px;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+}
+.common-productList-Y .product_register:active{
+    background-color: #0045A7;
+    color: #FFFFFF;
+}
+.common-productList-Y .product_title{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.common-productList-Y .product_Intro{
+    font-size: 16px;
+    line-height: 1.5em;
+    max-height: 100px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.common-productList-Y .product-more{
+    color: #0F45A7;font-size: 16px;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>工作日志</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/gongzuotai.css" />
+    <!--<script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-creditProgress.js"></script>
+    <script src="../../js/page-gongzuotai-new.js"></script>-->
+</head>
+
+<body>
+    <div data-role="page" class="main gongzuotai-con dailyLogY" id="dailyLog">
+        <!--头部-->
+        <div class="header">
+            <a href="../main.html" class="head-all head-left" data-direction="reverse">首页</a>
+            工作日志
+            <a href="../main.html" class="head-all head-right" data-direction="reverse">退出</a>
+        </div>
+        <!--控制按钮-->
+        <ul class="navigation-steps">
+            <a href="" class="seach-botton" style="margin-top: 26px;">自定义查询</a>
+            <a href="" class="button-right button-img-tj">
+                <img src="../../images/ic-tj-ing.png" alt="">
+            </a>
+        </ul>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con">
+            <div class="conter-auto" style="position: relative;">
+                <div class="conter-wrap">
+                    <div class="conter-pull-left">
+                        <div class="conter-count">
+                            <div class="count-header">完成统计情况</div>
+                            <div class="count-content list list-border-none">
+                                <!--<div class="item">
+                                    <span>已完成999笔</span>
+                                    <span>100.00%</span>
+                                </div>
+                                <div class="item">
+                                    <span>未完成999笔</span>
+                                    <span>100.00%</span>
+                                </div>
+                                <div class="item">
+                                    <span>已变更999笔</span>
+                                    <span>100.00%</span>
+                                </div>
+                                <div class="item item-total">
+                                    <span>总时长</span>
+                                    <span>n小时</span>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div id='dropDownList' class="conter-pull-right list">
+                        <!--<div class="item-drop-down">
+                            <div class="drop-down-title">
+                                <span>客户维护</span>
+                                <span>
+                                    100.00%
+                                    <img src="../../images/ic_shape.png" alt="">
+                                </span>
+                            </div>
+                            <ul class="drop-down-summary" style="display: block">
+                                <li class="summary-rows">
+                                    <div>客户梳理分析客户梳理分析客户梳理分析</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户接待</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户走访</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>协助组织营销活动</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <!--<div class="item-drop-down">
+                            <div class="drop-down-title">
+                                <span>业务营销</span>
+                                <span>
+                                    100.00%
+                                    <img src="../../images/ic_shape.png" alt="">
+                                </span>
+                            </div>
+                            <ul class="drop-down-summary">
+                                <li class="summary-rows">
+                                    <div>客户梳理分析</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户接待</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户走访</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>协助组织营销活动</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item-drop-down">
+                            <div class="drop-down-title">
+                                <span>授信业务</span>
+                                <span>
+                                    100.00%
+                                    <img src="../../images/ic_shape.png" alt="">
+                                </span>
+                            </div>
+                            <ul class="drop-down-summary">
+                                <li class="summary-rows">
+                                    <div>客户梳理分析</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户接待</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户走访</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>协助组织营销活动</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item-drop-down">
+                            <div class="drop-down-title">
+                                <span>日常事务</span>
+                                <span>
+                                    100.00%
+                                    <img src="../../images/ic_shape.png" alt="">
+                                </span>
+                            </div>
+                            <ul class="drop-down-summary">
+                                <li class="summary-rows">
+                                    <div>客户梳理分析</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户接待</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>客户走访</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                                <li class="summary-rows">
+                                    <div>协助组织营销活动</div>
+                                    <div>3笔</div>
+                                    <div>10.0小时</div>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--弹出选择框-->
+        <div class="seach-day-con">
+            <div class="seach-day seach-day-row3">
+                <ul class="seach-day-ul ul-no-title">
+                    <li class="group-no-border group-no-bg">
+                        <div class="day-botton" style="float: left;">
+                            <span class="inner-title">开始日期</span>
+                            <input type="date" class="has-title"/>
+                        </div>
+                        至
+                        <div class="day-botton" style="float: right;">
+                            <span class="inner-title">结束日期</span>
+                            <input type="date" class="has-title" style="z-index:999"/>
+                        </div>
+                    </li>
+                    <li class="group-no-border group-no-bg">
+                        <div class="seach-item-col2" id="bankBranch">
+                            <div class="seach-day-header">
+                                支行
+                            </div>
+                            <div class="seach-day-box">
+                                <div class="i-input-control i-input-control-dropdown">
+                                    <div class="i-input-select">
+                                        <select class="drop-down">
+                                            <option value="">请选择</option>
+                                            <!--<option value="">支行一</option>
+                                            <option value="">支行二</option>
+                                            <option value="">支行三</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seach-item-col2" id="branchUser">
+                            <div class="seach-day-header">
+                                用户
+                            </div>
+                            <div class="seach-day-box">
+                                <div class="i-input-control i-input-control-dropdown">
+                                    <div class="i-input-select">
+                                        <select class="drop-down">
+                                            <option value="">请选择</option>
+                                            <!--<option value="">用户一</option>
+                                            <option value="">用户二</option>
+                                            <option value="">用户三</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group-no-border group-no-bg">
+                        <div class="seach-item-col2" id="classify">
+                            <div class="seach-day-header">
+                                工作分类
+                            </div>
+                            <div class="seach-day-box">
+                                <div class="i-input-control i-input-control-dropdown">
+                                    <div class="i-input-select">
+                                        <select class="drop-down">
+                                            <option value="">请选择</option>
+                                            <!--<option value="">类型一</option>
+                                            <option value="">类型二</option>
+                                            <option value="">类型三</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fangqi-seach" style="float: left;">
+                            放弃
+                        </div>
+                        <div class="fangqi-seach" style="float: right;">
+                            搜索
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

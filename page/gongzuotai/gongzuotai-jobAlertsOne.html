@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-gongzuotai.js"></script>
+    <title>工作台</title>
+</head>
+<body>
+<div data-role="page" class="main gongzuotai-con" id="gongzuotai-jobAlertsOne">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">退出</a>
+        工作提醒
+        <div class="search-job-con">
+            <div class="search-job">
+                <input type="text" class="input-test-con" data-role="none" placeholder="内容关键字" style="color: #CCCCCC;">
+                <img src="../../images/ic_search_gztx.png" class="ic_search_gztx"/>
+            </div>
+        </div>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+        <span class="navigation-steps-icon"><img src="../../images/ic_left.png"/></span>
+        <span class="navigation-steps-day">2015年8月</span>
+        <span class="navigation-steps-icon"><img src="../../images/ic_right.png"/></span>
+        <img src="../../images/ic_add.png" class="ic_add"/>
+    </div>
+    <!--星期-->
+    <ul class="week-con">
+        <li>周日</li>
+        <li>周一</li>
+        <li>周二</li>
+        <li>周三</li>
+        <li>周四</li>
+        <li>周五</li>
+        <li>周六</li>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto">
+            <ul class="gongzuotai-date-con">
+            </ul>
+        </div>
+    </div>
+    <!--尾部-->
+    <!--添加弹窗-->
+    <div class="seach-day-con tianjiagongzuotixing-con">
+        <div class="seach-day">
+            <ul class="seach-day-ul">
+                <li>
+                    <div class="seach-change-header">提醒日期</div>
+                    <div class="seach-change-input">
+                        <div class="day-botton-daybtn"><input type="date"/></div>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                </li>
+                <!--<li class="seach-change-left">-->
+                    <!--<div class="seach-change-header">提醒方式</div>-->
+                    <!--<div class="seach-change-input">-->
+                        <!--<select class="drop-down">-->
+                            <!--<option value=""></option>-->
+                            <!--<option value="E">每次登陆</option>-->
+                            <!--<option value="F">首次登陆</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="seach-change-header">开始时间</div>-->
+                    <!--<div class="seach-change-input zuijialianluoshijian-con">-->
+                        <!--<div class="zuijialianluoshijian-bglocor" style="margin-left: 5px;"><input type="text"-->
+                                                                                                   <!--class="mobile-input-crm input-test-con"-->
+                                                                                                   <!--data-role="none"-->
+                                                                                                   <!--placeholder="00">-->
+                        <!--</div>-->
+                        <!--<div>:</div>-->
+                        <!--<div class="zuijialianluoshijian-bglocor"><input type="text"-->
+                                                                         <!--class="mobile-input-crm input-test-con"-->
+                                                                         <!--data-role="none" placeholder="00"></div>-->
+                        <!--<div>:</div>-->
+                        <!--<div class="zuijialianluoshijian-bglocor"><input type="text"-->
+                                                                         <!--class="mobile-input-crm input-test-con"-->
+                                                                         <!--data-role="none" placeholder="00"></div>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="seach-change-left">-->
+                    <!--<div class="seach-change-header">结束时间</div>-->
+                    <!--<div class="seach-change-input zuijialianluoshijian-con">-->
+                        <!--<div class="zuijialianluoshijian-bglocor" style="margin-left: 5px;"><input type="text"-->
+                                                                                                   <!--class="mobile-input-crm input-test-con"-->
+                                                                                                   <!--data-role="none"-->
+                                                                                                   <!--placeholder="23">-->
+                        <!--</div>-->
+                        <!--<div>:</div>-->
+                        <!--<div class="zuijialianluoshijian-bglocor"><input type="text"-->
+                                                                         <!--class="mobile-input-crm input-test-con"-->
+                                                                         <!--data-role="none" placeholder="59"></div>-->
+                        <!--<div>:</div>-->
+                        <!--<div class="zuijialianluoshijian-bglocor"><input type="text"-->
+                                                                         <!--class="mobile-input-crm input-test-con"-->
+                                                                         <!--data-role="none" placeholder="59"></div>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <li style="width: 100%;height: 158px;border:none;">
+                    <textarea class="textarea-text" data-role="none" placeholder="请输入提醒内容..."></textarea>
+                </li>
+                <li style="width: 100%;">
+                    <div class="fangqi-seach tianjiagongzuotixing-quxiao" style="float: left;margin-left: 50px;">
+                        取消
+                    </div>
+                    <div class="fangqi-seach tianjiagongzuotixing-tianjia" style="float: right;margin-right: 50px;">
+                        添加
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--日期提醒的弹窗-->
+    <div class="dayTixing-con">
+        <div class="dayTixing-all">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

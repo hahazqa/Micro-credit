@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/loan.css"/>
+    <link rel="stylesheet" href="../../css/xinka.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <title>数字卡卡号查询</title>
+</head>
+<body>
+<div data-role="page" class="main loan xinka" id="xinka-cardNoQuery">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" data-direction="reverse" class="head-all head-left">首页</a>
+        数字卡卡号查询
+        <a href="../main.html" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <div data-role="content" class="conter-con " style="padding-top: 40px;font-size: 0.95em;color: #CCCCCC;">
+        <div class="conter-auto">
+                <div class="input-box" style="padding-bottom: 20px;padding-top: 20px;width: 87%;">  <!--整体-->
+                    <div class="input-rows" > <!--行-->
+                        <div> <!--前-->
+                            <div class="result-left">证件类型</div>
+                            <div class="input-test pingyin-input">
+                                <select id="c-com-property" class="drop-down" disabled="disabled">
+                                    <option value="0" selected="true">身份证</option>
+                                    <option value="1">户口本</option>
+                                    <option value="2">护照</option>
+                                    <option value="3">军官证</option>
+                                    <option value="4">士兵证</option>
+                                    <option value="5">港澳居民来往内地通行证</option>
+                                    <option value="6">台湾同胞来往内地通行证</option>
+                                    <option value="7">临时身份证</option>
+                                    <option value="8">外国人居留证</option>
+                                    <option value="9">警官证</option>
+                                    <option value="A">香港身份证</option>
+                                    <option value="B">澳门身份证</option>
+                                    <option value="C">台湾身份证</option>
+                                    <option value="X">其他证件</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="width: 48%;float: right; border: 0px;">
+                        <div style="width: 90%;float: left;border: 1px solid #CCCCCC;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;">
+                        	<div>
+                            <div class="result-left" style="width: 20%;">证件号码</div>
+                            <div  class="input-test" style="width: 70%;">
+                                <input id="doc_no" type="text" class="input-test-con" style="background: none" data-role="none"/>
+                            </div>
+                        	</div>
+                        </div>
+                        <div class="OCRID_scan"  style="float: right;width: 8%;"><img  src="../../images/ps_paishe.png" alt="" style="height:20px;margin-top: 10px;float: right;"/></div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div  style="padding-top: 20px;height: 250px;width: 87%;">
+                    	<div style="width: 47%;float:left;">
+                    <div class="cardPicBoxZ"  >
+                    	<div class="cardno" id="debitCardNo"></div>
+                    	<div class="qixian" id="validDate"></div>
+                    </div>
+                    </div>
+                   <div style="width: 47%;float: right;">
+                    <div class="cardPicBoxF" >
+                    </div>
+                    </div>
+                    </div>
+                     <div class="input-box" style="border-bottom: 0px solid #cccccc;padding-top: 20px;width: 87%; ">  <!--整体-->
+                    	<div class="input-rows">   <!--行-->
+                        <div style="float: left;">
+                            <div  class="result-left" style="width: 24%;">姓名</div>
+                            <div  class="input-test" style="width: 50%;float: left;">
+                                <input id="custName" type="text" class="input-test-con" style="background: none" data-role="none" disabled="disabled"/>
+                            </div>
+                        </div>
+                        <div style="float: right;">
+                            <div class="result-left" style="width: 24%;">凭证状态</div>
+                            <div  class="input-test" style="width: 50%;float: left;">
+                                <select id="voucherStatus" class="drop-down" disabled="disabled">
+                                	<option value=""></option>
+                                    <option value="1">正常</option>
+                                    <option value="3">签发待激活</option>
+                                    <option value="5">临时挂失</option>
+                                    <option value="6">正式挂失</option>
+                                    <option value="7">风险卡</option>
+                                    <option value="9">注销</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+
+
+        </div>
+       </div>
+            <!--尾部-->
+    <div class="footter">
+                <div id="xinka-query-cardno" class="previous btn_next2" style="margin-left: auto;margin-right: auto;float:none;">查&nbsp;&nbsp;&nbsp;询
+        </div>
+    </div>
+    </div>
+</body>
+</html>

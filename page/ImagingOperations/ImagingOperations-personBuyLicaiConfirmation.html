@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/ImagingOperations.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-ImagingOperations.js"></script>
+    <title>运营影像</title>
+</head>
+<body>
+<div data-role="page" class="main main-con confirmationSignature" id="ImagingOperations-personBuyLicaiConfirmation">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        视频拍摄
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('yewuxuanze-one.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over confirmation"></div>
+        <ul class="circle-con ImagingOperations">
+            <li>
+                <div class="circle">1</div>
+                <p>业务选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>证件选择</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>信息录入</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>确认信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>采集完成</p>
+            </li>
+        </ul>
+    </div>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto">
+            <div class="msg-con">
+                <div class="basic_con msg-box">
+                    <div class="msg-box-header">确认信息<span style="float:right;padding-top:6px;" id="ImagingOperations-customerCon-edit"><img src="../../images/ps_modify.png" style="width:30px;" alt=""/></span></div>
+                    <ul class="confirm-ul">
+                        <li class="basic-li">
+                            <div class="li-first-div">
+                                <span>客户类型：</span>
+                                <span id="customerType"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span>业务类型：</span>
+                                <span id="businessType"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span>证件类型：</span>
+                                <span id="cerType"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span>证件号码：</span>
+                                <span id="documentId"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span>姓名：</span>
+                                <span id="clientName"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span>账卡号：</span>
+                                <span id="clientCard"></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="li-first-div">
+                                <span>币种：</span>
+                                <span id="moneyType"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span>金额：</span>
+                                <span id="money"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span>产品编号：</span>
+                                <span id="productNo"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span>产品名称：</span>
+                                <span id="productName"></span>
+                            </div>
+                        </li>
+                        <li style="width: 93%;">
+                            <div class="li-second-div">
+                                <span>备注：</span>
+                                <span id="img_beizhu" style="display:inline-block;width: 92%;vertical-align: top;"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video-qian">
+                    <span class="kh-buy-title">录制视频</span>
+                    <span class="kh-buy-cxps" style="display:none;">重新拍摄</span>
+                    <!--<span class="kh-buy-qrqm">确认签名</span>-->
+                    <div class="video-box">
+                        <div class="video-header">
+                            <span>必拍，请保证拍摄清晰</span>
+                        </div>
+                        <img src="../../images/ic_videocamera.png" alt="" class="photo"/>
+                    </div>
+                    <!--<div class="qian-box">-->
+                        <!--<div class="qianM_shadow"></div>-->
+                        <!--<div class="qian-content" id="qianMDT"></div>-->
+                        <!--<div id="clear-botton"><img src="../../images/ps_clear.png" style="width:30px;" alt=""/></div>-->
+                        <!--<form action="./Base64ToImages" method="post">-->
+                            <!--<input type="hidden" name="imageData" id="imageData" />-->
+                        <!--</form>-->
+                    <!--</div>-->
+                    <!--<div style="float: right;" id="qianOK">-->
+                        <!--<img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt=""/>-->
+                        <!--<img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%"-->
+                             <!--alt=""/>-->
+                        <!--<span>签名完成</span>-->
+                    <!--</div>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <!--<div class="previous previous-con back-1">上一步</div>-->
+        <div id="ImagingOperations-customerCon-sub" class="previous"
+             style="margin-left: auto;margin-right: auto;float:none;">提&nbsp;&nbsp;&nbsp;交
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

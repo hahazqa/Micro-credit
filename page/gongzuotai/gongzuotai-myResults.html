@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-gongzuotai.js"></script>
+    <title>工作台</title>
+</head>
+<body>
+<div data-role="page" class="main gongzuotai-con main-con" id="gongzuotai-myResults">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">退出</a>
+        我的业绩
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+    	    <ul class="my-result-ul">
+    	    	<li>
+    	    		<div class="my-result-con">
+    	    			统计时间类型:
+    	    			<div class="my-result-select">
+    	    				<select  class="drop-down" id="myBussTimeType">
+    				          <option value="1">月</option>
+    				          <option value="3">季度</option>
+    				          <option value="6">半年</option>
+    				          <option value="12">年</option>
+			                 </select>
+    	    			</div>
+    	    		</div>
+    	    	</li>
+    	    	<li>
+    	    		<div class="my-result-con">
+    	    			统计时间段:
+    	    			<div class="my-result-select">
+    	    				<select  class="drop-down" id="myBussTimeDetail">
+			                 </select>
+    	    			</div>
+    	    		</div>
+    	    	</li>
+    	    </ul>
+    </div>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+    	<div class="conter-auto">
+    		<div class="msg-con">
+            <div class="basic_con msg-box">
+                <div class="msg-box-header"></div>
+                <ul class="confirm-ul"> 
+                    <li class="basic-li" id="myRes-02">
+                        <div class="li-first-div">
+                            <span class="myResults-name">信用卡申请</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-27">
+                        <div class="li-first-div">
+                            <span class="myResults-name">理财签约</span>
+                            <span class="myResults-name-zhi"></span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-2">
+                        <div class="li-first-div">
+                            <span class="myResults-name">基金销售</span>
+                            <span class="myResults-name-zhi"></span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-03">
+                        <div class="li-first-div">
+                            <span class="myResults-name">按揭贷款申请</span>
+                            <span class="myResults-name-zhi"></span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-01">
+                        <div class="li-first-div">
+                            <span class="myResults-name">信通数字卡</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-10">
+                        <div class="li-first-div">
+                            <span class="myResults-name">电子签约</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-65">
+                        <div class="li-first-div">
+                            <span class="myResults-name">社保待遇签约</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-66">
+                        <div class="li-first-div">
+                            <span class="myResults-name">特色产品签约</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-68">
+                        <div class="li-first-div">
+                            <span class="myResults-name">特惠商户</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-58">
+                        <div class="li-first-div">
+                            <span class="myResults-name">视频拍摄</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-62">
+                        <div class="li-first-div">
+                            <span class="myResults-name">积分兑换</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-63">
+                        <div class="li-first-div">
+                            <span class="myResults-name">积分订单管理</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-71">
+                        <div class="li-first-div">
+                            <span class="myResults-name">小微贷款申请</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-72">
+                        <div class="li-first-div">
+                            <span class="myResults-name">面签</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-53">
+                        <div class="li-first-div">
+                            <span class="myResults-name">征信查询</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                    <li id="myRes-81">
+                        <div class="li-first-div">
+                            <span class="myResults-name">信用贷款申请</span>
+                            <span class="myResults-name-zhi"></span>
+                        </div>
+                        <div class="li-second-div">
+                            <span>排名</span>
+                            <span class="myResults-paiming"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </div>
+    </div>
+   <!--尾部-->
+   <div class="footter">
+        <!--<div class="previous previous-con back-1">上一步</div>-->
+        <a class="previous gongzuotai-danshu back-1">查询</a>
+   </div>
+</div>
+</body>
+</html>

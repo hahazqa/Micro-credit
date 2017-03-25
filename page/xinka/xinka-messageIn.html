@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>信通数字卡</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/xinka.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/credit.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).bind("mobileinit", function(){ 
+            $.mobile.defaultPageTransition = "slide";
+        }); 
+    </script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/page-credit.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <script src="../../js/wce-xinka.js"></script>
+</head>
+<body>
+<div data-role="page" class="main" id="xinka-messageIn">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+        信通数字卡
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('xinka-product.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>卡产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>申请完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--中间内容-->
+    <div class="conter-con">
+        <!--中间内容区右-->
+        <div class="conter-auto">
+            <div class="information-box">
+                <div class="information-l">
+                    <ul class="information-input">
+                        <div class="xin-card-call">证件信息</div>
+                        <li>
+                            <div class="information-result information-name">
+                                <div class="result-left result-xing">姓名</div>
+                                <span id="x-name"></span>
+                            </div>
+                            <div class="gender" id="x-sex"></div>
+                        </li>
+                        <li>
+                            <div class="information-result" style="width: 100%;">
+                                <div class="result-left">国籍</div>
+                                <span id="x-nation">中国</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result">
+                                <div class="result-left">证件类型</div>
+                                <span id="x-cardType">身份证</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="id-number-con information-result">
+                                <div class="result-left">证件号码</div>
+                                <span id="x-cerNO"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result">
+                                <div class="result-left">证件有效期</div>
+                                <span id="x-cerExpDt"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc"> 
+                                <div class="result-left">地区名称</div>
+                                <div class="input-test"><input type="text" class="input-test-con" data-role="none" id="x-placeSel"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left"><span class="required-stars">*</span>签发地区</div>
+                                <div class="input-test">
+                                    <select name="day" id="x-placeSelRes" class="drop-down">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-r">
+                    <ul class="information-input">
+                        <div class="xin-card-call">联系方式</div>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left res-right"><span class="required-stars star-right">*</span>手机号码</div>
+                                <div class="input-test"><input type="text" class="input-test-con" data-role="none" id="x-tel" reg="mobile" maxlength="11" style="font-size: 1.3em;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left res-right"><span class="required-stars star-right">*</span>邮政编码</div>
+                                <div class="input-test"><input type="text" class="input-test-con" data-role="none" id="x-pCode" reg="zipCode" maxlength="6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="public-drop-down public-sheng">
+                                <div class="domicile tongX"><span class="required-stars xing">*</span>通讯地址</div>
+                                <div class="domicile-value domicile-pos">
+                                    <select name="s_province" id="s_province" class="drop-down">
+                                        <option value="省份">省份</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="public-drop-down public-shi">
+                                <select name="s_city" id="s_city" class="drop-down">
+                                    <option value="城市">城市</option>
+                                </select>
+                            </div>
+                            <a href="#" id="hujifangxian"><div class="hu-normal"></div></a>　
+                            <a href="#" id="shishidingwei"><div class="ding-normal"></div></a>
+                            <!-- <div class="public-drop-down public-qu">
+                                <select name="s_county" id="s_county" class="drop-down">
+                                    <option value="市、县级市">市、县级市</option>
+                                </select>
+                            </div> -->
+                        </li>
+                        <li>
+                            <div class="information-result border-cc" style="position: relative;">
+                                <div class="result-left res-right" style="width:14%"><span class="required-stars star-right">*</span>详细地址</div>
+                                <div class="input-test" style="width:80%;">
+                                    <input type="text" class="input-test-con" data-role="none" id="x-placeDet" style="width:100%;">
+                                </div>
+                            </div>
+                        </li>
+                        <div class="xin-card-call-other">其他信息</div>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left"><span class="required-stars">*</span>职业</div>
+                                <div class="input-test">
+                                    <select name="day" id="x-occup" class="drop-down">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left">推荐人</div>
+                                <div class="input-test"><input type="text" class="input-test-con" data-role="none" id="x-recomm"/></div>
+                            </div>
+                        </li>
+                        <!--<li>
+                            <div class="information-result border-cc" style="width:80%; float:left;">
+                                <div class="result-left"><span class="required-stars">*</span>收款卡号</div>
+                                <div class="input-test"><input type="text" class="input-test-con" data-role="none" id="x-reCardNo" style="font-size: 1.3em;"/></div>
+                            </div>
+                            <div id="OCR_scan" style="float:right; width:16%; color:#0F45A7; border:1px solid #0F45A7; text-align:center; border-radius:4px;">OCR识别</div>
+                        </li>-->
+                        <!--<li>
+                            <div class="information-result">
+                                <div class="result-left">收款人</div>
+                                <span id="x-rePersonal"></span>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="kong_box"></div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a id="xk_messageIn_pre" class="previous previous-con back-1">上一步</a>
+        <a id="xk_messageIn_next" class="previous btn_next">下一步</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/jifen.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-jifen.js"></script>
+    <title>积分</title>
+</head>
+<body>
+<div data-role="page" class="main jifen gift" id="jifen-giftList" style="overflow: hidden;">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+    	积分兑换
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('jifen-readingID.html')">退出</a>
+    </div>
+    <!--流程-->
+    <ul class="navigation-steps">
+		<div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>礼品展示</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">3</div>
+                <p>影像采集</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>兑换信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>完成</p>
+            </li>
+        </ul>	    	
+    </ul>
+    <div class="jifen_Info">
+    	<span>客户：</span>
+    	<span id="clientName"></span>
+    	<span>积分：</span>
+    	<span id="integralTotal"></span>
+    	<span>近三个月到期积分：</span>
+    	<span id="maturityIntegral"></span>
+    	<span id="detailBtn" class="gift_header_btn">积分明细</span>
+    	<!--<span id="popularityGiftBtn" class="gift_header_btn">人气礼品</span>-->
+    	<span id="openSeachBoxBtn" class="gift_header_btn">筛选礼品</span>
+    </div>
+    <div id="giftList" class="swiper-container" style="height: 66%;margin-top: 24.2%;">
+    	<div class="swiper-wrapper">
+    		<div id="loadMore" class="loadMore">
+	    		<span></span>
+	    	</div>
+    	</div>
+    </div>
+    <!--<div data-role="content" class="conter-con">
+        <div id="list_content" class="conter-auto"></div>
+    </div>-->
+    <!--尾部-->
+    <!--<div class="footter">
+    	<div class="previous btn_next">筛选礼品</div>
+	    <div class="previous btn_next">人气礼品</div>
+    </div>-->
+    
+    <!--积分明细弹出框-->
+    <div id="detailWindow" class="submitted-successfully">
+		<div class="gift-detail">
+			<div class="detail-context">
+				<div class="detail-title">当前有效积分合计：<span id="detailIntegral"></span></div>
+				<div class="detail-header">
+					<div>序号</div>
+					<div>积分到期日</div>
+					<div>到期积分值</div>
+				</div>
+				<div id="detailList" class="detail-rows"></div>
+			</div>
+			<div class="detail-tips">温馨提示：消费积分时，将从最先到期的有效积分起扣。</div>
+			<div class="detail-footer">
+				<div id="detail_close_btn">关闭</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--礼品详情弹出框-->
+    <div id="giftInfoWindow" class="submitted-successfully">
+		<div class="gift-info-con">
+			<img id="windowCloseBtn" src="../../images/ic_close.png" class="ic_close"/>
+			<div class="gift-info">
+				<div id="giftInfoSwiper" class="swiper-container">
+			        <div class="swiper-wrapper">
+			        	<div class="swiper-slide swiper-no-swiping">
+		            		<div class="swiper-container-same">
+		            			<div class="swiper-container-sameCon">
+		            				<div class="overflow-con-giftInfo">
+		            					<img id="giftInfoImage" src=""/>
+		            				</div>
+		            			</div>
+		            		</div>
+			            </div>
+			            <div class="swiper-slide swiper-no-swiping">
+		            		<div class="swiper-container-same">
+		            			<div class="swiper-container-sameCon">
+		            				<div class="overflow-con-giftInfo">
+		            					<div id="giftInfoTitle" class="giftInfo-title"></div>
+			            				<div id="giftInfoContent" class="giftInfo-content"></div>
+			            			</div>
+			            		</div>
+			            	</div>
+			           	</div>
+			        </div>
+			        <!-- Add Pagination -->
+			       <div class="swiper-pagination"></div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 筛选礼品弹出框 -->
+	<div id="giftSearchBox" class="seach-box-con">
+        <div class="seach-box">
+            <ul class="seach-box-ul">
+                <li class="seach-box-baifenbai" style="width: 100%;">
+                    <div class="seach-box-input-left">
+                        <div class="seach-change-header">兑换积分</div>
+                        <div class="seach-box-botton-daybtn">
+                            <input id="minPointInput" type="text" class="input-test-con" data-role="none">
+                        </div>
+                    </div>
+                   	<span>至<span>
+                    <div class="seach-box-input-right">
+                        <input id="maxPointInput" type="text" class="input-test-con" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-change-header">排序方式</div>
+                    <div class="seach-change-input" style="margin-top: 0.5em;">
+                        <select id="orderSelect" class="drop-down">
+                            <option value="DESC">大到小</option>
+                            <option value="ASC">小到大</option>
+                        </select>
+                    </div>
+                </li>
+                <li style="width: 100%;">
+                    <div id="closeSearchBtn" class="fangqi-seach" style="float: left;">放弃</div>
+                    <div id="giftSearchBtn" class="fangqi-seach" style="float: right;">筛选</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

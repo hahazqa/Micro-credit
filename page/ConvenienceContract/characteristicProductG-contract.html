@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css"/>
+    <link rel="stylesheet" href="../../css/common-contract-Y.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/page-characteristicProduct.js"></script>
+    <title></title>
+</head>
+<body>
+<div data-role="page" class="main nav-seven common-contract-Y" id="characteristicProductG-contract">
+    <!--头部内容-->
+    <div class="header">
+        <a onclick="dzhShouye()" class="head-all head-left" data-direction="reverse">首页</a>
+        特色产品
+        <a onclick="dzhFanhui('characteristicProductA.html')" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航步骤-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over border-over-five"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品展示</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>采集影像</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>选择账号</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签字</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" id="conter-con" class="conter-con">
+        <div class="conter-auto">
+            <!--模拟表单布局-->
+            <div class="i-form">
+                <!--输入框组-->
+                <div class="i-input-group">
+                    <!--模拟input框-->
+                    <div class="i-input i-input-bg-info i-input-col2">
+                        <span class="i-input-info">用户姓名</span>
+                        <div class="i-input-control" type="text" id="XM"></div>
+                    </div>
+                    <!--模拟input框-->
+                    <div class="i-input i-input-bg-info i-input-col2">
+                        <span class="i-input-info">签约产品</span>
+                        <div class="i-input-control" type="text" id="CPM">
+                        </div>
+                    </div>
+                </div>
+                <!--输入框组-->
+                <div class="i-input-group">
+                    <!--模拟select框-->
+                    <div class="i-input i-input-col2" style="overflow:visible; ">
+                        <span class="i-input-info"><div class="required-stars">*</div>签约账卡号</span>
+
+                        <div class="i-input-control i-input-control-dropdown">
+                            <div class="i-input-select">
+                                <select class="drop-down" id="ZKH">
+                                    <option value="" selected="true">请选择</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--模拟表单结束-->
+        </div>
+    </div>
+    <!--尾部按钮-->
+    <div class="footter">
+        <div class="previous previous-con back-1">上一步</div>
+        <div id="btn_next" class="previous">下一步</div>
+    </div>
+</div>
+</body>
+</html>

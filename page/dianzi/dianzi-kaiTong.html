@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/dianzi.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-dianzi.js"></script>
+    <title>电子签约</title>
+</head>
+<body>
+<div data-role="page" class="main dianzi" id="dianzi-kaiTong">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+        电子签约
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('dianzi-readingID.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>开通情况</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>影像采集</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>签字确认</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>提交完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="bank-con">
+                <div class="bank-header">网上银行&手机银行</div>
+                <div class="bank-box">
+                    <div class="bank-box-con">
+                        <div id="netBank" class="selected">网上银行 <img class="biao" src="../../images/ic_shape.png"
+                                                                     alt=""/><span class="kai"></span></div>
+                        <div class="netBank option">
+                            <div class="netBank-header"><span>网上银行状态：</span><select class="switches"
+                                                                                    name="switch-one" id="switch-one"
+                                                                                    data-role="slider">
+                                <option value="off">关闭</option>
+                                <option value="on">开通</option>
+                            </select></div>
+                            <div class="netBank-content">
+                                <div class="wangyin">
+                                    <span>动态密码对外转账限额：</span><span class="yuan">元/日</span><input class="xe"
+                                                                                              data-role="none"
+                                                                                              type="text"
+                                                                                              value=""/>
+                                </div>
+                                <div class="wangyin">
+                                    <span>动态密码网银支付限额：</span><span class="yuan">元/日</span><input class="xe"
+                                                                                                data-role="none"
+                                                                                                type="text"
+                                                                                                value=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bank-box-con">
+                        <div id="mobBank" class="selected">手机银行 <img class="biao" src="../../images/ic_shape.png"
+                                                                     alt=""/><span class="kai"></span></div>
+                        <div class="mobBank option">
+                            <div class="netBank-header"><span>手机银行状态：</span><select class="switches"
+                                                                                    name="switch-two" id="switch-two"
+                                                                                    data-role="slider">
+                                <option value="off">关闭</option>
+                                <option value="on">开通</option>
+                            </select></div>
+                            <div class="netBank-content">
+                                <div class="wangyin">
+                                    <span>动态密码对外转账限额：</span><span class="yuan">元/日</span><input class="xe"
+                                                                                                data-role="none"
+                                                                                                type="text"
+                                                                                                value=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="guaKao" class="selected">挂靠账户 <img class="biao" src="../../images/ic_shape.png"
+                                                                alt=""/><span class="kai"></span></div>
+                    <div class="guaKao option">
+                        <div class="netBank-content">
+                            <div class="guaK gua">
+                                <p>已挂靠账户：</p>
+
+                                <div class="gua-box"></div>
+                                <div class="yesgua-btn">解除挂靠账户</div>
+                            </div>
+                            <div class="no-guaK gua">
+                                <p>未挂靠账户：</p>
+
+                                <div class="no-gua-box"></div>
+                                <div class="nogua-btn">添加挂靠账户</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bank-mm">
+                    <div><span class="mm-name">登录密码:</span><span class="mm-value"></span></div>
+                    <div style="float: right;"><span class="mm-name">交易密码:</span><span class="mm-value"></span></div>
+                </div>
+            </div>
+            <div class="yin-con">
+                <div class="yin-header"><span>银信通</span>
+
+                    <div class="yin-kzh">
+                        <label for="ples-kzh">请选择卡账号：</label>
+                        <select name="ples-kzh" id="ples-kzh">
+                        </select>
+                    </div>
+                </div>
+                <div class="yin-box">
+                    <div class="bank-box-con">
+                        <div id="yexport" class="selected">资金转出通知 <img class="biao" src="../../images/ic_shape.png"
+                                                                       alt=""/><span
+                                class="kai"></span></div>
+                        <div class="yexport option">
+                            <div class="netBank-header"><span>资金转出通知：</span><select class="switches-yin"
+                                                                                    name="switch-three"
+                                                                                    id="switch-three"
+                                                                                    data-role="slider">
+                                <option value="off">关闭</option>
+                                <option value="on">开通</option>
+                            </select></div>
+                            <div class="yimport-content">
+                                <div class="wangyin">
+                                    <span>资金转出起点金额：</span><span class="yuan">元</span><input id="yexport-wxxe" class="xe"
+                                                                                            data-role="none" type="text"
+                                                                                            value=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bank-box-con">
+                        <div id="yimport" class="selected">资金转入通知 <img class="biao" src="../../images/ic_shape.png"
+                                                                       alt=""/><span
+                                class="kai"></span></div>
+                        <div class="yimport option">
+                            <div class="netBank-header"><span>资金转入通知：</span><select class="switches-yin"
+                                                                                    name="switch-four"
+                                                                                    id="switch-four"
+                                                                                    data-role="slider">
+                                <option value="off">关闭</option>
+                                <option value="on">开通</option>
+                            </select></div>
+                            <div class="yimport-content">
+                                <div class="wangyin">
+                                    <span>资金转入起点金额：</span><span class="yuan">元</span><input id="yimport-wxxe"
+                                                                                            class="xe"
+                                                                                            data-role="none" type="text"
+                                                                                            value=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bank-box-con">
+                        <div id="yexpire" class="selected">定期到期通知 <img class="biao" src="../../images/ic_shape.png"
+                                                                       alt=""/><span
+                                class="kai"></span></div>
+                        <div class="yexpire option">
+                            <div class="netBank-header"><span>定期到期通知：</span><select class="switches-yin"
+                                                                                    name="switch-five"
+                                                                                    id="switch-five"
+                                                                                    data-role="slider">
+                                <option value="off">关闭</option>
+                                <option value="on">开通</option>
+                            </select></div>
+                        </div>
+                    </div>
+                    <div class="bank-box-con">
+                        <div id="ymessage" class="selected">金融信息通知 <img class="biao" src="../../images/ic_shape.png"
+                                                                        alt=""/><span class="kai"></span>
+
+                        </div>
+                        <div class="ymessage option">
+                            <div class="netBank-header"><span>金融信息通知：</span><select class="switches-yin"
+                                                                                    name="switch-six"
+                                                                                    id="switch-six"
+                                                                                    data-role="slider">
+                                <option value="off">关闭</option>
+                                <option value="on">开通</option>
+                            </select></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="xk-agree-pre" class="previous previous-con back-1">上一步</div>
+        <div id="xk-agree-next" class="previous" data-transition="slide">下一步</div>
+    </div>
+</div>
+</body>
+</html>

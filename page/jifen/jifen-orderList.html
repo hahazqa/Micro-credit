@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/jifen.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-jifen.js"></script>
+    <title>积分</title>
+</head>
+<body>
+<div data-role="page" class="main jifen order" id="jifen-orderList">
+	<!-- 头部 -->
+	<div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+       	 积分订单管理
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('jifen-readingID.html')">退出</a>
+    </div>
+    <!-- 流程 -->
+	<ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>查询订单</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">3</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>完成</p>
+            </li>
+        </ul>
+	</ul>
+	<div data-role="content" class="conter-con">
+        <div class="box-header">
+            <div>下单日期</div>
+            <div>订单编号</div>
+            <div>账卡号</div>
+            <div>礼品名称</div>
+            <div>礼品数量</div>
+            <div>消费积分</div>
+            <div>订单状态</div>
+        </div>
+        <ul class="box-content" id="orderList"></ul>
+        <div class="page-number-con">
+        	<span style="color: #000000;">
+        		当前第<span id="page" class="page-number-change" style="margin: 0 2px;">1</span>页
+        	</span>
+        	<span id="pre_btn" class="page-number-sx">上一页</span>
+        	<span id="next_btn" class="page-number-sx page-number-bgcolor">下一页</span>
+        </div>
+    </div>
+    <div class="footter">
+        <a id="return_btn" class="previous">礼品退货</a>
+        <a id="chancel_btn" class="previous">取消订单</a>
+        <a id="confirm_btn" class="previous">收货确认</a>
+    </div>
+    <!--取消原因弹出框-->
+    <div id="channel_reason_box" style="display: none;">
+    	<div class="box-screen"></div>
+	    <div class="box-container">
+            <div class="box-content">
+	            <div class="box-hd">请选择取消原因</div>
+	            <div class="box-bd">
+            		<ul>
+            			<li>
+            				<font>重复下单</font>
+            			</li>
+            			<li>
+            				<font>重复兑换</font>
+            			</li>
+            			<li>
+            				<font>变更礼品</font>
+            			</li>
+            		</ul>
+            		<ul>
+            			<li>
+            				<font>物流周期太长</font>
+            			</li>
+            			<li>
+            				<font>缺货</font>
+            			</li>
+            			<li>
+            				<font>其他</font>
+            			</li>
+            		</ul>
+	            	<div class="box-btnarea" style="padding-top: 20px;">
+	            		<span id="close_btn" class="box-btn btn_next">放弃</span>
+	            		<span id="continue_btn" class="box-btn">继续</span>
+	            	</div>
+            	</div>
+            </div>
+        </div>
+	</div>
+</div>
+</body>
+</html>

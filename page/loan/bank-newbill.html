@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/loan.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-loan.js"></script>
+    <script src="../../js/page-loan.js"></script>
+    <script src="../../js/wce-loan.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>银行对账单</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="bank-newBill">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse">首页</a>
+        银行对账单
+        <a class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <div data-role="content" class="conter-con" style="bottom: 0;">
+        <div class="newBill">
+            <div class="con-header">新对账单</div>
+            <div class="input-box" style="border: 0;">  <!--整体-->
+
+                <div class="input-rows"> <!--行-->
+                    <div> <!--前-->
+                        <div class="result-left">证件类型</div>
+                        <div class="input-test pingyin-input">
+                            <select id="c-com-property" disabled="disabled" class="drop-down">
+                                <option value="0" selected="true">身份证</option>
+                                <option value="1">户口本</option>
+                                <option value="2">护照</option>
+                                <option value="3">军官证</option>
+                                <option value="4">士兵证</option>
+                                <option value="5">港澳居民来往内地通行证</option>
+                                <option value="6">台湾同胞来往内地通行证</option>
+                                <option value="8">外国人居留证</option>
+                                <option value="9">警官证</option>
+                                <option value="L">文职干部证</option>
+                                <option value="X">其他证件</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--<div class="two-col-option">-->
+                        <!--<div class="option-left option-select-left">手工输入</div>-->
+                        <!--<div class="option-right">读卡器</div>-->
+                    <!--</div>-->
+                    <div style="float: right;border: 0;">
+                        <div class="queryCardList queryActive">读取身份证</div>
+                    </div>
+                </div>
+                <div class="input-rows">   <!--行-->
+                    <div>
+                        <div class="result-left">证件号码</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" disabled="disabled" data-role="none"/>
+                        </div>
+                    </div>
+                    <div style="float: right;">
+                        <div class="result-left">客户姓名</div>
+                        <div class="input-test">
+                            <input type="text" style="background:none" class="input-test-con" disabled="disabled" data-role="none"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-rows">
+                    <div>
+                        <div class="result-left">卡/账号</div>
+                        <div class="input-test">
+                            <select id="cardAccount" class="drop-down">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="float: right;border: 0;">
+                        <div class="queryCardList">获取卡账号列表</div>
+                    </div>
+                </div>
+                <div class="input-rows" style="text-align: center">
+                    <div class="day-botton" style="float: left;">
+                        <div class="result-left" style="text-align: left">起止日期</div>
+                        <input class="input-test" type="date" />
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                    至
+                    <div class="day-botton" style="float: right;">
+                        <input type="date" style="text-align: center" />
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                </div>
+            </div>
+            <div class="duanX_con">
+                <span>短信验证码:</span>
+                <input type="text" id="inp" data-role="none" />
+                <span id="getMsg" class="disMsg">获取验证码</span>
+                <span>请在<span style="color:red;"><span id="lb-auth-time">60</span>秒</span>内输入验证码</span>
+            </div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a id="lb-next" class="previous btn_next" style="margin-left: 37.5%">提交</a>
+    </div>
+</div>
+</body>
+</html>

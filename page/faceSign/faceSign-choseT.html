@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/faceSign.css">
+    <link rel="stylesheet" href="../../css/common-customeP.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-faceSign.js"></script>
+    <title>面签</title>
+</head>
+<body>
+<div data-role="page" class="main nav-four chooseLoan customerP screenP" id="faceSign-choseT">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouye()" class="head-all head-left" data-direction="reverse">首页</a>
+        面签
+        <a onclick="dzhFanhui('faceSign-reading.html')" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>选择贷款</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>身份验证</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" id="conter-con" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <ul class="msg_box">
+                <li>
+                    <div class="col_box">
+                        <div class="ziduan-name">合同号</div>
+                        <span>1234567890</span>
+                    </div>
+                    <div class="col_box">
+                        <div class="ziduan-name">借款人</div>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="col_box">
+                        <div class="ziduan-name">贷款金额</div>
+                        <span></span>
+                    </div>
+                    <div class="col_box">
+                        <div class="ziduan-name">贷款期限</div>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+            <div class="msg_box" style="position: relative">
+                <div class="ple">请勾选在场未验证客户</div>
+                <div class="op_header">
+                    <div>角色</div>
+                    <div>姓名</div>
+                    <div>证件类型</div>
+                    <div class="colTty">证件号码</div>
+                    <img class="op_y" src="../../images/ic_agree.png" alt="">
+                    <img class="op_n" src="../../images/ic_disagree.png" alt="">
+                </div>
+                <ul class="op_box">
+                    <!--<li>-->
+                        <!--<div>借款人</div>-->
+                        <!--<div>巡回赛</div>-->
+                        <!--<div>身份证</div>-->
+                        <!--<div class="colTty">113092877666678761</div>-->
+                        <!--<img class="op_y" src="../../images/ic_agree.png" alt="">-->
+                        <!--<img class="op_n" src="../../images/ic_disagree.png" alt="">-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="msg_box" style="display: none;">
+                <div class="ple">已完成验证客户</div>
+            </div>
+            <div class="msg_box">
+                <!--<div class="img_box">-->
+                    <!--<div class="customer customer_one">-->
+                        <!--&lt;!&ndash;<img class="trash" src="../../images/ic_delete.png" alt="">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="img_notes"><span>担保人</span>&nbsp;&nbsp;<span>李三</span></div>-->
+                    <!--<div class="img_notes">131081211233245432</div>-->
+                <!--</div>  style="margin-left: auto;margin-right: auto;float:none;"  -->
+            </div>
+        </div>
+
+    </div>
+    <div class="customerP-peiou btn_cai" style="display: none;">录音和照片</div>
+    <div class="customerP-zancun">暂&nbsp;存</div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous back-1 previous-con">身份验证</div>
+        <div class="previous">提交</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/faceSign.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <title>面签</title>
+</head>
+<body>
+<div data-role="page" class="main nav-four" id="faceSign-complete">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" data-direction="reverse" class="head-all head-left">首页</a>
+        面签
+        <a href="./faceSign-reading.html" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>选择贷款</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>身份验证</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content"  id="conter-con" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="compl_box">
+                <div class="compl"><img src="../../images/ic_sqwc.png" alt=""/><span>面签完成！</span></div>
+                <div class="basic_msg">
+                    <div class="basic_msg_content">
+                        <p><span class="ziduan-name">合同号</span>：<span class="info_value"></span></p>
+
+                        <p><span class="ziduan-name">借款人</span>：<span class="info_value"></span></p>
+
+                        <p><span class="ziduan-name">贷款金额</span>：<span class="info_value"></span></p>
+
+                        <p><span class="ziduan-name">贷款期限</span>：<span class="info_value"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">完 成</div>
+    </div>
+</div>
+</body>
+</html>

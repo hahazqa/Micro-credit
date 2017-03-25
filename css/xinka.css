@@ -1,0 +1,1107 @@
+#xinka-agreement #border-over {
+    width: 35.5%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-agreement .agree-notice {
+    margin: 20px auto;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    font-size: 22px;
+    color: #464D59;
+}
+
+#xinka-agreement .agree-content {
+    width: 80%;
+    margin: 0 10%;
+}
+
+#xinka-agreement .agree-box {
+    width: 80%;
+    background: url("../images/ic_ydxymb.png") no-repeat 100% 100%;
+    position: fixed;
+    bottom: 85px;
+    left: 10%;
+}
+
+#xinka-agreement .agree-btn-box {
+    width: 23.14453125%;
+    margin-top: 20px;
+    min-width: 237px;
+    height: 42px;
+    line-height: 42px;
+    border: solid 1px #0F45A7;
+    border-radius: 9px;
+    z-index: 1000;
+}
+
+#xinka-agreement .ic-agree {
+    display: inline-block;
+    height: 21px;
+    margin: 7.5px 6px 10.5px 23px;
+    vertical-align: middle;
+}
+
+#xinka-agreement .txt-agree {
+    display: inline-block;
+    font-size: 16px;
+    color: #0F45A7;
+}
+
+#xinka-customerP #border-over {
+    width: 49.7%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-customerP .img_content {
+    width: 58.7890625%;
+    margin: 43px 20.60546875% 0px 20.60546875%;
+}
+
+#xinka-customerP .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#xinka-customerP .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+
+#xinka-customerP .rephoto {
+    position: relative;
+    left: 0;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0 0;
+    z-index: 100;
+}
+
+#xinka-customerP .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+
+}
+
+#xinka-customerP .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+
+#xinka-customerP .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#xinka-customerP .customer_three {
+    background: url("../images/ykhhz.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#xinka-customerP .customer_four {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#xinka-customerP .customer_five {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#xinka-customerP .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+
+#xinka-customerP .img_box:nth-child(even) {
+    float: right;
+    position: relative;
+}
+
+#xinka-customerP .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#xinka-readID #border-over {
+    width: 21.3%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-readID .pic_suc {
+    margin: 15px 4%;
+    width: 92%;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+#xinka-readID .img_box {
+    width: 92%;
+  height: auto;
+  margin: 0 4%;
+}
+
+#xinka-readID .sfzz-box, #xinka-readID .sfzf-box {
+   width: 398px;
+  height: auto;
+  display: inline-block;
+}
+
+#xinka-readID .sfzz-box {
+    background: url("../images/sfzzm-d.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  height: 250px;
+}
+
+#xinka-readID .sfzz-box span {
+    display: inline-block;
+}
+
+#xinka-readID .sfz-img {
+      float: right;
+  width: 103px;
+  height: auto;
+  margin-top: 45px;
+  margin-right: 30px;
+}
+
+#xinka-readID .sfzz-box .sfz-name {
+    margin-top: 43px;
+}
+
+#xinka-readID .ziduan-name {
+    color: #2C86B6;
+  font-size: 16px;
+}
+
+#xinka-readID .ziduan-qian {
+    color: #3D3D3D;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#xinka-readID .ziduan-min {
+    margin-left: 30px;
+}
+
+#xinka-readID .ziduan-add {
+    display: inline-block;
+    font-size: 1.15em;
+    width: 46%;
+}
+
+#xinka-readID .ziduan-value {
+      font-size: 15px;
+  color: #3D3D3D;
+  margin-left: 4px;
+}
+
+#xinka-readID .gong-num {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#xinka-readID .sfzz-box > p {
+    margin-left: 32px;
+  margin-top: 12px;
+}
+
+#xinka-readID .sfzf-box {
+    background: url("../images/sfzfm-d.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  float: right;
+  height: 250px;
+}
+
+#xinka-readID .sfzf-box p {
+    margin-left: 21%;
+}
+
+#xinka-readID .sfzf-box .qianfa {
+    margin-top: 155px;
+}
+
+#xinka-readID .sfzf-box .qixian {
+    margin-top: 18px;
+    margin-bottom: 28px;
+}
+
+#xinka-readID .readID_positive, .readID_negative {
+    display: inline-block;
+    width: 46.71361502%;
+    height: auto;
+}
+
+#xinka-readID .readID_negative {
+    float: right;
+}
+
+#xinka-readID .loading_box {
+    width: 100%;
+    text-align: center;
+}
+
+#xinka-readID .read_loading {
+    font-size: 18px;
+    color: #d0021b;
+}
+
+#xinka-readingID #border-over {
+    width: 21.3%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-readingID .picRe {
+    position: relative;
+    top: 42px;
+    left: 80%;
+    margin: 0px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 16px;
+    width: 11.5234375%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+}
+
+#xinka-readingID .readID {
+    display: block;
+    width: auto;
+    height: 312px;
+    margin: 54px auto 41px auto;
+}
+
+#xinka-readingID .read_prompt {
+    text-align: center;
+    font-size: 22px;
+    color: #4A4A4A;
+}
+
+#xinka-messageIn .information-box {
+    margin: 30px 8.69140625% 0 8.69140625%;
+    width: 82.6171875%;
+    height: auto;
+    font-size: 0.9em;
+}
+
+#xinka-messageIn .information-l {
+    width: 32.2265625%;
+    margin-left: 0;
+    float: left;
+}
+
+#xinka-messageIn .information-r {
+    float: left;
+    width: 56.54609929078014%;
+    margin-left: 6.34765625%;
+}
+
+#xinka-messageIn .information-input li {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    margin-top: 15px;
+}
+
+#xinka-messageIn .information-result {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: left;
+}
+
+#xinka-messageIn .information-name {
+    width: 71.81818181818182% !important;
+    margin-right: 1.464% !important;
+}
+
+#xinka-messageIn .result-left {
+    width: 28.48484848484848%;
+    float: left;
+    color: #CCCCCC;
+    padding-left: 4.2%;
+    position: relative;
+}
+#xinka-messageIn .res-right{
+    padding-left:  2.385% !important;
+}
+#xinka-messageIn .result-xing {
+    width: 39.66244725738397%;
+    padding-left: 5.848101265822785%;
+}
+
+#xinka-messageIn .domicile {
+    width: 40%;
+    float: left;
+    color: #CCCCCC;
+    padding-left: 4.2%;
+    position: relative;
+}
+
+#xinka-messageIn .tongX {
+    padding-left: 6.22% !important;
+}
+
+#xinka-messageIn .public-sheng .xing {
+    left: 4.74% !important;
+}
+
+#xinka-messageIn .required-stars {
+    color: #d0021b;
+    position: absolute;
+    top: -3.5px;
+    left: 4.5%;
+    font-size: 0.85em;
+}
+#xinka-messageIn .star-right{
+    left: 2.55%!important;
+}
+#xinka-messageIn .border-cc {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    height: 39px;
+    line-height: 39px;
+    float: left;
+    margin-right: 1.464%;
+}
+
+#xinka-messageIn .input-test {
+    width: 65%;
+    height: 37px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+
+#xinka-messageIn .domicile-value {
+    width: 55%;
+    height: 37px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+
+#xinka-messageIn .domicile-pos {
+    width: 48% !important;
+}
+
+#xinka-messageIn .input-test1 {
+    width: 76%;
+}
+
+#xinka-messageIn .input-test-con {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: none;
+    border: 0;
+}
+
+#xinka-messageIn .gender {
+    width: 23.63636363636364%;
+    height: 39px;
+    background-color: #F0F0F0;
+    /*color: #FFFFFF;*/
+    border-radius: 3px;
+    float: right;
+    text-align: center;
+    text-shadow: none;
+}
+
+#xinka-messageIn .id-number-con {
+    width: 100%;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: left;
+}
+
+#xinka-messageIn .long-term-effective {
+    width: 15%;
+    height: 39px;
+    background-color: #F0F0F0;
+    color: #CCCCCC;
+    border-radius: 3px;
+    float: left;
+    text-align: center;
+}
+
+#xinka-messageIn .border-cc1 {
+    width: 74.3%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    float: left;
+}
+
+#xinka-messageIn .drop-down {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 0;
+    font-size: 0.9em;
+}
+
+#xinka-messageIn .ui-select {
+    margin: 0;
+}
+
+#xinka-messageIn .ui-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-shadow: none;
+    border: none;
+    box-shadow: none;
+    font-weight: 100;
+    font-weight: normal;
+}
+
+#xinka-messageIn .public-drop-down {
+    height: 39px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    overflow: hidden;
+}
+
+#xinka-messageIn .public-sheng {
+    width: 38.60485651214128%;
+    margin-right: 2%;
+    float: left;
+}
+
+#xinka-messageIn .public-shi {
+    width: 28.69757174392936%;
+    margin-right: 2%;
+    float: left;
+}
+
+#xinka-messageIn .public-qu {
+    width: 28.69757174392936%;
+    float: right;
+}
+
+#xinka-messageIn .ui-btn {
+    font-size: 1em;
+    padding: .8em 1em;
+    line-height: 1 !important;
+}
+
+#xinka-messageIn .ui-icon-carat-d:after {
+    background: url(../images/icon-right.png) no-repeat;
+    background-size: 60%;
+    top: 50% !important;
+    margin-top: -9px !important;
+}
+
+#xinka-messageIn .ui-content {
+    padding-left: 0;
+}
+
+#xinka-messageIn .ui-btn-icon-right:after {
+    right: .2625em;
+}
+
+#xinka-messageIn .ui-page-theme-a .ui-btn, #xinka-messageIn .ui-page-theme-a .ui-btn:hover {
+    background-color: #FFFFFF !important;
+    text-shadow: 0 !important;
+}
+
+#xinka-messageIn .information-input .xin-card-call {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+#xinka-messageIn .xin-card-call-other {
+    margin-top: 35px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+#xinka-messageIn #hujifangxian {
+    position: relative;
+    float: left;
+    right: -15px;
+}
+
+#xinka-messageIn #shishidingwei {
+    position: relative;
+    float: left;
+    right: -14px;
+    width: 59px;
+}
+
+#xinka-complete #border-over {
+    width: 85.2%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-complete .compl_box {
+    /* width: 39.0625%;
+    margin: 106px auto 0px;
+    padding-bottom: 30px; */
+}
+
+#xinka-complete .compl {
+    margin: 40px auto 40px auto;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 28px;
+    /*width: 31.5234375%;*/
+}
+
+#xinka-complete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+
+#xinka-complete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+
+#xinka-complete .basic_msg {
+    /* background: url("../images/card-left.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    border: solid 1px #FAFAFA;
+    border-radius: 16px;
+    font-size: 14px; */
+    float: left;
+    width: 50%;
+}
+#xinka-complete .basic_erweima{
+    float: right;
+    width: 40%;
+}
+#xinka-complete .basic_erweima img{
+    width: 230px;
+    height:230px;
+}
+#xinka-complete .basic_erweima p{
+    font-size: 17px;
+    color: #808080;
+    margin-top: 15px;
+}
+#xinka-complete .basic_msg_header {
+    color: #4A4A4A;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#xinka-complete .basic_msg_content .ziduan-name {
+    display: inline-block;
+    color: #999999 !important;
+    width: 42%;
+    text-align: right;
+    margin-right: 3%;
+}
+
+#xinka-complete .basic_msg_content .basic_msg_content {
+    color: #666666;
+}
+
+#xinka-complete .basic_msg_content > p {
+    margin-bottom: 26px;
+}
+
+#xinka-customerConfirm #border-over {
+    width: 78.1%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-customerConfirm .msg-con {
+    width: 97.0703125%;
+    height: auto;
+    padding: 0 1.46484375%;
+}
+
+#xinka-customerConfirm .msg-box {
+    margin-top: 20px;
+    width: 100%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#xinka-customerConfirm .msg-box-header {
+    height: 44px;
+    line-height: 44px;
+    color: #0F45A7;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0px 3.52112676%;
+    font-size: 16px;
+}
+
+#xinka-customerConfirm .confirm-ul li {
+    margin-left: 3.52112676%;
+    margin-bottom: 25px;
+    width: 92.95774648%;
+}
+
+#xinka-customerConfirm .confirm-ul li div span:first-child{
+    display: inline-block;
+    width: 90px;
+}
+
+#xinka-customerConfirm .confirm-ul .basic-li {
+    margin-top: 25px;
+}
+
+#xinka-customerConfirm .confirm-ul li div {
+    font-size: 15px;
+    display: inline-block;
+}
+
+#xinka-customerConfirm .confirm-ul li .li-first-div {
+    width: 45%;
+}
+
+#xinka-customerConfirm .confirm-ul li .li-second-div {
+    width: 45%;
+}
+
+#xinka-customerConfirm .confirm-ul li div span:first-child {
+    color: #999999;
+    font-size: 15px;
+}
+
+#xinka-customerConfirm .confirm-ul li div span:nth-child(2) {
+    color: #666666;
+}
+
+#xinka-customerConfirm .duanX_con > span {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+}
+
+#xinka-customerConfirm .video-qian {
+    margin: 50px 0 0 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#xinka-customerConfirm .video-qian .qian-box {
+    display: inline-block;
+    border: solid 1px #CCCCCC;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 260px;
+    background-color: #f2f2f2;
+    overflow: visible;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+#xinka-customerConfirm .video-qian .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#xinka-customerConfirm .video-qian .qian-box .qian-header {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 1.953125%;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    background-color: #e8e8e8;
+}
+
+#xinka-customerConfirm .duanX_con {
+    margin-top: 25px;
+    margin-left: 3.41796875%;
+    height: 36px;
+    line-height: 36px;
+}
+
+#xinka-customerConfirm .duanX_con > span {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+}
+
+#xinka-customerConfirm #inp {
+    height: 34px;
+    width: 13.28125%;
+    margin-left: 2%;
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+    /*font-size:1.5em;*/
+}
+
+#xinka-customerConfirm #getMsg {
+    height: 34px;
+    line-height: 34px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    width: 13.3515625%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+}
+
+#xinka-customerConfirm #qianM {
+    display: inline-block;
+    height: 215px;
+    margin-bottom: 20px;
+    width: 100%;
+    background:url(../images/shouxieqianming.png) center center no-repeat;
+    background-size: 282px;
+}
+
+#xinka-customerConfirm #clear-botton {
+    width: 50px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 8.1px;
+  text-align: center;
+  color: #0F45A7;
+}
+#xinka-customerConfirm .dianjiqianming-con {
+  position: absolute;
+  font-size: 15px;
+  color: #CCCCCC;
+  top: 14px;
+  right: 60px;
+}
+#xinka-customerConfirm .ic_down {
+  width: 19px;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  padding: 5px 10px;
+}
+#xinka-customerConfirm .ic_agree {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+#xinka-customerConfirm .reWrite,#credit-customerConfirm .reWrite{
+    float: right;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    color: #0F45A7;
+}
+#xinka-product #border-over {
+    width: 7.1%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+
+#xinka-product .product_box {
+    margin: 39px 4.8828125%;
+    width: 90.234375%;
+    height: 189px;
+    padding-bottom: 42px;
+    border-bottom: solid 1px #CCCCCC;
+
+}
+
+#xinka-product .product_img {
+    float: left;
+    display: inline-block;
+    width: 307px;
+    height: 189px;
+    margin-right: 20px;
+}
+
+#xinka-product .product_content {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    max-height: 189px;
+}
+
+#xinka-product .product_register {
+    float: right;
+    position: relative;
+    right: 0px;
+    top: 155px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 199px;
+    border: solid 1px #0F45A7;
+    border-radius: 3px;
+    color: #0F45A7;
+}
+#xinka-product .product_register:active{
+	background-color: #0045A7;
+	color: #FFFFFF;
+}
+#xinka-product .product_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#xinka-product .product_Intro {
+	width: 100%;
+    font-size: 18px;
+    line-height: 1.5em;
+    max-height: 115px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/**
+ * 影像复用
+ */
+#xinka-video .border-over{
+    width: 21.3% !important;
+}
+#xinka-video .box-header{
+    height: 50px;
+    width: 100%;
+    background-color: #EBEBEB;
+    margin-top: 30px;
+}
+#xinka-video .box-header>div{
+    height: 50px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+#xinka-video .box-content{
+    width: 100%;
+    height: auto;
+}
+#xinka-video .box-rows:nth-child(even){
+    background-color: #f7f7f7;
+}
+#xinka-video .box-rows{
+    width: 100%;
+    height: 55px;
+}
+#xinka-video .click{
+    background-color: #0F45A7 !important;
+    color: #FFFFFF;
+    text-shadow:none;
+}
+#xinka-video .box-rows>div{
+    height: 55px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#xinka-personFace #border-over {
+    width:58.33333333329%;
+}
+#xinka-personFace .center-header{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+#xinka-personFace .img_content {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+#xinka-personFace .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#xinka-personFace .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+
+#xinka-personFace .customer_one,#xinka-personFace .customer_four,#xinka-personFace .customer_six {
+    background: url("../images/ic_mianbu.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#xinka-personFace .customer_three {
+    background: url("../images/ic_shenfenzheng.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#xinka-personFace .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+#xinka-personFace .face-box {
+    float: left;
+    width: 24.42244224%;
+    min-width: 148px;
+}
+#xinka-personFace .face-result {
+    text-align: center;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 65px;
+    border-radius: 3px;
+    color: #F9F9F9;
+}
+#xinka-personFace .pass{
+    background-color: #0F45A7;
+}
+#xinka-personFace .no-pass{
+    background-color: #D13F14;
+}
+#xinka-personFace .img_notes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+#xinka-personFace .camera{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+#xinka-customerConfirm .xinka-sure-xy{
+    margin-left: 3.41796875%;
+    margin-top: 20px;
+    color:#666;
+    font-size:15px;
+    line-height:20px;
+}
+#xinka-customerConfirm .xinka-sure-xy span{
+    /* margin-left:30px; */
+    color:#0f45a7;
+   /*  text-decoration: underline; */
+   font-weight:bold;
+}
+
+#xinka-cardNoQuery .cardPicBoxZ{
+	width: 398px;
+	background: url("../images/debit_card_A.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  height: 250px;
+	
+}
+#xinka-cardNoQuery .cardPicBoxZ .qixian {
+	padding-left: 190px;
+	padding-top: 15px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+#xinka-cardNoQuery .cardPicBoxZ .cardno {
+	padding-left: 53px;
+	padding-top: 140px;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: "微软雅黑";
+	
+}
+
+#xinka-cardNoQuery .cardPicBoxF{
+	width: 398px;
+	background: url("../images/debit_card_B.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  height: 250px;
+	
+}
+
+
+#xinka-customerConfirm .yzmGrey{
+    color: #ccc !important;
+    border: 1px solid #ccc !important;
+}

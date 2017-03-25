@@ -1,0 +1,1557 @@
+.order .border-all {
+	width: 75%;
+	left: 12.5%;
+}
+.order .navigation-steps li {
+    width: 25%;
+}
+.gift .border-all {
+	width: 83.3%;
+	left: 8.3%;
+}
+.gift .navigation-steps li {
+    width: 16.6%;
+}
+.jifen .box-header {
+	height: 50px;
+	width: 100%;
+	background-color: #EBEBEB;
+}
+.jifen .box-header>div {
+	height: 50px;
+	width: 20%;
+	text-align: center;
+	float: left;
+	line-height: 50px;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	box-sizing: border-box;
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.jifen .box-content {
+	width: 100%;
+	height: auto;
+}
+.jifen .box-rows:nth-child(even) {
+	background-color: #f7f7f7;
+}
+.jifen .box-rows {
+	width: 100%;
+	height: 55px;
+}
+.jifen .click {
+	background-color: #0F45A7 !important;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+.jifen .box-rows>div {
+	height: 55px;
+	width: 20%;
+	text-align: center;
+	float: left;
+	line-height: 55px;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#jifen-orderList #border-over {
+    width: 37.5%;
+    left: 12.5%;
+}
+#jifen-orderList .box-header>div,
+#jifen-orderList .box-rows>div {
+	width: 11%;
+}
+#jifen-orderList .box-header>div:nth-child(2),
+#jifen-orderList .box-rows>div:nth-child(2) {
+	width: 17%;
+}
+#jifen-orderList .box-header>div:nth-child(3),
+#jifen-orderList .box-rows>div:nth-child(3) {
+	width: 20%;
+}
+#jifen-orderList .box-header>div:nth-child(4),
+#jifen-orderList .box-rows>div:nth-child(4) {
+	width: 15%;
+}
+#jifen-orderList .box-header>div:nth-child(7),
+#jifen-orderList .box-rows>div:nth-child(7) {
+	width: 14%;
+}
+#jifen-orderList .box-rows-shibai {
+	background-color: #fafafa;
+}
+#jifen-orderList #seach-day {
+	height: 424px !important;
+}
+#jifen-orderList .page-number-con {
+	width: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	text-align: right;
+	color: #CCCCCC;
+	padding-right: 50px;
+	box-sizing: border-box;
+}
+#jifen-orderList .conter-con {
+	bottom: 0;
+	background-color: #FFFFFF;
+}
+#jifen-orderList .footter .previous {
+	margin-left: 6%
+}
+#order_process #border-over {
+    width: 12.5%;
+    left: 12.5%;
+}
+#gift_process #border-over {
+    width: 8.3%;
+    left: 8.3%;
+}
+#jifen-readID .pic_suc {
+    margin: 15px 4%;
+    width: 92%;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: 18px;
+}
+#jifen-readID .img_box {
+    width: 92%;
+  	height: auto;
+  	margin: 0 4%;
+}
+#jifen-readID .sfzz-box, #jifen-readID .sfzf-box {
+	width: 398px;
+  	height: auto;
+  	display: inline-block;
+}
+#jifen-readID .sfzz-box {
+    background: url("../images/sfzzm-d.png") no-repeat 100% 100%;
+  	background-size: 100% 100%;
+  	height: 250px;
+}
+#jifen-readID .sfzz-box span {
+    display: inline-block;
+}
+#jifen-readID .sfz-img {
+	float: right;
+  	width: 103px;
+  	height: auto;
+  	margin-top: 45px;
+  	margin-right: 30px;
+}
+#jifen-readID .sfzz-box .sfz-name {
+    margin-top: 43px;
+}
+#jifen-readID .ziduan-name {
+    color: #2C86B6;
+  	font-size: 16px;
+}
+#jifen-readID .ziduan-qian {
+    color: #3D3D3D;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+#jifen-readID .ziduan-min {
+    margin-left: 30px;
+}
+#jifen-readID .ziduan-add {
+    display: inline-block;
+    font-size: 1.15em;
+    width: 46%;
+}
+#jifen-readID .ziduan-value {
+	font-size: 15px;
+  	color: #3D3D3D;
+  	margin-left: 4px;
+}
+#jifen-readID .gong-num {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#jifen-readID .sfzz-box > p {
+    margin-left: 32px;
+	margin-top: 12px;
+}
+#jifen-readID .sfzf-box {
+    background: url("../images/sfzfm-d.png") no-repeat 100% 100%;
+  	background-size: 100% 100%;
+  	float: right;
+  	height: 250px;
+}
+#jifen-readID .sfzf-box p {
+    margin-left: 21%;
+}
+#jifen-readID .sfzf-box .qianfa {
+    margin-top: 155px;
+}
+#jifen-readID .sfzf-box .qixian {
+    margin-top: 18px;
+    margin-bottom: 28px;
+}
+#jifen-readID .readID_positive, .readID_negative {
+    display: inline-block;
+    width: 46.71361502%;
+    height: auto;
+}
+#jifen-readID .readID_negative {
+    float: right;
+}
+#jifen-readID .loading_box {
+    width: 100%;
+    text-align: center;
+}
+#jifen-readID .read_loading {
+    font-size: 18px;
+    color: #d0021b;
+}
+#jifen-readingID .picRe {
+    position: relative;
+    top: 42px;
+    left: 80%;
+    margin: 0px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 16px;
+    width: 11.5234375%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+}
+#jifen-readingID .readID {
+    display: block;
+    width: auto;
+    height: 312px;
+    margin: 54px auto 41px auto;
+}
+#jifen-readingID .read_prompt {
+    text-align: center;
+    font-size: 22px;
+    color: #4A4A4A;
+}
+#jifen-video #border-over {
+    width: 8.3%;
+    left: 8.3%;
+}
+#jifen-orderList .page-number-con {
+	width: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 110px;
+	text-align: right;
+	color: #CCCCCC;
+	padding-right: 50px;
+	box-sizing: border-box;
+}
+#jifen-orderConfirm #border-over {
+    width: 62.5%;
+    left: 12.5%;
+}
+.order .page-number-con>span {
+	margin-left: 8px;
+	font-size: 14px;
+}
+.order .page-number-change {
+	color: #000000;
+}
+.order .page-number-sx {
+	padding: 4px 8px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+}
+.order .page-number-bgcolor {
+	border: 1px solid #0F45A7;
+	color: #0F45A7 !important;
+}
+.order .box-screen{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 11000;
+	background: #000;
+	opacity: 0.5;
+}
+.order .box-container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 11002;
+	min-width: 400px;
+	-webkit-transform: translate(-50%,-50%);
+	width: 500px;
+}
+.order .box-hd{
+	line-height: 43px;
+	padding: 0 35px;
+	border-radius: 10px 10px 0 0;b
+	order-bottom: 1px solid #ccc;
+	background: #f7f7f7;
+	text-align: center;
+	overflow: hidden;
+}
+.order .box-bd{
+	padding: 20px 35px;
+	border-radius: 0 0 10px 10px;
+	background: #fff;
+}
+.order .box-btnarea{
+	margin: 0 18px;
+}
+.order .box-btn{
+	display: inline-block;
+	min-width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #CCCCCC;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+}
+.order .btn_next{
+	color: #0f45a7;
+	border: 1px solid #0f45a7;
+}
+.order .btn_next:active{
+	background-color: #0f45a7 !important;
+	color: #ffffff !important;
+}
+.order .box-btnarea .box-btn:nth-child(2){
+	float: right;
+}
+.order .box-bd>ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.order .box-bd>ul>li {
+	float: left;
+	width: 33.3%;
+	background: url(../images/ic_sqwc2.png) no-repeat scroll 0 0 / 20px;
+}
+.order .box-bd>ul>li.select{
+	float: left;
+	width: 33.3%;
+	background: url(../images/ic_sqwc.png) no-repeat scroll 0 0 / 20px;
+}
+.order .box-bd>ul>li>font {
+	padding-left: 25px;
+}
+.jifen .msg-con {
+    width: 97.0703125%;
+    height: auto;
+    padding: 0 1.46484375%;
+}
+.jifen .msg-box {
+    margin-top: 20px;
+    width: 100%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.jifen .msg-box-header {
+    height: 44px;
+    line-height: 44px;
+    color: #0F45A7;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0px 3.52112676% 0px 1.953125%;
+    font-size: 16px;
+}
+.jifen .confirm-ul li {
+    margin-left: 3.52112676%;
+    margin-bottom: 25px;
+    width: 92.95774648%;
+}
+.jifen .confirm-ul li div span:first-child{
+    display: inline-block;
+    width: 90px;
+}
+.jifen .confirm-ul .basic-li {
+    margin-top: 25px;
+}
+.jifen .confirm-ul li div {
+    font-size: 15px;
+    display: inline-block;
+}
+.jifen .confirm-ul li .li-first-div {
+    width: 45%;
+}
+.jifen .confirm-ul li .li-second-div {
+    width: 45%;
+}
+.jifen .confirm-ul li div span:first-child {
+    color: #999999;
+    font-size: 15px;
+}
+.jifen .confirm-ul li div span:nth-child(2) {
+    color: #666666;
+}
+.jifen .video-qian {
+    margin: 50px 0 0 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.jifen .video-qian .qian-box {
+    display: inline-block;
+  	border: solid 1px #CCCCCC;
+  	border-radius: 12px;
+  	margin-bottom: 10px;
+  	width: 100%;
+  	height: 260px;
+  	background-color: #f2f2f2;
+  	overflow: visible;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+}
+.jifen .video-qian .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.jifen .video-qian .qian-box .qian-header {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 1.953125%;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    background-color: #e8e8e8;
+}
+.jifen #qianM {
+    display: inline-block;
+    height: 215px;
+    margin-bottom: 20px;
+    width: 100%;
+    background:url(../images/shouxieqianming.png) center center no-repeat;
+    background-size: 282px;
+}
+.jifen #clear-botton {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 8.1px;
+    text-align: center;
+    color: #0F45A7;
+}
+.jifen #clear-botton>img {
+    height: 30px;
+    width: 30px;
+}
+.jifen .dianjiqianming-con {
+  	position: absolute;
+  	font-size: 15px;
+  	color: #CCCCCC;
+  	top: 14px;
+  	right: 60px;
+}
+.jifen .ic_down {
+  	width: 19px;
+  	position: absolute;
+  	top: 11px;
+  	right: 15px;
+  	padding: 5px 10px;
+}
+.jifen .ic_agree {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+.jifen .reWrite{
+    float: right;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    color: #0F45A7;
+}
+.jifen .reWrite>img{
+	height: 34px;
+	padding-top: 5px
+}
+#jifen-orderComplete #border-over {
+    width: 75%;
+    left: 12.5%;
+}
+#jifen-orderComplete #btn_next {
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+}
+#jifen-orderComplete .compl {
+    margin: 40px auto 40px auto;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 28px;
+}
+#jifen-orderComplete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+#jifen-orderComplete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+#jifen-orderComplete .basic_msg_content .ziduan-name {
+    display: inline-block;
+    color: #999999 !important;
+    width: 42%;
+    text-align: right;
+    margin-right: 3%;
+}
+#jifen-orderComplete .basic_msg_content .basic_msg_content {
+    color: #666666;
+}
+#jifen-orderComplete .basic_msg_content > p {
+	float: left;
+	width: 100%;
+    margin-bottom: 26px;
+}
+#jifen-giftList #border-over {
+    width: 24.9%;
+    left: 8.3%;
+}
+#jifen-giftList .gift_box {
+    width: 90.234375%;
+}
+#jifen-giftList .gift_border {
+	height: 100%;
+	border-bottom: solid 1px #CCCCCC;
+}
+#jifen-giftList .gift_img {
+	margin-top: 20px;
+    float: left;
+    display: inline-block;
+    width: 200px;
+    height: 121px;
+    margin-right: 20px;
+}
+#jifen-giftList .gift_content {
+	margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    max-height: 100px;
+}
+#jifen-giftList .gift_need_point{
+	width: 99%;
+    position: absolute;
+    text-align: right;
+}
+#jifen-giftList .gift_need_point>span{
+	color: red;
+	padding-right: 1px;	
+}
+#jifen-giftList .gift_register {
+    float: right;
+    position: relative;
+    right: 0px;
+    top: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    border: solid 1px #0F45A7;
+    border-radius: 3px;
+    color: #0F45A7;
+    margin-left: 20px;
+}
+#jifen-giftList .gift_register:active{
+	background-color: #0045A7;
+	color: #FFFFFF;
+}
+#jifen-giftList .gift_unexchange {
+	float: right;
+    position: relative;
+    right: 0px;
+    top: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    border: solid 1px #CCCCCC;
+    border-radius: 3px;
+    color: #CCCCCC;
+    margin-left: 20px;
+}
+#jifen-giftList .gift_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+#jifen-giftList .gift_Info {
+	width: 65%;
+    font-size: 18px;
+    line-height: 1.5em;
+    max-height: 80px;
+    margin-left: 0px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: none;
+    border: 0px;
+    padding: 0px;
+    background-color: initial;
+}
+#jifen-giftList .conter-con{
+	top: 235px;
+}
+#jifen-giftList .jifen_Info{
+	color: #0f45a7;
+	background-color: #f7f7f7;
+	position: fixed;
+	top: 185px;
+	width: 100%;
+	padding: 18px 0px;
+	text-align: left;
+	z-index: 35;
+	font-size: 12pt;
+	padding-left: 50px;
+}
+#jifen-giftList .jifen_Info>span{
+	float: left;
+	margin-top: 5px;
+}
+#jifen-giftList .jifen_Info>span:nth-child(2n){
+	padding-right: 10px;
+}
+#jifen-giftList .jifen_Info>span.gift_header_btn{
+	float: right;
+	border: 1px solid #0f45a7 !important;
+	color: #0f45a7 !important;
+	border-radius:3px;
+	padding: 5px 20px;
+	margin-right: 20px;
+	margin-top: 0px;
+}
+#jifen-giftList .jifen_Info>span:nth-child(7){
+	float: left;
+	margin-left: 15px;
+}
+#jifen-giftList .jifen_Info>span:nth-child(8){
+	margin-right: 100px;
+}
+#jifen-giftList .jifen_Info>span.gift_header_btn:active{
+	background-color: #0f45a7;
+	color: #ffffff !important;
+}
+#jifen-giftList .previous:nth-child(1){
+	margin-left: 20%;
+}
+#jifen-giftList .previous:nth-child(2){
+	float: right;
+	margin-right: 20%;
+}
+#jifen-giftList .submitted-successfully{
+	z-index: 36;
+}
+#jifen-giftList .gift-info-con{
+	width: 92%;
+	height: 100%;
+	margin: 0 4%;
+	position: relative; 
+	padding: 93px 0 55px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#jifen-giftList .gift-info{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+#jifen-giftList .swiper-container-horizontal>.swiper-pagination{
+	bottom: -25px;
+}
+#jifen-giftList .swiper-container {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+#jifen-giftList .ic_close{
+	width: 33.5px;
+	position: absolute;
+	top:38px;
+	right: 30px;
+}
+#jifen-giftList .swiper-slide {
+  	font-size: 18px;
+}
+#jifen-giftList .swiper-container-same {
+  	width: 100%;
+  	height: 100%;
+}
+#jifen-giftList .swiper-container-sameCon {
+  	width: 100%;
+  	height: 100%;
+  	box-sizing: border-box;
+  	background-color: #FFFFFF;
+  	border-radius: 5PX;
+}
+#jifen-giftList .overflow-con-giftInfo {
+  	width: 100%;
+  	height: 100%;
+  	overflow: auto;
+  	position: relative;
+  	z-index: 34;
+}
+#jifen-giftList .swiper-container-same img {
+  	width: 100%;
+  	height: 100%;
+  	border-radius: 5px;
+}
+#jifen-giftList .swiper-pagination-bullet {
+    background-color: #4d4d4d;
+    opacity: 1;
+}
+#jifen-giftList .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+#jifen-giftList .giftInfo-title {
+  	width: 100%;
+  	font-size: 45px;
+  	color: #4D4D4D;
+  	text-align: center;
+  	padding-bottom: 50px;
+  	padding-top: 80px;
+}
+#jifen-giftList .giftInfo-content {
+  	width: 100%;
+  	line-height: 35.5px;
+  	color: #494949;
+  	font-size: 16px;
+  	padding: 0 42px;
+  	box-sizing: border-box;
+  	text-align: initial;
+}
+#jifen-giftList .giftInfo-content p {
+  	padding-bottom: 25px;
+}
+#jifen-giftList .gift-detail{
+	width: 55%;
+	height: 55%;
+	margin: 17.5% 22.5%;
+	position: absolute; 
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+}
+#jifen-giftList .gift-detail .detail-context{
+	position: absolute;
+	width: 100%;
+	height: 85%;
+}
+#jifen-giftList .gift-detail div.detail-title{
+	position: absolute;
+	width: 50%;
+	padding: 4% 0;
+	font-size: 13.5pt;
+}
+#jifen-giftList .gift-detail .detail-header{
+	position: absolute;
+	width: 100%;
+	background-color: #CCCCCC;
+	height: 50px;
+	top: 18%;
+}
+#jifen-giftList .gift-detail .detail-header>div{
+	padding:  3% 0;
+	float: left;
+	width: 33.3%;
+}
+#jifen-giftList .gift-detail .detail-rows{
+	position: absolute;
+	overflow: auto;
+	height: 56%;
+	width: 100%;
+	position: absolute;
+	top: 33%;
+}
+#jifen-giftList .gift-detail .detail-rows>ul{
+	width: 100%;
+	height: 25px;
+	padding:  2% 0;
+}
+#jifen-giftList .gift-detail .detail-rows>ul:nth-child(2n){
+	background-color: #f7f7f7;
+}
+#jifen-giftList .gift-detail .detail-rows>ul>li{
+	float: left;
+	width: 33.3%;
+}
+#jifen-giftList .detail-tips{
+	position: absolute;
+	top: 76%;
+	padding-left: 3%;
+	font-size: 11pt;
+}
+#jifen-giftList .gift-detail .detail-footer{
+	position: absolute;
+	width: 100%;
+	height: 15%;
+	top: 85%;
+}
+#jifen-giftList .gift-detail .detail-footer>div{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 140px;
+    border: solid 1px #0F45A7;
+    border-radius: 3px;
+    color: #0F45A7;
+    bottom: 10px;
+}
+#jifen-giftList .gift-detail .detail-footer>div:hover{
+	background-color: #0f45a7;
+	color: #ffffff !important;
+}
+#jifen-giftList .loadMore{
+	padding-top: 30px;
+	display: none;
+}
+#jifen-giftList .loadMore>span{
+	left: 45%;
+	position: absolute;
+	padding: 15px 30px;
+	background-repeat: no-repeat;
+}
+#jifen-customerP #border-over {
+    width: 41.5%;
+    left: 8.3%;
+}
+#jifen-customerP .img_content {
+    width: 100%;
+    margin: 43px 0 0px 0%;
+}
+#jifen-customerP .qitazhengming{
+    color: #0F45A7;
+}
+#jifen-customerP .qita-tanchuang-cbg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 100;
+	display: none;
+}
+#jifen-customerP .qita-tanchuang-con{
+	position: absolute;
+	bottom: 53px;
+	z-index: 101;
+	left: 0;
+	width: 100%;
+	height: 307px;
+	background-color: #FFFFFF;
+	display: none;
+	border-radius: 12px;
+	padding:0 0 10px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#jifen-customerP .crow_icon_win{
+	height: 14px;
+	position: absolute;
+	bottom: 41px;
+	left: 50%;
+	-webkit-transform: translateX()(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 101;
+	display: none;
+}
+#jifen-customerP .qita-tanchuang-ul{
+	width: 100%;
+	height: 257px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+}
+#jifen-customerP .queren-quxiao{
+	width: 100%;
+	height: 43px;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #CCCCCC;
+}
+#jifen-customerP .quxiao-ok{
+	width: 43px;
+	height: 43px;
+	line-height: 43px;
+	color: #2760cb;
+	text-align: center;
+}
+#jifen-customerP .quxiao-click{
+	float: left;
+	margin-left: 14px;
+}
+#jifen-customerP .queding-click{
+	float: right;
+	margin-right: 14px;
+}
+#jifen-customerP .qita-tanchuang-ul>li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	color: rgba(32,40,43,0.4);
+}
+#jifen-customerP .qita-tanchuang-ul .qita-tanchuang-li{
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	color: rgba(32,40,43,1);
+}
+#jifen-customerP .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+#jifen-customerP .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+#jifen-customerP .rephoto {
+    position: relative;
+    left: 0px;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0px 0px;
+    z-index: 2;
+}
+#jifen-customerP .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+}
+#jifen-customerP .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+    /*border: 0 !important;*/
+}
+#jifen-customerP .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#jifen-customerP .customer_four {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#jifen-customerP .customer_five {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#jifen-customerP .customer_six{
+background: url("../images/ic_xuanpai1.png") no-repeat 100% 100%;
+background-size: 100% 100%;
+}
+#jifen-customerP .img_box {
+  float: left;
+  width: 38.03986711%;
+  max-width: 229px;
+  min-width: 160px;
+  margin-left: 8%;
+  margin-bottom: 35px;
+}
+#jifen-customerP .customerP-zancun{
+  width: 89px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid #0F45A7;
+  color: #0F45A7;
+  border-radius: 3px;
+  position: fixed;
+  right: 50px;
+  bottom: 98px;
+  z-index: 20;
+}
+#jifen-customerP .img_box:nth-child(even) {
+    width: 38.03986711%;
+}
+#jifen-customerP .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}
+#jifen-personFace #border-over {
+    width: 41.5%;
+    left: 8.3%;
+}
+#jifen-personFace .center-header{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+#jifen-personFace .img_content {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+#jifen-personFace .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+#jifen-personFace .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+#jifen-personFace .customer_one,#jifen-personFace .customer_four,#jifen-personFace .customer_six {
+    background: url("../images/ic_mianbu.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#jifen-personFace .customer_three {
+    background: url("../images/ic_shenfenzheng.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#jifen-personFace .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+#jifen-personFace .face-box {
+    float: left;
+    width: 24.42244224%;
+    min-width: 148px;
+}
+#jifen-personFace .face-result {
+    text-align: center;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 65px;
+    border-radius: 3px;
+    color: #F9F9F9;
+}
+#jifen-personFace .pass{
+    background-color: #0F45A7;
+}
+#jifen-personFace .no-pass{
+    background-color: #D13F14;
+}
+#jifen-personFace .img_notes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+#jifen-personFace .camera{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+#jifen-giftExchange #border-over {
+    width: 57.1%;
+    left: 8.3%;
+}
+#jifen-giftExchange .information-box {
+    margin: 30px 10% 0;
+    width: 80%;
+    height: auto;
+    font-size: 0.9em;
+}
+#jifen-giftExchange .information-l {
+    width: 47.5%;
+    margin-left: 0;
+    float: left;
+}
+#jifen-giftExchange .information-r {
+    float: left;
+    width: 47.5%;
+    margin-left: 5%;
+}
+#jifen-giftExchange .information-input li {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    margin-top: 15px;
+}
+#jifen-giftExchange .information-result {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: left;
+}
+#jifen-giftExchange .information-name {
+    width: 71.81818181818182% !important;
+    margin-right: 1.464% !important;
+}
+#jifen-giftExchange .result-left {
+    width: 28.48484848484848%;
+    float: left;
+    color: #CCCCCC;
+    padding-left: 4.2%;
+    position: relative;
+}
+#jifen-giftExchange .res-right{
+    padding-left:  2.385% !important;
+}
+#jifen-giftExchange .result-xing {
+    width: 39.66244725738397%;
+    padding-left: 5.848101265822785%;
+}
+#jifen-giftExchange .domicile {
+    width: 40%;
+    float: left;
+    color: #CCCCCC;
+    padding-left: 4.2%;
+    position: relative;
+}
+#jifen-giftExchange .tongX {
+    padding-left: 6.22% !important;
+}
+#jifen-giftExchange .public-sheng .xing {
+    left: 4.74% !important;
+}
+#jifen-giftExchange .required-stars {
+    color: #d0021b;
+    position: absolute;
+    top: -3.5px;
+    left: 4.5%;
+    font-size: 0.85em;
+}
+#jifen-giftExchange .star-right{
+    left: 2.55%!important;
+}
+#jifen-giftExchange .border-cc {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    height: 39px;
+    line-height: 39px;
+    float: left;
+    margin-right: 1.464%;
+}
+#jifen-giftExchange .input-test {
+    width: 65%;
+    height: 37px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+#jifen-giftExchange .domicile-value {
+    width: 55%;
+    height: 37px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+#jifen-giftExchange .domicile-pos {
+    width: 48% !important;
+}
+#jifen-giftExchange .input-test1 {
+    width: 76%;
+}
+#jifen-giftExchange .input-test-con {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: none;
+    border: 0;
+}
+#jifen-giftExchange .gender {
+    width: 23.63636363636364%;
+    height: 39px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: right;
+    text-align: center;
+    text-shadow: none;
+}
+#jifen-giftExchange .id-number-con {
+    width: 100%;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    float: left;
+}
+#jifen-giftExchange .long-term-effective {
+    width: 15%;
+    height: 39px;
+    background-color: #F0F0F0;
+    color: #CCCCCC;
+    border-radius: 3px;
+    float: left;
+    text-align: center;
+}
+#jifen-giftExchange .border-cc1 {
+    width: 74.3%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    float: left;
+}
+#jifen-giftExchange .drop-down {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 0;
+    font-size: 0.9em;
+}
+#jifen-giftExchange .ui-select {
+    margin: 0;
+}
+#jifen-giftExchange .ui-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-shadow: none;
+    border: none;
+    box-shadow: none;
+    font-weight: 100;
+    font-weight: normal;
+}
+#jifen-giftExchange .public-drop-down {
+    height: 39px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    overflow: hidden;
+}
+#jifen-giftExchange .public-sheng {
+    width: 38.60485651214128%;
+    margin-right: 2%;
+    float: left;
+}
+#jifen-giftExchange .public-shi {
+    width: 28.69757174392936%;
+    margin-right: 2%;
+    float: left;
+}
+#jifen-giftExchange .public-qu {
+    width: 28.69757174392936%;
+    float: right;
+}
+#jifen-giftExchange .ui-btn {
+    font-size: 1em;
+    padding: .8em 1em;
+    line-height: 1 !important;
+}
+#jifen-giftExchange .ui-icon-carat-d:after {
+    background: url(../images/icon-right.png) no-repeat;
+    background-size: 60%;
+    top: 50% !important;
+    margin-top: -9px !important;
+}
+#jifen-giftExchange .ui-content {
+    padding-left: 0;
+}
+#jifen-giftExchange .ui-btn-icon-right:after {
+    right: .2625em;
+}
+#jifen-giftExchange .ui-page-theme-a .ui-btn, #jifen-giftExchange .ui-page-theme-a .ui-btn:hover {
+    background-color: #FFFFFF !important;
+    text-shadow: 0 !important;
+}
+#jifen-giftExchange #RECEIVE_MODE-button,
+#jifen-giftExchange #ACCT_NO-button,
+#jifen-giftExchange #RECEIVE_ORG-button{
+	padding-left: 0px;
+}
+#jifen-giftConfirm #border-over {
+    width: 73.7%;
+    left: 8.3%;
+}
+#jifen-giftConfirm .duanX_con {
+    margin-top: 25px;
+    margin-left: 3.41796875%;
+    height: 36px;
+    line-height: 36px;
+}
+#jifen-giftConfirm .duanX_con > span {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+}
+#jifen-giftConfirm .disMsg{
+    border: solid 1px #0F45A7;
+    color: #0F45A7;
+}
+#jifen-giftConfirm #getMsg {
+    height: 34px;
+    line-height: 34px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    width: 13.3515625%;
+    border-radius: 5px;
+}
+#jifen-giftConfirm #inp {
+    text-align: center;
+    height: 34px;
+    width: 13.28125%;
+    margin-left: 2%;
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+}
+#jifen-giftComplete #border-over {
+    width: 82%;
+    left: 8.3%;
+}
+#jifen-giftComplete .compl {
+    margin: 40px auto 40px auto;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 28px;
+}
+#jifen-giftComplete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+#jifen-giftComplete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+#jifen-giftComplete .basic_msg {
+    float: left;
+    width: 50%;
+}
+#jifen-giftComplete .basic_erweima{
+    float: right;
+    width: 40%;
+}
+#jifen-giftComplete .basic_erweima img{
+    width: 230px;
+    height:230px;
+}
+#jifen-giftComplete .basic_erweima p{
+    font-size: 17px;
+    color: #808080;
+    margin-top: 15px;
+}
+#jifen-giftComplete .basic_msg_header {
+    color: #4A4A4A;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#jifen-giftComplete .basic_msg_content .ziduan-name {
+    display: inline-block;
+    color: #999999 !important;
+    width: 42%;
+    text-align: right;
+    margin-right: 3%;
+}
+#jifen-giftComplete .basic_msg_content .basic_msg_content {
+    color: #666666;
+}
+#jifen-giftComplete .basic_msg_content > p {
+	float: left;
+	width: 100%;
+    margin-bottom: 26px;
+}
+.jifen .seach-box-con {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 40;
+	display: none;
+}
+.jifen .seach-box {
+	position: relative;
+	width: 505px;
+	height: 260px;
+	background-color: #f7f7f7;
+	margin: 0 auto;
+	border-radius: 8px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.jifen .seach-box-ul {
+	float: right;
+	margin-right: 35px;
+	margin-top: 40px;
+}
+.jifen .seach-box-ul li {
+	width: 100%;
+	height: 39px;
+	line-height: 39px;
+	margin-bottom: 20px;
+	color: #CCCCCC;
+	border: 1px solid #CCCCCC;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	position: relative;
+}
+.jifen .seach-box-ul .input-test-con {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	box-shadow: none;
+	border: 0;
+	font-size: 17px;
+}
+.jifen .seach-box-ul li:first-child {
+	text-align: center;
+}
+.jifen .seach-box-ul .seach-box-baifenbai {
+	margin-bottom: 25px;
+	text-align: center;
+	line-height: 39px;
+	background-color: #f7f7f7;
+	border: 0;
+}
+.jifen .seach-box-ul .seach-box-baifenbai>span {
+	margin: 0px 10px;
+}
+.jifen .seach-box-ul li:last-child {
+	margin-top: 30px;
+	height: 44px;
+	background-color: #f7f7f7;
+	border: 0;
+}
+.jifen .seach-box-input-left {
+	width: 250px;
+	height: 39px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	position: relative;
+	float: left;
+}
+.jifen .seach-box-input-right {
+	width: 150px;
+	height: 39px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	position: relative;
+	float: right;
+}
+.jifen .fangqi-seach {
+	width: 160px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #0F45A7;
+	color: #0F45A7;
+}
+.jifen .fangqi-seach:active {
+	background-color: #0F45A7;
+	color: #FFFFFF;
+}
+.jifen .seach-box-botton-daybtn {
+	width: 150px;
+	height: 37px;
+	float: left;
+}
+.jifen .seach-change-header {
+	width: 85px;
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	margin-left: 10px;
+	text-align: left;
+}
+.jifen .ui-btn {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-shadow: none;
+	border: none;
+	box-shadow: none;
+	font-weight: normal;
+	font-size: 1em;
+	padding: .25em 1em;
+	line-height: 1 !important;
+	font-family: "helvetica neue";
+}
+#jifen-giftList .seach-change-input .ui-btn{
+	padding-left: 0px;
+}
+.jifen .ui-btn-icon-right:after {
+	right: .2625em;
+}
+.jifen .ui-icon-carat-d:after {
+	background: url(.././images/icon-right.png) no-repeat;
+	background-size: 60%;
+	top: 41% !important;
+	margin-top: -9px !important;
+}
+.jifen .drop-down {
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: left;
+	border: 0;
+	font-size: 0.95em;
+}
+.ui-page-theme-a .ui-btn:hover,
+html .ui-bar-a .ui-btn:hover,
+html .ui-body-a .ui-btn:hover,
+html body .ui-group-theme-a .ui-btn:hover,
+html head + body .ui-btn.ui-btn-a:hover {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+	color: #000000;
+	text-shadow: none;
+}

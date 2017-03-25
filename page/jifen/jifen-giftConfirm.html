@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/jifen.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-jifen.js"></script>
+    <title>积分</title>
+</head>
+<body>
+<div data-role="page" class="main jifen gift" id="jifen-giftConfirm">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+    	积分兑换
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('jifen-readingID.html')">退出</a>
+    </div>
+    <!--流程-->
+    <ul class="navigation-steps">
+		<div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>礼品展示</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>兑换信息</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>完成</p>
+            </li>
+        </ul>	    	
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="msg-con">
+                <div class="basic_con msg-box">
+                    <div class="msg-box-header">
+                    	<span style="color: #000000;">确认信息</span>
+                    	<span id="giftEdit" class="reWrite">
+                    		<img src="../../images/ps_modify.png">
+                    	</span>
+                    </div>
+                    <ul class="confirm-ul">
+                        <li class="basic-li">
+                            <div class="li-first-div">
+                                <span class="basic-name">客户姓名：</span>
+                                <span id="CLIENT_NAME"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic-sex">礼品编号：</span>
+                                <span id="GF_ID"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="basic_zhengType">账&nbsp;&nbsp;卡&nbsp;&nbsp;号：</span>
+                                <span id="ACCT_NO"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic_guoJ">礼品名称：</span>
+                                <div id="GF_NAME" style="float: right;width: 77%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="basic_zhengJH">兑换数量：</span>
+                                <span id="EXCHANGE_NUM"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic_addressZ">消费积分：</span>
+                                <span id="NEED_POINT"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="basic_zhengJY">剩余积分：</span>
+                                <span id="OVER_POINT"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic_qianF">领取方式：</span>
+                                <span id="RECEIVE_MODE"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div" style="display: none;">
+                                <span class="basic_zhengJY">领取支行：</span>
+                                <span id="RECEIVE_ORG"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video-qian">
+                    <div class="qian-box">
+                        <!-- <img src="../../images/ic_down.png" class="ic_down"/> -->
+                        <div class="qian-header">确认签名</div>
+                        <!-- <div class="dianjiqianming-con">点击签名</div> -->
+                        <div id="clear-botton"><img src="../../images/ps_clear.png"></div>
+                        <div id="qianM" class="qian-content"></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="imageData" id="imageData" />
+                        </form>
+                    </div>
+                    <div id="qianOK" class="qian-over" style="float: right;">
+                        <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt=""/>
+                        <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt=""/>
+                        <span>签名完成</span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <div id="msgVerification" class="duanX_con">
+                    <span>短信验证码</span>
+                    <input type="text" id="inp" data-role="none"/>
+                    <span id="getMsg" class="disMsg">获取验证码</span>
+                    <span>请在<span style="color:red;"><span id="jifen-auth-time">80</span>秒</span>内输入验证码</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--尾部-->
+    <div class="footter">
+        <div id="gift_submit" class="previous btn_next2" style="float:none;">提&nbsp;&nbsp;&nbsp;交</div>
+    </div>
+</div>
+</body>
+</html>

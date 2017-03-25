@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/loan.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/variables.js"></script>
+    <!--<script src="../../js/page-loan.js"></script>-->
+    <script src="../../js/area.js"></script>
+    <!--<script src="../../js/wce-loan.js"></script>-->
+    <title>申请贷款</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="loan-cusInfo">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" onclick="dzhShouye()" class="head-all head-left">首页</a>
+        申请贷款
+        <a data-direction="reverse" onclick="dzhFanhui('loan-product.html')" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品选择</p>
+            </li>
+            <li class="color">
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li class="color">
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li class="color">
+                <div class="circle">4</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>申请完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div id="conter-con" class="conter-con">
+        <!--中间内容左边-->
+        <ul class="navigation">
+            <li class="change-bg">主申请人信息<span></span></li>
+            <li>主申请人配偶信息<span></span></li>
+            <li>房屋信息和借款申请<span></span></li>
+        </ul>
+        <!--中间内容区右-->
+        <div class="information-input">
+            <!--主申请人信息-->
+            <ul class="showOrHide info-enter-item">
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">姓名</div>
+                        <span></span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">性别</div>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">证件类型</div>
+                        <span>身份证</span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">证件号码</div>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>婚姻状况</div>
+                        <div class="input-test">
+                            <select id="maritalStatus" class="drop-down">
+                                <option value="10">未婚</option>
+                                <option value="20">已婚无子女</option>
+                                <option value="21">已婚有子女</option>
+                                <option value="22">离异</option>
+                                <option value="23">复婚</option>
+                                <option value="30">丧偶</option>
+                                <option value="40">再婚</option>
+                          <!--      <option value="90">未说明的婚姻状况</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc  fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>最高学历</div>
+                        <div class="input-test">
+                            <select id="eduExp" class="drop-down">
+                                <option value="10">研究生</option>
+                                <option value="20" selected="true">大学本科</option>
+                                <option value="30">大学专科</option>
+                                <option value="40">中专/中等校</option>
+                                <option value="50">技术学校</option>
+                                <option value="60">高中</option>
+                                <option value="70">初中</option>
+                                <option value="80">小学</option>
+                                <option value="90">文盲或半盲</option>
+                                <option value="99">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>最高学位</div>
+                        <div class="input-test">
+                            <select id="cuzgxw" class="drop-down">
+                                <option value="01">名誉博士</option>
+                                <option value="02">博士</option>
+                                <option value="03">硕士</option>
+                                <option value="04">学士</option>
+                                <option value="09">未知</option>
+                                <option value="99" selected="selected">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc  fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>行业</div>
+                        <div class="input-test">
+                            <select id="industry" class="drop-down">
+                                <option value="A">农、林、牧、渔业</option>
+                                <option value="B">采矿业</option>
+                                <option value="C" selected="selected">制造业</option>
+                                <option value="D">电力、热力、燃气及水生产和供应业</option>
+                                <option value="E">建筑业</option>
+                                <option value="F">批发和零售业</option>
+                                <option value="G">交通运输、仓储和邮政业</option>
+                                <option value="H">住宿、餐饮业</option>
+                                <option value="I">信息传输、软件和信息技术服务业</option>
+                                <option value="J">金融业</option>
+                                <option value="K">房地产业</option>
+                                <option value="L">租赁和商务服务业</option>
+                                <option value="M">科学研究和技术服务业</option>
+                                <option value="N">水利、环境和公共设施管理</option>
+                                <option value="O">居民服务、修理和其他服务</option>
+                                <option value="P">教育</option>
+                                <option value="Q">卫生和社会工作</option>
+                                <option value="R">文化、体育和娱乐业</option>
+                                <option value="S">公共管理、社会保障和社会组织</option>
+                                <option value="T">国际组织</option>
+                                <option value="Z">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>职业</div>
+                        <div class="input-test">
+                            <select id="occupation" class="drop-down">
+                                <option value="xxx"></option>
+                                <option value="000">国家党政机关、事业单位负责人</option>
+                                <option value="001">IT/网络/计算机工程技术人员</option>
+                                <option value="003">国家和地方公务员、事业单位工作人员</option>
+                                <option value="004">商业/贸易从业人员</option>
+                                <option value="005">旅游/餐饮/娱乐/体育从业人员</option>
+                                <option value="006">农、林、牧、渔生产人员</option>
+                                <option value="007">生产制造从业人员</option>
+                                <option value="024">军人、警察、武警</option>
+                                <option value="025">未知</option>
+                                <option value="026">不便分类的其他从业人员</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>工作单位</div>
+                        <div class="input-test"><input type="text" class="input-test-con" data-role="none" id="corporation"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>工作职位</div>
+                        <div class="input-test">
+                            <select id="headship" name="day" class="drop-down">
+                                <option value="1">高级领导(行政级别局级局级以上领导或大公司高级管理人员)</option>
+                                <option value="2">中级领导(行政级别局级以下领导或大公司中级管理人员)</option>
+                                <option value="3" selected="true">一般员工</option>
+                                <option value="4">其他</option>
+                                <option value="9">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc  fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>职称</div>
+                        <div class="input-test">
+                            <select id="position" name="day" class="drop-down">
+                                <option value="01">无</option>
+                                <option value="02">高级</option>
+                                <option value="03">中级</option>
+                                <option value="04">初级</option>
+                                <option value="09">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc  fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>何时来本地</div>
+                        <div class="input-test">
+                            <input id="dwellYear" type="month" class="input-test-con" style="text-align: center;padding: 0.25em;"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>手机号码</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" maxlength="11" reg="mobile" data-role="none"/>
+                        </div>
+                    </div>
+
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left">办公电话</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" maxlength="20" reg="loanTel" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left">家庭电话</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" maxlength="20" reg="loanTel" data-role="none"/>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>邮政编码</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" maxlength="6" reg="zipCode" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1" style="width: 14.7%;padding-left: 2.1%"><span class="required-stars" style="left: 2.201%;">*</span>现住址</div>
+                        <div class="input-test input-test1"><input type="text" class="input-test-con" data-role="none"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item" style="width: 60%;">
+                        <div class="result-left result-left1" style="width: 18.2%;padding-left: 2.56%"><span class="required-stars" style="left: 2.201%;">*</span>通讯地址</div>
+                        <div class="input-test  input-test1"><input type="text" class="input-test-con" id="c-addr-detail" data-role="none"/></div>
+                    </div>
+                    <span class="tzh">同现住址</span>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1" style="padding-left: 2.1%"><span class="required-stars" style="left: 2.201%;">*</span>银行贷款购买/申请商品住房</div>
+                        <input type="text" class="addrAndArea" reg="numZU" data-role="none"/>套,建筑面积<input type="text" class="addrAndArea" reg="numZU" data-role="none"/>㎡
+                    </div>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1" style="padding-left: 2.1%"><span class="required-stars" style="left: 2.201%;">*</span>目前家庭实际拥有商品住房</div>
+                        <input type="text" class="addrAndArea" reg="numZU" data-role="none"/>套,建筑面积<input type="text" class="addrAndArea" reg="numZU" data-role="none"/>㎡
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>现住房性质</div>
+                        <div class="input-test">
+                            <select id="dwellingStatus" class="drop-down">
+                                <option value="1">自置</option>
+                                <option value="2">按揭</option>
+                                <option value="3">亲属楼宇</option>
+                                <option value="4">集体宿舍</option>
+                                <option value="5" selected="true">租房</option>
+                                <option value="6">共有住宅</option>
+                                <option value="7">其他</option>
+                                <option value="9">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--<div class="information-result border-cc fm-item">-->
+                        <!--<div class="result-left" style="width: 35%;"><span class="required-stars">*</span>现住房数</div>-->
+                        <!--<div class="input-test" style="width: 60%;">-->
+                            <!--<input type="text" style="width:80%" class="input-test-con" data-role="none"/>-->
+                            <!--<span class="units">数</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" style="width: 40%;"><span class="required-stars">*</span>月均稳定收入(元)</div>
+                        <div class="input-test" style="width: 55%;">
+                            <input type="text" class="input-test-con moneyFocus moneyBlur" reg="loanNum" maxlength="15" data-role="none"/>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>现负债额(元)</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con moneyFocus moneyBlur" reg="loanNum" maxlength="15" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" style="width: 40%;"><span class="required-stars">*</span>供养人数(人)</div>
+                        <div class="input-test" style="width: 55%;">
+                            <input type="text" class="input-test-con" reg="numZU" maxlength="2" data-role="none"/>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" style="width: 35%;"><span class="required-stars">*</span>未成年子女</div>
+                        <div class="input-test" style="width: 60%;">
+                            <select id="minorChildren" class="drop-down">
+                                <option value="1">有</option>
+                                <option value="0">无</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <!--<li style="height: 79px">-->
+                    <!--<div class="border-cc1" style="border: 0;margin: 20px auto">-->
+                        <!--<div class="zlqd" style="float: left;margin-left: 10%;display: none">添加配偶信息</div>-->
+
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
+            <!--主申请人配偶信息-->
+            <ul id="spouse" class="info-enter-item">
+                <!--<div class="ul-header">配偶身份证已读取</div>-->
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">姓名</div>
+                        <span></span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">性别</div>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">证件类型</div>
+                        <span>身份证</span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">证件号码</div>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>手机号码</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" maxlength="11" reg="mobile" data-role="none"/>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>工作单位</div>
+                        <div class="input-test">
+                            <input type="text" class="input-test-con" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" style="width: 35%;"><span class="required-stars">*</span>工作职位</div>
+                        <div class="input-test" style="width: 60%;">
+                            <select id="consortHeadship" name="day" class="drop-down">
+                                <option value="1">高级领导(行政级别局级局级以上领导或大公司高级管理人员)</option>
+                                <option value="2">中级领导(行政级别局级以下领导或大公司中级管理人员)</option>
+                                <option value="3" selected="true">一般员工</option>
+                                <option value="4">其他</option>
+                                <option value="9">未知</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left" style="width: 40%;"><span class="required-stars">*</span>月均稳定收入(元)</div>
+                        <div class="input-test" style="width: 55%;">
+                            <input type="text" class="input-test-con moneyFocus moneyBlur" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                <!--<li>-->
+                    <!--<div class="information-result border-cc fm-item">-->
+                        <!--<div class="result-left" style="width: 35%;"><span class="required-stars">*</span>是否共同申请人</div>-->
+                        <!--<div class="input-test" style="width: 60%;">-->
+                            <!--<select name="day" class="drop-down">-->
+                                <!--<option value="1">是</option>-->
+                                <!--<option value="0">否</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
+            <!--房屋信息和接款信息-->
+            <ul class="info-enter-item credit-card-show">
+                <div class="ul-header">房屋信息</div>
+                <li>
+                    <div class="information-result border-cc1 fm-item" style="width: 60%;">
+                        <div class="result-left" style="width: 18.2%;padding-left: 2.55%;"><span class="required-stars" style="left: 2.73%;">*</span>楼盘项目</div>
+                        <div class="input-test" style="width: 78%">
+                            <select id="buildingInfoId" name="day" class="drop-down">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="weiHu">项目维护</div>
+                </li>
+                <!--<li>-->
+                    <!--<div class="public-drop-down fm-item">-->
+                        <!--<div class="domicile"><span class="required-stars">*</span>通讯地址</div>-->
+                        <!--<div class="domicile-value">-->
+                            <!--<select name="s_province" id="s_province" class="drop-down">-->
+                                <!--<option>省份</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="public-drop-down fm-item">-->
+                        <!--<select name="s_city" id="s_city" class="drop-down">-->
+                            <!--<option>城市</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="public-drop-down fm-item">-->
+                        <!--<select name="s_county" id="s_county" class="drop-down">-->
+                            <!--<option>市、县级市</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1" style="width: 14.7%;padding-left: 2.058%"><span class="required-stars" style="left:2.201%;">*</span>房屋地址</div>
+                        <div class="input-test  input-test1" style="width:78%;">
+                            <input type="text" class="input-test-con" placeholder="请具体到房屋门牌号" data-role="none"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>房屋状态</div>
+                        <div class="input-test">
+                            <select name="day" class="drop-down">
+                                <option value="01">预售</option>
+                                <option value="02">现楼</option>
+                                <option value="03">二手楼</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>房屋用途</div>
+                        <div class="input-test">
+                            <select name="day" class="drop-down">
+                                <option value="1">自住</option>
+                                <option value="2">改善型自住</option>
+                                <option value="3">出租</option>
+                                <option value="4">投资</option>
+                                <option value="5">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>房屋总价</div>
+                        <div class="input-test">
+                            <input type="text" style="width: 80%;" reg="loanNum" class="input-test-con area-money totalMoney moneyAS moneyFocus" data-role="none"/>
+                            <span class="units">元</span>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>建筑面积</div>
+                        <div class="input-test">
+                            <input type="text" style="width: 80%;" reg="eleNum" class="input-test-con area-money moneyFocus" data-role="none"/>
+                            <span class="units">㎡</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>单价</div>
+                        <div class="input-test">
+                            <input type="text" style="width: 80%;" reg="loanNum" class="input-test-con unitMoney moneyFocus" data-role="none"/>
+                            <span class="units">元/㎡</span>
+                        </div>
+                    </div>
+                </li>
+                <div class="ul-header">借款申请</div>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>首付款金额</div>
+                        <div class="input-test">
+                            <input type="text" style="width: 80%;" reg="loanNum" class="input-test-con moneyAS moneyFocus" data-role="none"/>
+                            <span class="units">元</span>
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>借款金额</div>
+                        <div class="input-test">
+                            <input type="text" style="width: 80%;" reg="loanNum" class="input-test-con moneyJ moneyFocus moneyBlur" data-role="none"/>
+                            <span class="units">元</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>借款期限</div>
+                        <div class="input-test" style="width: 52%;">
+                            <select name="day" class="drop-down">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30" selected="selected">30</option>
+                            </select>
+                        </div>
+                        <span class="units" style="width: 13%;">年</span>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>还款方式</div>
+                        <div class="input-test">
+                            <select name="day" class="drop-down">
+                                <option value="1">按月等额还本息</option>
+                                <option value="2">按月等额还本</option>
+                                <!--<option value="3">按月还息到期一次性还本付息</option>-->
+                                <!--<option value="4">其他</option>-->
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1" style="width: 14.7%;padding-left: 2.058%"><span class="required-stars" style="left:2.201%;">*</span>还款账号</div>
+                        <div class="input-test  input-test1" style="width: 78%">
+                            <select id="cardAccount" name="day" class="drop-down">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <!--<li>-->
+                    <!--<div class="border-cc1" style="border: 0;">-->
+                        <!--<div class="zlqd zq">资料清单</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter" data-role="none">
+        <div class="previous previous-con back-1">上一步</div>
+        <div id="btn_next" class="previous btn_next" data-transition="slide">下一步</div>
+    </div>
+    <div class="zlqd zhengxin">征信报告</div>
+    <div class="zlqd dzd">对账单</div>
+    <div class="zlqd zq">资料清单</div>
+    <div class="zancun">暂存</div>
+    <div id="seach-day-con">
+        <div id="seach-day">
+            <div class="sear-header">添加楼盘项目</div>
+            <ul class="seach-day-ul" style="padding-bottom: 0;">
+                <li>
+                    <!--<div class="information-result border-cc fm-item">-->
+                    <!--<div class="result-left"><span class="required-stars">*</span>楼盘项目</div>-->
+                    <!--<div class="input-test">-->
+                    <!--<input type="text" class="input-test-con" data-role="none"/>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="information-result border-cc fm-item" style="margin-right: 0">-->
+                    <!--<div class="result-left"><span class="required-stars">*</span>楼盘名称</div>-->
+                    <!--<div class="input-test">-->
+                    <!--<input type="text" class="input-test-con" data-role="none"/>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--临时的-->
+                    <div class="fm-item border-cc" style="width: 100%;">
+                        <div class="result-left result-left1" style="padding-left: 1.91%;text-align: left;width: 15%;"><span class="required-stars">*</span>楼盘名称</div>
+                        <div class="input-test input-test1" style="width: 80%;">
+                            <input type="text" class="input-test-con" data-role="none"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="public-drop-down fm-item">
+                        <div class="domicile"><span class="required-stars">*</span>房屋地址</div>
+                        <div class="domicile-value">
+                            <select name="s_province" id="s_province" class="drop-down">
+                                <option>省份</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="public-drop-down fm-item">
+                        <select name="s_city" id="s_city" class="drop-down">
+                            <option>城市</option>
+                        </select>
+                    </div>
+                    <div class="public-drop-down fm-item">
+                        <select name="s_county" id="s_county" class="drop-down">
+                            <option>市/县级市</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="fm-item" style="width: 100%;">
+                        <div class="result-left result-left1" style="padding-left: 1.91%;text-align: left;width: 15%;"><span class="required-stars">*</span>详细地址</div>
+                        <div class="input-test  input-test1" style="width: 80%;"><input type="text" class="input-test-con"
+                                                                                        data-role="none"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fm-item" style="width: 100%;">
+                        <div class="result-left result-left1" style="padding-left: 1.91%;text-align: left;width: 15%;"><span class="required-stars">*</span>开发商</div>
+                        <div class="input-test  input-test1" style="width: 80%;"><input type="text" class="input-test-con"
+                                                                    data-role="none"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fangqi-seach" style="float: left;">
+                        放弃
+                    </div>
+                    <div class="fangqi-seach" style="float: right;">
+                        添加
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-weihu">
+        <div class="wei">
+            <div class="wei-header">清单列表<a data-direction="reverse" class="head-all head-right" style="top: 15px;">关闭</a></div>
+            <ul class="wei-con">
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_yuan.png" alt=""></li>
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_sqwc.png" alt=""></li>
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_yuan.png" alt=""></li>
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_yuan.png" alt=""></li>
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_yuan.png" alt=""></li>
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_yuan.png" alt=""></li>
+                <li><span>主申请人身份证件(正反面)</span><img src="../../images/ic_yuan.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="searchHu">
+        <div class="wei">
+            <div class="wei-header">
+                <a data-direction="reverse" class="head-all head-left" style="top: 15px;">关闭</a>
+                楼盘项目维护
+                <a data-direction="reverse" class="head-all head-right"
+                   style="top: 15px;margin-right: 80px;width: 90px;">从LOS同步</a>
+                <a data-direction="reverse" class="head-all head-right" style="top: 15px;">添加</a>
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+               <!--     <div>楼盘项目</div>-->
+                    <div style="width:25%">楼盘名称</div>
+                    <div style="width: 45%;">地址</div>
+                    <div style="width: 30%;">开发商</div>
+                </div>
+                <ul></ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con" style="margin-top: 5px;height: 45px;line-height: 45px;">删除</a>
+                <a class="previous" style="margin-top: 5px;height: 45px;line-height: 45px;">使用</a>
+            </div>
+        </div>
+    </div>
+    <div class='searchLos'>
+        <div class="wei">
+            <div class="wei-header">
+                从LOS同步楼盘项目
+            </div>
+            <div class="seachCon" style="height: 40px;padding: 5px 20px;">
+                <div class="head-seach" style="float: left;">
+                    <input type="text" placeholder="楼盘名称关键字" style="color: #CCCCCC;" data-role="none"
+                           class="head-seach-input">
+                    <img src="../../images/seach_one_icon.png" class="seach_icon">
+                </div>
+                <div class="seach-botton" style="float: right;">搜索</div>
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div class="widthF">楼盘名称</div>
+                    <div class="widthS">地址</div>
+                </div>
+                <ul style=" height: 200px;">
+                    <li>
+                        <div class="widthF">深圳市瑞泽家园</div>
+                        <div class="widthS">深圳市福田区福田中心区民田路</div>
+                        <div class="widthT"><div class="tong seach-botton">同步</div></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous back-1" style="margin: 5px auto 0 auto;float:none;height: 45px;line-height: 45px;">关闭</a>
+            </div>
+        </div>
+    </div>
+    <div class='searchBank'>
+        <div class="wei">
+            <div class="wei-header">
+                银行对账单
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div style="width: 12%">姓名</div>
+                    <div style="width: 15%;">查询时间</div>
+                    <div style="width: 20%;">账卡号</div>
+                    <div style="width: 43%;">对账单文件</div>
+                    <div style="width: 10%;">选中</div>
+                </div>
+                <ul>
+                    <li>
+                        <div style="width: 15%">深圳市瑞泽家园</div>
+                        <div style="width: 20%">深圳市福田区福田中心区民田路</div>
+                        <div style="width: 25%">同步</div>
+                        <div style="width: 30%;">对账单文件</div>
+                        <div style="width: 10%;"><img class="dzdImg" src="../../images/ic_sqwc.png" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con back-1" style="margin-top: 5px;height: 45px;line-height: 45px;">放弃</a>
+                <a class="previous btn_next" style="margin-top: 5px;height: 45px;line-height: 45px;">确认</a>
+            </div>
+        </div>
+    </div>
+    <div class='searchCredit'>
+        <div class="wei">
+            <div class="wei-header">
+                征信报告
+            </div>
+            <div class="hucon">
+                <div class="hu-header">
+                    <div style="width: 20%;">查询时间</div>
+                    <div style="width: 20%;">征信类型</div>
+                    <div style="width: 50%;">征信文件</div>
+                    <div style="width: 10%;">选中</div>
+                </div>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="footter">
+                <a class="previous previous-con back-1" style="margin-top: 5px;height: 45px;line-height: 45px;">放弃</a>
+                <a class="previous btn_next" style="margin-top: 5px;height: 45px;line-height: 45px;">确认</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

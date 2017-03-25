@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/finance.css">
+    <link rel="stylesheet" href="../../css/common-customeP.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/gatherPic.js"></script>
+    <title>理财风评</title>
+</head>
+<body>
+<div data-role="page" class="main nav-six customerP" id="finance-customerP">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouye()" data-direction="reverse" class="head-all head-left">首页</a>
+        理财风评
+        <a onclick="dzhFanhui('Finance-reading.html')" href="" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>风评等级</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>填写问卷</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" id="conter-con" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="plesPic">请拍摄影像</div>
+            <div class="img_content">
+                <div class="img_box get-face">
+                    <div class="customer customer_one">
+                        <div class="rephoto">必拍</div>
+                        <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                    </div>
+                    <div class="img_notes">客户面部照片</div>
+                </div>
+                <!--<div class="img_box">-->
+                    <!--<div class="customer customer_two" picName="custAndCustOwnerPic">-->
+                        <!--<div class="rephoto">必拍</div>-->
+                        <!--<img class="camera" src="../../images/ic_camera.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div class="img_notes">与客户合影照片</div>-->
+                <!--</div>-->
+                <!--<div style="clear: both"></div>-->
+            <!--</div>-->
+            <!--<div class="img_content">-->
+                <div class="img_box">
+                    <div class="customer customer_three" picName="frontIDCardPic">
+                        <div class="rephoto">必拍</div>
+                        <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                    </div>
+                    <div class="img_notes">身份证正面</div>
+                </div>
+                <div class="img_box">
+                    <div class="customer customer_four" picName="backIDCardPic">
+                        <div class="rephoto">必拍</div>
+                        <img class="camera" src="../../images/ic_camera.png" alt=""/>
+                    </div>
+                    <div class="img_notes">身份证反面</div>
+                </div>
+                <!--<div style="clear: both"></div>-->
+            </div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous previous-con back-1">上一步</div>
+        <div class="previous">下一步</div>
+    </div>
+    <div class="bigpic-review-box">
+        <div class="bigpic-review-cont">
+            <div class="bigpic-review-close"></div>
+            <div class="bigpic-review"></div>
+        </div>
+        <div class="bigpic-review-ft">
+            <span class="bigpic-review-rephone"></span>
+            <span class="bigpic-review-del"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

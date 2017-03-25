@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/loan.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/page-loan.js"></script>
+    <script src="../../js/data-loan.js"></script>
+    <script src="../../js/conf-loan.js"></script>
+    <script src="../../js/meapRequest-loan.js"></script>
+    <title>申请贷款</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="loan-cusConfirm">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left">首页</a>
+        申请贷款
+        <a data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>信息录入</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>确认信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>申请完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" id="conter-con" class="conter-con">
+        <div class="conter-auto">
+            <div class="msg-con">
+                <div class="candidate msg-box">
+                    <div class="msg-header">申请人<span class="reWrite"><img style="height: 34px;padding-top: 5px" src="../../images/ps_modify.png" alt=""></span></div>
+                    <div class="msg-box-content">
+                        <div class="box-header">
+                            <div>角色</div>
+                            <div>姓名</div>
+                            <div class="sfz">证件号码</div>
+                            <div>手机号码</div>
+                            <div class="srm">月均稳定收入</div>
+                            <div>共同借款人</div>
+                        </div>
+                        <ul class="box-content">
+                            <li>
+                                <div>主申请人</div>
+                                <div></div>
+                                <div class="sfz"></div>
+                                <div></div>
+                                <div class="srm"></div>
+                                <div>---</div>
+                            </li>
+                            <li>
+                                <div>配偶</div>
+                                <div></div>
+                                <div class="sfz"></div>
+                                <div></div>
+                                <div class="srm"></div>
+                                <div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="building msg-box">
+                    <div class="msg-header">房屋信息</div>
+                    <div class="msg-box-content">
+                        <div class="box-header">
+                            <div class="build">房屋地址</div>
+                            <div>建筑面积(㎡)</div>
+                            <div>单价(元/㎡)</div>
+                            <div>总价(元)</div>
+                        </div>
+                        <ul class="box-content">
+                            <li>
+                                <div class="build"></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <!--<span><div class="zlqd" status="buildingModify">修改</div></span>-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="borrow msg-box">
+                    <div class="msg-header">借款信息</div>
+                    <div class="msg-box-content">
+                        <div class="box-header">
+                            <div>借款金额(元)</div>
+                            <div>首付款(元)</div>
+                            <div>借款期限(年)</div>
+                            <div>还款方式</div>
+                            <div>还款账号</div>
+                        </div>
+                        <ul class="box-content">
+                            <li>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <!--<span><div class="zlqd" status="borrowModify">修改</div></span>-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="underwriting msg-box">
+                    <div class="msg-header">借款人征信文件</div>
+                    <div class="msg-box-content">
+                        <div class="box-header">
+                            <div style="width: 15%;">角色</div>
+                            <div style="width: 16%;">姓名</div>
+                            <div class="zjh" style="width: 17%;">证件号码</div>
+                            <div style="width: 15%;">征信类型</div>
+                            <div class="zxwj">征信文件</div>
+                        </div>
+                        <ul class="box-content">
+                            <!--<li>
+                                <div style="width: 15%;">主申请人</div>
+                                <div style="width: 16%;">姓名</div>
+                                <div class="zjh" style="width: 17%;">证件号码</div>
+                                <div style="width: 15%;">征信类型</div>
+                                <div class="zxwj">征信文件</div>
+                                <span><div class="zlqd">查看</div></span>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="underwriting msg-box">
+                    <div class="msg-header">借款人对账单</div>
+                    <div class="msg-box-content">
+                        <div class="box-header">
+                            <div>角色</div>
+                            <div>姓名</div>
+                            <div class="zjh">证件号码</div>
+                            <div class="zxwj">对账单文件</div>
+                        </div>
+                        <ul class="box-content">
+                            <!--<li>-->
+                                <!--<div>主申请人</div>-->
+                                <!--<div></div>-->
+                                <!--<div class="zjh"></div>-->
+                                <!--<div class="zxwj"></div>-->
+                                <!--<span><div class="zlqd">查看</div></span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div></div>-->
+                                <!--<div></div>-->
+                                <!--<div class="zjh"></div>-->
+                                <!--<div class="zxwj"></div>-->
+                                <!--<span><div class="zlqd">查看</div></span>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="underwriting msg-box">
+                    <div class="msg-header">其他文件</div>
+                    <div class="msg-box-content">
+                        <div class="linkClick">
+                            点击查看<span>《按揭贷款申请表》</span><span class="faceTalkRecord">和<span>《个人购房贷款面谈笔录》</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="duanX_con">
+                    <span>短信验证码:</span>
+                    <input type="text" id="inp" data-role="none"/>
+                    <span id="getMsg" class="disMsg">获取验证码</span>
+                    <span>请在<span style="color:red;"><span id="lb-auth-time">80</span>秒</span>内输入验证码</span>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="video-qian">
+                    <div class="qian-box" style="position: relative;">
+                        <div class="qian-header">
+                            主申请人签名栏
+                            <!-- <img src="../../images/ic_down.png" class="ic_down"/> -->
+                            <div id="mclear-botton" class="clearBtn"><img src="../../images/ps_clear.png"/></div>
+                            <!-- <div class="dianjiqianming-con querenqianming-click">点击签名</div> -->
+                        </div>
+                        <div id="mqianM" class="qian-content"></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="mimageData" id="mimageData"/>
+                        </form>
+                    </div>
+                    <div id="mqianOK" class="qian-over">
+                        <img id="ic_mdisqian" class="ic_agree" src="../../images/ic_disagree.png" height="100%"
+                             alt=""/>
+                        <img id="ic_mqian" class="ic_agree" style="display: none" src="../../images/ic_agree.png"
+                             height="100%" alt=""/>
+                        <span>签名完成</span>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-con">
+                <div class="video-qian">
+                    <div class="qian-box" style="position: relative;">
+                        <div class="qian-header">
+                            共同申请人(配偶)签名栏
+                            <!-- <img src="../../images/ic_down.png" class="ic_down_two"/> -->
+                            <div id="sclear-botton" class="clearBtn"><img src="../../images/ps_clear.png"/></div>
+                            <!-- <div class="dianjiqianming-con querenqianming-click">点击签名</div> -->
+                        </div>
+                        <div id="sqianM" class="qian-content"></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="simageData" id="simageData"/>
+                        </form>
+                    </div>
+                    <div id="sqianOK" class="qian-over">
+                        <img id="ic_sdisqian" class="ic_agree" src="../../images/ic_disagree.png" height="100%"
+                             alt=""/>
+                        <img id="ic_sqian" class="ic_agree" style="display: none" src="../../images/ic_agree.png"
+                             height="100%" alt=""/>
+                        <span>签名完成</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg-con">
+                <!--<span class="bank_bill">和<span class="aTags">《银行对账单》</span></span>-->
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="btn_next" class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">提交</div>
+    </div>
+
+</div>
+</body>
+</html>

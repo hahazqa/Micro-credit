@@ -1,0 +1,1776 @@
+/**
+ * 基金超市citigold-fundSupermarketsOne.html页面面
+ */
+#citigold-fundSupermarketsOne .head-seach{
+	  width: 200px;
+	  height: 34px;
+	  line-height: 34px;
+	  border-radius: 3px;
+	  border: 1px solid #0F45A7;
+	  color: #0F45A7;
+	  position: absolute;
+	  font-size: 0.8em;
+	  text-shadow: none;
+	  top: 30px;
+	  right: 14px;
+	  text-align: left;
+	  background-color: #FFFFFF;
+}
+#citigold-fundSupermarketsOne .seach_icon{
+	width: 20px;
+  	position: absolute;
+  	right: 15px;
+  	top: 6.5px;
+}
+#citigold-fundSupermarketsOne .head-seach-input{
+	width: 150px;
+    height: 32px;
+  	line-height: 32px;
+  	box-shadow: none;
+  	margin: 0 5px 0 5px;
+  	border: 0;
+}
+#citigold-fundSupermarketsOne #border-over,#citigold-fundSupermarketsTwo .border-over,.citigold-video-fundSupermarketsThree .border-over,#citigold-fundSupermarketsFour .border-over,#citigold-fundSupermarketsFives .border-over {
+  width: 7.1%;
+  height: 1px;
+  background-color: #0F45A7;
+  position: absolute;
+  top: 41.5px;
+  left: 7%;
+  z-index: 10;
+}
+#citigold-fundSupermarketsOne .conter-auto{
+	width: 90%;
+	padding: 0 5% 3% 5%;
+}
+#citigold-fundSupermarketsOne .featured-hot-con{
+	position: relative;
+	width: 100%;
+	top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+#citigold-fundSupermarketsOne .featured-hot{
+	width: 100%;
+}
+#citigold-fundSupermarketsOne .featured-hot-title{
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+#citigold-fundSupermarketsOne .featured-hot-ul{
+	
+	width: 100%;
+}
+#citigold-fundSupermarketsOne .featured-hot-ul li{
+	width: 33.33333333%;
+	float: left;
+	text-align: center;
+}
+#citigold-fundSupermarketsOne .featured-hot-border1{
+	width:195.5px;
+	height:195.5px;
+	border-radius: 195.5px;
+	border: 1px solid #CCCCCC;
+}
+#citigold-fundSupermarketsOne .featured-hot-border2{
+	width:183px;
+	height:183px;
+	border-radius: 183px;
+	border: 1px solid #0F45A7;
+	margin-top: 6.25px;
+}
+#citigold-fundSupermarketsOne .featured-hot-top{
+	display: block;
+	width: 49px;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-top: 23px;
+	margin-bottom: 30px;
+	font-size: 11px;
+}
+#citigold-fundSupermarketsOne .featured-hot-top1{
+	border: 1px solid #ff9e00;
+	color: #ff9e00;
+}
+#citigold-fundSupermarketsOne .featured-hot-top2{
+	border: 1px solid #ff9e00;
+	color: #ff9e00;
+}
+#citigold-fundSupermarketsOne .featured-hot-top3{
+	border: 1px solid #ff9e00;
+	color: #ff9e00;
+}
+#citigold-fundSupermarketsOne .featured-hot-mc{
+	padding: 0 20px 0 20px;
+	color: #0088cd;
+}
+#citigold-fundSupermarketsOne .featured-hot-sz{
+	padding-top: 30px;
+	color: #0088cd;
+	font-size: 11px;
+}
+#citigold-fundSupermarketsOne .goumai-dingtou{
+	width: 160px;
+	height: 25px;
+	background-color: #0F45A7;
+	color: #FFFFFF;
+	border-radius: 3px;
+	margin-top: 15px;
+	font-weight: 100 !important;
+}
+#citigold-fundSupermarketsOne .goumai-dingtou>a{
+	display: block;
+	width: 79px;
+	height: 20PX;
+	line-height: 20px;
+	margin-top: 2.5PX;
+	float: left;
+	font-size: 10px;
+	font-weight: 100 !important;
+	color: #FFFFFF !important;
+	text-shadow: none !important;
+  font-size: 14px;
+}
+#citigold-fundSupermarketsOne .goumai-dingtou>a:active{
+	background-color: #547bc1;
+	color: #FFFFFF;
+	padding: 2px 0;
+}
+#citigold-fundSupermarketsOne .goumai{
+	border-right: 1px solid #FFFFFF;
+}
+
+
+#citigold-fundSupermarketsOne .swiper-container {
+    width: 100%;
+    margin: 0;
+    height: 280px;
+    /*overflow: hidden;*/
+}
+#citigold-fundSupermarketsOne .swiper-pagination{
+    bottom:0;
+}
+#citigold-fundSupermarketsOne .swiper-pagination>span{
+    height: 9px;
+    width: 9px;
+    border-radius: 9px;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang{
+	width: 100%;
+  	height: 100%;
+  	background-color: rgba(0,0,0,0.35);
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 24;
+  	display: none;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang-con{
+	width: 760px;
+	height: 388px;
+	background-color: #f7f7f7;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang-ul{
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang-ul li{
+	width: 334px;
+  height: 39px;
+  border: 1px solid #CCCCCC;
+  float: left;
+  margin-top: 25px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-left: 38px;
+  background-color: #FFFFFF;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang-ul li.min-left{
+	margin-left: 15px;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang-ul li.chenXing{
+	width: 195px;
+}
+#citigold-fundSupermarketsOne .shuaixuan-tanchuang-ul li.xingJi{
+	width: 124px;
+}
+#citigold-fundSupermarketsOne .chen{
+	width: 73px;
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	color: #CCCCCC;
+	padding-left: 4.2%;
+	position: relative;
+	box-shadow: none !important;
+}
+#citigold-fundSupermarketsOne .xishu{
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	color: #CCCCCC;
+	padding-left: 4.2%;
+	position: relative;
+	box-shadow: none !important;
+}
+#citigold-fundSupermarketsOne .result-left{
+	width: 80px;
+  	height: 37px;
+  	line-height: 37px;
+  	float: left;
+  	color: #CCCCCC;
+  	padding-left: 4.2%;
+  	position: relative;	
+  	box-shadow: none !important;
+}
+#citigold-fundSupermarketsOne .citigold-left{
+	width: 115px;
+}
+#citigold-fundSupermarketsOne .required-stars{
+	color: #d0021b;
+  	position: absolute;
+  	top: -3.5px;
+  	left: 4%;
+  	font-size: 0.85em;
+}
+#citigold-fundSupermarketsOne .input-test{
+	width: 213px;
+  	height: 37px;
+  	background-color: #FFFFFF;
+  	float: right;
+  	overflow: hidden;
+}
+#citigold-fundSupermarketsOne .citigold-test{
+	width: 178px;
+}
+#citigold-fundSupermarketsOne .input-test-con{
+	width: 100%;
+  	height: 34px;
+  	line-height: 34px;
+  	box-shadow: none;
+  	border: 0;
+}
+#citigold-fundSupermarketsOne .ui-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+  font-size: 1em;
+  padding: .8em 1em;
+  line-height: 1 !important;
+  font-family: "helvetica neue";
+}
+#citigold-fundSupermarketsOne .ui-btn {
+  font-size: 1em;
+  padding: .8em 1em;
+  line-height: 1 !important;
+}
+#citigold-fundSupermarketsOne .ui-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+  font-weight: 100;
+  font-weight: normal;
+}
+#citigold-fundSupermarketsOne .ui-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+}
+#citigold-fundSupermarketsOne .ui-btn {
+  font-size: 1em;
+  padding: .25em 1em;
+  line-height: 1 !important;
+}
+#citigold-fundSupermarketsOne .ui-btn-icon-right:after {
+  right: .2625em;
+}
+#citigold-fundSupermarketsOne .ui-icon-carat-d:after {
+  background: url(.././images/icon-right.png) no-repeat;
+  background-size: 60%;
+  top: 41% !important;
+  margin-top: -9px !important;
+}
+#citigold-fundSupermarketsOne .drop-down {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 0;
+  font-size: 0.95em;
+}
+#citigold-fundSupermarketsOne .shuaixuan-queren{
+	display: block;
+	width: 260px;
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #0F45A7;
+	color: #0F45A7;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	margin-top: 30px;
+	font-weight: 400 !important;
+	text-shadow: none !important;
+}
+#citigold-fundSupermarketsOne .shuaixuan-queren:active{
+	background-color: #0F45A7;
+    color:#FFFFFF !important;
+}
+#citigold-fundSupermarketsOne .citigold-drop-down{
+	width: 80px !important;
+}
+#citigold-fundSupermarketsOne .citigold-drop-down1{
+	width: 104px !important;
+}
+#citigold-fundSupermarketsOne .citigold-drop-down2{
+	width: 72px !important;
+}
+/**
+ * 基金超市citigold-fundSupermarketsTwo.html页面
+ */
+#citigold-fundSupermarketsTwo .previous-ul {
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 45px;
+}
+#citigold-fundSupermarketsTwo .add-to-compare{
+	width: 250px;
+	height: 43.5px;
+	line-height: 43.5px;
+	border:1px solid #0F45A7;
+	color: #0F45A7;
+	clear: both;
+	text-align: center;
+	margin-top: 40px;
+}
+#citigold-fundSupermarketsTwo .add-to-compare:active{
+	background-color: #0F45A7;
+	color: #FFFFFF;
+}
+#citigold-fundSupermarketsTwo .previous-ul>li{
+	margin-bottom: 40px;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-con{
+	width: 100%;
+	float: left;
+	padding: 0 2% 0 2%;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-con>li{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-con>li:first-child{
+	margin-left: 20%;
+}
+#citigold-fundSupermarketsTwo .conter-con{
+	background-color: #FFFFFF;
+}
+#citigold-fundSupermarketsTwo .contrast-fund{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-bottom{
+	width: 100%;
+	height: 33px;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-bottom>a{
+	width: 48.5px;
+	height: 30.5px;
+	line-height: 30.5px;
+	border: 1px solid #0F45A7;
+	color: #0045A7 !important;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400 !important;
+	text-shadow: none !important;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-bottom>a:active{
+	background-color: #0045A7;
+	color: #FFFFFF !important;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-buy{
+	float: left;
+	margin-left: 30px;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-dingtou{
+	float: right;
+	margin-right: 30px;
+}
+#citigold-fundSupermarketsTwo .expand-collapse-con{
+	width: 96%;
+	margin: 0 auto;
+	clear: both;
+	margin-left: 2%;
+}
+#citigold-fundSupermarketsTwo .expand-collapse{
+	width: 100%;
+}
+#citigold-fundSupermarketsTwo .expand-collapse-title{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #0F45A7;
+	color: #0F45A7;
+	position: relative;
+}
+#citigold-fundSupermarketsTwo .expand-collapse-name{
+	padding-left:86px;
+}
+#citigold-fundSupermarketsTwo .expand-collapse-zhankai{
+	display: block;
+  	width: 100px;
+  	float: right;
+  	height: 38px;
+  	top: 0;
+  	right: 27.5px;
+  	background: url(../images/jiantou-bottom.png) 50% 50% no-repeat;
+  	background-size: 18px;
+}
+#citigold-fundSupermarketsTwo .expand-collapse-shouqi{
+	display: block;
+  	width: 100px;
+  	float: right;
+  	height: 38px;
+  	top: 0;
+  	right: 27.5px;
+  	background: url(../images/jiantou-top.png) 50% 50% no-repeat;
+  	background-size: 18px;
+  	display: none;
+}
+#citigold-fundSupermarketsTwo .zhankai-neirong{
+	width: 100%;
+	display: none;
+}
+#citigold-fundSupermarketsTwo .zhankai-neirong>li{
+	width: 100%;
+	height: 38px;
+	overflow: hidden;
+	background-color: #F7F7F7;
+}
+#citigold-fundSupermarketsTwo .zhankai-neirong>li:nth-child(even){
+	background-color: #FFFFFF;
+}
+#citigold-fundSupermarketsTwo .zhankai-neirong>li>span{
+	display: block;
+	width: 20%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center !important;
+	float: left;
+}
+/**
+ * 基金超市citigold-fundSupermarketsFour.html页面
+ */
+.citigold-four-fives .fund-investment{
+	width: 82%;
+  	text-align: left;
+  	margin-top: 40px;
+  	margin-left: 12.2%;
+  	margin-bottom: 16px;
+  	font-size: 19px;
+  	color: #666666;
+}
+.citigold-four-fives .previous-ul{
+	width: 80%;
+	padding: 0 8% 0 8%;
+	float: left;
+	margin-left: 2%;
+}
+.citigold-four-fives .previous-ul>li{
+	width: 45.5%;
+	height: 39px;
+	border: 1px solid #CCCCCC;
+	float: left;
+	margin-left: 3%;
+	margin-top: 35px;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+.citigold-four-fives .previous-ul .change-color-li{
+	background-color: #f5f5f5;
+}
+.citigold-four-fives .previous-ul .change-colorf-li{
+	background-color: #ffffff;
+}
+.citigold-four-fives .day-botton-img {
+  height: 24px;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+.citigold-four-fives .ui-input-text input, .ui-input-search input {
+  margin: 0;
+  height: 100%;
+  text-align: left;
+  border: 0;
+  background:#FFFFFF;
+  -webkit-appearance: none;
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+.citigold-four-fives .ui-input-text, .ui-input-search {
+  margin: 0;
+  border-width: 0;
+  border-style: solid;
+}
+.citigold-four-fives .result-left {
+  width: 30%;
+  height: 37px;
+  line-height: 37px;
+  float: left;
+  color: #CCCCCC;
+  padding-left: 4.2%;
+  position: relative;
+  box-shadow: none !important;
+}
+.citigold-four-fives .required-stars {
+  color: #d0021b;
+  position: absolute;
+  top: -3.5px;
+  left: 4.5%;
+  font-size: 0.85em;
+}
+.citigold-four-fives .input-test{
+  width: 65%;
+  height: 37px;
+  float: left;
+  overflow: hidden;
+}
+.citigold-four-fives .input-last-zhi{
+	line-height: 37px;
+	color: #666666;
+}
+.citigold-four-fives .citigold-right{
+	width: 61%;
+}
+.citigold-four-fives .citigold-right1{
+	width: 54%;
+}
+
+/**
+ * 业务签约citigold-businessContract.html页面
+ */
+#citigold-businessContract  #border-over {
+    width: 49.9%;
+}
+#citigold-businessContract .previous-ul{
+	margin-top: 30px;
+	clear: both;
+}
+#citigold-businessContract .previous-ul>li {
+  margin-top: 25px;
+  background-color: #FFFFFF;
+}
+#citigold-businessContract .citigold-left1{
+	width: 35%;
+}
+#citigold-businessContract .citigold-right1{
+	width: 60%;
+}
+#citigold-businessContract .tzrblzjywxz{
+	width: 100%;
+}
+#citigold-businessContract .tzrblzjywxz-con{
+	width: 75%;
+  	clear: both;
+  	margin: 0 auto;
+  	padding-top: 55px;
+}
+.citigold-four-fives .input-test-con{
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  box-shadow: none;
+  border: 0;
+}
+.citigold-four-fives .ui-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+  font-size: 1em;
+  padding: .8em 1em;
+  line-height: 1 !important;
+  font-family: "helvetica neue";
+}
+.citigold-four-fives .ui-btn {
+  font-size: 1em;
+  padding: .8em 1em;
+  line-height: 1 !important;
+}
+.citigold-four-fives .ui-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+  font-weight: 100;
+  font-weight: normal;
+}
+.citigold-four-fives .ui-btn {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+}
+.citigold-four-fives .ui-btn {
+  font-size: 1em;
+  padding: .25em 1em;
+  line-height: 1 !important;
+}
+.citigold-four-fives .ui-btn-icon-right:after {
+  right: .2625em;
+}
+.citigold-four-fives .ui-icon-carat-d:after {
+  background: url(.././images/icon-right.png) no-repeat;
+  background-size: 60%;
+  top: 41% !important;
+  margin-top: -9px !important;
+}
+.citigold-four-fives .drop-down {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 0;
+  font-size: 0.95em;
+}
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #000000;
+  text-shadow: none;
+}
+#citigold-businessContract .tzrblzjywxz-detaid{
+	width: 100%;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	margin-top: 30px;
+	border: 1px solid #CCCCCC;
+	padding-bottom: 30px;
+}
+#citigold-businessContract .tzrblzjywxz-detaid-title{
+	padding: 0 5%;
+	display: block;
+	font-size: 14px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	text-align: center;
+	color: #333333;
+}
+#citigold-businessContract .tzrblzjywxz-detaid-con{
+	font-size: 12px;
+	padding: 0 5%;
+	color: #666666;
+}
+#citigold-businessContract .agree-box {
+  width: 100%;
+}
+#citigold-businessContract .agree-btn-box {
+  width: 23.14453125%;
+  margin-top: 20px;
+  min-width: 237px;
+  height: 42px;
+  line-height: 42px;
+  border: solid 1px #0F45A7;
+  border-radius: 9px;
+  z-index: 1000;
+  /*float: left;*/
+}
+#citigold-businessContract .ic-agree {
+  display: inline-block;
+  height: 21px;
+  margin: 7.5px 6px 10.5px 23px;
+  vertical-align: middle;
+}
+#citigold-businessContract .ic-agree {
+  display: inline-block;
+  height: 21px;
+  margin: 7.5px 6px 10.5px 23px;
+  vertical-align: middle;
+}
+#citigold-businessContract .txt-agree {
+  display: inline-block;
+  font-size: 16px;
+  color: #0F45A7;
+}
+
+/**
+ * 基金超市citigold-fundSupermarketsThree.html页面
+ */
+.citigold-video-fundSupermarketsThree .box-header{
+    height: 50px;
+    width: 100%;
+    background-color: #EBEBEB;
+    margin-top: 30px;
+}
+.citigold-video-fundSupermarketsThree .box-header>div{
+    height: 50px;
+    width: 12%;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+#citigold-fundSupermarketsThree .box-header>div:nth-child(1){
+  width:16%;
+}
+.citigold-video-fundSupermarketsThree .box-content{
+    width: 100%;
+    height: auto;
+}
+.citigold-video-fundSupermarketsThree .box-rows:nth-child(even){
+    background-color: #f7f7f7;
+}
+.citigold-video-fundSupermarketsThree .box-rows{
+    width: 100%;
+    height: 55px;
+}
+.citigold-video-fundSupermarketsThree .click{
+    background-color: #0F45A7 !important;
+    color: #FFFFFF;
+    text-shadow:none;
+}
+.citigold-video-fundSupermarketsThree .box-rows>div{
+    height: 55px;
+    width: 12%;
+    text-align: center;
+    float: left;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#citigold-fundSupermarketsThree .box-rows>div:nth-child(1){
+  width: 16%;
+}
+#citigold-fundSupermarketsThree .box-rows>div:nth-child(4){
+  text-align: center;
+  /*width: 8%;*/
+  /*padding-right: 4%;*/
+}
+.citigold-video-fundSupermarketsThree .ui-page-theme-a{
+	text-shadow: none !important;
+}
+/**
+ * 读取身份证citigold-readIDOne.html页面
+ */
+#citigold-readIDOne .conter-con{
+	bottom: 0;
+}
+#citigold-readIDOne #border-over,#dianzi-yingXiang #border-over{
+    width: 21.3%;
+}
+
+#citigold-readIDOne .picRe {
+	display: block;
+    position: relative;
+    top: 42px;
+    left: 80%;
+    margin: 0;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 16px;
+    width: 11.5234375%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    
+}
+
+#citigold-readIDOne .readID {
+    display: block;
+    width: auto;
+    height: 312px;
+    margin: 54px auto 41px auto;
+}
+
+#citigold-readIDOne .read_prompt {
+    text-align: center;
+    font-size: 22px;
+    color: #4A4A4A;
+}
+/**
+ * 读取身份证citigold-readIDTwo.html页面
+ */
+#citigold-readIDTwo #border-over {
+    width: 21.3%;
+}
+
+#citigold-readIDTwo .pic_suc {
+    margin: 15px 4% 10px 4%;
+    width:92%;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: 19px;
+}
+
+#citigold-readIDTwo .img_box {
+    width: 92%;
+    height: auto;
+    margin: 0 4%;
+}
+
+#citigold-readIDTwo .sfzz-box, #citigold-readIDTwo .sfzf-box {
+    width: 398px;
+    height: auto;
+    display: inline-block;
+}
+
+#citigold-readIDTwo .sfzz-box {
+    background: url("../images/sfzzm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#citigold-readIDTwo .sfzz-box span {
+    display: inline-block;
+}
+
+#citigold-readIDTwo .sfz-img {
+    float: right;
+    width: 103px;
+    height: auto;
+    margin-top: 45px;
+    margin-right: 30px;
+}
+
+#citigold-readIDTwo .sfzz-box .sfz-name {
+    margin-top: 43px;
+}
+
+#citigold-readIDTwo .ziduan-name {
+    color: #2C86B6;
+    font-size: 16px;
+}
+
+#citigold-readIDTwo .ziduan-qian {
+    color: #3D3D3D;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#citigold-readIDTwo .ziduan-min {
+    margin-left: 30px;
+}
+
+#citigold-readIDTwo .ziduan-add {
+    display: inline-block !important;
+    font-size: 14px !important;
+    width: 46%;
+}
+
+#citigold-readIDTwo .ziduan-value {
+    font-size: 15px;
+    color: #3D3D3D;
+    margin-left: 4px;
+}
+
+#citigold-readIDTwo .gong-num {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#citigold-readIDTwo .sfzz-box > p {
+    margin-left: 32px;
+    margin-top: 12px;
+}
+
+#citigold-readIDTwo .sfzf-box {
+    background: url("../images/sfzfm-d.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    float: right;
+    height: 250px;
+}
+
+#citigold-readIDTwo .sfzf-box p {
+    margin-left: 21%;
+}
+
+#citigold-readIDTwo .sfzf-box .qianfa {
+    margin-top: 155px;
+}
+
+#citigold-readIDTwo .sfzf-box .qixian {
+    margin-top: 18px;
+    margin-bottom: 28px;
+}
+
+#citigold-readIDTwo .readID_positive, .readID_negative {
+    display: inline-block;
+    width: 46.71361502%;
+    height: auto;
+}
+
+#citigold-readIDTwo .readID_negative {
+    float: right;
+}
+
+#citigold-readIDTwo .loading_box {
+    width: 100%;
+    text-align: center;
+}
+
+#citigold-readIDTwo .read_loading {
+    font-size: 18px;
+    color: #d0021b;
+}
+#citigold-readIDTwo .loading_box>img{
+    width: 60px;
+    height: auto;
+}
+/**
+ * 完成citigold-carryOut.html页面
+ */
+#citigold-carryOut #border-over{
+    width: 83.3333333333%;
+}
+#citigold-carryOut .compl_box{
+   /*  margin-top: 106px; */
+    width:100%;
+}
+#citigold-carryOut .compl_box>img{
+    display: block;
+    /* margin-left: 42.5%; */
+    width:15%;
+    height:auto;
+}
+#citigold-carryOut .compl_box>p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #0F45A7;
+}
+/**
+ *信息录入 citigold-InformationInput.html页面
+ */
+#citigold-InformationInput #border-over {
+    width: 64.5%;
+}
+
+#citigold-InformationInput .img_content {
+    width: 76%;
+  	margin: 43px 0 0px 7%;
+}
+#citigold-InformationInput .qitazhengming{
+    color: #0F45A7;
+}
+#citigold-InformationInput .img_content:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#citigold-InformationInput .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#citigold-InformationInput .rephoto {
+    position: relative;
+    left: 0px;
+    top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #d0021b;
+    font-size: 14px;
+    background-color: rgba(250, 251, 252, 0.8);
+    border-radius: 12px 12px 0px 0px;
+    z-index: 100;
+}
+
+#citigold-InformationInput .customer .camera {
+    width: 60px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    margin-left: -30px;
+    margin-top: -15px;
+    z-index: 100;
+
+}
+
+#citigold-InformationInput .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+    /*border: 0 !important;*/
+}
+
+#citigold-InformationInput .customer_one {
+    background: url("../images/khmbzp.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+/*#citigold-InformationInput .customer_two{*/
+/*background: url("../images/khsqxyksp.png") no-repeat 100% 100%;*/
+/*background-size: 100% 100%;*/
+/*}*/
+#citigold-InformationInput .customer_three {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#citigold-InformationInput .customer_four {
+    background: url("../images/sfzzm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#citigold-InformationInput .customer_five {
+    background: url("../images/sfzfm.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+/*#citigold-InformationInput .customer_six{*/
+/*background: url("../images/otherzm.png") no-repeat 100% 100%;*/
+/*background-size: 100% 100%;*/
+/*}*/
+#citigold-InformationInput .img_box {
+  float: left;
+  width: 38.03986711%;
+  max-width: 229px;
+  min-width: 160px;
+  margin-left: 18%;
+  margin-bottom: 45px;
+}
+
+#citigold-InformationInput .img_box:nth-child(even) {
+    width: 38.03986711%;
+}
+
+#citigold-InformationInput .img_notes {
+    margin-top: 10px;
+    text-align: center;
+}
+/**
+ * 信息录入citigold-InformationInputOne.html页面
+ */
+#citigold-InformationInputOne #border-over {
+    width: 64.5%;
+}
+#citigold-InformationInputOne .previous-ul-ul{
+	margin-top: 46px;
+}
+#citigold-InformationInputOne .previous-ul>li,#citigold-fundSupermarketsFivesTwo .previous-ul>li {
+  margin-top: 15px;
+}
+#citigold-InformationInputOne .li-first-div-con{
+	width: 280px;
+	height: 39px;
+	line-height: 39px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	float: left;
+}
+#citigold-InformationInputOne .li-first-div-con .li-first-div-title{
+	width:73px;
+	float: left;
+	padding-left: 11px;
+	position: relative;
+	color: #B3B3B3;
+}
+#citigold-InformationInputOne .required-stars {
+  color: #d0021b;
+  position: absolute;
+  top: -3PX;
+  left: 5PX;
+  font-size: 0.85em;
+}
+#citigold-InformationInputOne .li-first-div-input{
+	width: 195px;
+	height: 39px;
+	float: left;
+}
+/**
+ * 信息录入citigold-fundSupermarketsFivesTwo.html页面
+ */
+#citigold-InformationInputTwo .previous-ul>li {
+  margin-top: 15px;
+}
+#citigold-InformationInputTwo .day-touzi{
+	display: block;
+  	width: 90px;
+  	position: absolute;
+  	right: -110px;
+  	bottom: 12px;
+  	color: #D0021B;
+  	font-size: 12px;
+}
+/**
+ * 确认签名citigold-fundSupermarketsFivesTwo.html页面
+ */
+#citigold-confirmationSignature #border-over,#citigold-confirmationSignatureTwo #border-over {
+    width: 78.1%;
+}
+#citigold-confirmationSignature .confirm-ul li,#citigold-confirmationSignatureTwo .confirm-ul li {
+    margin-left: 3.52112676%;
+    margin-bottom: 25px;
+    width: 92.95774648%;
+}
+#citigold-confirmationSignature .duanX_con > span,#citigold-confirmationSignatureTwo .duanX_con > span {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+}
+
+#citigold-confirmationSignature .video-qian,#citigold-confirmationSignatureTwo .video-qian {
+    margin: 90px 2% 0px 2%;
+    width: 96%;
+    height: 231.5px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index:1;
+}
+
+#citigold-confirmationSignature .video-qian .video-box, #citigold-confirmationSignature .video-qian .qian-box,#citigold-confirmationSignatureTwo .video-qian .video-box, #citigold-confirmationSignatureTwo .video-qian .qian-box {
+    display: inline-block;
+    border: solid 1px #CCCCCC;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    height: 231.5px;
+}
+
+#citigold-confirmationSignature .video-qian .video-box,#citigold-confirmationSignatureTwo .video-qian .video-box {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 36.1328125%;
+    margin-right: 3.80859375%;
+    background: url("../images/bg_photo.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index:2;
+}
+
+#citigold-confirmationSignature .video-qian .video-box .video-header,#citigold-confirmationSignatureTwo .video-qian .video-box .video-header {
+    height: 44px;
+    padding: 0px 1.953125%;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #ffffff;
+    text-align: center;
+    color:#D0021B;
+}
+
+#citigold-confirmationSignature .video-qian .video-box .video-header > span,#citigold-confirmationSignatureTwo .video-qian .video-box .video-header > span {
+    height: 44px;
+    line-height: 44px;
+}
+
+#citigold-confirmationSignature #rephoto,#citigold-confirmationSignatureTwo #rephoto {
+    float: right;
+    color: #0F45A7;
+}
+
+#citigold-confirmationSignature .photo,#citigold-confirmationSignatureTwo .photo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-top: -80px;
+    margin-left: -50px;
+
+}
+
+#citigold-confirmationSignature .video-qian .qian-box,#citigold-confirmationSignatureTwo .video-qian .qian-box {
+	width: 100%;
+	height: 100%;
+    float: right;
+    width: 54.19921875%;
+    background-color: #fcfcfc;
+    position: relative;
+    z-index:1;
+}
+#citigold-confirmationSignature .kh-buy-title,#citigold-confirmationSignatureTwo .kh-buy-title{
+	position: absolute;
+  	top: -40px;
+  	left: 0;
+}
+#citigold-confirmationSignature .kh-buy-cxps,#citigold-confirmationSignatureTwo .kh-buy-cxps{
+	position: absolute;
+  	top: -40px;
+  	left: 29%;
+  	color: #0F45A7;
+}
+#citigold-confirmationSignature .kh-buy-qrqm,#citigold-confirmationSignatureTwo .kh-buy-qrqm{
+	position: absolute;
+  	top: -40px;
+  	left: 45.5%;
+}
+#citigold-confirmationSignature .qian-content,#citigold-confirmationSignatureTwo .qian-content{
+	width: 100%;
+	height: 100%;
+	background: url(../images/shouxieqianming.png) center center no-repeat;
+  	background-size: 282px;
+}
+#citigold-confirmationSignature .video-qian .qian-box .qian-header,#citigold-confirmationSignatureTwo .video-qian .qian-box .qian-header {
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 1.953125%;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #e8e8e8;
+}
+#citigold-confirmationSignature .qian-over,#citigold-confirmationSignatureTwo .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+/*#citigold-confirmationSignature .video-qian .qian-box .qian-header{*/
+/*height: 44px;*/
+/**/
+/*}*/
+#citigold-confirmationSignature .duanX_con,#citigold-confirmationSignatureTwo .duanX_con {
+    margin-top: 25px;
+    margin-left: 3.41796875%;
+    height: 36px;
+    line-height: 36px;
+}
+
+#citigold-confirmationSignature .duanX_con > span,#citigold-confirmationSignatureTwo .duanX_con > span {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+}
+
+#citigold-confirmationSignature #inp,#citigold-confirmationSignatureTwo #inp {
+    height: 34px;
+    width: 13.28125%;
+    margin-left: 2%;
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+}
+
+#citigold-confirmationSignature #getMsg,#citigold-confirmationSignatureTwo #getMsg {
+    height: 34px;
+    line-height: 34px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    width: 13.3515625%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+}
+
+#citigold-confirmationSignature .qianM_con,#citigold-confirmationSignatureTwo .qianM_con {
+    margin: 25px 0px 25px 3.41796875%;
+}
+
+#citigold-confirmationSignature .qianM_con > span,#citigold-confirmationSignatureTwo .qianM_con > span {
+    display: inline-block;
+}
+
+#citigold-confirmationSignature .qianM_con > span:first-child,#citigold-confirmationSignatureTwo .qianM_con > span:first-child{
+    vertical-align: top;
+}
+
+#citigold-confirmationSignature .qianM_box,#citigold-confirmationSignatureTwo .qianM_box {
+    width: 78.3203125%;
+}
+
+#citigold-confirmationSignature #qianM,#citigold-confirmationSignatureTwo #qianM {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 235.5px;
+    border-radius: 12px;
+}
+
+#citigold-confirmationSignature .ic_agree,#citigold-confirmationSignatureTwo .ic_agree {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+#citigold-confirmationSignature .customer-risk-rating,#citigold-confirmationSignatureTwo .customer-risk-rating{
+	width: 100%;
+	height: 90px;
+	margin-top: 45px;
+}
+#citigold-confirmationSignature .customer-risk-pj,#citigold-confirmationSignatureTwo .customer-risk-pj{
+	padding: 0 5px;
+}
+#citigold-confirmationSignature .agree-btn-box,#citigold-confirmationSignatureTwo .agree-btn-box {
+  width: 100%;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 42px;
+  z-index: 99;
+  float: left;
+}
+#citigold-confirmationSignature .ic-agree,#citigold-confirmationSignatureTwo .ic-agree {
+  display: inline-block;
+  height: 21px;
+  margin: 7.5px 6px 10.5px 0;
+  vertical-align: middle;
+}
+#citigold-confirmationSignature .txt-agree,#citigold-confirmationSignatureTwo .txt-agree {
+  display: inline-block;
+  font-size: 16px;
+  color: #666666;
+}
+#citigold-confirmationSignature .jijin-kesm,#citigold-confirmationSignatureTwo .jijin-kesm{
+	color: #0F45A7;
+}
+#citigold-confirmationSignature #clear-botton,#citigold-confirmationSignatureTwo #clear-botton{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #CCCCCC;
+	position: absolute;
+	right: 0;
+	top: -45px;
+	text-align: center;
+	border-radius: 5px;
+  z-index:2;
+}
+
+#citigold-confirmationSignature .qianM_shadow,#citigold-confirmationSignatureTwo .qianM_shadow{
+  display: none;
+  position: absolute;
+  left:0;
+  right:0;
+  top:-45px;
+  z-index:3;
+  height:277px;
+}
+/**
+ *风险评估页面citigold-riskAssessment.html 
+ */
+#citigold-riskAssessment #border-over,#citigold-diaocawenjuan #border-over {
+    width: 35.8%;
+}
+#citigold-riskAssessment .assessment-con{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 85px;
+}
+#citigold-riskAssessment .assessment-con .assessment-con-li{
+	width: 30%;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	position: relative;
+	border-radius: 8px;
+	float: left;
+	margin-left: 13%;
+	font-size: 25px;
+}
+#citigold-riskAssessment .assessment-con-baoshou{
+	border: 1px solid #0F45A7;
+	color: #0F45A7;
+}
+#citigold-riskAssessment .assessment-con-jinqu{
+	border: 1PX solid #e2385d;
+	color: #e2385d;
+}
+#citigold-riskAssessment .khfxdj-cpfxdj{
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	color: #000000;
+}
+#citigold-riskAssessment .djckxq-con{
+	padding: 0 5px;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid #CCCCCC;
+	color: #CCCCCC;
+	font-size: 12px;
+	border-radius: 3px;
+}
+#citigold-riskAssessment .end-yes-no{
+	width: 100%;
+	font-size: 17px;
+	color: #e2385d;
+	float: left;
+	text-align: center;
+	margin-top: 100px;
+}
+#citigold-riskAssessment .yes-no-con{
+	font-size: 28px;
+	padding-right: 10px;
+}
+#citigold-riskAssessment .no-no-con{
+	color: #0088cd;
+}
+/**
+ * 风险评估－调查问卷citigold-diaocawenjuan.html页面
+ */
+#citigold-diaocawenjuan .diaocawenjuan-con{
+	width: 90%;
+	margin: 0 auto;
+}
+#citigold-diaocawenjuan .diaocawenjuan-name{
+	width: 100%;
+	text-align: center;
+	font-size: 19px;
+	margin:28px 0 15px 0;
+}
+#citigold-diaocawenjuan .diaocawenjuan-all{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+#citigold-diaocawenjuan .diaocawenjuan-ul,#citigold-diaocawenjuan .diaocawenjuan-ul-con{
+	width: 100%;
+	float: left;
+}
+#citigold-diaocawenjuan .diaocawenjuan-header{
+	margin: 40px 0 30px 0;
+	font-size: 18px;
+	float: left;
+}
+#citigold-diaocawenjuan .diaocawenjuan-ul>li{
+	width: 33.3333%;
+	float: left;
+	margin-top: 35px;
+}
+#citigold-diaocawenjuan .diaocawenjuan-ul-con>li{
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+	position: relative;
+	
+}
+#citigold-diaocawenjuan .diaocawenjuan-ul>li>span{
+	padding: 8px 15px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	font-size: 15px;
+	margin-top: 30x;
+	position: relative;
+}
+#citigold-diaocawenjuan .diaocawenjuan-ul-con>li>span{
+	padding: 8px 15px;
+	font-size: 15px;
+	margin-top: 30px;
+	padding-left: 40px;
+}
+#citigold-diaocawenjuan .diaocawenjuan-no{
+	width: 23px;
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+#citigold-diaocawenjuan .diaocawenjuan-yes{
+	width: 23px;
+	position: absolute;
+	top:-1px;
+	left: 0;
+	display: none;
+}
+#citigold-diaocawenjuan .diaocawenjuan-ul>li .diaocawenjuan-duigou{
+	border: 1px solid #0F45A7;
+	background: url(../images/diaocawenjuan-duigou.png) bottom right no-repeat;
+	background-size: 20px;
+}
+#citigold-diaocawenjuan .submitted-successfully {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 24;
+  display: none;
+}
+#citigold-diaocawenjuan .submitted-successfully-con {
+  width: 417px;
+  height: 235px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#citigold-diaocawenjuan .submitted-successfully-head {
+  width: 95%;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-bottom: 1PX solid #CCCCCC;
+  text-align: left;
+  padding-left: 5%;
+  margin-bottom: 30px;
+}
+#citigold-diaocawenjuan .submitted-successfully-btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #0F45A7;
+  color: #0F45A7;
+  margin-top: 30px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 57px;
+  font-weight: 100;
+}
+#citigold-diaocawenjuan .submitted-successfully-neirong{
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+	color: #757575;
+	font-size: 15PX;
+}
+
+#citigold-video .box-header>div{
+	width: 20% !important;
+}
+#citigold-video .box-rows>div{
+	width: 20% !important;
+}
+
+
+#citigold-personFace #border-over {
+    width:58.33333333329%;
+}
+#citigold-personFace .center-header{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+#citigold-personFace .img_content {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+#citigold-personFace .customer {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: solid 1px #CCCCCC !important;
+    border-radius: 12px !important;
+}
+
+#citigold-personFace .customer .customer-picture {
+    width: 100%;
+    height: 100%;
+}
+
+#citigold-personFace .customer_one,#citigold-personFace .customer_four,#citigold-personFace .customer_six {
+    background: url("../images/ic_mianbu.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+#citigold-personFace .customer_three {
+    background: url("../images/ic_shenfenzheng.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+#citigold-personFace .img_box {
+    float: left;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+}
+#citigold-personFace .face-box {
+    float: left;
+    width: 24.42244224%;
+    min-width: 148px;
+}
+#citigold-personFace .face-result {
+    text-align: center;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 65px;
+    border-radius: 3px;
+    color: #F9F9F9;
+}
+#citigold-personFace .pass{
+    background-color: #0F45A7;
+}
+#citigold-personFace .no-pass{
+    background-color: #D13F14;
+}
+#citigold-personFace .img_notes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+#citigold-personFace .camera{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+
+
+#citigold-riskAssessment .submitted-successfully {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 24;
+  display: none;
+}
+#citigold-riskAssessment .submitted-successfully-con {
+  width: 417px;
+  height: 235px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#citigold-riskAssessment .submitted-successfully-head {
+  width: 95%;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-bottom: 1PX solid #CCCCCC;
+  text-align: left;
+  padding-left: 5%;
+  margin-bottom: 30px;
+}
+#citigold-riskAssessment .submitted-successfully-btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #0F45A7;
+  color: #0F45A7;
+  margin-top: 30px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 148px;
+  font-weight: 100;
+}
+#citigold-riskAssessment .submitted-successfully-neirong{
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+  color: #757575;
+  font-size: 15PX;
+}
+#citigold-confirmationSignature .cannt-click,#citigold-confirmationSignatureTwo .cannt-click{
+    color: #ccc !important;
+    border: 1px solid #ccc !important;
+}
+
+#citigold-fundSupermarketsError .box-header{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+  background-color: #EBEBEB;
+}
+#citigold-fundSupermarketsError .box-header div{
+  width: 10%;
+  float: left;
+}
+#citigold-fundSupermarketsError .conter-auto{
+  height: 82%;
+}
+#citigold-fundSupermarketsError .box-content li{
+  width: 100%;
+  text-align: center;
+  height: 55px;
+  line-height: 55px;
+}
+#citigold-fundSupermarketsError .box-content li:nth-child(even){
+  background-color: #f7f7f7;
+}
+#citigold-fundSupermarketsError .box-content li div{
+  float: left;
+  width: 10%;
+  height:55px;/*G20151123*/
+  overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+#citigold-carryOut #border-over{
+    width: 83.3333333333%;
+}
+#citigold-carryOut .compl_box{
+    width:100%;
+}
+#citigold-carryOut .compl_box>img{
+    display: block;
+    border: 0;
+    margin-top: 25px;
+    width:230px;
+    height:230px;
+}
+#citigold-carryOut .compl_box .box_head{
+    padding-top: 75px;
+    color: #0F45A7;
+    font-size: 20px;
+    text-align: center;
+}
+#citigold-carryOut .compl_box .box_foot{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    color: #808080;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-bottom .btn_next_dingtougoumai{
+	border: 1px solid #0F45A7 !important;
+    color: #0F45A7 !important;
+}
+#citigold-fundSupermarketsTwo .contrast-fund-bottom .btn_next_dingtougoumai:active{
+	background-color: 1px solid #0F45A7 !important;
+    color: #ffffff !important;
+}
+
+
+

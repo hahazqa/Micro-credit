@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/loan.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <title>银行对账单</title>
+</head>
+<body>
+    <div data-role="page" class="main loan" id="bank-bill">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">首页</a>
+        银行对账单
+        <a href="../main.html" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航栏-->
+    <div class="navigation-steps-mobile">
+        <div class="navigation-steps-seach">
+            <div class="seach-botton">搜索</div>
+            <div class="seach-botton">新对账单</div>
+            <div class="head-seach">
+                <input type="text" placeholder="按姓名搜索" style="color: #CCCCCC;" data-role="none"
+                       class="head-seach-input">
+                <img src="../../images/seach_one_icon.png" class="seach_icon">
+            </div>
+        </div>
+    </div>
+    <div data-role="content"  class="conter-con" style="bottom: 0;">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <!--第一屏-->
+            <ul class="bank-bill-con tixing-con tixing-zoushitu-bg">
+                <div class="bank-bill-title com-title">
+                    <div>客户姓名</div>
+                    <div>查询时间</div>
+                    <div>证件类型</div>  <!--class="id-card"-->
+                    <div style="width: 20%">证件号码</div>
+                    <div style="width: 20%">卡/账号</div>
+                    <div>查询结果</div>
+                </div>
+                <!--<li>-->
+                    <!--<div>赵向东</div>-->
+                    <!--<div>2016-01-06</div>-->
+                    <!--<div>身份证</div>-->
+                    <!--<div class="id-card">113133111111111111</div>-->
+                    <!--<div class="id-card">113133111111111</div>-->
+                    <!--<div>未执行</div>-->
+                <!--</li>-->
+            </ul>
+            <!--页码-->
+            <div class="page-number-con"></div>
+        </div>
+    </div>
+    <div class="footter">
+        <div class="previous previous-con">删除</div>
+        <div class="previous" data-transition="slide">查询详情</div>
+    </div>
+    <div id="seach-day-con">
+        <div id="seach-day">
+            <span class="seach-day-title">查询日期</span>
+            <ul class="seach-day-ul">
+                <li>
+                    <div class="day-botton" style="float: left;">
+                        <input type="date" />
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                    至
+                    <div class="day-botton" style="float: right;">
+                        <input type="date" />
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        客户姓名
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        证件号码
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        账/卡号
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        查询结果
+                    </div>
+                    <div class="seach-day-box" style="padding: 0;">
+                        <select  class="drop-down">
+                            <option value="">全部</option>
+                            <option value="1">成功</option>
+                            <option value="-2">失败</option>
+                            <option value="-3">无流水</option>
+                            <option value="0">查询中</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="fangqi-seach" style="float: left;">
+                        放弃
+                    </div>
+                    <div class="fangqi-seach" style="float: right;">
+                        搜索
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

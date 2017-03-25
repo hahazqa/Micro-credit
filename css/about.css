@@ -1,0 +1,510 @@
+/**
+ *产品展业 
+ */
+#about-showIndustry .navigation-con {
+    width: 80%;
+    height: 20px;
+    color: #4D4D4D;
+    margin: 0 auto;
+    padding-top: 23.5px;
+}
+
+#about-showIndustry .navigation-con > li {
+    width: 14.285%;
+    height: 20px;
+    line-height: 20px;
+    border-right: 1px solid #cad0d2;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+
+#about-showIndustry .navigation-con > li:first-child {
+    border-left: 1px solid #CAD0D2;
+}
+
+#about-showIndustry .navigation-con .navigation-bgcolor {
+    color: #0088CD;
+}
+
+#about-showIndustry .womendeyinhang-con {
+    width: 100%;
+    float: left;
+    margin-top: 32.5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#about-showIndustry .womendeyinhang-con > a {
+    display: block;
+    width: 29.253%;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    font-weight: 100;
+    max-height: 130px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 15px 2%;
+    background-color: #dfdfdf;
+}
+
+#about-showIndustry .womendeyinhang-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#about-showIndustry .womendeyinhang-title {
+    min-width: 85px;
+    max-width: 100%;
+    height: 42.5px;
+    line-height: 42.5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 18px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#about-showIndustry .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+#about-showIndustry .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#about-showIndustry .ui-btn {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 0;
+}
+
+#about-showIndustry .ui-shadow {
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+}
+
+#about-showIndustry .dispaly-cpzynone {
+    display: none;
+}
+
+/*用户手册
+named by lei.
+*/
+.manual .conter-auto {
+    padding-bottom: 0;
+}
+
+.manual .navigation {
+    width: 17.57%;
+    padding-top: 30px;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    float: left;
+}
+
+.manual .navigation li {
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-weight: 100;
+    color: #000000;
+}
+
+.manual .navigation .change-bg {
+    background-color: #0F45A7;
+    color: #ffffff !important;
+}
+
+.netWorth-header .click {
+    background-color: #0F45A7;
+    color: #ffffff !important;
+}
+
+.manual .information-input {
+    position: relative;
+    width: 81.8%;
+    margin-top: 0;
+    float: right;
+    font-size: 0.9em;
+    height: 97%;
+    overflow: hidden;
+    /*padding-bottom: 3%;*/
+}
+
+.manual .information-input .credit-card-show, .manual .netWorth-content #worthTwo {
+    display: block;
+}
+
+.manual .netWorth-content #worthThree {
+    margin-top: 35px !important;
+}
+
+.manual .information-input > ul, .manual .netWorth-content .worth {
+    width: 100%;
+    display: none;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.manual .netWorth-content .worth {
+    margin-top: 80px;
+}
+
+.manual .information-input > ul li {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.manual .information-input #manual-ratio li {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.manual .information-result {
+    width: 36.5%;
+    height: 39px;
+    line-height: 39px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    float: left;
+    margin-right: 1.464%;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+}
+
+.manual .name-credit {
+    width: 24% !important;
+}
+
+.manual .result-left {
+    width: 33%;
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    color: #CCCCCC;
+    padding-left: 4.2%;
+    position: relative;
+    box-shadow: none !important;
+}
+
+.manual .input-test {
+    width: 70%;
+    height: 37px;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+}
+
+.manual .rationTable-header {
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    /*background-color: #EBEBEB;*/
+}
+
+.manual .worthHeader {
+    height: 39px;
+    width: 100%;
+    margin-top: 35px;
+    background-color: #f0f0f0;
+}
+
+.manual .worthHeader > div {
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 33%;
+}
+
+.manual .rationTable-header > div {
+    height: 50px;
+    width: 22%;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.manual .rationTable-body, .manual .worthBody {
+    width: 100%;
+    height: auto;
+}
+
+.manual .rationTable-rows, .manual .worthTable-rows {
+    width: 100%;
+    height: 55px;
+    margin: 0 !important;
+}
+
+.manual .worthTable-rows:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.manual .rationTable-rows > div {
+    height: 55px;
+    width: 22%;
+    text-align: center;
+    display: inline-block;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.manual .worthTable-rows > div {
+    height: 44px;
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+}
+
+.manual .content-header {
+    height: 50px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.manual .content-header > div, .result-mrg {
+    height: 50px !important;
+    line-height: 50px !important;
+    border: 0;
+
+}
+
+.manual .content-header .result-mrg {
+    width: auto;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+.manual .content-header .information-result {
+    width: 50%;
+    margin: 0;
+}
+
+.manual .content-header .float-left {
+    float: left;
+}
+
+.manual #manual-garde li {
+    margin-top: 30px;
+}
+
+.manual #manual-garde .gard-top {
+    margin-top: 70px;
+}
+
+.manual #manual-garde li .information-result {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+}
+
+.manual .marginLeft {
+    padding-left: 100px;
+    width: auto;
+    padding-right: 10px;
+}
+
+.manual #basic-info,.manual #manual-ratio{
+    overflow: hidden !important;
+}
+#manual-ratio > li {
+    padding-left: 100px;
+}
+
+.manual .li-first {
+    margin-top: 70px !important;
+}
+
+.manual #basic-info li {
+    margin-left: 110px !important;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.manual .btn-next {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    left: 57.85%;
+    margin-left: -130px;
+    width: 258px;
+    height: 47px;
+    border: 1px solid #0045A7;
+    text-align: center;
+    line-height: 47px;
+    color: #0045A7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.manual .btn-next:active{
+    background-color: #0F45A7 !important;
+    color: #FFFFFF !important;
+}
+/*#basic-info .btn-next {*/
+    /*margin-top: 73px;*/
+/*}*/
+
+.manual #manual-netWorth .netWorth-header {
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid #0F45A7;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 55px;
+    line-height: 35px;
+}
+
+.manual #manual-netWorth .netWorth-header > div {
+    float: left;
+    width: 33.2%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+.manual #manual-netWorth #worthTwo .line-rows {
+    width: 90%;
+    margin-left: 5%;
+    height: 39px;
+    margin-bottom: 45px;
+}
+
+.manual #manual-netWorth #worthTwo .line-rows .information-result {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.manual #manual-netWorth #worthTwo .line-rows .result-left {
+    width: 45%;
+}
+
+.manual .page-number-con {
+    width: auto;
+    position: absolute;
+    right: 50px;
+    bottom: 75px;
+    color: #CCCCCC;
+}
+.manual .page-number-con span.current{display: inline-block;margin-left: 8px;color: #000;}
+.manual .day-botton{
+    width: 250px;
+    height: 39px;
+    /*border: 1px solid #CCCCCC;*/
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.manual .worthQuery input{
+    height: 39px !important;
+    padding-top: 9px !important;
+}
+.manual .day-botton-img{
+    height: 24px;
+    position: absolute;
+    right: 7px;
+    top: 9px;
+}
+.manual .worthTime{
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 10px;
+}
+.manual .worthSearch{
+    float: left;
+    width: auto;
+    padding: 3px 20px;
+    margin-left: 15px;
+    height: 31px;
+    line-height: 31px;
+    color: #0F45A7;
+    border: 1px solid #0F45A7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.manual .worthSearch:active{
+    background-color: #0F45A7 !important;
+    color: #FFFFFF !important;
+}
+.manual .worthQuery{
+    margin-left: 35px;
+    height: 39px;
+    line-height: 39px;
+}
+.manual .ui-input-text{
+    margin: 0;
+}
+.manual .star-box>img{
+    display: inline-block;
+    height: 20px;
+    margin-top: 10px;
+    width: auto;
+    margin-left: 10px;
+}

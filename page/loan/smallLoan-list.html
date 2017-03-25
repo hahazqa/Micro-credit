@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/xinka.css"/>
+    <link rel="stylesheet" href="../../css/about.css"/>
+    <link rel="stylesheet" href="../../css/login.css"/>
+    <link rel="stylesheet" href="../../css/after-login.css"/>
+    <link rel="stylesheet" href="../../css/pfn-merchant.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/credit.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/dianzi.css" />
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <link rel="stylesheet" href="../../css/loan.css">
+    <link rel="stylesheet" href="../../css/smallLoan.css">
+    <link rel="stylesheet" href="../../css/jifen.css">
+    <link rel="stylesheet" href="../../css/appendix.css">
+    <link rel="stylesheet" href="../../css/ImagingOperations.css">
+    <link rel="stylesheet" href="../../css/common-customeP.css">
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/personFace.css">
+    <link rel="stylesheet" href="../../css/common-read.css">
+    <link rel="stylesheet" href="../../css/common-reading.css">
+    <link rel="stylesheet" href="../../css/customerPVideo.css">
+    <link rel="stylesheet" href="../../css/finance.css">
+    <link rel="stylesheet" href="../../css/faceSign.css">
+    <link rel="stylesheet" href="../../css/socialSecurity.css">
+    <link rel="stylesheet" href="../../css/common-product-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-agreement-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-complete-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-contract-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-customerConfirm-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-footer-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-video-Y.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+</head>
+<body>
+<div data-role="page" class="main" id="smallLoan-list">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left">退出</a>
+    </div>
+    <div data-role="content" style="top:74px;">
+        <div class="sContainer">
+            <div class="conHead">
+                <img src="../../images/srcb.png">
+                <p>“<span id="smallLoan-proName"></span>”申请表</p>
+            </div>
+            <table style="position:relative;z-index:99">
+                <div style="position: absolute;width:100%;height: 100%;z-index:100;"></div>
+                <tr>
+                    <td colspan="8" class="current">填写以下客户信息，请提前准备好身份证、借记卡及房产证复印件（如有商品房）。</td>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td colspan="7" id="smallLoan-name"></td>
+
+                </tr>
+                <tr>
+                    <td>手机号码</td>
+                    <td colspan="3" id="smallLoan-mobile"></td>
+                    <td>月收入</td>
+                    <td colspan="3" id="smallLoan-income"></td>
+                </tr>
+                <tr>
+                    <td>经营企业<br>/工作单位</td>
+                    <td colspan="4" id="smallLoan-companyName"></td>
+                    <td>职务</td>
+                    <td colspan="2" id="ZhiWu"></td>
+                </tr>
+                <tr>
+                    <td>经营地址</td>
+                    <td colspan="7" id="smallLoan-addr-home"></td>
+                </tr>
+                <tr>
+                    <td>居住地址</td>
+                    <td colspan="7" id="smallLoan-addr-detail"></td>
+                </tr>
+                <tr>
+                    <td>婚姻情况</td>
+                    <td colspan="3" id="smallLoan-marriage">
+                        <input type="checkbox" data-role="none" value="10" /><span>未婚</span>
+                        <input type="checkbox" data-role="none" value="20" /><span>已婚</span>
+                        <input type="checkbox" data-role="none" value="40" /><span>离异</span>
+                    </td>
+                    <td>家庭月收入金额</td>
+                    <td colspan="3" id="smallLoan-f-income"></td>
+                </tr>
+                <tr>
+                    <td>配偶姓名</td>
+                    <td colspan="2" id="smallLoan-peiName"></td>
+                    <td>工作单位</td>
+                    <td colspan="4" id="smallLoan-peiCompany"></td>
+                </tr>
+                <tr>
+                    <td>手机号码</td>
+                    <td colspan="3" id="smallLoan-peiPhone"></td>
+                    <td>配偶身份证号码</td>
+                    <td colspan="3" id="smallLoan-peiCerNo"></td>
+                </tr>
+                <tr>
+                    <td colspan="8" class="current">填写贷款申请信息，到期还本的还款方式只适用于期限12个月以内贷款</td>
+                </tr>
+                <tr>
+                    <td>额度(≤<span id="smallLoan-fixedAmount"></span>万)</td>
+                    <td colspan="3" id="smallLoan-loanMoney"></td>
+                    <td>贷款用途</td>
+                    <td colspan="3" id="smallLoan-loanUse"></td>
+                </tr>
+                <tr>
+                    <td>期限(≤<span id="smallLoan-fixedTerms"></span>月)</td>
+                    <td colspan="3" id="smallLoan-loanTime"></td>
+                    <td>还款方式</td>
+                    <td colspan="3" id="paymentMethod">
+                        <input type="checkbox" data-role="none" value="1" /><span>按月等额本息</span>
+                        <input type="checkbox" data-role="none" value="2" /><span>按月付息到期还本</span>
+                        <input type="checkbox" data-role="none" value="3" /><span>其他</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="height:120px;">
+                        <div style="float: left;width: 13.5%;margin-top:40px;text-align: left;">借款人签名：</div>
+                        <div id="smallLoan-signImg" style="float: left;width: 50%;"></div>
+                        <div style="float: right;width: 15%;text-align: right;padding-right:15px;margin-top:68px;"><span class="year"></span>年<span class="month"></span>月<span class="day"></span>日</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" >
+                        <p style="text-align: left;">面签声明：本人已对以上签字人员的签字进行了面签。</p>
+                        <p style="text-align: center;">小微金融部受理人签名：<span id="admin"></span><span id="adminName" style="margin-left: 10px;"></span></p>
+                        <p style="text-align: right;margin-right:15px;"><span class="year"></span>年<span class="month"></span>月<span class="day"></span>日</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>信用卡申请</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/credit.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-credit.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <title>信用卡申请</title>
+</head>
+
+<body>
+    <div data-role="page" class="main" id="credit-customerP">
+        <!--头部-->
+        <div class="header">
+            <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a> 信用卡申请
+            <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('credit-product.html')">退出</a>
+        </div>
+        <!--123...流程-->
+        <ul class="navigation-steps">
+            <div class="border-all"></div>
+            <div id="border-over" class="border-over"></div>
+            <ul class="circle-con">
+                <li>
+                    <div class="circle">1</div>
+                    <p>卡产品选择</p>
+                </li>
+                <li>
+                    <div class="circle">2</div>
+                    <p>读取身份证</p>
+                </li>
+                <li>
+                    <div class="circle">3</div>
+                    <p>阅读协议</p>
+                </li>
+                <li>
+                    <div class="circle">4</div>
+                    <p>影像采集</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">5</div>
+                    <p>信息录入</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">6</div>
+                    <p>确认信息</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">7</div>
+                    <p>申请完成</p>
+                </li>
+            </ul>
+        </ul>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con">
+            <div class="conter-auto">
+                <div class="img_content" style="overflow:hidden;">
+                    <div class="img_box get-face">
+                        <div class="customer customer_one">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">客户面部照片</div>
+                    </div>
+                    <div class="img_box">
+                        <div class="customer customer_three" picname="custAndCustOwnerPic">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">与客户合影照片</div>
+                    </div>
+                    <div class="img_box">
+                        <div class="customer customer_two" picname="appliformPic">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">申请表照片</div>
+                    </div>
+                    <!-- <div style="clear: both"></div> -->
+                    <div class="img_box">
+                        <div class="customer customer_four" picname="frontIDCardPic">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">身份证正面</div>
+                    </div>
+                    <div class="img_box">
+                        <div class="customer customer_five" picname="backIDCardPic">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">身份证反面</div>
+                    </div>
+                    <div class="img_box" style="position: relative;">
+                        <div class="customer customer_six" picname="qitazhengming">
+                            <div class="rephoto">选拍，可多张拍摄</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera cameraMul" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes qitazhengming" othername="qitazhengming">其他证明</div>
+                        <!--其他证明弹窗选择-->
+                        <div class="qita-tanchuang-cbg"></div>
+                        <img src="../../images/crow_icon_win.png" class="crow_icon_win" />
+                        <div class="qita-tanchuang-con">
+                            <div class="queren-quxiao">
+                                <div class="quxiao-ok quxiao-click">取消</div>
+                                <div class="quxiao-ok queding-click">确定</div>
+                            </div>
+                            <ul class="qita-tanchuang-ul">
+                                <li othername="fangchanzhengming">房产证明</li>
+                                <li othername="gongzuozhengming">工作证明</li>
+                                <li othername="xuelizhengming">学历证明</li>
+                                <li othername="cunkuanzhengming">存款证明</li>
+                                <li othername="shebaozhengming">社保证明</li>
+                                <li othername="qitaxinyongka">他行信用卡</li>
+                                <li othername="cheliangzhengming">车辆证明</li>
+                                <li othername="qitazhengming" class="qita-tanchuang-li">其他证明</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div style="clear: both"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="customerP-zancun">暂&nbsp;存</div>
+        <!--尾部-->
+        <div class="footter">
+            <div id="credit-customerP-pre" class="previous previous-con back-1">上一步</div>
+            <div id="credit-customerP-next" class="previous">下一步</div>
+        </div>
+        <div class="bigpic-review-box">
+            <div class="bigpic-review-cont">
+                <div class="bigpic-review-close"></div>
+                <div class="bigpic-review"></div>
+            </div>
+            <div class="bigpic-review-ft">
+                <span class="bigpic-review-rephone"></span>
+                <span class="bigpic-review-del"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

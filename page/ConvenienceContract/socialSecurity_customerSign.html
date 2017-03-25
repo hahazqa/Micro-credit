@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/socialSecurity.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-socialSe curity.js"></script>
+    <script src="../../js/wce-socialSecurity.js"></script>
+    <script src="../../js/data-credit.js"></script>
+    <title>社保待遇</title>
+</head>
+
+<body>
+    <div data-role="page" class="main" id="socialSecurity-customerConfirm">
+        <!--头部-->
+        <div class="header">
+            <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+            社保待遇
+            <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('socialSecurity_readingID.html')">退出</a>
+        </div>
+        <!--123...流程-->
+        <ul class="navigation-steps">
+            <div class="border-all"></div>
+            <div id="border-over" class="border-over" style="left: 28.7%; width:36%"></div>
+            <ul class="circle-con">
+                <li>
+                    <div class="circle">1</div>
+                    <p>读取身份证</p>
+                </li>
+                <li>
+                    <div class="circle">2</div>
+                    <p>采集影像</p>
+                </li>
+                <li>
+                    <div class="circle">3</div>
+                    <p>确认签名</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">4</div>
+                    <p>完成</p>
+                </li>
+            </ul>
+        </ul>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con">
+            <div class="conter-auto">
+                <div class="masterID_con">
+                    <div class="masterID_header">确认信息</div>
+                    <ul class="masterID_content  confirm_ul">
+                        <li class="masterID_content_rows">
+                            <div class="masterID_rows_lines">
+                                <span class="masterID_lines">社保IC卡：</span>
+                                <span class="SBICcard"></span>
+                            </div>
+                            <div class="masterID_rows_lines">
+                                <span class="masterID_lines">证件类型：</span>
+                                <span class="ZJLX"></span>
+                            </div>
+                        </li>
+                        <li class="masterID_content_rows">
+                            <div class="masterID_rows_lines">
+                                <span class="masterID_lines">中文姓名：</span>
+                                <span class="XM"></span>
+                            </div>
+                            <div class="masterID_rows_lines">
+                                <span class="masterID_lines">证件号码：</span>
+                                <span class="ZJHM"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="duanX_con">
+                    <span>短信验证码</span>
+                    <input type="text" id="inp" data-role="none" />
+                    <span id="getMsg">获取验证码</span>
+                    <span class="codetime">请在<span style="color:red;">80秒</span>内输入验证码</span>
+                </div>
+                <div class="information">
+                    <p>本人确认使用金融社保卡的金融账户作为本人在人力资源和社会保障领域费用缴纳和待遇领取的默认账户。</p>
+                    <p>上述填写内容本人审核无误</p>
+                </div>
+                <div class="qianM_con">
+                    <div class="qianM_shadow"></div>
+                    <div class="masterID_header masterID_header-qrqm querenqianming-click">确认签名</div>
+                    <!-- <img src="../../images/ic_up.png" class="ic_up"/>-->
+                    <div class="qianM_box">
+                        <span id="qianM" data-role="none" style="z-index: 1000000;"></span>
+                        <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:30px"/></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="imageData" id="imageData" />
+                        </form>
+                        <!-- <img id="tempImage" src="" alt="临时图片文件" /> -->
+                        <div id="qianOK" class="qian-over" style="float: right;" qmImg="">
+                            <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt="" />
+                            <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt="" />
+                            <span id="btn_submit">签名完成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--尾部-->
+        <div class="footter">
+            <!--<div class="previous previous-con back-1">上一步</div>-->
+            <div class="previous btn_next2" style="margin-left: auto;margin-right: auto;float:none;">提交</div>
+        </div>
+    </div>
+</body>
+</html>

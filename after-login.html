@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/after-login.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/page-afterIogin.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/radialindicator.js"></script>
+    <title>首页登陆</title>
+</head>
+<body>
+	<div data-role="page" class="main home-login-about" id="after-login">
+		<!--左边导航-->
+		<div class="left-navigation">
+			<div class="left-navigation-con">
+				<div class="logo_home-con">
+					<img src="images/logo_home.png" class="logo_home" />
+				</div>
+				<ul class="left-navigation-top">
+					<a class="left-navigation-li">
+						主页
+						<img src="images/ic_home2.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li">
+						信用卡申请
+						<img src="images/ic_xinyongka.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li" href="page/xinka/xinka-product.html" data-direction="reverse">
+						信通数字卡
+						<img src="images/ic_xintongka.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li" href="page/mobile/mobile-one.html" data-direction="reverse">
+						移动CRM
+						<img src="images/ic_crm2.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li" href="page/dianzi/dianzi-readingID.html" data-direction="reverse">
+						电子签约
+						<img src="images/ic_dianziqianyue2.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li" href="page/citigold/citigold-fundSupermarketsOne.html" data-direction="reverse">
+						理财基金
+						<img src="images/ic_licai2.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li">
+						贷款申请
+						<img src="images/ic_daikuan2.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li">
+						我的工作台
+						<img src="images/ic_gongzuotai2.png" class="left-navigation-li-img" />
+					</a>
+				</ul>
+				<div class="left-navigation-hengtiao"></div>
+				<ul class="left-navigation-top left-navigation-bottom">
+					<a class="left-navigation-li">
+						我们的银行
+						<img src="images/ic_womendeyinhang2.png" class="left-navigation-li-img" />
+					</a>
+					<a class="left-navigation-li">
+						产品展示
+						<img src="images/ic_chanpinzhanye.png" class="left-navigation-li-img" />
+					</a>
+				</ul>
+			</div>
+		</div>
+		<!--右边内容区-->
+		<div class="right-content-con">
+			<div class="right-content-auto">
+				<!--头部统一名字／名下数量的下拉-->
+				<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>
+							<!--下拉单-->
+							<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<div class="sign-out">退出当前帐户</div>
+							</ul>
+						</div>
+				<!--第一页切换-->
+				<div class="right-content-qiehuan has-head-con" style="display: block;">
+					<!--头部导航-->
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+					</div>
+					<!--内容区-->
+					<!--大图切换-->
+					<div class="banner-after-con">
+						<div class="swiper-container swiper-container-zhuye">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide"><img src="images/bg_roll_home.png" class="banner-after-img"/></div>
+					            <div class="swiper-slide"><img src="images/bg_roll_home.png" class="banner-after-img"/></div>
+					        </div>
+					        <!-- Add Pagination -->
+					        <div class="swiper-pagination swiper-pagination-zhuye"></div>
+					    </div>
+					</div>
+					<!--底部业务详情和工作提醒-->
+					<ul class="yewujob-after-con">
+						<li class="yewujob-after-li yewujob-after-jindutiao">
+							<!--左边圆形进度条-->
+							<div class="byywxq-title">本月业务详情</div>
+								<div class="byywxq-con">
+									<div id="indicatorContainer"><span class="banlishuliang-con">办理数量</span></div>
+								</div>
+							<!--右边拖扯-->
+							<div class="yewujob-navigation-con">
+								<div class="swiper-container container-login-after">
+									<img src="images/ic_after-jiantoutop.png" class="ic_after-jiantou ic_after-jiantoutop"/>
+						        	    <img src="images/ic_after-jiantoubottom.png" class="ic_after-jiantou ic_after-jiantoubottom"/>
+							        <div class="swiper-wrapper">
+							            <div class="swiper-slide">
+							            		<ul class="yewujob-navigation-ul">
+							            			<li class="yewujob-navigation-bgcolor">
+							            				<div class="yewujob-navigation-number">1</div>
+							            				<div class="yewujob-navigation-title">信用卡</div>
+							            			</li>
+							            			<li>
+							            				<div class="yewujob-navigation-number">2</div>
+							            				<div class="yewujob-navigation-title">电子卡</div>
+							            			</li>
+							            			<li>
+							            				<div class="yewujob-navigation-number">4</div>
+							            				<div class="yewujob-navigation-title">贷款</div>
+							            			</li>
+							            		</ul>
+							            </div>
+							            <div class="swiper-slide">
+							            		<ul class="yewujob-navigation-ul">
+							            			<li>
+							            				<div class="yewujob-navigation-number">22</div>
+							            				<div class="yewujob-navigation-title">移动</div>
+							            			</li>
+							            			<li>
+							            				<div class="yewujob-navigation-number">7</div>
+							            				<div class="yewujob-navigation-title">信通数字卡</div>
+							            			</li>
+							            			<li>
+							            				<div class="yewujob-navigation-number">14</div>
+							            				<div class="yewujob-navigation-title">信用卡</div>
+							            			</li>
+							            		</ul>
+							            </div>
+										<div class="swiper-slide">
+											<ul class="yewujob-navigation-ul">
+												<li>
+													<div class="yewujob-navigation-number">28</div>
+													<div class="yewujob-navigation-title">视频拍摄</div>
+												</li>
+											</ul>
+										</div>
+							        </div>
+							        <!-- Add Pagination -->
+							        <!--<div class="swiper-pagination pagination-login-after"></div>-->
+							    </div>
+							</div>
+						</li>
+						<!--年月日工作提醒-->
+						<li class="yewujob-after-li flip-container" id="flip-container" style="background-color: #edf5fa;border: 0;"> 
+							<div class="flipper">
+								<div class="front">
+									<!-- 前面内容 -->
+									<div class="yewujob-after-fanzhuanone">
+							
+									</div>
+									<div class="yewujob-after-fanzhuantwo">
+										
+									</div>
+									<div class="job-after-head">
+										<img src="images/ic_home_zuo.png" class="ic_home_zuo" />
+										<span>2015年9月</span>
+										<img src="images/ic_home_you.png" class="ic_home_you" />
+									</div>
+									<ul class="job-after-xingqi">
+										<li class="job-after-li-bgcolor">日</li>
+										<li>一</li>
+										<li>二</li>
+										<li>三</li>
+										<li>四</li>
+										<li>五</li>
+										<li class="job-after-li-bgcolor">六</li>
+									</ul>
+									<ul class="job-after-riqi">
+										<li></li> <li></li> <li>1</li> <li class="yuanquan-yellow button-fanzhuan">2</li> <li>3</li> <li>4</li> <li class="job-after-li-bgcolor">5</li>
+										<li class="job-after-li-bgcolor">6</li> <li>7</li> <li>8</li> <li>9</li> <li>10</li> <li>11</li> <li class="job-after-li-bgcolor">12</li>
+										<li class="job-after-li-bgcolor">13</li> <li>14</li> <li>15</li> <li>16</li> <li>17</li> <li class="yuanquan-borderlanse button-fanzhuan">18</li> <li class="job-after-li-bgcolor">19</li>
+										<li class="job-after-li-bgcolor">20</li> <li>21</li> <li class="yuanquan-lanse button-fanzhuan">22</li> <li>23</li> <li>24</li> <li>25</li> <li class="job-after-li-bgcolor">26</li>
+										<li class="job-after-li-bgcolor">27</li> <li>28</li> <li>29</li> <li>30</li> <li></li> <li></li> <li></li>
+									</ul>
+								</div>
+								<div class="back">
+									<!-- 背面内容 -->
+									<div class="beimian-riqi">2015年9月22日</div>
+									<ul class="beimian-con">
+										<li>
+											这个时间待办事项占位符占位符占位符占位符占位符
+											<span class="beimian-time beimian-time-lanse">09:00</span>
+										</li>
+										<li>
+											这个时间待办事项占位符占位符占位符占位符占位符
+											<span class="beimian-time beimian-time-huangse">09:00</span>
+										</li>
+									</ul>
+									<div class="beimian-djfh">点击返回</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!--第二页切换-->
+				<div class="right-content-qiehuan has-head-con">
+					<!--头部导航-->
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<!--内容区-->
+					<div class="womendeyinhang-con">
+						<a href="page/xinyongka/credit-product.html">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="page/xinyongka/credit-product.html">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="page/xinyongka/credit-product.html">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="page/xinyongka/credit-product.html">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="page/xinyongka/credit-product.html">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="page/xinyongka/credit-product.html">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+					</div>
+				</div>
+				<!--第三页切换-->
+				<div class="right-content-qiehuan">
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<img src="images/暂放.jpg" width="100%"/></div>
+				<!--第四页切换-->
+				<div class="right-content-qiehuan">
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<img src="images/暂放.jpg" width="100%"/></div>
+				<!--第五页切换-->
+				<div class="right-content-qiehuan">
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<img src="images/暂放.jpg" width="100%"/></div>
+				<!--第六页切换-->
+				<div class="right-content-qiehuan">
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<img src="images/暂放.jpg" width="100%"/></div>
+				<!--第七页切换-->
+				<div class="right-content-qiehuan">
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<img src="images/暂放.jpg" width="100%"/></div>
+				<!--第八页切换-->
+				<div class="right-content-qiehuan has-head-con">
+					<!--头部导航-->
+					<div class="has-head-navigation">
+						<div class="after-head-search">
+							<img src="images/search_icon_home.png" class="search_icon_home" />
+							<input type="text" class="input-text-same" data-role="none" value="请输入搜索内容" style="color: #e0e0e0;"/>
+						</div>
+						<!--<div class="after-head-name-con">
+							<div class="after-head-name">
+								<img src="images/ic_touxiang.png" class="ic_touxiang" />
+								<span>赵晓东</span>
+								<img src="images/ic_jiantou.png" class="ic_jiantou" />
+								<div class="after-head-number">13</div>
+							</div>-->
+							<!--下拉单-->
+							<!--<ul class="after-head-xialaall">
+								<li>
+									<span>脱机业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>暂存业务</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>通知公告</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>到期提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+								<li>
+									<span>异常提醒</span>
+									<div class="after-head-shuzi">3</diav>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<!--内容区-->
+					<div class="wodegongzuotai-big">
+						<div class="wodegongzuotai-con">
+							<a href="page/gongzuotai/gongzuotai-zcywjxbl.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_one.png" width="28px" />
+									</div>
+									<div class="wodegongzuotai-title">暂存业务继续办理</div>
+								</div>
+							</a>
+							<a href="page/gongzuotai/gongzuotai-tuojibanli.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_two.png" width="35px" />
+									</div>
+									<div class="wodegongzuotai-title">脱机业务继续办理</div>
+								</div>
+							</a>
+							<a href="page/gongzuotai/gongzuotai-ywblqkcx.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_three.png" width="31.5px" />
+									</div>
+									<div class="wodegongzuotai-title">业务办理情况查询</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_four.png" width="30px" />
+									</div>
+									<div class="wodegongzuotai-title">我的业绩</div>
+								</div>
+							</a>
+							<!--<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_five.png" width="29px" />
+									</div>
+									<div class="wodegongzuotai-title">远程复核应答</div>
+								</div>
+							</a>-->
+							<a href="page/gongzuotai/gongzuotai-myWorkPermit.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_six.png" width="29px" />
+									</div>
+									<div class="wodegongzuotai-title">我的工作证</div>
+								</div>
+							</a>
+							<a href="page/gongzuotai/gongzuotai-jobAlertsOne.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_seven.png" width="26.5px" />
+									</div>
+									<div class="wodegongzuotai-title">工作提醒</div>
+								</div>
+							</a>
+							<a href="page/gongzuotai/gongzuotai-announcement.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_eight.png" width="32px" />
+									</div>
+									<div class="wodegongzuotai-title">通知公告</div>
+								</div>
+							</a>
+							<a href="page/gongzuotai/gongzuotai-xuchuanyingxiangziliao.html" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_nine.png" width="29.5px" />
+									</div>
+									<div class="wodegongzuotai-title">续传影像资料</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_ten.png" width="32px" />
+									</div>
+									<div class="wodegongzuotai-title">更新文档／视频资料</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_eleven.png" width="31.5px" />
+									</div>
+									<div class="wodegongzuotai-title">利率和外汇牌价</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_twelven.png" width="30px" />
+									</div>
+									<div class="wodegongzuotai-title">实用工具</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_thirteen.png" width="33px" />
+									</div>
+									<div class="wodegongzuotai-title">常见业务问题</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/icon_home_eight_fourteen.png" width="25.5px" />
+									</div>
+									<div class="wodegongzuotai-title">用户手册</div>
+								</div>
+							</a>
+							<a href="#" data-direction="reverse">
+								<div class="wodegongzuotai-after">
+									<div class="wodegongzuotai-img">
+										<img src="images/fiveteen_icon_home.png" width="30px" />
+									</div>
+									<div class="wodegongzuotai-title">异常处理</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--第九页切换-->
+				<div class="right-content-qiehuan has-head-con">
+					<!--头部导航-->
+					<ul class="has-head-navigation navigation-womendeyinhang" style="z-index: 34;">
+						<li class="navigation-after-bgcolor">存款</li>
+						<li>贷款</li>
+						<li>理财产品</li>
+						<li>代销产品</li>
+					</ul>
+					<!--内容区-->
+					<div class="womendeyinhang-con">
+						<a href="#">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+					</div>
+				</div>
+				<!--第十页切换-->
+				<div class="right-content-qiehuan">
+					<!--头部导航-->
+					<ul class="has-head-navigation" style="z-index: 34;">
+						<li class="navigation-after-bgcolor">存款</li>
+						<li>贷款</li>
+						<li>理财产品</li>
+						<li>代销产品</li>
+						<li>特色产品</li>
+						<li>更多</li>
+					</ul>
+					<!--内容区-->
+					<div class="womendeyinhang-con" style="margin-top: 50px;">
+						<a href="#" class="chanpinzhanshi-click">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#" class="chanpinzhanshi-click">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#" class="chanpinzhanshi-click">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#" class="chanpinzhanshi-click">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#" class="chanpinzhanshi-click">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+						<a href="#" class="chanpinzhanshi-click">
+							<img src="images/ceshi-chanpin.jpg" class="womendeyinhang-img" />
+							<div class="womendeyinhang-title">随想益</div>
+						</a>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		<!--我们的银行、展品展示统一弹窗-->
+		<div class="submitted-successfully">
+			<div class="chanpin-zhanye-con">
+				<img src="images/ic_close.png" class="ic_close"/>
+				<div class="chanpin-zhanye">
+					<div class="swiper-container containerafter">
+					        <div class="swiper-wrapper">
+					        	<div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<img src="images/Two_Two_photo.png" />
+					            					<div class="yinhangjieshao">随想益</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            </div>
+					            <div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<div class="TwoOne-title">深圳农村商业银行介绍</div>
+						            				<div class="TwoOne-neirong">
+						            					<p>深圳农村商业银行（以下简称“我行”）成立于2005年12月9日，是经中国银监会批准,在深圳市农村信用社基础上改制组建而成的股份制农村商业银行。我行继承了深圳市农村信用社50多年的发展历史、服务特色和文化传统，在改革发展和经营管理的各个方面都取得了较好的成绩。
+		                                        </p>
+												    截至2014年底，我行总资产折合人民币1590.26亿元，2014年度实现净利润人民币26.15亿元，净资产收益率（ROE）22.29％，主要财务指标均位居国内中小商业银行前列。在英国《银行家》杂志2015年发布的“世界银行1000强”中，我行排名405位。
+												<p>截至2014年底，我行近200个营业网点遍布深圳全市，网点数量居深圳银行同业首位。我行已发行银行卡“信通卡”超过1200万张，安装ATM、现金存取款机、自助终端等自助银行设备超过2000台，网上银行、移动银行等相继上线，成为深圳地区服务网络和销售渠道最为完善的银行之一。
+												</p>
+												    <p>2010年5月28日我行首家异地支行——广西临桂支行顺利开业，2010年12月28日广西柳江支行开业，我行作为主发起人的宜州深通村镇银行、灵川深通村镇银行、扶绥深通村镇银行、苍梧深通村镇银行按计划相继开业，我行业务走出深圳迈向全国，顺利实现了由地方性银行向区域性银行的转变，是发展史上又一次里程碑式的跨越。截至2014年底，广西地区支行共有8个营业网点，村镇银行共有19个营业网点。
+												</p>
+												    2010年5月28日我行首家异地支行——广西临桂支行顺利开业，2010年12月28日广西柳江支行开业，我行作为主发起人的宜州深通村镇银行、灵川深通村镇银行、扶绥深通村镇银行、苍梧深通村镇银行按计划相继开业，我行业务走出深圳迈向全国，顺利实现了由地方性银行向区域性银行的转变，是发展史上又一次里程碑式的跨越。截至2014年底，广西地区支行共有8个营业网点，村镇银行共有19个营业网点。
+												<p>我行始终坚持“社区零售银行”的市场定位，树立了“质量优先、适度规模、专注服务、保证效益”的零售银行发展观，以中小企业和社区居民为主要服务对象，追求质量、效益、规模全面协调可持续发展，致力于打造成为资本充足、服务优良、内控严密、效益良好、特色鲜明的的社区零售银行。
+						            				</p>
+												  </div>
+					            			     </div>
+					            		</div>
+					            	</div>
+					           </div>
+					        </div>
+					        <!-- Add Pagination -->
+					       <div class="swiper-pagination pagination-after"></div>
+					    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/loan.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../../js/page-loan.js" ></script>
+    <title>征信查询</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="credit-search">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">首页</a>
+		征信查询
+        <a href="../main.html" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航栏-->
+    <div class="navigation-steps-mobile">
+        <div class="navigation-steps-seach">
+            <div id="searchBtn" class="seach-botton">搜索</div>
+            <div id="newQueryBtn" class="seach-botton">新查询</div>
+            <div id="supplementBtn" class="seach-botton btn-unclick">补充查询</div>
+            <div class="head-seach">
+                <input type="text" placeholder="按姓名搜索" style="color: #CCCCCC;" data-role="none"
+                       class="head-seach-input">
+                <img src="../../images/seach_one_icon.png" class="seach_icon">
+            </div>
+        </div>
+    </div>
+    <div data-role="content"  class="conter-con" style="bottom: 0;">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <!--第一屏-->
+            <ul class="tixing-zoushitu tixing-con tixing-zoushitu-bg">
+                <div class="tixing-zoushitu-title com-title">
+                    <div>客户姓名</div>
+                    <div>身份证号</div>
+                    <div>查询时间</div>
+                    <div>查询类型</div>
+                    <div>允许补查</div>
+                    <div>查询结果</div>
+                </div>
+            </ul>
+            <!--页码-->
+            <div class="page-number-con"></div>
+        </div>
+    </div>
+    <div class="footter">
+        <div class="previous previous-con">删除</div>
+        <div class="previous" data-transition="slide">详情</div>
+    </div>
+    <div id="seach-day-con">
+        <div id="seach-day">
+            <span class="seach-day-title">查询日期</span>
+            <ul class="seach-day-ul">
+                <li>
+                    <div class="day-botton" style="float: left;">
+                        <input type="date" />
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+					至
+                    <div class="day-botton" style="float: right;">
+                        <input type="date" />
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+						客户姓名
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+						身份证号
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+						查询类型
+                    </div>
+                    <div class="seach-day-box" style="padding: 0;">
+                        <select id="creditTypeSelect" class="drop-down">
+                            <option value="">全部</option>
+                            <option value="RH">人行</option>
+                            <option value="PY">鹏元</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+						允许补查
+                    </div>
+                    <div class="seach-day-box" style="padding: 0;">
+                        <select id="supplementIndSelect" class="drop-down">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+						查询结果
+                    </div>
+                    <div class="seach-day-box" style="padding: 0;">
+                        <select id="searchStatusSelect" class="drop-down">
+                            <option value="">全部</option>
+                            <option value="1">成功</option>
+                            <option value="3">LOS查询成功</option>
+                            <option value="-2">失败</option>
+                            <option value="0">查询中</option>
+                            <option value="-3">LOS查询中</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="fangqi-seach" style="float: left;">
+						放弃
+                    </div>
+                    <div class="fangqi-seach" style="float: right;">
+						搜索
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

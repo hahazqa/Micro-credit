@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/loan.css">
+    <link rel="stylesheet" href="../../css/popUplayer.css" />
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/page-loan.js"></script>
+    <script src="../../js/wce-loan.js"></script>
+    <title>征信查询</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="credit-newSearchConfirm">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouye()" data-direction="reverse" class="head-all head-left">首页</a>
+		征信查询
+        <a onclick="dzhFanhui('credit-search.html')" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto">
+            <div class="newSearch">
+                <div class="con-header">查询详情</div>
+                <div class="input-box">
+                    <div class="input-rows">
+                        <div class="input-disabled">
+                            <div class="result-left" style="width: 24%;">客户姓名</div>
+                            <div class="input-test">
+                                <input id="custName" type="text" class="input-test-con" style="background: none" data-role="none" disabled="disabled"/>
+                            </div>
+                        </div>
+                        <div class="input-disabled" style="float: right;">
+                            <div class="result-left" style="width: 24%;">身份证号</div>
+                            <div class="input-test">
+                                <input id="cardNum" type="text" class="input-test-con" style="background: none" data-role="none" disabled="disabled"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-rows">
+                        <div>
+                            <div class="result-left" style="width: 24%;">查询原因</div>
+                            <div class="input-test pingyin-input">
+                                <select id="queryReasonSelect" class="drop-down">
+                                    <option value="02" selected="true">贷款审批</option>
+                                    <option value="01">贷后管理</option>
+                                    <option value="08">担保资格审查</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="float: right;">
+                            <div class="result-left" style="width: 24%;">数据查询方式</div>
+                            <div class="input-test pingyin-input">
+                                <select id="queryTypeSelect" class="drop-down">
+                                    <option value="1" selected="true">本地优先查询</option>
+                                    <option value="2">实时查询</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            	<div class="search-context">
+            		<div class="search-title-1">
+                		<label>
+                			<input id="rhSearchInd" data-role="none" type="checkbox" checked="checked"/>人行征信
+                		</label>
+            		</div>
+            	</div>
+            	<div id="pyContext" class="search-context">
+            		<div id="pyCreditTitle" class="search-title-1 search-title-2">
+	            		<label>
+	            			<input id="pySearchInd" data-role="none" type="checkbox" checked="checked"/>鹏元征信
+	            		</label>
+	            		<div id="creditStretchBtn" class="stretch-top"></div>
+            		</div>
+            		<div id="pyCreditBox">
+                		<div>
+                			<span style="padding-left: 10px; font-size: 13pt;">报告类型：</span>
+                			<label>
+                				<input id="90008" data-role="none" name="reportType" type="radio" value="90008" checked="checked"/>深圳市个人信用基本报告
+                			</label>
+                			<label>
+                				<input data-role="none" name="reportType" type="radio" value="90014"/>贷款专用报告
+                			</label>
+                		</div>
+                		<div>
+                			<div style="padding-left: 10px; font-size: 13pt;">子报告类型：</div>
+                			<div>
+                				<label>
+                					<input id="allSelect" data-role="none" type="checkbox"/>全选
+                				</label>
+                			</div>
+                			<div class="select-rows">
+            					<label>
+            						<input id="11000" name="subReport" data-role="none" type="checkbox"/>个人综合信用评分
+            					</label>
+	                			<label>
+	                				<input id="12903" name="subReport" data-role="none" type="checkbox"/>个人小额信贷信用风险评分
+	                			</label>
+                			</div>
+                			<div class="select-rows">
+                				<label>
+                					<input id="12101" name="subReport" data-role="none" type="checkbox"/>个人信用卡风险评分
+                				</label>
+                				<label>
+                					<input id="12100" name="subReport" data-role="none" type="checkbox"/>个人信用卡消费指数
+                				</label>
+                			</div>
+                			<div class="select-rows">
+                				<label>
+	                				<input id="20203" name="subReport" data-role="none" type="checkbox"/>深圳市个人所在单位基本信息
+	                			</label>
+	                			<label>
+	                				<input id="10801" name="subReport" data-role="none" type="checkbox"/>深圳市法定代表人信息
+	                			</label>
+                			</div>
+                			<div class="select-rows">
+                				<label>
+                					<input id="12000" name="subReport" data-role="none" type="checkbox"/>深圳市个人联系地址信息
+                				</label>
+                				<label>
+                					<input id="90006" name="subReport" data-role="none" type="checkbox"/>深圳市个人电话缴费信息
+                				</label>
+                			</div>
+                			<div class="select-rows">
+		                        <label>
+		                            <input id="11801" name="subReport" data-role="none" type="checkbox"/>深圳市个人用水缴费信息
+		                        </label>
+		                        <label>
+		                            <input id="13301" name="subReport" data-role="none" type="checkbox"/>深圳市个人燃气缴费信息
+		                        </label>
+                			</div>
+                			<div>
+                				<label>
+                					<input id="12701" name="subReport" data-role="none" type="checkbox"/>深圳市有线电视缴费信息
+                				</label>
+                			</div>
+                			<div>
+                				<label>
+                					<input id="13800" name="subReport2" data-role="none" type="checkbox"/>深圳市个人车辆信息（最新一笔车辆信息）
+                				</label>
+								<div class="input-rows" style="display: none;">
+			                        <div>
+			                            <div class="result-left" style="width: 24%;">车牌号码</div>
+			                            <div class="input-test" style="width: 50%;float: left;">
+			                                <input id="carNumber" type="text" class="input-test-con" style="background: none" data-role="none" maxlength="7"/>
+			                            </div>
+			                        </div>
+			                    </div>
+                			</div>
+                			<div>
+                				<label>
+                					<input id="11104" name="subReport3" data-role="none" type="checkbox"/>全国高等教育学历信息
+                				</label>
+								<div class="input-rows" style="display: none;">
+			                        <div>
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	毕业时间
+			                            </div>
+			                            <div class="input-test pingyin-input">
+			                            	<select id="graduatedTime" class="drop-down">
+			                            		<option value="" selected="selected">请选择</option>
+			                            		<option value="2003">2003年及以后</option>
+			                            		<option value="2002">2002</option>
+			                            		<option value="2001">2001</option>
+			                            		<option value="2000">2000</option>
+			                            		<option value="1999">1999</option>
+			                            		<option value="1998">1998</option>
+			                            		<option value="1997">1997</option>
+			                            		<option value="1996">1996</option>
+			                            		<option value="1995">1995</option>
+			                            		<option value="1994">1994</option>
+			                            		<option value="1993">1993</option>
+			                            		<option value="1992">1992</option>
+			                            		<option value="1991">1991</option>
+			                            	</select>
+			                            </div>
+			                        </div>
+			                        <div id="graduatedCertCodeDiv" style="float: right;display: none;">
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	毕业证编号
+			                            </div>
+			                            <div class="input-test" style="width: 50%;float: left;">
+			                                <input id="graduatedCertCode" type="text" class="input-test-con" style="background: none" data-role="none"/>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div id="graduatedSchoolDiv" class="input-rows" style="display: none;">
+			                        <div>
+			                            <div class="result-left" style="width: 24%;">毕业院校</div>
+			                            <div class="input-test" style="width: 50%;float: left;">
+			                                <input id="graduatedSchool" type="text" class="input-test-con" style="background: none" data-role="none"/>
+			                            </div>
+			                        </div>
+			                    </div>
+                			</div>
+                			<div>
+                				<label>
+                					<input id="11109" name="subReport4" data-role="none" type="checkbox"/>全国高等教育学籍信息
+                				</label>
+	                			<div class="input-rows" style="display: none;">
+			                        <div>
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	入学年份
+			                            </div>
+			                            <div class="input-test pingyin-input">
+			                            	<select id="startTime" class="drop-down">
+			                            		<option value="" selected="selected">请选择</option>
+			                            	</select>
+			                            </div>
+			                        </div>
+			                        <div style="float: right;">
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	所在院校
+			                            </div>
+			                            <div class="input-test" style="width: 50%;float: left;">
+			                                <input id="institutions" type="text" class="input-test-con" style="background: none" data-role="none"/>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="input-rows" style="display: none;">
+			                        <div>
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	学历层级
+			                          	</div>
+			                            <div class="input-test pingyin-input">
+			                                <select id="academicLevel" class="drop-down">
+			                                	<option value="" selected="selected">请选择</option>
+			                                    <option value="04">专科</option>
+			                                    <option value="03">本科</option>
+			                                    <option value="02">硕士研究生</option>
+			                                    <option value="01">博士研究生</option>
+			                                </select>
+			                            </div>
+			                        </div>
+			                    </div>
+                			</div>
+                			<div>
+                				<label>
+                					<input id="13400" name="subReport5" data-role="none" type="checkbox"/>个人职业资格信息
+                				</label>
+                				<div class="input-rows" style="display: none;">
+			                        <div>
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	省份
+			                          	</div>
+			                            <div class="input-test pingyin-input">
+			                                <select id="province" class="drop-down">
+			                                	<option value="" selected="selected">请选择</option>
+			                                </select>
+			                            </div>
+			                        </div>
+			                        <div style="float: right;">
+			                            <div class="result-left" style="width: 24%;">
+			                            	<span class="required-mark">*</span>
+			                            	城市
+			                          	</div>
+			                            <div class="input-test pingyin-input">
+			                                <select id="city" class="drop-down">
+			                                	<option value="" selected="selected">请选择</option>
+			                                </select>
+			                            </div>
+			                        </div>
+			                    </div>
+                			</div>
+                			<div>
+                				<label>
+                					<input id="96001" name="subReport5" data-role="none" type="checkbox"/>全国个人参股及高管信息
+                				</label>
+                			</div>
+                		</div>
+            		</div>
+            	</div>
+            	<div id="noticeContext" class="search-context">
+            		<div id="noticeTitle" class="search-title-1 search-title-2">
+	            		<label>
+	            			<input id="noticeInd" data-role="none" type="checkbox" checked="checked"/>短信通知征信查询人员
+	            		</label>
+	            		<div id="noticeStretchBtn" class="stretch-top"></div>
+	            	</div>
+			        <div id="noticeBox" class="input-rows">
+                        <div>
+                            <div class="result-left" style="width: 24%;">
+                            	<span class="required-mark">*</span>
+                            	征信查询人员
+                           	</div>
+                            <div class="input-test pingyin-input">
+                                <select id="noticeUser" class="drop-down">
+                                    <option value="">请选择</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="searchBtn" class="previous btn_next" style="float: none;">查询</div>
+    </div>
+    <div id="creditConfirmBox" class="pop-up-mask-div">
+        <div class="pop-up-box-div" style="height: auto;">
+        	<div class="confirm-context-div">
+        		<div class="row-block"><h3>请确认本次查询信息</h3></div>
+        		<div id="custNameS" class="left-block">客户名称：<textarea data-role="none" readonly="readonly"></textarea></div>
+        		<div id="cardNumS" class="right-block">身份证号：<textarea data-role="none" readonly="readonly"></textarea></div>
+        		<div id="queryReasonSelectS" class="left-block">查询原因：<textarea data-role="none" readonly="readonly"></textarea></div>
+        		<div id="queryTypeSelectS" class="right-block">数据查询方式：<textarea data-role="none" readonly="readonly" style="width: 55%;"></textarea></div>
+        		<div id="rhSearchIndC" class="row-block">人行征信  &radic;</div>
+        		<div id="pyConfirmContext">
+	        		<div id="pySearchIndC" class="row-block">鹏元征信  &radic;</div>
+	        		<div id="reportTypeC" class="row-block">报告类型：<textarea data-role="none" readonly="readonly"></textarea></div>
+	        		<div id="subReportTypeC" class="row-block">子报告类型：</div>
+	        		<div id="11000C" class="left-block">个人综合信用评分  &radic;</div>
+	        		<div id="12903C" class="right-block">个人小额信贷信用风险评分  &radic;</div>
+					<div id="12101C" class="left-block">个人信用卡风险评分  &radic;</div>
+	    			<div id="12100C" class="right-block">个人信用卡消费指数  &radic;</div>
+	    			<div id="20203C" class="left-block">深圳市个人所在单位基本信息  &radic;</div>
+	        		<div id="10801C" class="right-block">深圳市法定代表人信息  &radic;</div>
+	        		<div id="12000C" class="left-block">深圳市个人联系地址信息  &radic;</div>
+	    			<div id="90006C" class="right-block">深圳市个人电话缴费信息  &radic;</div>
+	    			<div id="11801C" class="left-block">深圳市个人用水缴费信息  &radic;</div>
+			        <div id="13301C" class="right-block">深圳市个人燃气缴费信息  &radic;</div>
+					<div id="12701C" class="left-block">深圳市有线电视缴费信息  &radic;</div>
+	                <div id="13800C" class="row-block">深圳市个人车辆信息（最新一笔车辆信息）  &radic;</div>
+	                <div id="carNumberS" class="row-block">车牌号码：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="11104C" class="row-block">全国高等教育学历信息  &radic;</div>
+	                <div id="graduatedTimeS" class="left-block">毕业时间：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="graduatedCertCodeS" class="right-block">毕业证编号：<textarea data-role="none" readonly="readonly" style="width: 59%;"></textarea></div>
+	                <div id="graduatedSchoolS" class="left-block">毕业院校：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="11109C" class="row-block">全国高等教育学籍信息  &radic;</div>
+	                <div id="startTimeS" class="left-block">入学年份：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="institutionsS" class="right-block">所在院校：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="academicLevelS" class="left-block">学历层级：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="13400C" class="row-block">个人职业资格信息  &radic;</div>
+	                <div id="provinceS" class="left-block">省份：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="cityS" class="right-block">城市：<textarea data-role="none" readonly="readonly"></textarea></div>
+	                <div id="96001C" class="row-block">全国个人参股及高管信息  &radic;</div>
+                </div>
+                <div id="noticeContextC" class="row-block">短信通知征信查询人员  &radic;</div>
+                <div id="noticeUserS" class="row-block">征信查询人员：<textarea data-role="none" readonly="readonly"></textarea></div>
+        	</div>
+        	<div class="box-footer-div">
+	    		<button id="confirmCloseBtn" data-role="none">放弃</button>
+	    		<button id="confirmOkBtn" data-role="none">确认</button>
+	    	</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

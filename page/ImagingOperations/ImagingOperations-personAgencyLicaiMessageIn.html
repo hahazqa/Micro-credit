@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/ImagingOperations.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).bind("mobileinit", function () {
+            $.mobile.defaultPageTransition = "slide";
+        });
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-ImagingOperations.js"></script>
+    <title>运营影像</title>
+</head>
+<body>
+<div data-role="page" class="main messageIn" id="ImagingOperations-personAgencyLicaiMessageIn">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+        视频拍摄
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('yewuxuanze-one.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+        <div class="border-all"></div>
+        <div class="border-over message"></div>
+        <ul class="circle-con ImagingOperations">
+            <li>
+                <div class="circle">1</div>
+                <p>业务选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>证件选择</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>采集完成</p>
+            </li>
+        </ul>
+    </div>
+    <!--中间内容-->
+    <div class="conter-con">
+        <!--中间内容区右-->
+        <div class="conter-auto">
+            <div class="information-box">
+                <div class="information-l">
+                    <ul class="information-input">
+
+                        <li>
+                            <div class="information-result border-cc current">
+                                <div class="result-left">客户类型</div>
+                                <div class="input-test current" id="imaging-customerType">
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc current">
+                                <div class="result-left">代办人证件类型</div>
+                                <div class="input-test current" id="imaging-cerType">
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc current">
+                                <div class="result-left">代办人证件号码</div>
+                                <div class="input-test current" id="imaging-cerNo">
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc current">
+                                <div class="result-left">代办人姓名</div>
+                                <div class="input-test current" id="imaging-name">
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc fm-item" style="width:78%; float:left;">
+                                <div class="result-left" style="width: 18%;padding-left: 5.5%;"><span
+                                        class="required-stars  tongX">*</span>账卡号
+                                </div>
+                                <div class="input-test" style="width: 75%;"><input type="text" class="input-test-con"
+                                                                                   data-role="none" id="img-zhangkahao"
+                                        /></div>
+                            </div>
+                            <div class="selectCard">查询</div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc fm-item">
+                                <div class="result-left" style="width: 37%;"><span class="required-stars">*</span>币种
+                                </div>
+                                <div class="input-test" style="width: 58%;">
+                                    <select name="day" id="currency" class="drop-down">
+                                        <!--<option value="">-请选择-</option>-->
+                                        <option value="000" selected>人民币</option>
+                                        <option value="344">港币</option>
+                                        <option value="840">美元</option>
+                                        <option value="978">欧元</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc fm-item">
+                                <div class="result-left"><span class="required-stars">*</span>产品编号</div>
+                                <div class="input-test">
+                                    <input type="text" class="input-test-con" data-role="none" id="productNo" maxlength="60">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-r">
+                    <ul class="information-input">
+                        <li>
+                            <div class="information-result border-cc current">
+
+                                <div class="result-left">业务类型</div>
+                                <div class="input-test current" id="imaging-businessType">
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left"><span class="required-stars">*</span>存款人证件类型</div>
+                                <div class="input-test">
+                                    <select id="QitaZhengjiann_Leixing" class="drop-down">
+                                        <option value="0">身份证</option>
+                                        <option value="1">户口簿</option>
+                                        <option value="2">护照</option>
+                                        <option value="3">军官证</option>
+                                        <option value="4">士兵证</option>
+                                        <option value="5">港澳居民来往内地通行证</option>
+                                        <option value="6">台湾同胞来往内地通行证</option>
+                                        <option value="8">外国人居留证</option>
+                                        <option value="9">警官证</option>
+                                        <option value="L">文职干部证</option>
+                                        <option value="X">其它</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc fm-item" style="width:87%; float:left;">
+                                <div class="result-left" style="width:33%;"><span class="required-stars">*</span>存款人证件号码</div>
+                                <div class="input-test"  style="width:60%;">
+                                    <input type="text" class="input-test-con" data-role="none" id="depositorId">
+                                </div>
+                            </div>
+                            <div class="OCRID_scan"><img src="../../images/ps_paishe.png" alt="" style="height:20px;margin-top: 10px;"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc fm-item">
+                                <div class="result-left"><span class="required-stars">*</span>存款人姓名</div>
+                                <div class="input-test">
+                                    <input type="text" class="input-test-con" data-role="none" id="depositorName" maxlength="20">
+                                </div>
+                            </div>
+                        </li>
+                        <li></li>
+                        <li>
+                            <div class="information-result border-cc fm-item">
+                                <div class="result-left"><span class="required-stars">*</span>金额</div>
+                                <div class="input-test">
+                                    <input type="text" class="input-test-con" data-role="none" id="tranMoney">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc fm-item">
+                                <div class="result-left"><span class="required-stars">*</span>产品名称</div>
+                                <div class="input-test">
+                                    <input type="text" class="input-test-con" data-role="none" id="productName"  maxlength="60">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="beiZhu_con">
+                    <div class="information-result border-cc">
+                        <div class="result-left" style="width: 6%;padding-left: 2%;">备注</div>
+                        <div class="input-test" style="width: 91%;"><input type="text" id="img_beizhu"
+                                                                           class="input-test-con" data-role="none"
+                                                                           maxlength="100"></div>
+                    </div>
+                </div>
+                <div class="beiZhu_con" style="width:47%;display:none;" id="offline-show">
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>脱机影音编号</div>
+                        <div class="input-test">
+                            T<span style="margin-left:5px;"></span>
+                            <input type="text" data-role="none" class="input-test-con" style="width:40%">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="kong_box"></div>
+        </div>
+
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a id="ImagingOperations_messageIn_pre" class="previous previous-con back-1">上一步</a>
+        <a id="ImagingOperations_messageIn_next" class="previous btn_next">下一步</a>
+    </div>
+    <div class="backContainer">
+        <div class="mianContainer">
+            <p class="contHeader">请选择账卡号</p>
+            <ul>
+
+            </ul>
+            <div id="contClose" class="contFooter contentFooter">关闭</div>
+            <div id="contChoose" class="contFooter">选择</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

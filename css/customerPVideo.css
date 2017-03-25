@@ -1,0 +1,46 @@
+/**
+ * 公共模块-----影像复用界面
+ * named by lei.
+ */
+
+.customerPVideo .box-header {
+    height: 50px;
+    width: 100%;
+    background-color: #EBEBEB;
+    margin-top: 30px;
+}
+
+.customerPVideo .box-header > div {
+    height: 50px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.customerPVideo .box-rows:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.customerPVideo .box-rows {
+    width: 100%;
+    height: 52px;
+}
+
+.customerPVideo .click {
+    background-color: #0F45A7 !important;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.customerPVideo .box-rows > div {
+    height: 52px;
+    width: 19.58%;
+    text-align: center;
+    display: inline-block;
+    line-height: 52px;
+    margin: 0;
+    padding: 0;
+}

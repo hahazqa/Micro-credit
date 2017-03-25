@@ -1,0 +1,481 @@
+/**
+ * 面谈签约
+ * named by lei.
+ */
+
+/*页面导航栏进度条---------选择贷款*/
+
+#faceSign-contract #border-over{
+    width:21.6%;
+}
+/*页面导航栏进度条---------影像采集AND影像对比AND读身份证*/
+#faceSign-customerP #border-over, #faceSign-personFace #border-over, #faceSign-perReading #border-over, #faceSign-screenP #border-over, #faceSign-choseT #border-over, #faceSign-audio #border-over, #faceSign-showAudio #border-over, #faceSign-perRead
+#border-over {
+    width: 36%;
+}
+
+/*页面导航栏进度条---------完成*/
+#faceSign-complete #border-over {
+    width: 43%;
+}
+
+/*读取身份证*/
+#faceSign-reading .cus_box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#faceSign-reading .box_content {
+    position: relative;
+    width: 417px;
+    height: 168px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#faceSign-reading .cus_header {
+    line-height: 43px;
+    padding: 0 35px;
+    border-radius: 10px 10px 0 0;
+    /*border-bottom: 1px solid #ccc;*/
+    background: #f7f7f7;
+    text-align: center;
+    overflow: hidden;
+}
+#faceSign-reading .cus_con{
+    margin: 0 35px 30px 35px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+#faceSign-reading #htInp{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+#faceSign-reading .cus_foot{
+     padding: 0 35px 20px 35px;
+}
+#faceSign-reading .cus_foot>.foot_btn{
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+    line-height: 40px;
+    border-radius: 5px;
+}
+#faceSign-reading .foot_btn_active{
+    color: #0F45A7 !important;
+    border: 1px solid #0F45A7 !important;
+}
+
+/*合同号*/
+#faceSign-contract .box-header > div, #faceSign-contract .box-rows > div {
+    width: 16.66%;
+    float: left;
+}
+
+#faceSign-contract .page-number-con > span {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+#faceSign-contract .page-number-change {
+    color: #000000;
+}
+#faceSign-contract .page-number-con{
+    bottom: 10px;
+}
+
+#faceSign-contract .page-number-sx {
+    padding: 4px 8px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+#faceSign-contract .page-number-bgcolor {
+    border: 1px solid #0F45A7;
+    color: #0F45A7 !important;
+}
+
+/*选择贷款*/
+.chooseLoan .msg_box {
+    margin: 20px 8.6% 25px 8.6%;
+    width: 83.8%;
+    border: 0 !important;
+}
+#faceSign-choseT .customerP-peiou{
+    border: 1px solid #0F45A7 !important;
+    color: #0F45A7 !important;
+}
+
+.chooseLoan .msg_box li {
+    width: 100%;
+    height: 39px;
+    margin-bottom: 20px;
+}
+
+.chooseLoan .col_box {
+    display: inline-block;
+    width: 46.9%;
+    height: 39px;
+    line-height: 39px;
+    background-color: #F0F0F0;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    float: left;
+}
+
+.chooseLoan .col_box:nth-child(odd) {
+    margin-right: 6.2%;
+}
+
+.chooseLoan .ziduan-name {
+    margin: 0 15px;
+    display: inline-block;
+    width: 20%;
+    color: #CCCCCC;
+}
+
+.chooseLoan .op_box {
+    width: 100%;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+}
+
+.chooseLoan .op_header {
+    width: 94%;
+    height: 49px;
+    padding-left: 6%;
+    margin-top: 15px;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    background-color: #EBEBEB;
+    position: relative;
+}
+
+.chooseLoan .op_box > li {
+    width: 94%;
+    height: 49px;
+    margin-bottom: 0;
+    padding-left: 6%;
+    position: relative;
+}
+
+.chooseLoan .op_header .colTty, .chooseLoan .op_box > li .colTty {
+    width: 34%;
+}
+
+.chooseLoan .op_y {
+    display: none;
+    width: 21px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    margin: auto;
+}
+
+.chooseLoan .op_n {
+    width: 21px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    margin: auto;
+}
+
+.chooseLoan .op_box > li:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.chooseLoan .op_header > div, .chooseLoan .op_box li > div {
+    float: left;
+    width: 22%;
+    text-align: center;
+    height: 49px;
+    line-height: 49px;
+}
+
+/*身份验证-----------读身份证*/
+#faceSign-perReading .clues {
+    text-align: left;
+    margin-top: 50px;
+    width: 507px;
+}
+
+#faceSign-perReading .clues span {
+    color: red;
+}
+
+#faceSign-perReading .readID {
+    margin: 30px auto 41px auto;
+}
+
+/*身份验证-----------客户面部照片*/
+#faceSign-customerP .plesPic {
+    margin-top: 105px;
+    text-align: center;
+}
+
+#faceSign-customerP .plesPic span {
+    color: red;
+}
+
+#faceSign-customerP .img_box {
+    float: none;
+}
+
+/*录音界面*/
+#faceSign-audio .msg_box {
+    margin: 40px 8.6% 0 8.6%;;
+}
+
+#faceSign-audio .ple img {
+    height: 21px;
+    vertical-align: text-top;
+    width: auto;
+}
+
+#faceSign-audio .audio_box {
+    margin: 35px 25% 0 25%;
+    height: 30px;
+    width: 50%;
+}
+
+#faceSign-audio .btn_box {
+    height: 80px;
+    width: 40%;
+    margin: 35px 30% 0 30%;
+    text-align: center;
+}
+#faceSign-audio .btn_box>div{
+    height: 80px;
+    display: inline-block;
+    width:20%;
+}
+#faceSign-audio .btn_box img {
+    height: 100%;
+}
+
+#faceSign-audio .search_box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+}
+
+#faceSign-audio .search_con {
+    position: relative;
+    width: 375px;
+    height: 256px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#faceSign-audio .time_box {
+    text-align: center;
+    padding: 56px 0 28px 0;
+    color: red;
+}
+
+#faceSign-audio .search_con img {
+    width: 100px;
+    margin-left: 138px;
+}
+
+/*显示录音界面*/
+#faceSign-showAudio .box_con {
+    margin: 20px 8.6% 25px 8.6%;
+    width: 83.8%;
+}
+
+#faceSign-showAudio .msg_box {
+    padding-top: 20px;
+}
+
+#faceSign-showAudio .time_box {
+    float: left;
+    display: inline-block;
+    width: 40%;
+    /*margin-left: 5%;*/
+    margin-right: 10%;
+}
+
+#faceSign-showAudio .sty_box {
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    height: 39px;
+    line-height: 39px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-left: 12px;
+    background-color: #F6F6F6;
+}
+
+#faceSign-showAudio .play_box{
+    float: right;
+    margin-right: 7%;
+    width: 50px;
+}
+#faceSign-showAudio .play_box img{
+    width:100%;
+    height:auto;
+}
+
+#faceSign-showAudio .per_son {
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+#faceSign-showAudio .per_son li {
+    margin-bottom: 15px;
+}
+
+#faceSign-showAudio .per_son li span:first-child {
+    display: inline-block;
+    width: 40%;
+}
+
+#faceSign-showAudio .per_son li span:last-child {
+    display: inline-block;
+    width: 55%;
+}
+
+/*身份验证-----------场景照片*/
+.screenP .img_content {
+    width: 100%;
+    margin: 23px 0 0 0;
+}
+
+.screenP .img_box {
+    float: left !important;
+    width: 38.03986711%;
+    max-width: 229px;
+    min-width: 160px;
+    margin-left: 8%;
+    margin-bottom: 35px;
+}
+
+.screenP .trash {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 25px;
+    height: auto;
+}
+
+/*身份验证-----------再次选择*/
+#faceSign-choseT .img_box {
+    margin-left: 9.93%;
+}
+
+#faceSign-choseT .img_box:nth-child(3n+1), #faceSign-showAudio .img_box:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+#faceSign-choseT .img_notes {
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/*面签完成*/
+#faceSign-complete .compl {
+    margin: 40px auto 40px auto;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+    font-size: 28px;
+}
+
+#faceSign-complete .compl img {
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+
+#faceSign-complete .compl span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+
+#faceSign-complete .basic_msg {
+    margin-left: 37.5%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+#faceSign-complete .basic_msg_header {
+    color: #4A4A4A;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#faceSign-complete .basic_msg_content {
+    padding-top: 58px;
+}
+
+#faceSign-complete .basic_msg_content .ziduan-name {
+    display: inline-block;
+    color: #999999 !important;
+    width: 10%;
+    text-align: left;
+    margin-right: 3%;
+}
+
+#faceSign-complete .basic_msg_content .info_value {
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#faceSign-complete .basic_msg_content .basic_msg_content {
+    color: #666666;
+}
+
+#faceSign-complete .basic_msg_content > p {
+    margin-bottom: 30px;
+}

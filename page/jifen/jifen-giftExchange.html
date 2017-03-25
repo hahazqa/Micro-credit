@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/jifen.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-jifen.js"></script>
+    <title>积分</title>
+</head>
+<body>
+<div data-role="page" class="main jifen gift" id="jifen-giftExchange">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+    	积分兑换
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('jifen-readingID.html')">退出</a>
+    </div>
+    <!--流程-->
+    <ul class="navigation-steps">
+		<div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>礼品展示</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>兑换信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>完成</p>
+            </li>
+        </ul>	    	
+    </ul>
+    <!--中间内容-->
+    <div class="conter-con">
+        <!--中间内容区右-->
+        <div class="conter-auto">
+            <div class="information-box">
+                <div class="information-l">
+                    <ul class="information-input">
+                        <li>
+                            <div class="information-result">
+                                <div class="result-left">礼品编号</div>
+                                <span id="GF_ID"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result">
+                                <div class="result-left">兑换积分</div>
+                                <span id="NEED_POINT1"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="id-number-con information-result">
+                                <div class="result-left">消费积分</div>
+                                <span id="NEED_POINT"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result">
+                                <div class="result-left">剩余积分</div>
+                                <span id="OVER_POINT"></span>
+                            </div>
+                        </li>
+                        <li id="orgList"  style="display: none;">
+                        	<div class="information-result border-cc">
+	                            <div class="result-left">
+			                    	<span class="required-stars">*</span>
+			                    	领取支行
+			                    </div>
+			                    <div class="input-test">
+			                        <select id="RECEIVE_ORG" class="drop-down"></select>
+			                    </div>
+		                    </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-r">
+                    <ul class="information-input">
+                    	<li>
+                            <div class="information-result">
+                                <div class="result-left">礼品名称</div>
+                                <div id="GF_NAME" style="white-space: nowrap;overflow: auto;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc" style="width: 92%;">
+                                <div class="result-left">
+                                	<span class="required-stars">*</span>
+                                	兑换数量
+                                </div>
+                                <div class="input-test">
+                                	<input id="EXCHANGE_NUM" type="text" class="input-test-con" data-role="none" reg="mobile" maxlength="5" value="1" style="padding-left: 8px;">
+                                </div>
+                            </div>
+                            <span style="margin-left: 5px;">个</span>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left">
+                                	<span class="required-stars">*</span>
+                                	选择账卡号
+                                </div>
+                                <div class="input-test">
+                                    <select id="ACCT_NO" class="drop-down"></select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information-result border-cc">
+                                <div class="result-left">
+                                	<span class="required-stars">*</span>
+                                	领取方式
+                                </div>
+                                <div class="input-test">
+                                    <select id="RECEIVE_MODE" class="drop-down"></select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kong_box"></div>
+        </div>
+    </div>
+    <div class="footter">
+        <a id="pre_btn" class="previous previous-con back-1">上一步</a>
+        <a id="next_btn" class="previous btn_next">下一步</a>
+    </div>
+</div>
+</html>

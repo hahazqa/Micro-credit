@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/loan.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/page-loan.js"></script>
+    <script src="../../js/wce-loan.js"></script>
+    <title>征信查询</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="credit-newSearch">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouye()" data-direction="reverse" class="head-all head-left">首页</a>
+		征信查询
+        <a onclick="dzhFanhui('credit-search.html')" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <div data-role="content" class="conter-con ">
+        <div class="conter-auto">
+            <div class="newSearch">
+                <div class="con-header"><!--新查询--></div>
+                <div class="input-box">  <!--整体-->
+                    <div class="input-rows"> <!--行-->
+                        <div class="input-disabled"> <!--前-->
+                            <div class="result-left">证件类型</div>
+                            <div class="input-test pingyin-input">
+                                <select id="c-com-property" class="drop-down" disabled="disabled">
+                                    <option value="0" selected="true">身份证</option>
+                                    <option value="1">户口本</option>
+                                    <option value="2">护照</option>
+                                    <option value="3">军官证</option>
+                                    <option value="4">士兵证</option>
+                                    <option value="5">港澳居民来往内地通行证</option>
+                                    <option value="6">台湾同胞来往内地通行证</option>
+                                    <option value="7">临时身份证</option>
+                                    <option value="8">外国人居留证</option>
+                                    <option value="9">警官证</option>
+                                    <option value="A">香港身份证</option>
+                                    <option value="B">澳门身份证</option>
+                                    <option value="C">台湾身份证</option>
+                                    <option value="X">其他证件</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="two-col-option">-->
+                            <!--<div class="option-left option-select-left">手工输入</div>-->
+                            <!--<div class="option-right">读卡器</div>-->
+                        <!--</div>-->
+                        <div style="float: right;border: 0;">
+                            <div class="queryCardList queryActive">读取身份证</div>
+                        </div>
+                    </div>
+                    <div class="input-rows">   <!--行-->
+                        <div class="input-disabled">
+                            <div class="result-left" style="width: 24%;">证件号码</div>
+                            <div class="input-test" style="width: 50%;float: left;">
+                                <input type="text" class="input-test-con" data-role="none" disabled="disabled" style="background: none;"/>
+                            </div>
+                        </div>
+                        <div class="input-disabled" style="float: right;">
+                            <div class="result-left" style="width: 24%;">客户姓名</div>
+                            <div class="input-test" style="width: 50%;float: left;">
+                                <input type="text" class="input-test-con" style="background: none" data-role="none" disabled="disabled"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="agree-content">  <!--整体-->
+                    <div class="con-header"><h2>个人授权与承诺书</h2></div>
+                    <div>  <!--协议体-->
+                        <p style="text-indent: 2em"><h3>深圳农村商业银行（以下简称“贵行”）：</h3></p>
+                        <p style="text-indent: 2em"><strong>本人或本人的配偶或关联企业</strong>在办理银行业务（包括申请授信、信用卡、为其他单位或个人提供担保）及业务存续期间，<strong>本人向贵行郑重作出以下授权与承诺：</strong></p>
+                        <p style="text-indent: 2em">一、<strong>本人不可撤销地同意并授权</strong>贵行向中国人民银行征信中心“个人信用信息基础数据库”、鹏元征信有限公司“鹏元征信系统”以及其它经政府核准的信用征信评级机构，以查询、打印、校验、审核、保存及扫描等方式使用本人的个人征信信息（如个人基本信息、信用交易、社保等相关信息）。同时，<strong>也不可撤销地同意并授权贵行，将本人的个人征信等相关信息提供给上述机构。若贵行未经本人授权或超出上述业务范围对本人征信报告进行查询和使用，由此引发的一切后果及法律责任由贵行承担。</strong></p>
+                        <p style="text-indent: 2em">二、<strong>本人承诺</strong>按照贵行要求的方式和内容提供贷款申请或担保资料，并<strong>保证所提供资料真实、完整、有效，贷款用途及还款来源真实、合法，同意并授权贵行对本人与贷款申请相关的信息和资料进行调查核实，并在贵行系统建立客户信息予以管理。</strong></p>
+                        <p style="text-indent: 2em">三、<strong>本人（借款人）承诺严格按照合同约定用途及方式使用贷款资金：</strong></p>
+                        <p style="text-indent: 2em">
+                            1、贷款资金不流入<strong>股市、楼市</strong>，不用于购买理财产品、炒房、支付个人住房贷款首期款、股权性投资、注册验资、保证金、违法违规经营等；
+                        </p>
+                        <p style="text-indent: 2em">
+                            2、贷款资金不在借款人个人账户之间（含本人账户之间）划转，贷款资金“<strong>实贷实付</strong>”，不回流到借款人在贵行或他行的同名账户。
+                        </p>
+                        <p style="text-indent: 2em">
+							四、本人尊重、理解并无条件接受贵行对贷款申请作出贷与不贷的决定。
+                        </p>
+                        <p style="text-indent: 2em">
+							五、本人已知悉并理解上述授权条款。本人将恪守诚实守信原则，遵守上述所有承诺，<strong>否则无条件且不可撤销地同意并授权贵行对相关贷款采取包括但不限于从违反承诺之日起加收100%罚息、提前收回全部贷款、列入贵行限制授信特殊名单等措施，</strong>本人愿意承担由此产生的全部经济责任和法律责任。
+                        </p>
+                        <p style="text-indent: 2em">
+                            <strong>本人作为借款人配偶或担保人配偶时，对借款人借款行为或担保人的担保行为均知情且同意。</strong>
+                        </p>
+                    </div>
+                    <div class="agree-box">
+                        <div class="agree-btn-box" id="lc-agree-btn">
+                            <img id="ic-disagree" class="ic-agree" src="../../images/ic_disagree.png" height="100%"
+                                 alt=""/>
+                            <img id="ic-agree" class="ic-agree" style="display: none" src="../../images/ic_agree.png"
+                                 height="100%" alt=""/>
+                            <span class="txt-agree">我已阅读并同意本协议</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-qian">
+                    <div class="qian-box">
+                        <div class="qian-header">确认签名</div>
+                        <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:30px;" alt=""/></div>
+                        <div id="qianM" class="qian-content"></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="imageData" id="imageData"/>
+                        </form>
+                    </div>
+                    <div id="qianOK" class="qian-over">
+                        <img id="ic_disqian" class="ic_agree" src="../../images/ic_disagree.png" height="100%"
+                             alt=""/>
+                        <img id="ic_qian" class="ic_agree" style="display: none" src="../../images/ic_agree.png"
+                             height="100%" alt=""/>
+                        <span>签名完成</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div id="lc-agree-pre" class="previous previous-con back-1">放弃</div>
+        <div id="lc-agree-next" class="previous" data-transition="slide">确认</div>
+    </div>
+</div>
+</body>
+</html>

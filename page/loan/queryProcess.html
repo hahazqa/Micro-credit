@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/loan.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <title>进度查询</title>
+</head>
+<body>
+<div data-role="page" class="main loan" id="queryProcess">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">首页</a>
+        进度查询
+        <a href="../main.html" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--导航栏-->
+    <div class="navigation-steps-mobile">
+        <div class="navigation-steps-seach">
+            <div class="seach-botton">搜索</div>
+            <div class="head-seach">
+                <input type="text" placeholder="按姓名搜索" style="color: #CCCCCC;" data-role="none" class="head-seach-input" id="daikuan_name_sousuo">
+                <img src="../../images/seach_one_icon.png" class="seach_icon" id="daikuan_img_sousuo">
+            </div>
+        </div>
+    </div>
+    <div data-role="content"  class="conter-con" style="bottom: 0;">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <!--第一屏-->
+            <ul class="queryProcess-con tixing-con tixing-zoushitu-bg" id="queryProcess-con">
+                <div class="queryProcess-title com-title">
+                    <div>姓名</div>
+                    <div>证件号码</div>
+                    <div>申请时间</div>
+                    <div>办理进度</div>  <!--class="id-card"-->
+                    <div>楼盘名称</div>
+                    <div>房屋地址</div>
+                    <div>拒绝原因</div>
+                </div>
+                <!--<li>
+                    <div>赵向东</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>2016-01-06</div>
+                    <div>一手楼按揭</div>
+                    <div>亿立方写字楼</div>
+                    <div>深圳市福田区口岸田区口岸片区深圳市福田区口岸</div>
+                    <div>信用不足信用不足信用不足信用不足</div>
+                </li>
+                <li>
+                    <div>赵向东</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>2016-01-06</div>
+                    <div>一手楼按揭</div>
+                    <div>亿立方写字楼</div>
+                    <div>深圳市福田区口岸片区</div>
+                    <div>信用不足</div>
+                </li>
+                <li>
+                    <div>赵向东</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>2016-01-06</div>
+                    <div>一手楼按揭</div>
+                    <div>亿立方写字楼</div>
+                    <div>深圳市福田区口岸片区</div>
+                    <div>信用不足</div>
+                </li>
+                <li>
+                    <div>赵向东</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>2016-01-06</div>
+                    <div>一手楼按揭</div>
+                    <div>亿立方写字楼</div>
+                    <div>深圳市福田区口岸片区</div>
+                    <div>信用不足</div>
+                </li>
+                <li>
+                    <div>赵向东</div>
+                    <div class="id-card">113133111111111111</div>
+                    <div>2016-01-06</div>
+                    <div>一手楼按揭</div>
+                    <div>亿立方写字楼</div>
+                    <div>深圳市福田区口岸片区</div>
+                    <div>信用不足</div>
+                </li>-->
+            </ul>
+        </div>
+        <!--页码-->
+        <div class="page-number-con">
+                <!--<span class="page-number-sx">上一页</span>
+                <span class="page-number-change">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>...</span>
+                <span>10</span>
+                <span class="page-number-sx page-number-bgcolor">下一页</span>-->
+            </div>
+    </div>
+    <div class="footter">
+        <a class="previous" style="margin-left: 37.5%" id="daikuan_bucongziliao">补充资料</a>
+    </div>
+    
+    <!--搜索框-->
+    <div id="seach-day-con">
+        <div id="seach-day">
+            <span class="seach-day-title">申请日期</span>
+            <ul class="seach-day-ul">
+                <li>
+                    <div class="day-botton" style="float: left;">
+                        <input type="date" value="" id="kaishiDate"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                    至
+                    <div class="day-botton" style="float: right;">
+                        <input type="date" value="" id="jieshuDate"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img" />
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        客户姓名
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" id="kehuname" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        证件号码
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" id="zhengjiannumber" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        楼盘名称
+                    </div>
+                    <div class="seach-day-box">
+                        <input type="text" class="input-test-con" id="loupanname" style="color: #CCCCCC;" data-role="none">
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-header">
+                        办理进度
+                    </div>
+                    <div class="seach-day-box" style="padding: 0;">
+                        <select  class="drop-down" id="banlijindu">
+                        	   <option value="">全部</option>
+                            <option value="1">贷款审批中</option>
+                            <option value="2">终审同意</option>
+                            <option value="3">终审否决</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="fangqi-seach" style="float: left;">
+                        放弃
+                    </div>
+                    <div class="fangqi-seach" style="float: right;">
+                        搜索
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

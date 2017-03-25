@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/xinka.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/after-login.css" />
+    <link rel="stylesheet" href="css/pfn-merchant.css" />
+    <link type="text/css" rel="stylesheet" href="css/credit.css" />
+    <link type="text/css" rel="stylesheet" href="css/dianzi.css" />
+    <link rel="stylesheet" href="css/citigold.css" />
+    <link rel="stylesheet" href="css/gongzuotai.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/loan.css">
+    <link rel="stylesheet" href="css/smallLoan.css">
+    <link rel="stylesheet" href="css/jifen.css">
+    <link rel="stylesheet" href="css/appendix.css">
+    <link rel="stylesheet" href="css/ImagingOperations.css">
+    <link rel="stylesheet" href="css/common-customeP.css">
+    <link rel="stylesheet" href="css/common-nav.css">
+    <link rel="stylesheet" href="css/personFace.css">
+    <link rel="stylesheet" href="css/common-read.css">
+    <link rel="stylesheet" href="css/common-reading.css">
+    <link rel="stylesheet" href="css/customerPVideo.css">
+    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="css/faceSign.css">
+    <link rel="stylesheet" href="css/socialSecurity.css">
+    <link rel="stylesheet" href="css/common-product-Y.css" />
+    <link rel="stylesheet" href="css/common-agreement-Y.css" />
+    <link rel="stylesheet" href="css/common-complete-Y.css" />
+    <link rel="stylesheet" href="css/common-contract-Y.css" />
+    <link rel="stylesheet" href="css/common-customerConfirm-Y.css" />
+	<link rel="stylesheet" href="css/common-footer-Y.css"/>
+    <link rel="stylesheet" href="css/common-video-Y.css">
+	<link rel="stylesheet" href="css/creditLoan.css"/>
+	<link rel="stylesheet" href="css/creditloanProgress.css"/>
+	<link rel="stylesheet" href="css/popUplayer.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    $(document).bind("mobileinit", function() {
+        $.mobile.defaultPageTransition = "slide";
+    });
+//  $(document).on("pagehide", function(event) {
+//      $(event.target).remove();
+//  });
+    </script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/meapNameSpace.js"></script>
+    <script type="text/javascript" src="js/page-cache.js"></script>
+    <script type="text/javascript" src="js/page-calendar.js"></script>
+    <script src="js/cordova.js"></script>
+    <script src="js/NSMeapPlugin.js"></script>
+    <script src="js/area.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/meapRequest.js"></script>
+    <script src="js/meapRequest-credit.js"></script>
+    <script src="js/meapRequest-gongzuotai.js"></script>
+    <script src="js/page-credit.js"></script>
+    <script src="js/page-creditProgress.js"></script>
+    <script src="js/page-xinka.js"></script>
+    <script src="js/wce-credit.js"></script>
+    <script src="js/wce-creditProgress.js"></script>
+    <script src="js/wce-xinka.js"></script>
+    <script src="js/data-credit.js"></script>
+    <script src="js/echarts-all.js"></script>
+    <script src="js/page-tools.js"></script>
+    <script src="js/fileUtil.js"></script>
+    <!--电子渠道引用js文件-->
+    <script src="js/meapRequest-dianzi.js"></script>
+    <script src="js/wce-dianzi.js"></script>
+    <script src="js/page-dianzi.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <!--贵宾理财-->
+    <script src="js/meapRequest-citigold.js"></script>
+    <script src="js/page-citigold.js"></script>
+    <script src="js/page-citigold-su.js"></script>
+    <script src="js/wce-citigold.js"></script>
+    <script src="js/meapRequest-Finance.js"></script>
+    <script src="js/gatherPic.js"></script>
+    <script src="js/page-Finance.js"></script>
+    <script src="js/wce-Finance.js"></script>
+    <!--工作台-->
+    <script src="js/page-gongzuotai.js"></script>
+    <script src="js/page-gongzuotai-new.js"></script>
+    <script src="js/wce-gongzuotai.js"></script>
+    <script src="js/wce-gongzuotai-new.js"></script>
+    <!--登陆前-->
+    <script src="js/radialindicator.js"></script>
+    <!--贷款-->
+    <script src="js/meapRequest-loan.js"></script>
+    <script src="js/wce-loan.js"></script>
+    <script src="js/conf-loan.js"></script>
+    <script src="js/page-loan.js"></script>
+    <script src="js/data-loan.js"></script>
+    <!--面签-->
+    <script src="js/page-faceSign.js"></script>
+    <script src="js/wce-faceSign.js"></script>
+    <!--信用贷款进度查询-->
+    <script src="js/page-creditloanprogress.js"></script>
+    <script src="js/wce-creditloanprogress.js"></script>
+    <!--小微贷款-->
+    <script src="js/page-smallLoan.js"></script>
+    <script src="js/wce-smallLoan.js"></script>
+    <script src="js/page-smallLoanCusManage.js"></script>
+    <script src="js/wce-smallLoanCusMan.js"></script>
+    <script src= "js/data-smallLoanCusManage.js"></script>
+    <!-- <script src="js/vconsole.min.js"></script> -->
+	<script src="js/creditLoan-data.js"></script>
+	<script src="js/creditLoan-service.js"></script>
+	<script src="js/creditLoan-page.js"></script>
+    <!--特惠商户-->
+    <script type="text/javascript" src="js/page-pfn-merchant.js"></script>
+    <script type="text/javascript" src="js/Bmap.js"></script>
+    <!--移动CRM-->
+    <script src="js/page-mobile.js"></script>
+    <script src="js/page-rpm.js"></script>
+    <!--    <script src="js/page-mobile-crm.js"></script>-->
+    <!--about-->
+    <script src="js/page-about.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/page-afterIogin.js"></script>
+    <!--运营影像-->
+    <script src="js/meapRequest-ImagingOperations.js"></script>
+    <script src="js/page-ImagingOperations.js"></script>
+    <script src="js/wce-ImagingOperations.js"></script>
+    <!--积分-->
+    <script src="js/meapRequest-jifen.js"></script>
+    <script src="js/page-jifen.js"></script>
+    <script src="js/wce-jifen.js"></script>
+    <!--便民签约-->
+    <script src="js/page-socialSecurity.js"></script>
+    <script src="js/wce-socialSecurity.js"></script>
+    <script src="js/page-characteristicProduct.js"></script>
+    <script src="js/meapRequest-convenienceContract.js"></script>
+    <script src="js/wce-commonY.js"></script>
+	<script src="page-characteristicProduct.js"></script>
+	<!--<script src="js/vconsole.min.js" ></script>-->
+    <title>首页登陆</title>
+</head>
+
+<body>
+    <div data-role="page" class="main" id="home-login">
+        <!--头部-->
+        <div class="login-header">
+            <img src="images/logo_login.png" class="logo-login" />
+            <div class="please-login-con ic_after-jiantoubottom">
+                <img src="images/account_login_icon.png" class="account_login_icon" /> 请登录
+            </div>
+        </div>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con">
+            <!--上下滑动-->
+            <div class="swiper-container swiper-containerone">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide login-noe-con ">
+                        <!--第一屏左边导航-->
+                        <div class="login-noe-left swiper-no-swiping">
+                            <div class="login-noe-left-con name-login-oneBg swiper-no-swiping">
+                                <ul class="login-rlsb-con">
+                                    <li class="name-login">密码登录</li>
+                                    <li class="login-renlian login-renlian-cg">人脸登录</li>
+                                </ul>
+                                <div class="name-login-con">
+                                    <ul class="name-login-one name-login-oneBg">
+                                        <li><img src="images/icon_account_login.png" class="icon_account_login" />
+                                            <input type="text" class="input-text-same" data-role="none" placeholder="用户名" style="color: #666666;" id="login-name" />
+                                        </li>
+                                        <li><img src="images/icon_key_login.png" class="icon_account_login" />
+                                            <input type="password" class="input-text-same" data-role="none" placeholder="密码" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false" style="color: #666666;" id="login-password" />
+                                        </li>
+                                        <!--<span class="xiugaimima-con" id="xiugaimima-con">修改密码</span>-->
+                                        <a class="name-login-denglu" id="login-denglu">登录</a>
+                                    </ul>
+                                    <ul class="name-login-one">
+                                        <li><img src="images/icon_account_login.png" class="icon_account_login" />
+                                            <input type="text" class="input-text-same input-renlianshibie" data-role="none" placeholder="用户名" style="color: #666666;" id="input-gonghao" />
+                                        </li>
+                                        <!--<li style="padding-left: 15px;"><input type="text" class="input-text-same input-renlianshibie" data-role="none" placeholder="请输入工号" style="color: #666666;" id="input-gonghao"/></li>-->
+                                        <li class="name-login-denglu name-login-caiji">登录</li>
+                                    </ul>
+                                </div>
+                                <div class="left_fanhuiliebiao fanhuiliebiao-click">返回列表</div>
+                            </div>
+                            <!--返回列表-->
+                            <div class="login-noe-left-contwo swiper-no-swiping">
+                                <div class="name-login-con swiper-no-swiping">
+                                    <ul class="name-login-one name-login-oneBg swiper-no-swiping">
+                                        <li class="fanhuiliebiao-li fanhuiliebiao-top">
+                                            <img src="images/icon_bank_login.png" class="icon_account_login" />我们的银行
+                                            <img src="images/arrow_icon.png" class="arrow_icon" />
+                                        </li>
+                                        <div class="wodeyinhang-con wodeyinhang-yh">
+                                            <a href="#">银行介绍</a>
+                                            <a href="#">品牌宣传</a>
+                                            <a href="#">客户活动</a>
+                                            <a href="#">关注我们</a>
+                                        </div>
+                                        <li class="fanhuiliebiao-li fanhuiliebiao-bottom"><img src="images/icon_product.png" class="icon_account_login" />产品展页<img src="images/arrow_icon.png" class="arrow_icon" /></li>
+                                        <div class="wodeyinhang-con wodeyinhang-zy">
+                                            <a data-id="01">存款</a>
+                                            <a data-id="02">贷款</a>
+                                            <a data-id="03">理财产品</a>
+                                            <a data-id="04">代销产品</a>
+                                            <a data-id="05">银行卡</a>
+                                            <a data-id="06">特色产品</a>
+                                            <a data-id="07">更多</a>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="left_fanhuiliebiao denglu-click">登录</div>
+                            </div>
+                        </div>
+                        <!--第一屏右边内容-->
+                        <div class="login-noe-right">
+                            <!-- Swiper -->
+                            <div class="swiper-container swiper-containertwo">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="suixiangyi-con">随享益</div>
+                                        <div class="suixiangyi-jieshao swiper-no-swiping">
+                                            <div class="suixiangyi-jieshao-neirong">“随享益”存款 随存随用，乐享收益！</div>
+                                            <div class="suixiangyi-jieshao-neirong">适合投资者：不定期有资金需求，对资金的安全性、收益性要求高的投资者</div>
+                                            <div class="suixiangyi-jieshao-neirong">产品特色 好收益：7天通知存款利率起，最高可达1年定期存款利率； 好便利：允许多次支取；随时存、随时取，无需预约； 好贴心：满1年即本息自动续存，方便您打理资金。
+                                            </div>
+                                            <div class="suixiangyi-jieshao-neirong">产品简介 1、人民币5万元起存，支取后留存金额不低于5万元； 2、需一次存入，允许多次支取，支取部分和支取后剩余资金均按照 “随享益”产品规则计高利息； 3、无需提前约定存期，随存款期限延长逐级提高存期，最高可按1年定期存款计息； 4、满1年本、息自动转存。
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="suixiangyi-con">步步高</div>
+                                        <div class="suixiangyi-jieshao swiper-no-swiping">
+                                            <div class="suixiangyi-jieshao-neirong">“步步高”约定存款  存期逐级升，收益步步高！</div>
+                                            <div class="suixiangyi-jieshao-neirong">适合投资者：风险承受能力低、愿意中长期投资但又要求资金随时可支取的投资者。</div>
+                                            <div class="suixiangyi-jieshao-neirong">产品特色 活期便利、定期收益：无需提前约定存期，随存款期限延长逐级提高，最高可达5年定期存款利息； 资金运用较灵活：允许多次支取，支取部分和支取后剩余资金均按约定存款的规则计息（剩余金额不低于起存金额）； 管理方便：满5年将自动转存。
+                                            </div>
+                                            <div class="suixiangyi-jieshao-neirong">产品简介 起存及最低留存金额20万元。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination swiper-paginationtwo"></div>
+                            </div>
+                        </div>
+                        <!--第一屏底部导航-->
+                        <div class="login-noe-foot">
+                            <div class="login-foot-ul">
+                                <a href="#" id="shiyongGongJu">
+                                    <img src="images/icon_tool.png" class="icon_login-img" /> 实用工具
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon_user.png" class="icon_login-img" /> 用户手册
+                                </a>
+                                <a href="page/gongzuotai/gongzuotai-xuchuanyingxiangziliao.html">
+                                    <img src="images/icon_question.png" class="icon_login-img" /> 资料上传
+                                </a>
+                                <a href="page/gongzuotai/gongzuotai-lilvandwaihui.html">
+                                    <!--page/gongzuotai/gongzuotai-lilvandwaihui.html-->
+                                    <img src="images/icon_price.png" class="icon_login-img" /> 利率和外汇牌价
+                                </a>
+                            </div>
+                            <img src="images/gif_huadong.gif" class="arrow_login_icon" />
+                            <div class="banbenhao">版本号：<span id="banbenhao"><!--v2.1--></span></div>
+                        </div>
+                    </div>
+                    <!--第二屏滑动-->
+                    <div class="swiper-slide dierping-con">
+                        <img src="images/gif_huadongtwo.gif" class="gif_huadongtwo" />
+                        <div class="login-two-neirong">
+                            <div class="login-two-neirongall login-two-neirong-cg">
+                                <!--银行介绍-->
+                                <!-- Swiper -->
+                                <div class="swiper-container containerTwoOne">
+                                    <div class="swiper-wrapper containerTwoWrapper" id="containerTwoOne">
+                                        <!-- <div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<img src="images/Two_Two_photo.png" />
+					            					<div class="yinhangjieshao">银行介绍</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            	</div>
+					            	<div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<div class="TwoOne-title">深圳农村商业银行介绍</div>
+						            				<div class="TwoOne-neirong">
+						            					<p>深圳农村商业银行（以下简称“我行”）成立于2005年12月9日，是经中国银监会批准,在深圳市农村信用社基础上改制组建而成的股份制农村商业银行。我行继承了深圳市农村信用社50多年的发展历史、服务特色和文化传统，在改革发展和经营管理的各个方面都取得了较好的成绩。
+		                                        </p>
+												    截至2014年底，我行总资产折合人民币1590.26亿元，2014年度实现净利润人民币26.15亿元，净资产收益率（ROE）22.29％，主要财务指标均位居国内中小商业银行前列。在英国《银行家》杂志2015年发布的“世界银行1000强”中，我行排名405位。
+												<p>截至2014年底，我行近200个营业网点遍布深圳全市，网点数量居深圳银行同业首位。我行已发行银行卡“信通卡”超过1200万张，安装ATM、现金存取款机、自助终端等自助银行设备超过2000台，网上银行、移动银行等相继上线，成为深圳地区服务网络和销售渠道最为完善的银行之一。
+												</p>
+												    <p>2010年5月28日我行首家异地支行——广西临桂支行顺利开业，2010年12月28日广西柳江支行开业，我行作为主发起人的宜州深通村镇银行、灵川深通村镇银行、扶绥深通村镇银行、苍梧深通村镇银行按计划相继开业，我行业务走出深圳迈向全国，顺利实现了由地方性银行向区域性银行的转变，是发展史上又一次里程碑式的跨越。截至2014年底，广西地区支行共有8个营业网点，村镇银行共有19个营业网点。
+												</p>
+												    2010年5月28日我行首家异地支行——广西临桂支行顺利开业，2010年12月28日广西柳江支行开业，我行作为主发起人的宜州深通村镇银行、灵川深通村镇银行、扶绥深通村镇银行、苍梧深通村镇银行按计划相继开业，我行业务走出深圳迈向全国，顺利实现了由地方性银行向区域性银行的转变，是发展史上又一次里程碑式的跨越。截至2014年底，广西地区支行共有8个营业网点，村镇银行共有19个营业网点。
+												<p>我行始终坚持“社区零售银行”的市场定位，树立了“质量优先、适度规模、专注服务、保证效益”的零售银行发展观，以中小企业和社区居民为主要服务对象，追求质量、效益、规模全面协调可持续发展，致力于打造成为资本充足、服务优良、内控严密、效益良好、特色鲜明的的社区零售银行。
+						            				</p>
+													</div>
+					            			    </div>
+					            			</div>
+					            		</div>
+					            	</div> -->
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination paginationTwoOne"></div>
+                                </div>
+                            </div>
+                            <div class="login-two-neirongall">
+                                <!--品牌宣传-->
+                                <div class="swiper-container containerTwotwo">
+                                    <div class="swiper-wrapper containerTwoWrapper" id="containerTwotwo">
+                                        <!-- <div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<video id="srcb_vedio" src="images/0826_深圳农商银行_30秒_高码流~3.mp4" width="100%" height="100%" controls="controls">
+					            				</div>
+					            			</div>
+					            		</div>
+				            		</div>
+				            		<div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<div class="TwoOne-title">品牌宣传</div>
+						            				<div class="TwoOne-neirong">
+													</div>
+					            			    </div>
+						            		</div>
+						            	</div>
+						           </div> -->
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination paginationTwotwo"></div>
+                                </div>
+                            </div>
+                            <div class="login-two-neirongall">
+                                <!--客户活动-->
+                                <div class="swiper-container containerTwothree">
+                                    <div class="swiper-wrapper containerTwoWrapper" id="containerTwothree">
+                                    </div>
+                                    <div class="swiper-pagination paginationTwothree"></div>
+                                </div>
+                            </div>
+                            <div class="login-two-neirongall">
+                                <!--关注我们-->
+                                <div class="swiper-container containerTwofour">
+                                    <div class="swiper-wrapper containerTwoWrapper" id="containerTwofour">
+                                        <!-- <div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<img src="images/Two_Two_photo.png" />
+					            					<div class="yinhangjieshao">银行介绍</div>
+					            				</div>
+					            			</div>
+					            		</div>
+						            </div>
+						            <div class="swiper-slide swiper-no-swiping">
+					            		<div class="swiper-container-same">
+					            			<div class="swiper-container-sameCon">
+					            				<div class="overflow-con-TwoOne">
+					            					<div class="TwoOne-title">深圳农村商业银行介绍</div>
+						            				<div class="TwoOne-neirong">
+						            					<p>深圳农村商业银行（以下简称“我行”）成立于2005年12月9日，是经中国银监会批准,在深圳市农村信用社基础上改制组建而成的股份制农村商业银行。我行继承了深圳市农村信用社50多年的发展历史、服务特色和文化传统，在改革发展和经营管理的各个方面都取得了较好的成绩。
+		                                        </p>
+												    截至2014年底，我行总资产折合人民币1590.26亿元，2014年度实现净利润人民币26.15亿元，净资产收益率（ROE）22.29％，主要财务指标均位居国内中小商业银行前列。在英国《银行家》杂志2015年发布的“世界银行1000强”中，我行排名405位。
+												<p>截至2014年底，我行近200个营业网点遍布深圳全市，网点数量居深圳银行同业首位。我行已发行银行卡“信通卡”超过1200万张，安装ATM、现金存取款机、自助终端等自助银行设备超过2000台，网上银行、移动银行等相继上线，成为深圳地区服务网络和销售渠道最为完善的银行之一。
+												</p>
+												    <p>2010年5月28日我行首家异地支行——广西临桂支行顺利开业，2010年12月28日广西柳江支行开业，我行作为主发起人的宜州深通村镇银行、灵川深通村镇银行、扶绥深通村镇银行、苍梧深通村镇银行按计划相继开业，我行业务走出深圳迈向全国，顺利实现了由地方性银行向区域性银行的转变，是发展史上又一次里程碑式的跨越。截至2014年底，广西地区支行共有8个营业网点，村镇银行共有19个营业网点。
+												</p>
+												    2010年5月28日我行首家异地支行——广西临桂支行顺利开业，2010年12月28日广西柳江支行开业，我行作为主发起人的宜州深通村镇银行、灵川深通村镇银行、扶绥深通村镇银行、苍梧深通村镇银行按计划相继开业，我行业务走出深圳迈向全国，顺利实现了由地方性银行向区域性银行的转变，是发展史上又一次里程碑式的跨越。截至2014年底，广西地区支行共有8个营业网点，村镇银行共有19个营业网点。
+												<p>我行始终坚持“社区零售银行”的市场定位，树立了“质量优先、适度规模、专注服务、保证效益”的零售银行发展观，以中小企业和社区居民为主要服务对象，追求质量、效益、规模全面协调可持续发展，致力于打造成为资本充足、服务优良、内控严密、效益良好、特色鲜明的的社区零售银行。
+						            				</p>
+													</div>
+					            			    </div>
+						            		</div>
+						            	</div>
+						           </div> -->
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination paginationTwofour"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--底部导航-->
+                        <ul class="login-two-foot">
+                            <li class="login-two-foot-bg">银行介绍</li>
+                            <li>品牌宣传</li>
+                            <li>客户活动</li>
+                            <li>关注我们</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!--<div class="swiper-pagination swiper-paginationone"></div>-->
+            </div>
+        </div>
+        <!--修改密码弹窗-->
+        <div class="submitted-successfully xiugaimima-mimalogin">
+            <div class="submitted-successfully-con">
+                <div class="submitted-successfully-head" id="shoucidenglu-mimaguoqu">
+                    <!--首次登录请修改密码-->
+                </div>
+                <div class="login-xiugaimima-con">
+                    <div class="login-xiugaimima-title">原密码</div>
+                    <div class="login-xiugaimima-zhi">
+                        <input type="password" class="login-xiugaimima-input" data-role="none" placeholder="请输入原密码" id="qsrysmm-valueone" style="color: #666666;" />
+                    </div>
+                </div>
+                <div class="login-xiugaimima-con">
+                    <div class="login-xiugaimima-title">新密码</div>
+                    <div class="login-xiugaimima-zhi">
+                        <input type="password" class="login-xiugaimima-input" data-role="none" placeholder="密码需6-10位包含字母和数字" id="xmm-valueone" style="color: #666666;" />
+                    </div>
+                </div>
+                <div class="login-xiugaimima-con">
+                    <div class="login-xiugaimima-title">确认新密码</div>
+                    <div class="login-xiugaimima-zhi">
+                        <input type="password" class="login-xiugaimima-input" data-role="none" placeholder="请再次输入新密码" id="qrxmm-valueone" style="color: #666666;" />
+                    </div>
+                    <span class="lcmmsrbyz-tishi">两次密码输入不一致！</span>
+                </div>
+                <div class="submitted-successfully-btn" id="submitted-successfullyone-btn">取消</div>
+                <div class="submitted-successfully-btn" id="xiugaimimaone-ok">确认</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

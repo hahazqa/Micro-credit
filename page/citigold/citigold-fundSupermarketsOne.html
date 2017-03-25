@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-citigold.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <script src="../../js/swiper.jquery.min.js"></script>
+    <title>基金购买</title>
+</head>
+<body>
+<div data-role="page" class="main" id="citigold-fundSupermarketsOne">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left">首页</a>
+        基金购买
+        <div class="head-seach">
+        	<input type="text" value="" placeholder="请输入基金代码" data-role="none" class="head-seach-input" />
+        <a class="seach-botton" href="#"><img src="../../images/seach_icon.png" class="seach_icon" /></a>
+        </div>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>基金超市</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">3</div>
+                <p>风险评估</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>业务签约</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容--> 
+    <div data-role="content"  class="conter-con">
+            <div style="padding:20px 0 0 30px; font-size:20px; color:#0F45A7 ">
+                ---主推产品---
+            </div>
+	    	<div class="conter-auto">
+	    		<div class="featured-hot-con">
+	    			<div class="featured-hot">
+	    				<div class="swiper-container">
+        					<div class="swiper-wrapper">
+        						<!-- <div class="swiper-slide">
+                                                                    <ul class="featured-hot-ul">
+                                                                        <li>
+                                                                            <div class="featured-hot-border1">
+                                                                                <div class="featured-hot-border2">
+                                                                                    <span class="featured-hot-top featured-hot-top1">投票型</span>
+                                                                                    <p class="featured-hot-mc">产品名称产品名称产品名称</p>
+                                                                                    <p class="featured-hot-sz">2388456</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="goumai-dingtou">
+                                                                                <a href="citigold-fundSupermarketsFives.html" class="goumai">购买</a>
+                                                                                <a href="citigold-fundSupermarketsFour.html" class="dingtou">定投</a>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="featured-hot-border1">
+                                                                                <div class="featured-hot-border2">
+                                                                                    <span class="featured-hot-top featured-hot-top2">投票型</span>
+                                                                                    <p class="featured-hot-mc">产品名称产品名称产品名称</p>
+                                                                                    <p class="featured-hot-sz">2388456</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="goumai-dingtou">
+                                                                                <a href="citigold-fundSupermarketsFives.html" class="goumai">购买</a>
+                                                                                <a href="citigold-fundSupermarketsFour.html" class="dingtou">定投</a>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="featured-hot-border1">
+                                                                                <div class="featured-hot-border2">
+                                                                                    <span class="featured-hot-top featured-hot-top3">投票型</span>
+                                                                                    <p class="featured-hot-mc">产品名称产品名称产品名称</p>
+                                                                                    <p class="featured-hot-sz">2388456</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="goumai-dingtou">
+                                                                                <a href="citigold-fundSupermarketsFives.html" class="goumai">购买</a>
+                                                                                <a href="citigold-fundSupermarketsFour.html" class="dingtou">定投</a>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                <div class="swiper-slide">
+                                                                    <ul class="featured-hot-ul">
+                                                                        <li>
+                                                                            <div class="featured-hot-border1">
+                                                                                <div class="featured-hot-border2">
+                                                                                    <span class="featured-hot-top featured-hot-top1">投票型</span>
+                                                                                    <p class="featured-hot-mc">产品名称产品名称产品名称</p>
+                                                                                    <p class="featured-hot-sz">2388456</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="goumai-dingtou">
+                                                                                <a href="citigold-fundSupermarketsFives.html" class="goumai">购买</a>
+                                                                                <a href="citigold-fundSupermarketsFour.html" class="dingtou">定投</a>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="featured-hot-border1">
+                                                                                <div class="featured-hot-border2">
+                                                                                    <span class="featured-hot-top featured-hot-top2">投票型</span>
+                                                                                    <p class="featured-hot-mc">产品名称产品名称产品名称</p>
+                                                                                    <p class="featured-hot-sz">2388456</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="goumai-dingtou">
+                                                                                <a href="citigold-fundSupermarketsFives.html" class="goumai">购买</a>
+                                                                                <a href="citigold-fundSupermarketsFour.html" class="dingtou">定投</a>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="featured-hot-border1">
+                                                                                <div class="featured-hot-border2">
+                                                                                    <span class="featured-hot-top featured-hot-top3">投票型</span>
+                                                                                    <p class="featured-hot-mc">产品名称产品名称产品名称</p>
+                                                                                    <p class="featured-hot-sz">2388456</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="goumai-dingtou">
+                                                                                <a href="citigold-fundSupermarketsFives.html" class="goumai">购买</a>
+                                                                                <a href="citigold-fundSupermarketsFour.html" class="dingtou">定投</a>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div> -->
+        					</div>
+        					<!-- 如果需要分页器 -->
+        					<div class="swiper-pagination">
+        						
+        					</div>
+        			
+        					<!-- 如果需要导航按钮 -->
+        					<!--<div class="swiper-button-prev"></div>-->
+        					<!--<div class="swiper-button-next"></div>-->
+        			
+        					<!-- 如果需要滚动条 -->
+        					<!--<div class="swiper-scrollbar"></div>-->
+        				</div>
+	    			</div>
+	    		</div>
+	</div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a class="previous previous-con back-1" biaoshi="不限" id="jijinshuaixuan-btn">基金筛选</a>
+        <a id="btn_next" class="previous btn_next" href="citigold-fundSupermarketsTwo.html">基金比较</a>
+    </div>
+    <!--筛选弹窗-->
+    <div class="shuaixuan-tanchuang" id="shuaixuan-tanchuang">
+        <div class="shuaixuan-tanchuang-con">
+            <ul class="shuaixuan-tanchuang-ul" style="margin-top: 20px;">
+                <li>
+                    <div class="result-left citigold-left">基金公司名称</div>
+                    <div class="input-test citigold-test">
+                        <select class="drop-down CompanyName" id="CompanyName">
+                            <option value="">不限</option>
+                            <!--<option value="2">深农商银行</option>
+                            <option value="3">北京国信灵通</option>-->
+                        </select>
+                    </div>
+                </li>
+                <li class=" min-left">
+                    <div class="result-left">基金类型</div>
+                    <div class="input-test">
+                        <select class="drop-down" id="CitigoldType">
+                        		<option value="" selected="selected">不限</option>
+                            <option value="1">股票型</option>
+                            <option value="2">配置型</option>
+                            <option value="3">债券型</option>
+                            <option value="4">货币型</option>
+                            <option value="5">保本型</option>
+                            <option value="6">QDII</option>
+                            <option value="7">其他</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-left citigold-left">基金净值</div>
+                    <div class="input-test citigold-test">
+                        <select class="drop-down" id="citigoldJingZhi">
+                        	    <option value="" selected="selected">不限</option>
+                            <option value="1">1.0元(含)以下</option>
+                            <option value="2">1.0元－1.2元(含)</option>
+                            <option value="3">1.2元－1.4元(含)</option>
+                            <option value="4">1.4元－1.6元(含)</option>
+                            <option value="5">1.6元－1.8元(含)</option>
+                            <option value="6">1.8元－2.0元(含)</option>
+                            <option value="7">2.0元－3.0元(含)</option>
+                            <option value="8">3.0元以上</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="min-left">
+                    <div class="result-left">基金代码</div>
+                    <div class="input-test"><input type="text" class="input-test-con" id="inputTestCon" data-role="none"></div>
+                </li>
+                <li class="chenXing">
+                    <div class="result-left min-left"> 晨星评级</div>
+                    <div class="input-test citigold-drop-down1">
+                        <select class="drop-down" id="CenXingPingJi">
+                        		<option value="" selected="selected">不限</option>
+                            <option value="1">一年评级</option>
+                            <option value="2">两年评级</option>
+                            <option value="3">三年评级</option>
+                            <option value="5">五年评级</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="xingJi min-left">
+                    <div class="input-test citigold-drop-down1">
+                        <select class="drop-down" id="CenXingPingJiZhi">
+                            <option value="1" selected="selected">一星</option>
+                            <option value="2">二星</option>
+                            <option value="3">三星</option>
+                            <option value="4">四星</option>
+                            <option value="5">五星</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="chenXing min-left">
+                    <div class="xishu">晨星风险系数</div>
+                    <div class="input-test citigold-drop-down">
+                        <select class="drop-down" id="CXFengxianXiShu">
+                        		<option value="" selected="selected">不限</option>
+                            <option value="1">一年</option>
+                            <option value="2">两年</option>
+                            <option value="3">三年</option>
+                            <option value="5">五年</option>
+                        </select>
+                    </div>
+                    </li>
+                <li class="xingJi min-left">
+                    <div class="input-test citigold-drop-down1">
+                        <select class="drop-down" id="CXFengxianXiShuZhi">
+                            <option value="L" selected="selected">低风险</option>
+                            <option value="B">中低风险</option>
+                            <option value="M">中风险</option>
+                            <option value="H">高风险</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="chenXing">
+                    <div class="result-left"> 投资回报率</div>
+                    <div class="input-test citigold-drop-down1">
+                        <select class="drop-down" id="TZHuiBaoLue">
+                        		<option value="" selected="selected">不限</option>
+                            <option value="1">成立以来回报率</option>
+                            <option value="2">今年以来回报率</option>
+                            <option value="3">半年以来回报率</option>
+                            <option value="4">三个月以来回报率</option>
+                            <option value="5">一个月以来回报率</option>
+                            <option value="6">一周以来回报率</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="xingJi min-left">
+                    <div class="input-test citigold-drop-down1">
+                        <select class="drop-down" id="TZHuiBaoLueZhi">
+                            <option value="1" selected="selected">0%(含)以下</option>
+                            <option value="2">0%－3%(含)以下</option>
+                            <option value="3">3%－5%(含)以下</option>
+                            <option value="4">5%－10%(含)以下</option>
+                            <option value="5">10%－30%(含)以下</option>
+                            <option value="6">30%－50%(含)以下</option>
+                            <option value="7">50%－100%(含)以下</option>
+                            <option value="8">100%以上</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="chenXing min-left">
+                    <div class="xishu">投资回报率排行</div>
+                    <div class="input-test citigold-drop-down2">
+                        <select class="drop-down" id="TZHuiBaoLuePH">
+                        		<option value="" selected="selected">不限</option>
+                            <option value="1">今年以来回报排行</option>
+                            <option value="2">半年以来回报排行</option>
+                            <option value="3">三个月以来回报排行</option>
+                            <option value="4">一个月以来回报排行</option>
+                            <option value="5">一周以来回报排行</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="xingJi min-left">
+                    <div class="input-test citigold-drop-down1">
+                        <select class="drop-down" id="TZHuiBaoLuePHZhi">
+                            <option value="5" selected="selected">前5名</option>
+                            <option value="10">前10名</option>
+                            <option value="30">前30名</option>
+                            <option value="50">前50名</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <a class="shuaixuan-queren" id="ShaiXuan">筛选</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

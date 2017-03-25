@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-citigold.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/page-citigold-su.js"></script>
+    <title>基金购买</title>
+</head>
+<body>
+<div data-role="page" class="main" id="citigold-diaocawenjuan">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        基金购买
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('citigold-fundSupermarketsOne.html')">退出</a>
+    </div>
+    <!--123...流程-->
+   <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>基金超市</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>风险评估</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>业务签约</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+    	<div class="conter-auto">
+    		<div class="diaocawenjuan-con">
+    			<div class="diaocawenjuan-name">调查问卷</div>
+    			<div class="diaocawenjuan-header">
+    				一、财务状况
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">1.您的年龄是？</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="-2"><span>A. 18-25</span></li>
+    					<li scale="0" scale=""><span>B. 25-50</span></li>
+    					<li scale="-2"><span>C.51-60</span></li>
+    					<li scale="-3"><span>D.61-65</span></li>
+    					<li scale="-10"><span>E.高于65岁</span></li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">2.您的家庭总资产净值为（折合人民币）？（不包括自用住宅和私营企业等实业投资，包括储蓄、保险、金融投资、实物投资，并需扣除未结清贷款、信用卡账单等债务）</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="0"><span>A.15万元以下</span></li>
+    					<li scale="2"><span>B.15万元（不含）-50万元（含）</span></li>
+    					<li scale="6"><span>C.50万元（不含）-100万元（含）</span></li>
+    					<li scale="8"><span>D.100万元（不含）-1000万元（含）</span></li>
+    					<li scale="10"><span>E.1000万元（不含）以上</span></li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">3.在您的家庭总资产净值中，可用于金融投资（储蓄存款除外）的比例为？</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="2"><span>A.小于10%</span></li>
+    					<li scale="4"><span>B.10%至25%</span></li>
+    					<li scale="8"><span>C.25%至50%</span></li>
+    					<li scale="10"><span>D.大于50%</span></li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-header">
+    				二、投资经验（任一项选A客户均视为无投资经验客户）
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">4.以下哪项最能说明您的投资经验？</div>
+    				<ul class="diaocawenjuan-ul-con">
+    					<li scale="0">
+    						<span>
+    						A.除存款、国债外，我几乎不投资其他金融产品
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="2">
+    						<span>
+    						B.大部分投资于存款、国债等，较少投资于股票、基金等风险产品
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="6">
+    						<span>
+    						C.资产均衡地分布于存款、国债、银行理财产品、信托产品、股票、基金等
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="10">
+    						<span>
+    						D.大部分投资于股票、基金、外汇等高风险产品，较少投资于存款、国债
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">5.您有多少年投资股票、基金、外汇、金融衍生产品等风险投资品的经验？</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="0"><span>A.没有经验</span></li>
+    					<li scale="2"><span>B.有经验，但少于2年</span></li>
+    					<li scale="6"><span>C.2至5年</span></li>
+    					<li scale="8"><span>D.5至8年</span></li>
+    					<li scale="10"><span>E.8年以上</span></li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">6．以下哪项描述最符合您的投资态度？</div>
+    				<ul class="diaocawenjuan-ul-con">
+    					<li scale="0">
+    						<span>
+    						A.厌恶风险，不希望本金损失，希望获得稳定回报
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="4">
+    						<span>
+    						B.保守投资，不希望本金损失，愿意承担一定幅度的收益波动
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="8">
+    						<span>
+    						C.寻求资金的较高收益和成长性，愿意为此承担有限本金损失
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="10">
+    						<span>
+    						D.希望赚取高回报，愿意为此承担较大本金损失
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-header">
+    				三、投资风格
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">7.本金100万元，不提供保本承诺的情况下，您会选择哪一种投资机会？</div>
+    				<ul class="diaocawenjuan-ul-con">
+    					<li scale="0">
+    						<span>
+    						A.有100%的机会赢取1000元现金，并保证归还
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="4">
+    						<span>
+    						B.有50%的机会赢取5万元现金，并有较高可能性归还本金
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="6">
+    						<span>
+    						C.有25%的机会赢取50万元现金，并有一定的可能性损失本金
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="10">
+    						<span>
+    						D.有10%的机会赢取100万元现金，并有较高可能性损失本金
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">8. 投资于理财、股票、基金等金融投资品（不含存款和国债）时，您可接受的最长投资期限是多久？</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="4"><span>A.1年以下</span></li>
+    					<li scale="6"><span>B.1－3年</span></li>
+    					<li scale="8"><span>C.3—5年</span></li>
+    					<li scale="10"><span>D.5年以上</span></li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">9、您的投资目的是？</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="2"><span>A.资产保值 </span></li>
+    					<li scale="6"><span>B.资产稳健增值</span></li>
+    					<li scale="10"><span>C.资产迅速增值</span></li>
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-header">
+    				四、风险承受能力
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">10.您的投资出现何种程度的波动时，您会呈现明显的焦虑？</div>
+    				<ul class="diaocawenjuan-ul-con">
+    					<li scale="-5">
+    						<span>
+    						A.本金无损失，但收益未达预期
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="0">
+    						<span>
+    						B.出现轻微本金损失
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="5">
+    						<span>
+    						 C.本金10％以内的损失
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="10">
+    						<span>
+    						 D.本金20-50％的损失
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					<li scale="15">
+    						<span>
+    						 E.本金50％以上损失
+    					    </span>
+    					    <img src="../../images/diaocawenjuan-no.png" class="diaocawenjuan-no" />
+    						<img src="../../images/diaocawenjuan-yes.png" class="diaocawenjuan-yes" />
+    					</li>
+    					
+    				</ul>
+    			</div>
+    			<div class="diaocawenjuan-all">
+    				<div class="diaocawenjuan-title">11、对您而言，保本比高收益更为重要？</div>
+    				<ul class="diaocawenjuan-ul">
+    					<li scale="-2"><span>A.非常同意</span></li>
+    					<li scale="0"><span>B.同意</span></li>
+    					<li scale="2"><span>C.无所谓</span></li>
+    					<li scale="4"><span>D.不同意 </span></li>
+    					<li scale="5"><span>E.非常不同意</span></li>
+    				</ul>
+    			</div>
+    		</div>
+     </div>
+    </div>
+   <!--尾部-->
+    <div class="footter">
+       <!-- <a class="previous previous-con back-1">上一步</a>-->
+        <a id="buy_next" class="previous" style="float: initial;">风险评估</a>
+    </div>
+    <!--终止弹窗-->
+   <div class="submitted-successfully submitted-successfully-zz">
+   	    <div class="submitted-successfully-con">
+   	    	   <div class="submitted-successfully-head">显示风评结果</div>
+                <div class="submitted-succ-cont">
+                   <!-- <div class="submitted-successfully-neirong">客户风险承受能力评级为:[<span>占位符占位符</span>]</div>
+                   <div class="submitted-successfully-neirong">有效期至<span>2016年6月13日</span></div> -->
+                </div>
+   	    	   <a class="submitted-successfully-btn">风险评级</a>
+   	    	   <a class="submitted-successfully-btn">继续办理业务</a>
+   	    </div>
+   </div>
+   <!--
+   <script type="text/javascript">
+   	$(document).on("pageshow",'#citigold-diaocawenjuan',function(){
+   		 //终止弹窗
+	    $(".submitted-successfully-con").css("margin-top",($(window).height()-163)/2);
+	   	$(".previous").on("click",function(){
+	   		$(".submitted-successfully-zz").show();
+	   		
+	   		$(".submitted-successfully-btn").on("click",function(){
+	   			$(".submitted-successfully-zz").hide();
+	   		});
+	   		
+	   	});
+   		
+});
+   </script>-->
+</div>
+</body>
+</html>

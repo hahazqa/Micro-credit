@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/credit.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <title>信用卡申请</title>
+</head>
+<body>
+<div data-role="page" class="main citigold-four-fives" id="credit-jinduchaxun">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">首页</a>
+        信用卡办理进度查询及资料补充
+        <a href="../main.html" class="head-all head-right" data-direction="reverse">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="navigation-steps-seach">
+            <div class="seach-botton" style="display: inline-block">搜索</div>
+            <!--<div class="head-seach">
+                <input type="text" placeholder="请输入姓名" style="color: #CCCCCC;" data-role="none" class="head-seach-input">
+                <img src="../../images/seach_one_icon.png" class="seach_icon">
+           </div>-->
+            <div class="creditNav">
+                <div class="creditSelected">已提交信用卡系统</div>
+                <div>未提交信用卡系统</div>
+            </div>
+        </div>
+    </ul>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto">
+            <div class="box-header">
+                <div>申请人</div>
+                <div>证件号码</div>
+                <div>申请时间</div>
+                <div>申请类型</div>
+                <div>办理进度</div>
+                <div style="width: 25%;">拒绝原因</div>
+            </div>
+            <ul class="box-content"></ul>
+            <!--页码-->
+            <div class="page-number-con"></div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a id="credit-jinduchaxun-btn" class="previous"
+           style="margin-left: auto;margin-right: auto;float:none;">补充资料</a>
+    </div>
+    <div id="seach-day-con">
+        <div id="seach-day">
+            <span class="seach-day-title">查询日期</span>
+            <ul class="seach-day-ul">
+                <li style="margin-bottom: 25px;text-align: center;line-height: 39px;">
+                    <div class="day-botton" style="float: left;">
+                        <input type="date" value="" id="kaishiDate"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                    至
+                    <div class="day-botton" style="float: right;">
+                        <input type="date" value="" id="jieshuDate"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-box" style="line-height: 39px;">
+                        <span style="color: #000000;">证件号码</span>
+                        <div style="width: 280px;float: right;">
+                            <input type="text" class="input-test-con" style="color: #000000;" data-role="none" value="">
+                        </div>
+                    </div>
+                </li>
+                <li style="margin-top: 55px; height: 44px;">
+                    <div id="btn_cancel_done" class="fangqi-seach" style="float: left;">
+                        放弃
+                    </div>
+                    <div id="btn_sure_done" class="fangqi-seach" style="float: right;">
+                        搜索
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="seach-undone-con">
+        <div id="seach-undone">
+            <span class="seach-day-title">查询日期</span>
+            <ul class="seach-day-ul">
+                <li class="li-date">
+                    <div class="day-botton float-left">
+                        <input type="date" value="" id="start_date_ud"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                    至
+                    <div class="day-botton float-right">
+                        <input type="date" value="" id="end_date_ud"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-box">
+                        <span class="color-black">申请人姓名</span>
+                        <div class="text-div">
+                            <input id="ipt-custName" type="text" class="input-test-con color-black" data-role="none" value="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-box">
+                        <span class="color-black">证件号码</span>
+                        <div class="text-div">
+                            <input id="ipt-certNo" type="text" class="input-test-con color-black" data-role="none" value="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-box">
+                        <span class="color-black">手机号码</span>
+                        <div class="text-div">
+                            <input id="ipt-phoneNo" type="text" class="input-test-con color-black" data-role="none" value="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-box">
+                        <span class="color-black">经办人</span>
+                        <div class="select-div">
+                            <select id="operaterNo" class="drop-down">
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-day-box">
+                        <span class="color-black">办理进度</span>
+                        <div class="select-div">
+                            <select id="slt-statu" class="drop-down">
+                                <option value="">全部</option>
+                                <option value="-5">待补件</option>
+                                <option value="0">申请中</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="footer-btn">
+                    <div id="btn_cancel_ud" class="fangqi-seach float-left">
+                        放弃
+                    </div>
+                    <div id="btn_sure_ud" class="fangqi-seach float-right">
+                        搜索
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

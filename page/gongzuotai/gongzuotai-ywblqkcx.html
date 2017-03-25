@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/page-gongzuotai.js"></script>
+    <title>工作台</title>
+</head>
+<body>
+<div data-role="page" class="main gongzuotai-con" id="gongzuotai-ywblqkcx">
+    <!--头部-->
+    <div class="header">
+        <a href="../main.html" class="head-all head-left" data-direction="reverse">退出</a>
+        业务办理情况查询
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps">
+        <div class="custom seach-botton">自定义查询</div>
+        <div class="all-bishu">
+            总笔数：<span class="all-bishu-zhi"></span>总金额：<span></span>
+        </div>
+    </div>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto" style="position: relative;">
+            <div class="box-header">
+                <div>办理时间</div>
+                <div>业务类型</div>
+                <div>处理状态</div>
+                <div>人脸识别</div>
+                <div>交易金额</div>
+                <div>脱机／联机</div>
+                <div>客户姓名</div>
+                <div>身份证</div>
+            </div>
+            <ul class="box-content">
+                <!-- <li class="box-rows">
+                   <div>2015-6-24</div>
+                    <div>电子渠道-手机银行</div>
+                    <div>处理状态</div>
+                    <div>人脸识别</div>
+                    <div>9999</div>
+                    <div>脱机</div>
+                    <div>赵向东</div>
+                    <div>452167876545676545</div>
+                </li>
+                <li class="box-rows">
+                   <div>2015-6-24</div>
+                    <div>贷款业务</div>
+                    <div>处理状态</div>
+                    <div>人脸识别</div>
+                    <div>9999</div>
+                    <div>脱机</div>
+                    <div>赵向东</div>
+                    <div>452167876545676545</div>
+                </li>
+                <li class="box-rows">
+                   <div>2015-6-24</div>
+                    <div>贷款业务</div>
+                    <div>处理状态</div>
+                    <div>人脸识别</div>
+                    <div>9999</div>
+                    <div>脱机</div>
+                    <div>赵向东</div>
+                    <div>452167876545676545</div>
+                </li>
+                <li class="box-rows">
+                   <div>2015-6-24</div>
+                    <div>贷款业务</div>
+                    <div>处理状态</div>
+                    <div>人脸识别</div>
+                    <div>9999</div>
+                    <div>脱机</div>
+                    <div>赵向东</div>
+                    <div>452167876545676545</div>
+                </li> -->
+            </ul>
+            <!--页码-->
+            <div class="page-number-con">
+                <!--   <span class="page-number-sx">上一页</span>
+            <span class="page-number-change">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>...</span>
+            <span>10</span>
+            <span class="page-number-sx page-number-bgcolor">下一页</span> -->
+            </div>
+        </div>
+    </div>
+    <div id="ywbl-erweima"
+         style="position:absolute; z-index:90; background:rgba(0,0,0,.4); top:0; left:0; right:0; bottom:0; display:none;">
+        <img src="" alt=""
+             style="position:absolute; background-color:#fff; top:50%; left:50%; width:300px; height:300px; margin-top:-150px; margin-left:-150px;"/>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous previous-con">详情</div>
+        <a class="previous">二维码回单</a>
+    </div>
+
+    <div id="seach-day-con">
+        <div id="seach-day">
+            <ul class="seach-day-ul">
+                <li style="width: 100%;" class="seach-day-baifenbai">
+                    <span class="required-stars">*</span>
+
+                    <div class="day-botton" style="float: left;width: 310px;">
+                        <div class="day-botton-header">业务办理时间</div>
+                        <div class="day-botton-daybtn"><input type="date"/></div>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                    至
+                    <div class="day-botton" style="float: right;">
+                        <input type="date"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-change-header">业务类型</div>
+                    <div class="seach-change-input">
+                        <select class="drop-down">
+                            <option value=""></option>
+                            <option value="01">信通数字卡</option>
+                            <option value="02">信用卡申请</option>
+                            <!--<option value="31">购买理财</option>-->
+                            <option value="27">理财签约</option>
+                            <option value="2">基金销售</option>
+                            <option value="10">电子签约</option>
+                            <option value="03">按揭贷款申请</option>
+                            <option value="81">信用贷款申请</option>
+                            <option value="71">小微贷款申请</option>
+                            <option value="84">小贷客户信息管理</option>
+                            <!--<option value="03">信用贷款申请</option>-->
+                            <option value="72">面签</option>
+                            <option value="58">视频拍摄</option>
+                            <option value="62">积分兑换</option>
+                            <option value="63">积分订单管理</option>
+                            <option value="68">特惠商户</option>
+                            <option value="65">社保待遇签约</option>
+                            <option value="66">特色产品签约</option>
+                            <option value="53">征信查询</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="seach-change-left">
+                    <div class="seach-change-header">处理状态</div>
+                    <div class="seach-change-input">
+                        <select class="drop-down">
+                            <option value=""></option>
+                            <option value="00">成功</option>
+                            <option value="01">失败</option>
+                            <option value="09">超时</option>
+                            <option value="11">部分成功</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-change-header">人脸识别</div>
+                    <div class="seach-change-input">
+                        <select class="drop-down">
+                            <option value=""></option>
+                            <option value="1">自动通过</option>
+                            <option value="2">自动不通过</option>
+                            <option value="5">手动通过</option>
+                            <option value="6">手动不通过</option>
+                            <option value="3">远程复核通过</option>
+                            <option value="4">远程复核不通过</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="seach-change-left">
+                    <div class="seach-change-header">脱机／联机</div>
+                    <div class="seach-change-input">
+                        <select class="drop-down">
+                            <option value=""></option>
+                            <option value="online">联机</option>
+                            <option value="offline">脱机</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="seach-change-header" style="width: 50px;">币种</div>
+                    <div class="seach-change-input" style="width: 195px;">
+                        <select class="drop-down">
+                            <option value=""></option>
+                            <option value="156">人民币</option>
+                            <!-- <option value="250">马克</option>
+                            <option value="256">法郎</option> -->
+                            <option value="344">港币</option>
+                            <!-- <option value="392">日元</option>
+                            <option value="826">英镑</option> -->
+                            <option value="840">美元</option>
+                            <option value="954">欧元</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="seach-day-baifenbai" style="width: 100%;">
+                    <div class="day-botton" style="float: left;width: 310px;">
+                        <div class="seach-change-header">交易金额</div>
+                        <div class="day-botton-daybtn">
+                            <input type="text" class="input-test-con" data-role="none">
+                        </div>
+                    </div>
+                    至
+                    <div class="day-botton" style="float: right;">
+                        <input type="text" class="input-test-con" data-role="none">
+                    </div>
+                </li>
+                <li style="width: 100%;">
+                    <div class="fangqi-seach" style="float: left;">
+                        放弃
+                    </div>
+                    <div class="fangqi-seach" style="float: right;">
+                        查询
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

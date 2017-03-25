@@ -1,0 +1,74 @@
+/**
+ * 公共模块-----完成界面样式
+ * named by Y.
+ */
+.common-complete-Y #border-over {
+    width: 85.2%;
+    height: 1px;
+    background-color: #0F45A7;
+    position: absolute;
+    top: 41.5px;
+    left: 7%;
+    z-index: 10;
+}
+.common-complete-Y .compl{
+    margin: 61px auto 25px auto;
+    width: 33%;
+    font-size: 18px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #0F45A7;
+}
+.common-complete-Y .compl img{
+    height: 33px;
+    width: auto;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.common-complete-Y .compl span{
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+}
+.common-complete-Y .comp2 {
+    float:left;
+    margin-left:0;
+    width:50%;
+}
+.common-complete-Y .comp2 p {
+    width:60%;
+    float:right;
+    margin:15px 0;
+}
+.common-complete-Y .comp2 p:first-child {
+    margin-top:50px;
+}
+.common-complete-Y .colspan {
+    width:2px;
+    float:left;
+    height:60%;
+    background-color:rgba(0,0,0,0.2);
+    margin-top:20px;
+}
+.common-complete-Y .comp3 {
+    float:left;
+    margin-left:80px;
+}
+.common-complete-Y .com_txt{
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+.common-complete-Y .card_mode{
+    display: block;
+    width:auto;
+    height: 220px;
+    margin: 30px auto 20px auto;
+}
+.common-complete-Y .read_prompt{
+    text-align: center;
+    font-size: 15px;
+    color: #909090;
+}

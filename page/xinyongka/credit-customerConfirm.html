@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/credit.css" />
+   <!-- <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/page-credit.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>-->
+    <title>信用卡申请</title>
+</head>
+
+<body>
+    <div data-role="page" class="main" id="credit-customerConfirm">
+        <!--头部-->
+        <div class="header">
+            <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a> 信用卡申请
+            <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('credit-product.html')">退出</a>
+        </div>
+        <!--123...流程-->
+        <ul class="navigation-steps">
+            <div class="border-all"></div>
+            <div id="border-over" class="border-over"></div>
+            <ul class="circle-con">
+                <li>
+                    <div class="circle">1</div>
+                    <p>卡产品选择</p>
+                </li>
+                <li>
+                    <div class="circle">2</div>
+                    <p>读取身份证</p>
+                </li>
+                <li>
+                    <div class="circle">3</div>
+                    <p>阅读协议</p>
+                </li>
+                <li>
+                    <div class="circle">4</div>
+                    <p>影像采集</p>
+                </li>
+                <li>
+                    <div class="circle">5</div>
+                    <p>信息录入</p>
+                </li>
+                <li>
+                    <div class="circle">6</div>
+                    <p>确认信息</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">7</div>
+                    <p>申请完成</p>
+                </li>
+            </ul>
+        </ul>
+        <!--中间内容-->
+        <div data-role="content" class="conter-con">
+            <div class="conter-auto">
+                <div class="msg_con">
+                    <div class="basic_con">
+                        <div class="basic_header" style="position:relative">基本信息<span class="reWrite"><img src="../../images/ps_modify.png" style="width:30px;position: absolute;top:5px;right:50px;" alt=""/></span></div>
+                        <ul class="basic_content confirm_ul">
+                            <li class="basic_content_rows">
+                                <div class="basic_rows_name">
+                                    <span class="basic_name">姓名：</span>
+                                    <span id="basic_name"><!-- 王浩 --></span>
+                                </div>
+                            </li>
+                            <li class="basic_content_rows">
+                                <div class="basic_rows_sex">
+                                    <span class="basic_sex">性别：</span>
+                                    <span id="basic_sex"><!-- 男 --></span>
+                                </div>
+                                <div class="basic_rows_pinX">
+                                    <span class="basic_pinX">拼音：</span>
+                                    <span id="basic_pinX"><!-- Wanghao --></span>
+                                </div>
+                                <div class="basic_rows_birth">
+                                    <span class="basic_birth">出生日期：</span>
+                                    <span id="basic_birth"><!-- 1991-11-19 --></span>
+                                </div>
+                            </li>
+                            <li class="basic_content_rows">
+                                <div class="basic_rows_zhengJY">
+                                    <span class="basic_zhengJY">证件有效期：</span>
+                                    <span id="basic_zhengJY"><!-- 2020年5月 --></span>
+                                </div>
+                                <div class="basic_rows_zhengJH">
+                                    <span class="basic_zhengJH">证件号码：</span>
+                                    <span id="basic_zhengJH"><!-- 131082199111194113 --></span>
+                                </div>
+                                <div class="basic_rows_houseType">
+                                    <span class="basic_houseType">住宅类型：</span>
+                                    <span id="basic_houseType"><!-- 经济房 --></span>
+                                </div>
+                            </li>
+                            <li class="basic_content_rows">
+                                <div class="basic_rows_teach">
+                                    <span class="basic_teach">教育程度：</span>
+                                    <span id="basic_teach"><!-- 本科 --></span>
+                                </div>
+                                <div class="basic_rows_phoneN">
+                                    <span class="basic_phoneN">手机号码：</span>
+                                    <span id="basic_phoneN"><!-- 18232053662 --></span>
+                                </div>
+                                <div class="basic_rows_youB">
+                                    <span class="basic_youB">邮编：</span>
+                                    <span id="basic_youB"><!-- 065200 --></span>
+                                </div>
+                            </li>
+                            <li class="basic_content_rows">
+                                <div class="basic_rows_addressH">
+                                    <span class="basic_addressH">户籍所在地：</span>
+                                    <span id="basic_domicile"><!-- 广东省深圳市罗湖区 --></span>
+                                </div>
+                                <div class="basic_rows_addressZ">
+                                    <span class="basic_addressZ">户籍地址：</span>
+                                    <span id="basic_addressH"><!-- 广东省深圳市罗湖区合作金融大厦 --></span>
+                                </div>
+                                <div class="basic_rows_mailbox">
+                                    <span class="basic_mailbox">邮箱：</span>
+                                    <span id="basic_mailbox"><!-- 2500382373@qq.com --></span>
+                                </div>
+                            </li>
+                            <li class="basic_content_rows">
+                            	   <div class="basic_rows_addressZ">
+                                    <span class="basic_addressZ">婚姻状况:</span>
+                                    <span id="yunyinZK"><!-- 广东省深圳市罗湖区合作金融大厦 --></span>
+                                </div>
+                            	   <div class="basic_rows_addressZ">
+                                    <span class="basic_addressZ">推荐人:</span>
+                                    <span id="basic_reference"><!-- 广东省深圳市罗湖区合作金融大厦 --></span>
+                                </div>
+                            </li>
+                            <li class="basic_content_rows" style="width: 100%;">
+                                <div class="basic_rows_addressZN">
+                                    <span class="basic_addressZN" style="float: left;">通讯地址：</span>
+                                    <span id="basic_addressZN" style="float: left;width: 72%;"><!-- 广东省深圳市罗湖区合作金融大厦2003室 --></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="work_con">
+                        <div class="work_header">职业信息</div>
+                        <ul class="work_content confirm_ul">
+                            <li class="work_content_rows">
+                                <div class="work_rows_name">
+                                    <span class="work_danW">单位全称：</span>
+                                    <span id="work_danW"><!-- 深圳国信灵通 --></span>
+                                </div>
+                                <div class="work_rows_danWType">
+                                    <span class="work_danWType">单位性质：</span>
+                                    <span id="work_danWType"><!-- 私营企业 --></span>
+                                </div>
+                                <div class="work_rows_danWPoneN">
+                                    <span class="work_danWPoneN">单位固话：</span>
+                                    <span id="work_danWPoneN"><!-- 0755-214353324 --></span>
+                                </div>
+                            </li>
+                            <li class="work_content_rows">
+                                <div class="work_rows_hangYType">
+                                    <span class="work_marriage">行业类型：</span>
+                                    <span id="work_marriage"><!-- 互联网科技 --></span>
+                                </div>
+                                <div class="work_rows_incomeN">
+                                    <span class="work_allIncomeN">职位/岗位：</span>
+                                    <span id="zhiweigw"><!-- 10万 --></span>
+                                </div>
+                                <div class="work_rows_incomeN">
+                                    <span class="work_allIncomeN">在现单位工作年限：</span>
+                                    <span id="zxdwgznianxian"><!-- 10万 --></span>
+                                </div>
+                            </li>
+                            <li class="work_content_rows">
+                                <div class="work_rows_incomeN">
+                                    <span class="work_allIncomeN">年收入：</span>
+                                    <span id="work_incomeN"><!-- 10万 --></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="family_con">
+                        <div class="family_header">联系人信息</div>
+                        <ul class="family_content confirm_ul">
+                            <li class="family_content_rows">
+                                <div class="family_rows_emergentName">
+                                    <span class="family_emergentName">紧急联系人姓名：</span>
+                                    <span id="family_emergentName"><!-- 李婷 --></span>
+                                </div>
+                                <div class="family_rows_emergentNum">
+                                    <span class="family_emergentNum">紧急联系人手机：</span>
+                                    <span id="family_emergentNum"><!-- 18232053664 --></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="masterID_con">
+                        <div class="masterID_header">主卡信息</div>
+                        <ul class="masterID_content  confirm_ul">
+                            <li class="masterID_content_rows">
+                                <div class="masterID_rows_lines">
+                                    <span class="masterID_lines">年费类型：</span>
+                                    <span id="masterID_nflx"></span>
+                                </div>
+                                <div class="masterID_rows_billType">
+                                    <span class="masterID_billType">自动还款功能：</span>
+                                    <span id="masterID_zdhk"><!-- 关闭 --></span>
+                                </div>
+                            </li>
+                            <li class="masterID_content_rows is-auto-pay">
+                                <div class="masterID_rows_lines">
+                                    <span class="masterID_lines">自动还款方式：</span>
+                                    <span id="masterID_hkfs"></span>
+                                </div>
+                                <div class="masterID_rows_billType">
+                                    <span class="masterID_billType">还款卡号／账号：</span>
+                                    <span id="masterID_hkzh"><!-- 关闭 --></span>
+                                </div>
+                            </li>
+                            <li class="masterID_content_rows">
+                                <div class="masterID_rows_lines">
+                                    <span class="masterID_lines">进件来源：</span>
+                                    <span id="jinjianly"></span>
+                                </div>
+                                <div class="masterID_rows_billType">
+                                    <span class="masterID_billType">申请额度：</span>
+                                    <span id="shenqinged"><!-- 关闭 --></span>元
+                                </div>
+                            </li>
+                            <li class="masterID_content_rows">
+                                <div id="masterID_rows_billDate">
+                                    <span>账单日：</span>
+                                    <span id="masterID_billDate"></span>
+                                </div>
+                            </li>
+                            <li class="masterID_content_rows">
+                                <div class="masterID_rows_cardAddress" style="width:93%">
+                                    <span class="masterID_cardAddress">卡片寄送地址：</span>
+                                    <span id="masterID_cardAddress"><!-- 广东省深圳市罗湖区合作金融大厦2003室 --></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="qianM_con">
+                        <div class="qianM_shadow"></div>
+                        <div class="masterID_header masterID_header-qrqm querenqianming-click">确认签名</div>
+                        <!-- <img src="../../images/ic_down.png" class="ic_down" /> -->
+                        <!-- <img src="../../images/ic_up.png" class="ic_up"/>-->
+                        <!-- <div class="dianjiqianming-con">点击签名</div> -->
+                        <div class="qianM_box">
+                            <span id="qianM" data-role="none" style="z-index: 1000000;"></span>
+                            <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:25px;position: relative;top:5px"/></div>
+                            <form action="./Base64ToImages" method="post">
+                                <input type="hidden" name="imageData" id="imageData" />
+                            </form>
+                            <!-- <img id="tempImage" src="" alt="临时图片文件" /> -->
+                            <div id="qianOK" class="qian-over" style="float: right;" qmImg="">
+                                <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt="" />
+                                <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%" alt="" />
+                                <span id="btn_submit">签名完成</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duanX_con">
+                        <span>短信验证码</span>
+                        <input type="text" id="inp" data-role="none" />
+                        <span id="getMsg">获取验证码</span>
+                        <span class="codetime">请在<span style="color:red;">80秒</span>内输入验证码</span>
+                    </div>
+                    <div class="credit-sure-xy" style="overflow:hidden;">
+                        <div class="readxy" style="float:left;display:inline;">
+                        <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt="" style="float:left;margin-right:5px;" />
+                        <img id="ic_agree" class="ic_agree" src="../../images/ic_agree.png" height="100%" alt="" style="float:left;margin-right:5px;display:none;" /> 本人已阅读<span>《深圳农村商业银行信用卡(个人卡)领用合约》</span>,自愿申请开立信用卡业务,并承诺所提供资料信息真实有效。</div></div>
+                </div>
+            </div>
+        </div>
+        <!--尾部-->
+        <!--尾部-->
+        <div class="footter">
+            <!--<div class="previous previous-con back-1">上一步</div>-->
+            <div class="previous btn_next2" style="margin-left: auto;margin-right: auto;float:none;">提交</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/cordova.js"></script>
+    <script src="../../js/NSMeapPlugin.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/meapRequest.js"></script>
+    <script src="../../js/meapRequest-credit.js"></script>
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-citigold.js"></script>
+    <script src="../../js/page-citigold-su.js"></script>
+    <script src="../../js/page-xinka.js"></script>
+    <script src="../../js/wce-credit.js"></script>
+    <script src="../../js/swiper.jquery.min.js"></script>
+    <title>基金购买</title>
+</head>
+<body>
+<div data-role="page" class="main citigold-four-fives" id="citigold-InformationInputOne">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a>
+        基金购买
+        <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('citigold-fundSupermarketsOne.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>基金超市</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>风险评估</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>业务签约</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <!--主题内容--> 
+    <div data-role="content"  class="conter-con">
+	    	<div class="conter-auto">
+	    		<div class="fund-investment">基金购买交易</div>
+	    		<ul class="previous-ul">
+	        	    <li class="change-color-li">
+				   <div class="result-left">基金名称</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- 深圳国信灵通有限公司 --></span></div>
+        	        </li>
+	        	    <li class="change-color-li">
+				   <div class="result-left">基金代码</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- AB56567 --></span></div>
+        	        </li>
+	        	    <li class="change-color-li">
+				   <div class="result-left">单位净值</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- 1.2元 --></span></div>
+        	        </li>
+        	        <li class="change-color-li">
+				   <div class="result-left">净值日期</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- AB4645 --></span></div>
+        	        </li>
+	        	    <li class="change-color-li">
+				   <div class="result-left">首次购买起点</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- 578978.00元 --></span></div>
+        	        </li>
+        	        <li class="change-color-li">
+				   <div class="result-left">最小购买单位</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- 占位符占位符 --></span></div>
+        	        </li>
+	        	    <li class="change-color-li">
+				   <div class="result-left">追加购买下限</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- 566555.00元 --></span></div>
+        	        </li>
+        	        <li class="change-color-li">
+				   <div class="result-left">参考费率</div>
+				   <div class="input-test"><span class="input-last-zhi"><!-- 占位符占位符 --></span></div>
+        	        </li>
+        </ul>
+        <ul class="previous-ul previous-ul-ul">
+	        	<li class="change-color-li">
+			   <div class="result-left">账／卡号</div>
+			   <div class="input-test"><span class="input-last-zhi" id="citigold-dt-kh"><!-- 5544576554355676 --></span></div>
+		    </li>
+		    <li class="change-color-li">
+			   <div class="result-left">币种</div>
+			   <div class="input-test"><span class="input-last-zhi">人民币</span></div>
+		    </li>
+		    <li class="change-colorf-li">
+			   <div class="result-left"><span class="required-stars">*</span>购买金额</div>
+			   <div class="input-test"><input type="text" class="input-test-con input-test-yuan" data-role="none" reg="num" style="width:85%" maxlength="13">元</div>
+    	        </li>
+		    <li class="change-colorf-li">
+			   <div class="result-left">推荐人</div>
+			   <div class="input-test"><input type="text" class="input-test-con" data-role="none"></div>
+		    </li>
+        	</ul>
+	    </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <a  class="previous previous-con back-1">上一步</a>
+        <a  class="previous" href="javascript:;">下一步</a>
+    </div>
+</div>
+</body>
+</html>

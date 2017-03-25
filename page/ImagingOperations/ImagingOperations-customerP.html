@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/ImagingOperations.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/page-ImagingOperations.js"></script>
+    <title>运营影像</title>
+</head>
+
+<body>
+    <div data-role="page" class="main customerPp" id="ImagingOperations-customerP">
+        <!--头部-->
+        <div class="header">
+            <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()">首页</a> 视频拍摄
+            <a class="head-all head-right" data-direction="reverse" onclick="dzhFanhui('yewuxuanze-one.html')">退出</a>
+        </div>
+        <!--123...流程-->
+        <div class="navigation-steps">
+            <div class="border-all"></div>
+            <div class="border-over customerPp"></div>
+            <ul class="circle-con ImagingOperations">
+                <li>
+                <div class="circle">1</div>
+                <p>业务选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>证件选择</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认信息</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>采集完成</p>
+            </li>
+            </ul>
+        </div>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con">
+            <div class="conter-auto">
+                <div class="img_content" style="overflow:hidden;">
+                    <div class="img_box get-face">
+                        <div class="customer customer_one">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">客户面部照片</div>
+                    </div>
+                    <div class="img_box">
+                        <div class="customer customer_four" picname="frontIDCardPic">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">身份证正面</div>
+                    </div>
+                    <div class="img_box">
+                        <div class="customer customer_five" picname="backIDCardPic">
+                            <div class="rephoto">必拍</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">身份证反面</div>
+                    </div>
+                    <div class="img_box" style="position: relative;">
+                        <div class="customer customer_six" picname="qitazhengming">
+                            <div class="rephoto">选拍，可多张拍摄</div>
+                            <!--<img class="customer-picture" src="" alt=""/>-->
+                            <img class="camera cameraMul" src="../../images/ic_camera.png" alt="" />
+                        </div>
+                        <div class="img_notes">其他</div>
+                    </div>
+                    <!-- <div style="clear: both"></div> -->
+                </div>
+            </div>
+        </div>
+        <!--<div class="customerP-zancun">暂&nbsp;存</div>-->
+        <!--尾部-->
+        <div class="footter">
+            <div id="ImagingOperations-customerP-pre" class="previous previous-con back-1">上一步</div>
+            <div id="ImagingOperations-customerP-next" class="previous">下一步</div>
+        </div>
+        <div class="bigpic-review-box">
+            <div class="bigpic-review-cont">
+                <div class="bigpic-review-close"></div>
+                <div class="bigpic-review"></div>
+            </div>
+            <div class="bigpic-review-ft">
+                <span class="bigpic-review-rephone"></span>
+                <span class="bigpic-review-del"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

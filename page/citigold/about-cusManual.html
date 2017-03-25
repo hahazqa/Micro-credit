@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/about.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/echarts-all.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/swiper.jquery.min.js"></script>
+    <script src="../../js/page-about.js"></script>
+    <title>用户手册</title>
+</head>
+<body>
+<div data-role="page" class="main about-con manual" id='manual-one'>
+    <!--头部-->
+    <div class="header">
+        <div class="header-con">产品说明书</div>
+    </div>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con">
+        <div class="conter-auto">
+            <!--中间内容左边-->
+            <ul class="navigation">
+                <li class="change-bg">基本信息<span></span></li>
+                <li>净值回报<span></span></li>
+                <li>晨星评级<span></span></li>
+                <li>晨星风险系数<span></span></li>
+            </ul>
+            <!--中间内容区右-->
+            <div class="information-input">
+                <!--基本信息-->
+                <ul id="basic-info" class="credit-card-show info-enter-item">
+                    <li class="li-first">
+                        <div class="information-result">
+                            <div class="result-left">基金名称:</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">基金代码:</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left">基金类型:</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">成立日期:</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 70px">
+                        <div class="information-result">
+                            <div class="result-left">基金托管人:</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">基金管理公司:</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left">管理费:</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">托管费:</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left">最低申购额:</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">最低追加额:</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left">申购费率(前端):</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">申购费率(后端):</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left">赎回费率:</div>
+                            <div class="result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left">销售服务费率:</div>
+                            <div class="result-val"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!--净值回报-->
+                <ul id="manual-netWorth" class="info-enter-item">
+                    <div class="netWorth-header">
+                        <div>净值走势</div>
+                        <div class="click" style="border-left: 1px solid #0F45A7;border-right: 1px solid #0F45A7;">
+                            净值回报
+                        </div>
+                        <div>历史净值查询</div>
+                    </div>
+                    <div class="netWorth-content">
+                        <div id="worthOne" class="worth" style="margin-top: 40px">
+                            <div id="worthCanvas" style="height: 400px;width: 700px;"></div>
+                        </div>
+                        <div id="worthTwo" class="worth">
+                            <div class="line-rows">
+                                <div class="information-result">
+                                    <div class="result-left">日期:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                                <div class="information-result">
+                                    <div class="result-left">单位资产净值:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                            </div>
+                            <div class="line-rows">
+                                <div class="information-result">
+                                    <div class="result-left">累计资产净值:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                                <div class="information-result">
+                                    <div class="result-left">回报率-近三个月以来:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                            </div>
+                            <div class="line-rows">
+                                <div class="information-result">
+                                    <div class="result-left">回报率-今年以来:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                                <div class="information-result">
+                                    <div class="result-left">回报率-近三年以来:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                            </div>
+                            <div class="line-rows">
+                                <div class="information-result">
+                                    <div class="result-left">回报率-成立以来:</div>
+                                    <div class="result-val"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="worthThree" class="worth">
+                            <div class="worthQuery">
+                                <div class="worthTime">开始时间:</div>
+                                <div class="day-botton" style="float: left;"><input type="date"/>
+                                    <img src="../../images/day-botton.png" class="day-botton-img"/>
+                                </div>
+                                <div class="worthTime">结束时间:</div>
+                                <div class="day-botton" style="float: left;">
+                                    <input type="date"/>
+                                    <img src="../../images/day-botton.png" class="day-botton-img"/>
+                                </div>
+                                <div class="worthSearch">查询</div>
+                            </div>
+                            <div class="worthTable">
+                                <div class="worthHeader">
+                                    <div>日期</div>
+                                    <div>基金份额净值(元)</div>
+                                    <div>基金份额累计净值(元)</div>
+                                </div>
+                                <ul class="worthBody"></ul>
+                                <!--页码-->
+                                <div class="page-number-con">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </ul>
+                <!--晨星评级-->
+                <ul id="manual-garde" class="info-enter-item">
+                    <div class="content-header">
+                        <div class="information-result">
+                            <div class="result-left result-mrg">基金名称:</div>
+                            <div class="float-left result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left result-mrg">基金代码:</div>
+                            <div class="float-left result-val"></div>
+                        </div>
+                    </div>
+                    <li class="gard-top">
+                        <div class="information-result">
+                            <div class="result-left marginLeft">晨星评级&nbsp;&nbsp;(一年)&nbsp;&nbsp;:</div>
+                            <div class="star-box"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left marginLeft">晨星评级&nbsp;&nbsp;(二年)&nbsp;&nbsp;:</div>
+                            <div class="star-box"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left marginLeft">晨星评级&nbsp;&nbsp;(三年)&nbsp;&nbsp;:</div>
+                            <div class="star-box"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left marginLeft">晨星评级&nbsp;&nbsp;(五年)&nbsp;&nbsp;:</div>
+                            <div class="star-box"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information-result">
+                            <div class="result-left marginLeft">晨星综合评级:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div class="star-box"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!--晨星风险系数-->
+                <ul id="manual-ratio" class="info-enter-item">
+                    <div class="content-header">
+                        <div class="information-result">
+                            <div class="result-left result-mrg">基金名称:</div>
+                            <div class="float-left result-val"></div>
+                        </div>
+                        <div class="information-result">
+                            <div class="result-left result-mrg">基金代码:</div>
+                            <div class="float-left result-val"></div>
+                        </div>
+                    </div>
+                    <li>
+                        <div class="rationTable-header">
+                            <div>期限</div>
+                            <div>晨星风险系数</div>
+                            <div>晨星风险系数评价</div>
+                        </div>
+                        <ul class="rationTable-body">
+                            <li class="rationTable-rows">
+                                <div>一年</div>
+                                <div></div>
+                                <div></div>
+                            </li>
+                            <li class="rationTable-rows">
+                                <div>两年</div>
+                                <div></div>
+                                <div></div>
+                            </li>
+                            <li class="rationTable-rows">
+                                <div>三年</div>
+                                <div></div>
+                                <div></div>
+                            </li>
+                            <li class="rationTable-rows">
+                                <div>五年</div>
+                                <div></div>
+                                <div></div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="btn-next">关闭</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

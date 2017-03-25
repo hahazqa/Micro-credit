@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/smallLoan.css"/>
+    <link rel="stylesheet" href="../../css/credit.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <!--<script src="../../js/common.js"></script>-->
+    <script src="../../js/variables.js"></script>
+    <!--<script src="../../js/page-loan.js"></script>-->
+    <script src="../../js/area.js"></script>
+    <script src="../../js/page-smallLoan.js"></script>
+    <!--<script src="../../js/wce-loan.js"></script>-->
+    <title>小贷客户信息管理</title>
+</head>
+<body>
+<div data-role="page" class="main card-f-o" id="smallLoanCusManage-messageinput">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" onclick="dzhShouye()" class="head-all head-left">首页</a>
+        小贷客户信息管理
+        <a data-direction="reverse" onclick="dzhFanhui('smallLoanCusManage-index.html')" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <div class="navigation-steps sixCurrent">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>信息录入</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">5</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">6</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </div>
+    <!--主题内容-->
+    <div id="conter-con" class="conter-con">
+        <!--中间内容左边-->
+        <ul class="navigation">
+            <li class="change-bg">证件信息<span></span></li>
+            <li>联系方式<span></span></li>
+            <!--<li>配偶信息<span></span></li>
+            <li>贷款信息<span></span></li>-->
+            <li>其他信息<span></span></li>
+        </ul>
+        <!--中间内容区右-->
+        <div class="information-input">
+            <!--证件信息-->
+            <ul class="info-enter-item credit-card-show">
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">姓名</div>
+                        <span id="smallLoanCus-name"></span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">国籍</div>
+                        <span id="smallLoanCus-nationality">中国</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">证件类型</div>
+                        <span id="smallLoanCus-cerType">身份证</span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">性别</div>
+                        <span id="smallLoanCus-sex"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result">
+                        <div class="result-left">证件到期日</div>
+                        <span id="smallLoanCus-cerTime"></span>
+                    </div>
+                    <div class="information-result">
+                        <div class="result-left">证件号码</div>
+                        <span id="smallLoanCus-cerNo"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left">地区名称</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="smallLoanCus-addrName">
+                        </div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>签发地区</div>
+                        <div class="input-test pingyin-input">
+                            <select name="day" id="smallLoanCus-addr" class="drop-down">
+                                <!--<option value="1">深圳市</option>-->
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--联系方式-->
+            <ul class="info-enter-item">
+                <li>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>手机号码</div>
+                        <div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" maxlength="11" id="smallLoanCus-mobile" reg="mobile" style="font-size: 1.3em;"/></div>
+                    </div>
+                    <div class="information-result border-cc fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>邮编</div>
+                        <div class="input-test pingyin-input"><input type="text" class="input-test-con" data-role="none" maxlength="6" id="smallLoanCus-zipcode" reg="zipCode"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="public-drop-down fm-item">
+                        <div class="domicile"><span class="required-stars">*</span>居住地址</div>
+                        <div class="domicile-value">
+                            <select id="s_city" class="drop-down" disabled>
+                                <option value="深圳市">深圳市</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="public-drop-down fm-item">
+                        <select name="s_county" id="s_county" class="drop-down">
+                            <!--<option value="区/县级市">区/县级市</option>-->
+                            <option value="福田区">福田区</option>
+                            <option value="罗湖区">罗湖区</option>
+                            <option value="南山区">南山区</option>
+                            <option value="宝安区">宝安区</option>
+                            <option value="龙岗区">龙岗区</option>
+                            <option value="盐田区">盐田区</option>
+                            <option value="龙华新区">龙华新区</option>
+                            <option value="光明新区">光明新区</option>
+                            <option value="大鹏新区">大鹏新区</option>
+                            <option value="坪山新区">坪山新区</option>
+                        </select>
+                    </div>
+                    <a href="javascript:;" id="hujifangxian1"><div class="hu-normal"></div></a>
+                    　<a href="javascript:;" id="shishidingwei1"><div class="ding-normal"></div></a>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1"><span class="required-stars">*</span>详细地址</div>
+                        <div class="input-test  input-test1"><input type="text" class="input-test-con" id="smallLoanCus-addr-detail" data-role="none"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="public-drop-down fm-item">
+                        <div class="domicile"><span class="required-stars">*</span>经营地址</div>
+                        <div class="domicile-value">
+                            <select id="day_b" class="drop-down" disabled>
+                                <option value="深圳市">深圳市</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="public-drop-down fm-item">
+                        <select id="day_c" class="drop-down">
+                            <!--<option value="区/县级市">区/县级市</option>-->
+                            <option value="福田区">福田区</option>
+                            <option value="罗湖区">罗湖区</option>
+                            <option value="南山区">南山区</option>
+                            <option value="宝安区">宝安区</option>
+                            <option value="龙岗区">龙岗区</option>
+                            <option value="盐田区">盐田区</option>
+                            <option value="龙华新区">龙华新区</option>
+                            <option value="光明新区">光明新区</option>
+                            <option value="大鹏新区">大鹏新区</option>
+                            <option value="坪山新区">坪山新区</option>
+                        </select>
+                    </div>
+                    <a href="javascript:void(0);" id="hujifangxian"><div class="hu-normal"></div></a>
+                    　<a href="javascript:void(0);" id="shishidingwei"><div class="ding-normal"></div></a>
+                </li>
+                <li>
+                    <div class="border-cc1 fm-item">
+                        <div class="result-left result-left1"><span class="required-stars">*</span>详细地址</div>
+                        <div class="input-test  input-test1"><input type="text" class="input-test-con" id="smallLoanCus-addr-home" data-role="none"/></div>
+                    </div>
+                </li>
+            </ul>
+
+            <!--其他信息-->
+            <ul class="info-enter-item">
+                <li>
+                    <div class="border-cc left-long fm-item">
+                        <div class="result-left" style="width: 25%;"><span class="required-stars">*</span>婚姻状况</div>
+                        <div class="input-test pingyin-input" style="width: 70%;">
+                            <select class="drop-down" id="smallLoanCus-marriage">
+                                <option value="10">未婚</option>
+                                <option value="20">已婚有子女</option>
+                                <option value="21">已婚无子女</option>
+                                <option value="22">再婚</option>
+                                <option value="30">丧偶</option>
+                                <option value="40">离婚</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="border-cc fm-item left-long">
+                        <div class="result-left" style="width: 25%;"><span class="required-stars">*</span>职业</div>
+
+                        <div class="input-test">
+                            <select name="day" id="smallLoanCus-occup" class="drop-down">
+                                <option value="001">专业技术人员</option>
+                                <option value="003">办事人员和有关人员</option>
+                                <option value="004">商业人员</option>
+                                <option value="005">服务从业人员</option>
+                                <option value="006">农、林、牧、渔、水利生产人员</option>
+                                <option value="007">生产、运输设备操作人员及有关人员</option>
+                                <option value="024">军人</option>
+                                <option value="025">不便分类的其他从业人员</option>
+                                <option value="026">未知</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="border-cc left-long fm-item">
+                        <div class="result-left"><span class="required-stars">*</span>工作单位</div>
+                        <div class="input-test pingyin-input">
+                            <input type="text" class="input-test-con" data-role="none" id="smallLoanCus-com-name" maxlength="60"/>
+                        </div>
+                    </div>
+                    <div class="border-cc fm-item left-long">
+                        <div class="result-left" style="width: 25%;"><span class="required-stars">*</span>职务</div>
+                        <div class="input-test pingyin-input" style="width: 70%;">
+                            <select id="ZhiWu" class="drop-down">
+                                <option value="01">法人代表</option>
+                                <option value="02">董事长</option>
+                                <option value="03">总经理</option>
+                                <option value="04">财务负责人</option>
+                                <option value="05">授权经办人</option>
+                                <option value="06">部门经理</option>
+                                <option value="07">董事</option>
+                                <option value="08">监事</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border-cc fm-item left-long">
+                        <div class="result-left"><span class="required-stars">*</span>月收入</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <input type="text" class="input-test-con" data-role="none" id="smallLoanCus-income"/>
+                        </div>
+                        <span>元</span>
+                    </div>
+
+                    <div class="border-cc fm-item left-long">
+                        <div class="result-left"><span class="required-stars">*</span>家庭月收入</div>
+                        <div class="input-test pingyin-input" style="width: 55%;">
+                            <input type="text" class="input-test-con" data-role="none" id="smallLoanCus-f-income"/>
+                        </div>
+                        <span>元</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter" data-role="none">
+        <div class="previous previous-con back-1">上一步</div>
+        <div id="ms_btn_next" class="previous btn_next" data-transition="slide">下一步</div>
+    </div>
+    <div class="zancun">暂存</div>
+</div>
+</body>
+</html>

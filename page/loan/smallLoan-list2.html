@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/xinka.css"/>
+    <link rel="stylesheet" href="../../css/about.css"/>
+    <link rel="stylesheet" href="../../css/login.css"/>
+    <link rel="stylesheet" href="../../css/after-login.css"/>
+    <link rel="stylesheet" href="../../css/pfn-merchant.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/credit.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/dianzi.css" />
+    <link rel="stylesheet" href="../../css/citigold.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+    <link rel="stylesheet" href="../../css/loan.css">
+    <link rel="stylesheet" href="../../css/smallLoan.css">
+    <link rel="stylesheet" href="../../css/jifen.css">
+    <link rel="stylesheet" href="../../css/appendix.css">
+    <link rel="stylesheet" href="../../css/ImagingOperations.css">
+    <link rel="stylesheet" href="../../css/common-customeP.css">
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/personFace.css">
+    <link rel="stylesheet" href="../../css/common-read.css">
+    <link rel="stylesheet" href="../../css/common-reading.css">
+    <link rel="stylesheet" href="../../css/customerPVideo.css">
+    <link rel="stylesheet" href="../../css/finance.css">
+    <link rel="stylesheet" href="../../css/faceSign.css">
+    <link rel="stylesheet" href="../../css/socialSecurity.css">
+    <link rel="stylesheet" href="../../css/common-product-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-agreement-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-complete-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-contract-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-customerConfirm-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-footer-Y.css"/>
+    <link rel="stylesheet" href="../../css/common-video-Y.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/canvas.js"></script>
+</head>
+<body>
+<div data-role="page" class="main" id="smallLoan-list2">
+    <!--头部-->
+    <div class="header">
+        <a class="head-all head-left">退出</a>
+    </div>
+    <div data-role="content" style="top:74px;">
+        <div class="sContainer">
+            <div class="conHead">
+                <img src="../../images/srcb.png">
+                <p>“<span id="smallLoan-proName"></span>”申请表</p>
+            </div>
+            <table style="position:relative;z-index:99">
+                <div style="position: absolute;width:100%;height: 100%;z-index:100;"></div>
+                <tr>
+                    <td colspan="8" class="current">客户信息</td>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td colspan="1" id="smallLoan-name"></td>
+                    <td>年龄</td>
+                    <td colspan="1" id="customerage"></td>
+					<td style="    font-weight: bold;text-align: center;">手机号码</td>
+                    <td colspan="3" id="smallLoan-mobile"></td>
+                </tr>
+                <!--<tr>
+                    <td>手机号码</td>
+                    <td colspan="3" id="smallLoan-mobile"></td>
+                    <td>月收入</td>
+                    <td colspan="3" id="smallLoan-income"></td>
+                </tr>-->
+                <tr>
+                    <td colspan="2">借款企业名称</td>
+                    <td colspan="3" id="smallLoan-companyName"></td>
+                    <td>经营时间</td>
+                    <td colspan="2" id="smallLoan-unitopentime"></td>
+                </tr>
+                <tr>
+                    <td>经营地址</td>
+                    <td colspan="7" id="smallLoan-addr-home"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">本地房产情况</td>
+                    <td colspan="6" id="smallLoan-houseproperty">
+                        <input type="checkbox" data-role="none" value="1" /><span>商品房</span>
+                        <input type="checkbox" data-role="none" value="2" /><span>小产权房</span>
+                        <input type="checkbox" data-role="none" value="3" /><span>无房产（房产所在地仅限深圳或柳州）</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>婚姻情况</td>
+                    <td colspan="2" id="smallLoan-marriage">
+                        <input type="checkbox" data-role="none" value="10" /><span>未婚</span>
+                        <input type="checkbox" data-role="none" value="20" /><span>已婚</span>
+                        <input type="checkbox" data-role="none" value="40" /><span>离异</span>
+                    </td>
+                    <td colspan="2">配偶是否同意签字</td>
+                    <td colspan="3" id="ismateagree">
+                    	&nbsp;&nbsp;<input type="checkbox" data-role="none" value="1" /><span>是&nbsp;&nbsp;</span>
+                        <input type="checkbox" data-role="none" value="0" /><span>否</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" class="current">贷款申请信息</td>
+                </tr>
+                <tr>
+                    <td>贷款金额</td>
+                    <td colspan="2" id="smallLoan-loanMoney"></td>
+                    <td colspan="2">贷款用途</td>
+                    <td colspan="3" id="smallLoan-loanUse"></td>
+                </tr>
+                <tr>
+                    <td>贷款期限</td>
+                    <td colspan="2" id="smallLoan-loanTime">123456</td>
+                    <td colspan="2">还款方式</td>
+                    <td colspan="3" id="paymentMethod">
+                        <input type="checkbox" data-role="none" value="1" /><span>按月</span>
+                        <input type="checkbox" data-role="none" value="2" /><span>按季</span>
+                        <input type="checkbox" data-role="none" value="3" /><span>其他</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">是否能提供担保人</td>
+                    <td colspan="5" id="canofferguarantee">
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" data-role="none" value="1" /><span>是&nbsp;&nbsp;</span>
+                        <input type="checkbox" data-role="none" value="0" /><span>否</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" class="current">客户确认（由小微金融部员工面签）</td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="height:120px;">
+                        <div style="float: left;width: 20.5%;margin-top:40px;text-align: left;">借款人签章及身份证：</div>
+                        <div style="width: 20.5%;text-align: center;float: left;margin-top: 6.5%;"><span id="cerNo"></span></div>
+                        <div id="smallLoan-signImg" style="float: left;width: 50%;margin-top: 3%;"></div>
+                        <div style="float: right;width: 15%;text-align: right;padding-right:15px;margin-top:68px;"><span class="year"></span>年<span class="month"></span>月<span class="day"></span>日</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" class="current">银行确认（由小微金融部员工填写）</td>
+                </tr>
+                <tr>
+                    <td colspan="4">客户签字由本人核对身份证并进行面签。</td>
+                    <td colspan="1" style="font-weight: bold;text-align: center;">面签人签字</td>
+                    <td colspan="3" ><span id="admin"></span><span id="adminName" style="margin-left: 15px;"></span></td>
+                </tr>
+                <!--<tr>
+                    <td colspan="8" >
+                        <p style="text-align: left;">面签声明：本人已对以上签字人员的签字进行了面签。</p>
+                        <p style="text-align: center;">小微金融部受理人签名：<span id="admin"></span><span id="adminName" style="margin-left: 10px;"></span></p>
+                        <p style="text-align: right;margin-right:15px;"><span class="year"></span>年<span class="month"></span>月<span class="day"></span>日</p>
+                    </td>
+                </tr>-->
+            </table>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/common-nav.css" />
+		<link rel="stylesheet" href="../../css/common-alert-Y.css" />
+		<link rel="stylesheet" href="../../css/common-contract-Y.css" />
+		<link rel="stylesheet" href="../../css/rpm.css" />
+		<!--<link rel="stylesheet" href="../../css/credit.css" />-->
+		<!--<link rel="stylesheet" href="../../css/mobile.css" />-->
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="../../js/rpm.js"></script>
+		<title>贷款定价试算</title>
+	</head>
+
+	<body>
+		<div data-role="page" class="main nav-four rpm-test  common-contract-Y common-alert-Y " id="rpm-customerBenefit">
+			<!--头部-->
+			<div class="header">
+				<a href="#" data-direction="reverse" class="head-all head-left">首页</a> 贷款定价试算
+				<a href="#" data-direction="reverse" class="head-all head-right">退出</a>
+			</div>
+			<!--123...流程-->
+			<ul class="navigation-steps">
+				<div class="border-all"></div>
+				<div class="border-over border-over-three"></div>
+				<ul class="circle-con">
+					<li>
+						<div class="circle">1</div>
+						<p>客户查询</p>
+					</li>
+					<li>
+						<div class="circle">2</div>
+						<p>录入子额度</p>
+					</li>
+					<li>
+						<div class="circle">3</div>
+						<p>模拟试算</p>
+					</li>
+					<li class="color-cc">
+						<div class="circle1">4</div>
+						<p>完成</p>
+					</li>
+				</ul>
+			</ul>
+			<!--主题内容-->
+			<div id="conter-con" class="conter-con">
+				<!--中间内容左边-->
+				<ul class="navigation">
+					<li class="change-bg">客户优惠信息<span></span></li>
+					<li>贷款优惠信息<span></span></li>
+					<li>派生承诺信息<span></span></li>
+				</ul>
+
+				<div class="information-input"   >
+					<!--
+                	描述：客户优惠信息 ul页签
+                -->
+					<ul class="subpage-show  info-enter-item  " style="position: relative;">
+						<!--模拟表单布局-->
+						<div class="i-form" style="float: left;width: 100%;" >
+							<!--输入框组-->
+							<div class="i-input-group">
+								<!--input框-->
+								<div class="i-input i-input-bg-info i-input-col2">
+									<span class="i-input-info">客户名称</span>
+									<div class="i-input-control-c">XXXXX</div>
+								</div>
+								<!--input框-->
+								<div class="i-input i-input-bg-info i-input-col2">
+									<span class="i-input-info">授信金额</span>
+									<div class="i-input-control-c">XXXXX</div>
+								</div>
+							</div>
+							<div class="i-input-group">
+								<!--input框-->
+								<div class="i-input i-input-bg-info i-input-col2">
+									<span class="i-input-info">授信客户分类</span>
+									<div class="i-input-control-c">XXXXX</div>
+								</div>
+							</div>
+							<!--输入框组-->
+							<div class="i-input-group">
+								<!--select框-->
+								<div class="i-input i-input-bg-info i-input-col2" style="overflow:visible; ">
+									<span class="i-input-info">过去12个月存款贡献</span>
+									<div class="i-input-control-c">XXXXX</div>
+								</div>
+								<!--input框-->
+								<div class="i-input i-input-bg-info i-input-col2">
+									<span class="i-input-info">存款贡献优惠点数</span>
+									<div class="i-input-control-c">XXXXX</div>
+								</div>
+							</div>
+						</div>
+						<!--模拟表单结束-->
+						<div class="i-form" style="float: left; margin-top: 20px;width: 100%;" >
+							<div  style="font-size: 1.2em;height:20px;width: 30%;float: left;">
+								其他优惠信息
+							</div>
+							<div style="position:absolute;width: 20px;height:20px;right:5%;">
+								<img src="../../img/ic_add.png" style="width: 100%;">
+							</div>
+							<div style="position:absolute;width: 20px;height:20px;right:0%;">
+								<img src="../../img/ic_remove.png" style="width: 100%;">
+							</div>
+						</div>
+						<div class="table-box" style="position: relative;	float: left;	width: 100%;">
+
+							<div class="box-header">
+								<div>项目名称</div>
+								<div>输入说明</div>
+								<div>系数‰（月息）</div>
+								<div>备注说明</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+								<div>XXXXX</div>
+							</div>
+						</div>
+
+					</ul>
+
+					<!--
+                	描述：贷款优惠信息 ul页签
+                -->
+					<ul class="info-enter-item " style="position: relative;" >
+						<div class="table-box" style="float:left;width: 100%;">
+							<div class="box-header">
+								<div>产品</div>
+								<div>币种</div>
+								<div>月利率‰</div>
+								<div>金额（年日均/元）</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>美元</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>港币</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>欧元</div>
+								<div>12.00</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12.00</div>
+								<div>60000</div>
+							</div>
+<div class="btn_next" style=" position:relative;right: 11%;	border:1px solid #0F45A7 !important;padding-top:15px;height:35px;width: 35%;border-radius:3px;text-align: center;">优惠信息</div>
+						</div>
+						
+						
+
+						<!--弹出窗-->
+					</ul>
+
+					<!--
+                	描述：派生承诺信息 ul页签
+                -->
+					<ul class=" info-enter-item" style="position: relative;">
+						<div style="margin-top:20px;margin-bottom: 20px;">
+							<div style="position: absolute;width: 20px;height:20px;right:5%;">
+								<img src="../../img/ic_add.png" style="width: 100%;">
+							</div>
+							<div style="position: absolute;width: 20px;height:20px;right:0%;">
+								<img src="../../img/ic_remove.png" style="width: 100%;">
+							</div>
+						</div>
+						<div class="table-box" style="float:left;top: 40px;width: 100%;">
+							
+							<div class="box-header" style="">
+								<div>产品</div>
+								<div>币种</div>
+								<div>月利率‰</div>
+								<div>金额（年日均/元）</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>美元</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>港币</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>欧元</div>
+								<div>12.00</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12.00</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12.00</div>
+								<div>60000</div>
+							</div>
+						</div>
+				</div>
+
+				</ul>
+			</div>
+
+			<!--尾部-->
+			<div class="footter" data-role="none">
+				<div class="previous previous-con back-1">上一步</div>
+				<div id="btn_next" class="previous btn_next" data-transition="slide">下一步</div>
+			</div>
+			<!--弹出窗-->
+			<div id="a" class="alertLayer">
+				<div class="alert">
+					<!--头部标签-->
+					<div class="alertHeader">
+						请录入客户其他优惠信息
+					</div>
+					<!--主体-->
+					<div class="alertBody">
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">项目名称</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXXX">
+								</div>
+							</div>
+							<div class="row">
+								<div class="inputTitle">输入说明</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXXX">
+								</div>
+							</div>
+						</div>
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">系数</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXX">
+								</div>
+							</div>
+						</div>
+
+						<div class="rowGroup" style="width: 99.6%; height: 160px;">
+							<textarea style="color:#3b4447;width: 100%;height:100%;border-radius: 5PX;box-sizing: border-box;" data-role="none" placeholder="备注"></textarea>
+						</div>
+
+					</div>
+					<!--底部按钮-->
+					<div class="alertFooter">
+						<div class="alertButton">关闭</div>
+						<div class="alertButton">增加</div>
+					</div>
+				</div>
+			</div>
+			<!--弹出窗-->
+			<div id="b" class="alertLayer">
+				<div class="alert">
+					<!--头部标签-->
+					<div class="alertHeader">
+					</div>
+					<!--主体-->
+					<div class="alertBody">
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">产品名称</div>
+								<div class="inputInner">
+									<input type="text" value="测试元 ">
+								</div>
+							</div>
+							<div class="row">
+								<div class="inputTitle">授信金额</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXXX">
+								</div>
+							</div>
+						</div>
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">初始价格</div>
+								<div class="inputInner">
+									<input type="text" value="XXXX">
+								</div>
+							</div>
+						</div>
+						<div style="position: absolute;width: 120px;height:20px;left:5%;margin-top: 10px;">
+							其他优惠信息
+						</div>
+						<div style="position: absolute;width: 20px;height:20px;right:95px;">
+							<img src="../../img/ic_add.png" style="width: 100%;">
+						</div>
+						<div style="position: absolute;width: 20px;height:20px;right:55px;">
+							<img src="../../img/ic_remove.png" style="width: 100%;">
+						</div>
+						<div class="table-box" style="width:100%;margin-top:40px;position:relative ">
+							<div class="box-header">
+								<div>项目名称</div>
+								<div>输入说明 </div>
+								<div>系数‰（月息）</div>
+								<div>备注说明</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>美元</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>人民币</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+							<div class="box-rows">
+								<div>XXXXX</div>
+								<div>美元</div>
+								<div>12</div>
+								<div>60000</div>
+							</div>
+						</div>
+						<!--底部按钮-->
+						<div class="alertFooter">
+							<div class="alertButton" style="float: none;">关闭</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--弹出窗-->
+			<div id="c" class="alertLayer">
+				<div class="alert">
+					<!--头部标签-->
+					<div class="alertHeader">
+						请录入贷款优惠信息
+					</div>
+					<!--主体-->
+					<div class="alertBody">
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">项目名称</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXXX">
+								</div>
+							</div>
+							<div class="row">
+								<div class="inputTitle">输入说明</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXXX">
+								</div>
+							</div>
+						</div>
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">系数</div>
+								<div class="inputInner">
+									<input type="text" value="XXXXX">
+								</div>
+							</div>
+						</div>
+
+						<div class="rowGroup" style="width: 99.6%; height: 160px;">
+							<textarea style="color:#3b4447;width: 100%;height:100%;border-radius: 5PX;box-sizing: border-box;" data-role="none" placeholder="备注"></textarea>
+						</div>
+
+					</div>
+					<!--底部按钮-->
+					<div class="alertFooter">
+						<div class="alertButton">关闭</div>
+						<div class="alertButton">增加</div>
+					</div>
+				</div>
+			</div>
+			<!--弹出窗-->
+			<div id="d" class="alertLayer">
+				<div class="alert" style="width:650px">
+					<!--头部标签-->
+					<div class="alertHeader">
+						请录入贷后存款派生承诺信息
+					</div>
+					<!--主体-->
+					<div class="alertBody" style="width:650px">
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">币种</div>
+								<div class="inputInner">
+									<select class="drop-down">
+                                <option value="">请选择</option>
+                                <option value="">美元</option>
+                                <option value="">欧元</option>
+                                <option value="" selected>默认值</option>
+                            </select>
+								</div>
+							</div>
+							<div class="row" style="width:350px !important">
+								<div class="inputTitle">产品名称</div>
+								<div class="inputInner">
+									<input type="text" value="测试元">
+								</div>
+							</div>
+						</div>
+						<div class="rowGroup">
+							<div class="row">
+								<div class="inputTitle">利率</div>
+								<div class="inputInner">
+									<input type="text" value="12.00‰">
+								</div>
+							</div>
+							<div class="row" style="width:350px !important">
+								<div class="inputTitle" style="width:50%">新增金额（年日均/元）</div>
+								<div class="inputInner">
+									<input type="text" value="100000.00元">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--底部按钮-->
+					<div class="alertFooter">
+						<div class="alertButton">放弃</div>
+						<div class="alertButton">添加</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

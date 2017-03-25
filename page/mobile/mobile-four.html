@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/mobile.css" />
+		<script src="../../js/echarts-all.js"></script>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/page-cache.js"></script>
+		<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../../js/page-mobile.js"></script>
+
+		<title>移动CRM</title>
+	</head>
+
+	<body>
+		<div data-role="page" class="main mobile-con" id="mobile-four">
+			<!--头部-->
+			<div class="header">
+				<a href="../main.html" class="head-all head-right" data-direction="reverse">首页</a>移动CRM
+	        <a href="#" class="head-all head-left" data-direction="reverse">退出</a>
+			</div>
+			
+			<!--中间内容-->
+			<div class="conter-con conter-mobile-con">
+				<!--中间内容左边-->
+				<ul class="navigation">
+					<li class="change-bg">信息总览&nbsp;&nbsp;&nbsp;</li>
+					<li>基本信息&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>持有产品&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>客户购买力</li>
+					<li>意见需求&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				</ul>
+				<!--中间内容区右-->
+				<div class="information-input">
+					<!--信息总览页面-->
+					<ul class="credit-card-show info-enter-item xinxizonglan-con">
+						<div>
+							<ul class="nav-info">
+								<li>核心客户信息</li>
+								<li>身份证信息</li>
+								<li>其他补充信息</li>
+								<li>客户爱好及投资习惯</li>
+							</ul>
+						</div>
+						<div class="info-box">
+							<!--<div class="info-rows">
+								<div>客户姓名：<span>王浩</span></div>
+								<div>证件类型：<span>身份证</span></div>
+								<div>手机号码：<span>13788765677</span></div>
+							</div>
+							<div class="info-rows">
+								<div>客户等级：<span>五星级</span></div>
+								<div>信用等级：<span>良好</span></div>
+								<div>风评等级：<span>良好</span></div>
+							</div>
+							<div class="info-rows">
+								<div>风评到期日：<span class="day-end">2015年8月</span></div>
+								<div>当前积分：<span>38200</span></div>
+								<div>所属机构：<span>移动营销部</span></div>
+							</div>
+							<div class="info-rows">
+								<div>客户经理：<span>赵晓东</span></div>
+							</div>-->
+							<div class="qitabuchongziliao-con">
+								<div class="qitabuchongziliao-left">
+											<div class="qitabuchongziliao-title">客户姓名</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="王浩" readonly="readonly">
+										</div>
+										<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">证件类型</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="身份证" readonly="readonly">
+										</div>
+										<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">手机号码</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="13788765677" readonly="readonly">
+								</div>
+								
+								<div class="qitabuchongziliao-left">
+											<div class="qitabuchongziliao-title">客户等级</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="五星级" readonly="readonly">
+										</div>
+										<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">信用等级</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="良好" readonly="readonly">
+										</div>
+										<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">风评等级</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="良好" readonly="readonly">
+								</div>
+								
+								<div class="qitabuchongziliao-left">
+											<div class="qitabuchongziliao-title">风评到期日</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="2015年8月" readonly="readonly">
+										</div>
+										<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">当前积分</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="38200" readonly="readonly">
+										</div>
+										<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">所属机构</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="移动营销部" readonly="readonly">
+								</div>
+								<div class="qitabuchongziliao-right">
+											<div class="qitabuchongziliao-title">客户经理</div>
+											<input type="text" class="mobile-input-crm" data-role="none" value="赵小东" readonly="readonly">
+								</div>
+							</div>
+						</div>
+						<!--资产分布图-->
+						<!--<div class="jib<!--enxinxi-con">
+							<div class="jibenxinxi-ke">
+								<div class="jibenxinxi-bgcolor">金融资产分布图</div>
+								<div>等级变化趋势图</div>
+							</div>
+						</div>-->
+						<ul class="fenbutu-zichan">
+							<li class="bgcolorLi zhichanfenbutu">金融资产分布图</li>
+							<li class="dengjibianhuaqushitu">等级变化趋势图</li>
+						</ul>
+						<div class="asset-distribution-con zichanfenbutu-shuliang basic-information-change">
+							<div class="pie-tit">金融资产分布图</div>
+							<div id="canvasDiv-pie" style="height:400px"></div>
+							<!--<div id="chartjs-tooltip"></div>-->
+							<ul class="jijin-licai-cunkuan">
+								<li><img src="../../images/mobile-blue.png" />基金</li>
+								<li><img src="../../images/mobile-orange.png" />理财</li>
+								<li><img src="../../images/mobile-green.png" />存款</li>
+							</ul>
+
+						</div>
+						<!--资产分布图-->
+						<div class="asset-distribution-con zichanfenbutu-shuliang">
+							<div id="my-canvas-two" style="height:400px"></div>
+							<!--<ul class="jijin-licai-cunkuan">-->
+							<!--<li><img src="../../images/mobile-blue.png"/>基金</li>-->
+							<!--<li><img src="../../images/mobile-orange.png"/>理财</li>-->
+							<!--<li><img src="../../images/mobile-green.png"/>存款</li>-->
+							<!--</ul>-->
+						</div>
+					</ul>
+					<!--基本信息-->
+					<ul class="info-enter-item">
+						<div class="jibenxinxi-con">
+							<div class="jibenxinxi-ke">
+								<div class="jibenxinxi-bgcolor">核心客户信息</div>
+								<div>其他补充信息</div>
+								<div>客户爱好及投资习惯</div>
+							</div>
+						</div>
+						<div class="basic-information-con">
+							<!--核心客户信息切换内容-->
+							<div class="basic-information basic-information-change">
+								<div class="qitabuchongziliao-con">
+									<!--<div class="basic-information-left">
+                 		<div class="basic-information-title">客  户  号：</div>
+                 		<span>006</span>
+                 	</div>
+                 	<div class="basic-information-right">
+                 		<div class="basic-information-title">客户姓名：</div>
+                 		<span>王皓</span>
+                 	</div>-->
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">客 户 号</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="006" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">客户姓名</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="王皓" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">英 文 名</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="wanghao" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">性 &nbsp; 别：</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="男" readonly="readonly">
+									</div>
+
+									<!--<div class="basic-information-left">
+                 		<div class="basic-information-title">英  文  名：</div>
+                 		<span>wanghao</span>
+                 	</div>
+                 	<div class="basic-information-right">
+                 		<div class="basic-information-title">性    &nbsp;    别：</div>
+                 		<span>男</span>
+                 	</div>-->
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">国 &nbsp; 籍</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="中国" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">民 &nbsp; 族</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="壮族" readonly="readonly">
+									</div>
+
+									<!--<div class="basic-information-left">
+                 		<div class="basic-information-title">国    &nbsp;    籍：</div>
+                 		<span>中国</span>
+                 	</div>
+                 	<div class="basic-information-right">
+                 		<div class="basic-information-title">民    &nbsp;    族：</div>
+                 		<span>壮族</span>
+                 	</div>-->
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">证件号码</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="452345372652415678" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">出生日期</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="1988-09-28" readonly="readonly">
+									</div>
+									<!--<div class="basic-information-left">
+                 		<div class="basic-information-title">证件号码：</div>
+                 		<span>452345372652415678</span>
+                 	</div>
+                 	<div class="basic-information-right">
+                 		<div class="basic-information-title">出生日期：</div>
+                 		<span>1988-09-28</span>
+                 	</div>-->
+									<div class="qitabuchongziliao-quanbu">
+										<div class="qitabuchongziliao-title">户籍地址</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="广东省深圳市罗湖区深南东路3038合作金融大厦" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-quanbu">
+										<div class="qitabuchongziliao-title">通讯地址</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="广东省深圳市罗湖区深南东路3038合作金融大厦" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-quanbu">
+										<div class="qitabuchongziliao-title">邮 &nbsp; 编</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="广东省深圳市罗湖区深南东路3038合作金融大厦" readonly="readonly">
+									</div>
+
+									<!--<div class="basic-information-quanchang">
+                 		<div class="basic-information-title">户籍地址：</div>
+                 		<span>广东省深圳市罗湖区深南东路3038合作金融大厦</span>
+                 	</div>
+                 	<div class="basic-information-quanchang">
+                 		<div class="basic-information-title">通讯地址：</div>
+                 		<span>广东省深圳市罗湖区深南东路3038合作金融大厦</span>
+                 	</div>
+                 	<div class="basic-information-quanchang">
+                 		<div class="basic-information-title">邮    &nbsp;    编：</div>
+                 		<span>532200</span>
+                 	</div>-->
+								</div>
+							</div>
+							<!--其他补充信息切换内容-->
+							<div class="basic-information">
+								<div class="qitabuchongziliao-con jibenxinxi-conn">
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">手机</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="15775645345" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">禁忌</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="占位符" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">联络方式偏好</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="占位符" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">单位电话</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="15775645345" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-quanbu">
+										<div class="qitabuchongziliao-title">现住址</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="广东省深圳市罗湖区深南东路3038合作金融大厦" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">婚姻状况</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="未婚" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">配偶姓名</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="顾惜梦" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">配偶联系电话</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="15786647586" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">拥有深圳住房数</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="3套" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-left">
+										<div class="qitabuchongziliao-title">是否有深圳物业</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="是" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-right">
+										<div class="qitabuchongziliao-title">是否有私车</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="有" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-quanbu">
+										<div class="qitabuchongziliao-title">工作单位</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="广东省深圳市罗湖区深南东路3038合作金融大厦" readonly="readonly">
+									</div>
+									<div class="qitabuchongziliao-quanbu">
+										<div class="qitabuchongziliao-title">单位地址</div>
+										<input type="text" class="mobile-input-crm" data-role="none" value="广东省深圳市罗湖区深南东路3038合作金融大厦" readonly="readonly">
+									</div>
+
+								</div>
+								<div class="xiugai-click xiugai-xiugai">修改</div>
+								<div class="quxiao-baocun-con">
+									<div class="xiugai-click quxiao-baocun quxiao-quxiao">取消</div>
+									<div class="xiugai-click quxiao-baocun">保存</div>
+								</div>
+							</div>
+							<!--客户爱好及投资习惯切换内容-->
+							<div class="basic-information">
+								<div class="horCon">
+									<div class="hor-header" style="padding-top: 0;">客户爱好:</div>
+									<div class="hor-box">
+										<div class="hor-box-rows">
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>音乐会</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>话剧</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>电影</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>美食</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>讲座</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>演唱会</span></div>
+										</div>
+										<div class="hor-box-rows">
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>休闲娱乐</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>集邮</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>摄影</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>绘画</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>自驾游</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>钓鱼</span></div>
+										</div>
+										<div class="hor-box-rows">
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>古玩</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>电玩</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>运动</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="horCon">
+									<div class="hor-header">投资偏好:</div>
+									<div class="hor-box">
+										<div class="hor-box-rows">
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>房地产</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>国际市场</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>股票</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>基金</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>私募</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>信托</span></div>
+										</div>
+										<div class="hor-box-rows">
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>过期市场</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>黄金</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>汇市</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>现贷</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>理财</span></div>
+											<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>其他</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="horCon" style="width: 85%;">
+									<div class="hor-header">备注：</div>
+									<div class="hor-box">
+										<textarea class="textarea-text" data-role="none" placeholder="请输入文本内容..."></textarea>
+									</div>
+								</div>
+								<div class="btn-box" style="text-align: center">
+									<div>保存</div>
+								</div>
+							</div>
+						</div>
+					</ul>
+					<!--持有产品-->
+					<ul class="info-enter-item">
+						<div class="hold-products-con">
+							<div class="hold-products-header zichanhead-click">
+								<span>资产</span>
+								<img src="../../images/arrow_icon.png" class="mobile-arrow_icon" />
+							</div>
+							<ul class="hold-products-ul citigold-ul citigold-zichan-l">
+								<li>人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期</li>
+								<li>港币活期人民币活期人民币活期人民币活期人民币活期人民币活期v</li>
+								<li>美元活人民币活期人民币活期人民币活期人民币活期期</li>
+								<li>人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期</li>
+								<li>港币活期人民币活期人民币活期人民币活期人民币活期人民币活期v</li>
+								<li>美元活人民币活期人民币活期人民币活期人民币活期期</li>
+								<li>人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期人民币活期</li>
+								<li>港币活期人民币活期人民币活期人民币活期人民币活期人民币活期v</li>
+								<li>美元活人民币活期人民币活期人民币活期人民币活期期</li>
+							</ul>
+						</div>
+						<div class="hold-products-con">
+							<div class="hold-products-header zichanhead-click">
+								<span>负债</span>
+								<img src="../../images/arrow_icon.png" class="mobile-arrow_icon" />
+							</div>
+							<ul class="hold-products-ul liabilities-ul citigold-zichan-l">
+								<li>住宅按揭贷款（一手楼）</li>
+								<li>综合消费贷款</li>
+								<li>购车贷款</li>
+								<li>创业贷款</li>
+							</ul>
+						</div>
+						<div class="hold-products-con">
+							<div class="hold-products-header zichanhead-click">
+								<span>理财和基金</span>
+								<img src="../../images/arrow_icon.png" class="mobile-arrow_icon" />
+							</div>
+							<ul class="hold-products-ul citigold-ul citigold-zichan-l">
+								<li>季稳赢</li>
+								<li>月稳赢</li>
+								<li>年稳赢</li>
+							</ul>
+						</div>
+						<div class="hold-products-con">
+							<div class="hold-products-header">
+								<span>开通渠道</span>
+							</div>
+							<ul class="hold-products-ul liabilities-ul">
+								<li>网上银行<span class="it-has-opened">已开通</span></li>
+								<li>电话银行<span class="it-has-opened">已开通</span></li>
+								<li>手机银行<span class="it-has-opened">已开通</span></li>
+								<li>自助终端<span class="it-has-opened not-open">未开通</span></li>
+							</ul>
+						</div>
+						<div class="hold-products-con">
+							<div class="hold-products-header zichanhead-click">
+								<span>借记卡</span>
+								<img src="../../images/arrow_icon.png" class="mobile-arrow_icon" />
+							</div>
+							<ul class="card-ratings citigold-zichan-l">
+								<li>卡号</li>
+							</ul>
+							<ul class="hold-products-ul debit-cards-accepted citigold-zichan-l">
+								<div class="debit-cards-accepted-con">
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+							</ul>
+						</div>
+						<div class="hold-products-con marginBut">
+							<div class="hold-products-header zichanhead-click">
+								<span>信用卡</span>
+								<img src="../../images/arrow_icon.png" class="mobile-arrow_icon" />
+
+								<!--<div class="hold-products-botton">申请信用卡</div>-->
+							</div>
+							<ul class="card-ratings citigold-zichan-l">
+								 <li>卡号</li>
+							    </ul>
+							<ul class="hold-products-ul debit-cards-accepted citigold-zichan-l">
+								<div class="debit-cards-accepted-con citigold-zichan-l">
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+									<li>45238*****34656</li>
+								</div>
+							</ul>
+						</div>
+					</ul>
+					<!--最近到期产品-->
+					<ul class="info-enter-item">
+						<div class="opinions-demand">
+							<div class="expired-products">
+								<div>30天内到期产品</div>
+								<div>到期日</div>
+							</div>
+							<ul class="box-content">
+								<li class="expired-products-box">
+									<div>占位符占位符占位符</div>
+									<div>2015年7月26日</div>
+								</li>
+								<li class="expired-products-box">
+									<div>占位符占位符占位符</div>
+									<div>2015年7月26日</div>
+								</li>
+								<li class="expired-products-box">
+									<div>占位符占位符占位符</div>
+									<div>2015年7月26日</div>
+								</li>
+							</ul>
+						</div>
+					</ul>
+					<!--意见需求-->
+					<ul class="info-enter-item">
+						<div class="opinions-demand">
+							<div class="box-header">
+								<div>序号</div>
+								<div>事件类型</div>
+								<div>事件内容</div>
+								<div>登记日期</div>
+								<div>经办人</div>
+							</div>
+							<ul class="box-content">
+								<li class="box-rows">
+									<div>01</div>
+									<div>占位符占位符占位符</div>
+									<div>占位符占位符占位符</div>
+									<div>2015年6月28日</div>
+									<div>赵晓东</div>
+								</li>
+								<li class="box-rows">
+									<div>02</div>
+									<div>占位符占位符占位符</div>
+									<div>占位符占位符占位符</div>
+									<div>2015年6月28日</div>
+									<div>赵晓东</div>
+								</li>
+								<li class="box-rows">
+									<div>03</div>
+									<div>占位符占位符占位符</div>
+									<div>占位符占位符占位符</div>
+									<div>2015年6月28日</div>
+									<div>赵晓东</div>
+								</li>
+							</ul>
+						</div>
+						<div class="customer-opinions">登记新意见</div>
+					</ul>
+					<!--意见需求输入-->
+					<ul class="opinions-demand-text">
+						<div class="horCon">
+							<div class="hor-header">事件类型</div>
+							<div class="hor-box">
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>服务态度</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>网店环境</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>改进建议</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>凭证产品</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>贷款类产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>结算类产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>票据类产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>理财产品</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>缴费业务类产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>中间业务产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>渠道产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>基金产品</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>存款类产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>国际业务类产品</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>推荐卡</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>其他</span></div>
+								</div>
+							</div>
+						</div>
+						<li class="event-contents">
+							<div class="event-type-contents">事件内容</div>
+							<div class="event-content-con">
+								<textarea class="event-contents-textarea" placeholder="请输入文本内容...">
+
+								</textarea>
+							</div>
+						</li>
+						<li class="event-contents">
+							<div class="event-type-contents">后续措施</div>
+							<div class="event-content-con">
+								<textarea class="event-contents-textarea" placeholder="请输入文本内容...">
+
+								</textarea>
+							</div>
+						</li>
+						<li class="marginTop">
+							<div>登记日期<span><img src="../../images/ic_calender.png" alt=""/></span></div>
+							<div class="btn-save" style="margin-right:12%">获取日期<span><img src="../../images/ic_calender.png"
+                                                                                  alt=""/></span></div>
+						</li>
+						<li style="margin-top: 100px;">
+							<div class="btn-box">
+								<div class="btn-re">重置</div>
+								<div class="btn-save">保存</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(".zichanhead-click").on("click",function(){
+					if($(this).siblings(".citigold-zichan-l").css("display")=="none"){
+						$(".citigold-zichan-l").hide();
+						$(this).siblings(".citigold-zichan-l").show();
+					}else{
+						$(".citigold-zichan-l").hide();
+					}
+				});
+			</script>
+		</div>
+	</body>
+
+</html>

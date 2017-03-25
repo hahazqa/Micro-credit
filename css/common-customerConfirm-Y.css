@@ -1,0 +1,213 @@
+/**
+ * 公共模块-----用户确认界面样式
+ * named by Y.
+ */
+
+.common-customerConfirm-Y .msg_con{
+    width: 96%;
+    height: auto;
+    padding:0 2%;
+}
+.common-customerConfirm-Y .masterID_con{
+    margin-top: 25px;
+    width: 90%;
+    border: solid 1px #CCCCCC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.common-customerConfirm-Y .masterID_header{
+    height: 44px;
+    line-height: 44px;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #CCCCCC;
+    border-radius: 8px 8px 0 0;
+    padding: 0 3.52112676%;
+    font-size: 15px;
+}
+.common-customerConfirm-Y .querenqianming-con{
+    border-radius: 8px;
+}
+.common-customerConfirm-Y .confirm_ul li{
+    margin-left: 3.41796875%;
+    margin-bottom: 24px;
+}
+.common-customerConfirm-Y .confirm_ul li:first-child{
+    margin-top: 25px;
+
+}
+.common-customerConfirm-Y .confirm_ul li div{
+    font-size: 14px;
+    display: inline-block;
+}
+.common-customerConfirm-Y .confirm_ul li div:first-child{
+    width: 35.9375%;
+}
+.common-customerConfirm-Y .confirm_ul li div:nth-child(2){
+    width: 37.63671875%;
+}
+.common-customerConfirm-Y .confirm_ul li div span:first-child{
+    color: #999999;
+    font-size: 14px;
+}
+.common-customerConfirm-Y .confirm_ul li div span:nth-child(2){
+    color: #666666;
+    font-size: 14PX;
+}
+.common-customerConfirm-Y .dianjiqianming-con{
+    position: absolute;
+
+    font-size: 15px;
+    color: #CCCCCC;
+    top: 14px;
+    right: 60px;
+}
+.common-customerConfirm-Y  .masterID_con li div:first-child{
+    width: 44.7265625%;
+}
+.common-customerConfirm-Y  .duanX_con{
+    margin-top: 25px;
+    margin-left: 3.41796875%;
+    height: 36px;
+    line-height: 36px;
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.common-customerConfirm-Y .duanX_con>span{
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.common-customerConfirm-Y #inp{
+    height: 34px;
+    width: 13.28125%;
+    margin-left: 2%;
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+}
+.common-customerConfirm-Y #getMsg{
+    height: 34px;
+    line-height: 34px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    width: 13.3515625%;
+    border: solid 1px #0F45A7;
+    border-radius: 5px;
+    color: #0F45A7;
+}
+.common-customerConfirm-Y .cannt-click{
+    color: #ccc !important;
+    border: 1px solid #ccc !important;
+}
+.common-customerConfirm-Y .qianM_con{
+    position: relative;
+    z-index:1;
+    margin: 25px 0 25px 0;
+    width:90%;
+    margin-left: auto;
+    margin-right:auto;
+}
+.common-customerConfirm-Y .qianM_con>span{
+    display: inline-block;
+}
+.common-customerConfirm-Y .qianM_con>span:first-child{
+    vertical-align: top;
+}
+.common-customerConfirm-Y .qianM_box{
+    width: 100%;
+    position: relative;
+    height: 0px;
+    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+.common-customerConfirm-Y .qianM_shadow{
+    display: none;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    z-index:2;
+    height:261px;
+
+}
+.common-customerConfirm-Y #qianM{
+    display: inline-block;
+    height: 215px;
+    margin-bottom: 20px;
+    width: 100%;
+    background:url(../images/shouxieqianming.png) center center no-repeat;
+    background-size: 282px;;
+}
+.common-customerConfirm-Y .masterID_header-qrqm{
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-top: solid 1px #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 46px;
+    background-color: #E8E8E8;
+    padding: 0 3.52112676%;
+    font-size: 17px;
+}
+.common-customerConfirm-Y .qian-over{
+    float: right;
+    padding: 8px 10px;
+    border: solid 1px #0F45A7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.common-customerConfirm-Y .ic_agree{
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+}
+.common-customerConfirm-Y #masterID_messageT{
+    display: inline-block;
+    padding: 3px 5px;
+    color: #FFFFFF;
+    background-color: #D13F14;
+    border: solid 1px #D13F14;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.common-customerConfirm-Y #clear-botton{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 30px;
+    top: -39px;
+    text-align: center;
+    color: #0F45A7;
+}
+.common-customerConfirm-Y .ic_down{
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+}
+.common-customerConfirm-Y  .ic_up{
+    width: 19px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    padding: 5px 10px;
+    display: none;
+}
+.common-customerConfirm-Y .qianM_box {
+    height:215px;
+    overflow:visible;
+    border-left: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+
+}

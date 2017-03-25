@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <title>工作轨迹</title>
+    <link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/gongzuotai.css"/>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=C1SEj9RpkRvGwTeBy2Ptr6NQ3UUzQ674"></script>-->
+    <!--<script type="text/javascript" src="../../js/Bmap.js"></script>-->
+    <script type="text/javascript" src="../../js/page-gongzuotai.js"></script>
+    <script type="text/javascript" src="../../js/wce-gongzuotai.js"></script>
+    <script type="text/javascript" src="../../js/MT_JSON.js"></script>
+</head>
+<body>
+<!--工作轨迹页面展示-->
+<div data-role="page" class="main gongzuotai-con" id="gongzuotai-jobTrajectory">
+    <!--header头部-->
+    <div class="header">
+        <a class="head-all head-left" data-direction="reverse" onclick="dzhShouye()" data-action="backToHome">退出</a>
+        工作轨迹
+    </div>
+    <!--主题内容-->
+    <div data-role="content" class="conter-con" style="top:80px;bottom: 0px;">
+        <div style="width:100%; height:12.1%;border-bottom: 1px solid #979797;">
+            <div class="managerText">客户经理&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span><!--&nbsp;&nbsp;赵晓东--></span></div>
+            <div class="search">自定义查询</div>
+            <div class="clear"></div>
+        </div>
+        <!--地图框-->
+        <div id="MT_jobTrajectory_map"></div>
+        <!--列表框-->
+        <div class="detail_list">
+            <div>
+            <ul>
+                <!--<li class="date"><span>2016.5.1</span>&nbsp;-<span>2016.5.23</span></li>-->
+                <!--<li><span style="display: inline-block;width: 112px">业务合计</span>:&nbsp;8笔</li>-->
+                <!--<li><span style="display: inline-block;width: 112px">信通数字卡开立</span>:&nbsp;1笔</li>-->
+                <!--<li>申请信用卡:2笔</li>-->
+                <!--<li>申请贷款:1笔</li>-->
+                <!--<li>理财风评:1笔</li>-->
+                <!--<li>购买/定投基金:1笔</li>-->
+                <!--<li>电子渠道:3笔</li>-->
+                <!--<li>视频拍摄:4笔</li>-->
+                <!--<li>积分兑换:2笔</li>-->
+                <!--<li>积分订单:2笔</li>-->
+                <!--<li>特惠商户:2笔</li>-->
+                <!--<li>社保待遇:2笔</li>-->
+                <!--<li>特色产品:2笔</li>-->
+                <!--<li>小微贷款:2笔</li>-->
+                <!--<li>面签:2笔</li>-->
+                <!--<li>面签:2笔</li>-->
+                <!--<li>面签:2笔</li>-->
+                <!--<li>面签:2笔</li>-->
+            </ul>
+                </div>
+        </div>
+     <div class="clear"></div>
+    </div>
+    <!--自定义查询弹窗-->
+    <div class="seach-day-con">
+        <div class="seach-day">
+            <ul class="seach-day-ul">
+                <li style="width: 100%;" class="seach-day-baifenbai">
+                    <div class="day-botton" style="float: left;width: 260px;">
+                        <div class="day-botton-header">办理时间</div>
+                        <div class="day-botton-daybtn"><input type="date"/></div>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                    至
+                    <div class="day-botton" style="float:right;margin-right: 58px; ">
+                        <input type="date"/>
+                        <img src="../../images/day-botton.png" class="day-botton-img"/>
+                    </div>
+                </li>
+                <li class="checkBusiness">
+                    <div class="seach-change-header">业务类型</div>
+                    <div class="seach-change-input">
+                        <select class="drop-down">
+                            <option value="">全部业务</option>
+                            <option value="01">信通数字卡</option>
+                            <option value="02">申请信用卡</option>
+                            <option value="03">按揭贷款</option>
+                            <option value="27">理财风评</option>
+                            <option value="2">购买/定投基金</option>
+                            <option value="10">电子渠道</option>
+                            <option value="58">视频拍摄</option>
+                            <option value="62">积分兑换</option>
+                            <option value="63">积分订单</option>
+                            <option value="68">特惠商户</option>
+                            <option value="65">社保待遇</option>
+                            <option value="66">特色产品</option>
+                            <option value="71">小微贷款</option>
+                            <option value="72">面签</option>
+                        </select>
+                    </div>
+                </li>
+                <li style="width:480px">
+                    <div class="fangqi-seach" style="float: left;">放弃</div>
+                    <div class="fangqi-seach" style="float: right;">搜索</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

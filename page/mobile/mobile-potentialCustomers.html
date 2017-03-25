@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/mobile.css" />
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../../js/page-mobile.js"></script>
+		<title>移动CRM</title>
+	</head>
+
+	<body>
+		<div data-role="page" class="main mobile-con five-mobile-con" id="mobile-potentialCustomers">
+			<!--头部-->
+			<div class="header">
+				<a href="../main.html" class="head-all head-left" data-direction="reverse">退出</a> 创建潜在客户
+			</div>
+			<!--导航栏-->
+			<!--主题内容-->
+			<div data-role="content" class="conter-con conter-mobile-con" style="bottom: 0;">
+				<div class="conter-auto">
+					<div class="kehuxinxi-kehuaihao-con">
+						<div class="mobile-textarea">
+							<div class="hor-header">客户信息:</div>
+							<ul class="kehuxinxi-text">
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">客户姓名</div>
+										<div class="kehuxinxi-leftValue">
+											<input type="text" class="mobile-input-crm" data-role="none" value="王皓">
+										</div>
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">手机号码</div>
+										<div class="kehuxinxi-leftValue">
+											<input type="text" class="mobile-input-crm" data-role="none">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">证件类型</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">身份证</option>
+												<option value="2">社保卡</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">证件号码</div>
+										<div class="kehuxinxi-leftValue">
+											<input type="text" class="mobile-input-crm" data-role="none">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">最高学历</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">研究生</option>
+												<option value="2">博士</option>
+												<option value="3">本科</option>
+												<option value="4">专科</option>
+												<option value="5">高中</option>
+												<option value="6">初中</option>
+												<option value="7">小学</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">性别</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">男</option>
+												<option value="2">女</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" /></div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">最佳联络时间</div>
+										<div class="kehuxinxi-leftValue zuijialianluoshijian-con">
+											<div class="zuijialianluoshijian-bglocor"><input type="text" class="mobile-input-crm" data-role="none" placeholder="02"></div>
+											<div>:</div>
+											<div class="zuijialianluoshijian-bglocor"><input type="text" class="mobile-input-crm" data-role="none" placeholder="01"></div>
+											<div>:</div>
+											<div class="zuijialianluoshijian-bglocor"><input type="text" class="mobile-input-crm" data-role="none" placeholder="00"></div>
+										</div>
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">联络方式偏好</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">研究生</option>
+												<option value="2">博士</option>
+												<option value="3">本科</option>
+												<option value="4">专科</option>
+												<option value="5">高中</option>
+												<option value="6">初中</option>
+												<option value="7">小学</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">婚姻状况</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">已婚</option>
+												<option value="2">未婚</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">禁忌</div>
+										<div class="kehuxinxi-leftValue">
+											<input type="text" class="mobile-input-crm" data-role="none">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">年收入（万元）</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">6万</option>
+												<option value="2">8万</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">是否有深圳物业</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">是</option>
+												<option value="2">否</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">是否有私家车</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">是</option>
+												<option value="2">否</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">工作单位</div>
+										<div class="kehuxinxi-leftValue">
+											<input type="text" class="mobile-input-crm" data-role="none">
+										</div>
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">单位所属行业</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">占位符</option>
+												<option value="2">占位符</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">工作属性</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">占位符</option>
+												<option value="2">占位符</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">工作职位</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">主管</option>
+												<option value="2">程序媛</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+								</li>
+								<li>
+									<div class="kehuxinxi-left kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">客户来源</div>
+										<div class="kehuxinxi-leftValue">
+											<select class="drop-down">
+												<option value="1">占位符</option>
+												<option value="2">占位符</option>
+											</select>
+										</div>
+										<img src="../../images/icon-right.png" class="ic-right-mobile" />
+									</div>
+									<div class="kehuxinxi-right kehuxinxi-bgcolorF">
+										<div class="kehuxinxi-leftTitle">推荐人</div>
+										<div class="kehuxinxi-leftValue">
+											<input type="text" class="mobile-input-crm" data-role="none">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="horCon">
+							<div class="hor-header">客户爱好:</div>
+							<div class="hor-box">
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>音乐会</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>话剧</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>电影</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>美食</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>讲座</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>演唱会</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>休闲娱乐</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>集邮</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>摄影</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>绘画</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>自驾游</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>钓鱼</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>古玩</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>电玩</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>运动</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="horCon">
+							<div class="hor-header">投资偏好:</div>
+							<div class="hor-box">
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>房地产</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>国际市场</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>股票</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>基金</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>私募</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>信托</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>过期市场</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>黄金</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>汇市</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>现贷</span></div>
+								</div>
+								<div class="hor-box-rows">
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>理财</span></div>
+									<div><span class="hor-kuang"><img class="hor-img" src="../../images/ic_lansegou.png"
+                                                              alt=""/></span><span>其他</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="mobile-textarea">
+							<div class="hor-header">备注:</div>
+							<div class="textarea-text-con">
+								<textarea class="textarea-text" data-role="none" placeholder="请输入文本内容..."></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--尾部-->
+			<div class="footter">
+				<div class="foot-mobile">创建客户</div>
+			</div>
+		</div>
+	</body>
+
+</html>s

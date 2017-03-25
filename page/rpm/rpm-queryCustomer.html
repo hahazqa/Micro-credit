@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信用贷款</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/common-nav.css"/>
+    <link rel="stylesheet" href="../../css/common-contract-Y.css"/>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" class="main nav-four common-contract-Y">
+        <!--头部内容-->
+        <div class="header">
+            <a href="#" class="head-all head-left" data-direction="reverse">首页</a>
+            贷款定价试算
+            <a href="#" class="head-all head-right" data-direction="reverse">退出</a>
+        </div>
+        <!--导航步骤-->
+        <ul class="navigation-steps">
+            <div class="border-all"></div>
+            <div class="border-over border-over-one"></div>
+            <ul class="circle-con">
+                <li>
+                    <div class="circle">1</div>
+                    <p>客户查询</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">2</div>
+                    <p>录入子额度</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">3</div>
+                    <p>模拟试算</p>
+                </li>
+                <li class="color-cc">
+                    <div class="circle1">4</div>
+                    <p>完成</p>
+                </li>
+            </ul>
+        </ul>
+        <!--主题内容-->
+        <div data-role="content" class="conter-con">
+            <div class="conter-auto">
+                <div style="position:absolute;top:45px;right:223px;width:15px;height:15px">
+                    <img src="../../img/ic_add.png" style="width:100%; height:100%;">
+                </div>
+                <!--模拟表单布局-->
+                <div class="i-form" style="margin-top:80px;">
+                    <!--输入框组-->
+                    <div class="i-input-group">
+                        <!--input框-->
+                        <div class="i-input i-input-col2">
+                            <span class="i-input-info">客户号</span>
+                            <input class="i-input-control-c" type="text" value="0000012">
+                        </div>
+                        <!--input框-->
+                        <div class="i-input i-input-col2">
+                            <span class="i-input-info">客户名称</span>
+                            <input class="i-input-control-c" type="text" value="张三">
+                        </div>
+                    </div>
+                    <!--输入框组-->
+                    <div class="i-input-group">
+                        <!--select框-->
+                        <div class="i-input i-input-col2" style="overflow:visible; ">
+                            <span class="i-input-info">证件类型</span>
+
+                            <div class="i-input-control i-input-control-dropdown">
+                                <div class="i-input-select">
+                                    <select class="drop-down">
+                                        <option value="">请选择</option>
+                                        <option value="" selected="true">身份证</option>
+                                        <option value="">港澳证</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--input框-->
+                        <div class="i-input i-input-col2">
+                            <span class="i-input-info">证件号码</span>
+                            <input class="i-input-control-c" type="text" value="110223198607192419">
+                        </div>
+                    </div>
+                </div>
+                <!--模拟表单结束-->
+            </div>
+        </div>
+        <!--尾部按钮-->
+        <div class="footter">
+            <div class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">查询</div>
+        </div>
+    </div>
+</body>
+</html>

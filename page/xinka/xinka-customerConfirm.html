@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/xinka.css"/>
+    <!--<script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/variables.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/canvas.js"></script>
+    <script src="../../js/page-xinka.js"></script>-->
+    <title>信通数字卡</title>
+</head>
+<body>
+<div data-role="page" class="main" id="xinka-customerConfirm">
+    <!--头部-->
+    <div class="header">
+        <a data-direction="reverse" class="head-all head-left" onclick="dzhShouye()">首页</a>
+        信通数字卡
+        <a data-direction="reverse" class="head-all head-right" onclick="dzhFanhui('xinka-product.html')">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>卡产品选择</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>阅读协议</p>
+            </li>
+            <li>
+                <div class="circle">4</div>
+                <p>影像采集</p>
+            </li>
+            <li>
+                <div class="circle">5</div>
+                <p>信息录入</p>
+            </li>
+            <li>
+                <div class="circle">6</div>
+                <p>确认签名</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">7</div>
+                <p>申请完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="msg-con">
+                <div class="basic_con msg-box">
+                    <div class="msg-box-header">证件信息<span id="xinka-customerCon-edit" class="reWrite"><img src="../../images/ps_modify.png" style="width:30px;position: relative;top:5px" alt=""/></span></div>
+                    <ul class="confirm-ul">
+                        <li class="basic-li">
+                            <div class="li-first-div">
+                                <span class="basic-name">中文姓名：</span>
+                                <span id="basic-name"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic-sex">性别：</span>
+                                <span id="basic-sex"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="basic_zhengType">证件类型：</span>
+                                <span id="basic_zhengType">身份证</span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic_guoJ">国籍：</span>
+                                <span id="basic_guoJ">中国</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="basic_zhengJH">证件号码：</span>
+                                <span id="basic_zhengJH"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic_addressZ">签发地区：</span>
+                                <span id="basic_addressZ"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="basic_zhengJY">证件有效期：</span>
+                                <span id="basic_zhengJY"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="basic_qianF">签发机关：</span>
+                                <span id="basic_qianF"></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="family_con msg-box">
+                    <div class="msg-box-header">联系方式</div>
+                    <ul class="confirm-ul">
+                        <li class="basic-li">
+                            <div class="li-first-div">
+                                <span class="family_famliyName">手机号码：</span>
+                                <span id="family_famliyName"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="family_familyType">邮编：</span>
+                                <span id="family_familyType"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-first-div">
+                                <span class="family_familyNum">通讯地址：</span>
+                                <span id="family_familyNum"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="work_con  msg-box">
+                    <div class="msg-box-header">其他信息</div>
+                    <ul class="work_content confirm-ul">
+                        <li class="basic-li">
+                            <div class="li-first-div">
+                                <span class="work_workName">职业：</span>
+                                <span id="work_workName"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="work_tuiJ">推荐人：</span>
+                                <span id="work_tuiJ"></span>
+                            </div>
+                        </li>
+                        <!--<li class="basic-li">
+                            <div class="li-first-div">
+                                <span class="re_card_no">收款卡号：</span>
+                                <span id="re_card_no"></span>
+                            </div>
+                            <div class="li-second-div">
+                                <span class="re_personal">收款人：</span>
+                                <span id="re_personal"></span>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="video-qian">
+                    <div class="qian-box">
+                        <!-- <img src="../../images/ic_down.png" class="ic_down"/> -->
+                        <div class="qian-header">确认签名</div>
+                        <!-- <div class="dianjiqianming-con">点击签名</div> -->
+                        <div id="clear-botton"><img src="../../images/ps_clear.png" style="width:25px;position: relative;top:5px"/></div>
+                        <div id="qianM" class="qian-content"></div>
+                        <form action="./Base64ToImages" method="post">
+                            <input type="hidden" name="imageData" id="imageData" />
+                        </form>
+                    </div>
+                    <div id="qianOK" class="qian-over" style="float: right;">
+                        <img id="ic_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt=""/>
+                        <img id="ic_agree" class="ic_agree" style="display: none" src="../../images/ic_agree.png" height="100%"
+                             alt=""/>
+                        <span>签名完成</span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <!--<div class="duanX_con">
+                    <span>短信验证码</span>
+                    <input type="text" id="inp" data-role="none"/>
+                    <span id="getMsg">获取验证码</span>
+                    <span>请在<span style="color:red;"><span id="xinka-auth-time">90</span>秒</span>内输入验证码</span>
+                </div>-->
+                <div class="xinka-sure-xy"><img id="xy_disagree" class="ic_agree" src="../../images/ic_disagree.png" height="100%" alt="" style="float:left;margin-right:5px;" />
+                        <img id="xy_agree" class="ic_agree" src="../../images/ic_agree.png" height="100%" alt="" style="float:left;margin-right:5px;display:none;" /> 本人已阅读<span>《开立个人信通数字卡账户协议》</span>自愿申请开立数字卡业务，并承诺所提供资料信息真实有效。 </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <!-- <div id="xinka-customerCon-edit" class="previous previous-con back-1">修改</div> -->        
+        <div id="xinka-customerCon-sub" class="previous btn_next" style="margin-left: auto;margin-right: auto;float:none;">提&nbsp;&nbsp;&nbsp;交
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

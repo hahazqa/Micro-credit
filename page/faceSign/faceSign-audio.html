@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/common-nav.css">
+    <link rel="stylesheet" href="../../css/common-customeP.css"/>
+    <link rel="stylesheet" href="../../css/faceSign.css">
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/gatherPic.js"></script>
+    <title>面签</title>
+</head>
+<body>
+<div data-role="page" class="main nav-four chooseLoan" id="faceSign-audio">
+    <!--头部-->
+    <div class="header">
+        <a onclick="dzhShouye()" data-direction="reverse" class="head-all head-left">首页</a>
+        面签
+        <a onclick="dzhFanhui('faceSign-reading.html')" href="" data-direction="reverse" class="head-all head-right">退出</a>
+    </div>
+    <!--123...流程-->
+    <ul class="navigation-steps">
+        <div class="border-all"></div>
+        <div id="border-over" class="border-over"></div>
+        <ul class="circle-con">
+            <li>
+                <div class="circle">1</div>
+                <p>读取身份证</p>
+            </li>
+            <li>
+                <div class="circle">2</div>
+                <p>选择贷款</p>
+            </li>
+            <li>
+                <div class="circle">3</div>
+                <p>身份验证</p>
+            </li>
+            <li class="color-cc">
+                <div class="circle1">4</div>
+                <p>完成</p>
+            </li>
+        </ul>
+    </ul>
+    <div data-role="content" id="conter-con" class="conter-con">
+        <!--主题内容-->
+        <div class="conter-auto">
+            <div class="msg_box" style="position: relative">
+                <div class="ple">请确保以下客户在场,点击<img src="../../images/ic_restart.png" alt="">开始录音</div>
+                <div class="op_header">
+                    <div>角色</div>
+                    <div>姓名</div>
+                    <div>证件类型</div>
+                    <div class="colTty">证件号码</div>
+                </div>
+                <ul class="op_box">
+                    <!--<li>-->
+                        <!--<div>借款人</div>-->
+                        <!--<div>巡回赛</div>-->
+                        <!--<div>身份证</div>-->
+                        <!--<div class="colTty">113092877666678761</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="btn_box">
+                <!--<div>-->
+                    <!--<img class="ly_y" src="../../images/ic-ly-ing.png" alt="">-->
+                    <!--<img class="ly_n" style="display: none;" src="../../images/ic-nokz-ing.png" alt="">-->
+                <!--</div>-->
+                <!--<div style="float: right;">-->
+                    <!--<img class="disRestart" src="../../images/ic_disresstart.png" alt="">-->
+                    <!--<img class="restart" style="display: none;" src="../../images/ic_restart.png" alt="">-->
+                <!--</div>-->
+                <img class="restart" src="../../images/ic_restart.png" alt="">
+            </div>
+
+            <div class="audio_box">
+                <!--<audio src="../../images/yicijiuhao.mp3" autoplay="autoplay" controls="controls" style="width: 100%"></audio>-->
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footter">
+        <div class="previous" style="margin-left: auto;margin-right: auto;float:none;">录音完成</div>
+    </div>
+    <div class="search_box">
+        <div class="search_con">
+            <div class="time_box">······&nbsp;<span>00:00:00</span>&nbsp;······</div>
+            <img src="../../images/ic-zt-ing.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
